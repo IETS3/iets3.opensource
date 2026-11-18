@@ -11,6 +11,7 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -24,233 +25,297 @@ public class Generated_minMax_Test {
   public static final Number d_ = ((Number) new BigInteger("255"));
   @Test
   public void testMax_item0_2152957725070759621() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725070759621");
+    }
   }
   @Test
   public void testMax_item1_2152957725074445903() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.b_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.b_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.b_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.b_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725074445903");
+    }
   }
   @Test
   public void testMax_item2_2152957725072296641() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.b_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.m_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.b_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.m_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.b_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.m_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.b_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.m_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725072296641");
+    }
   }
   @Test
   public void testMax_item3_2152957725072297190() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.m_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.m_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.m_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.m_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725072297190");
+    }
   }
   @Test
   public void testMax_item4_2152957725072291986() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.c_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.c_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.c_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.c_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725072291986");
+    }
   }
   @Test
   public void testMax_item5_2152957725072292872() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.c_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.c_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.c_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.c_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.b_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725072292872");
+    }
   }
   @Test
   public void testMax_item6_2152957725072294546() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.c_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.c_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.c_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.c_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.a_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725072294546");
+    }
   }
   @Test
   public void testMax_item7_3182514044104379759() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.d_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.d_);
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.d_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
-      ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.d_);
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.d_) + ", but was: " + (SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.d_);
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.d_, SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.c_);
+        ListSequence.fromList(l).addElement((BigInteger) Generated_minMax_Test.d_);
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F3182514044104379759");
+    }
   }
   @Test
   public void testMin_item0_2152957725072301350() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.b_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.b_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.b_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.b_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725072301350");
+    }
   }
   @Test
   public void testMin_item1_2152957725074450185() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725074450185");
+    }
   }
   @Test
   public void testMin_item2_2152957725073500429() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.m_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.m_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.m_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.m_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.m_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.m_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.m_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.m_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725073500429");
+    }
   }
   @Test
   public void testMin_item3_2152957725073500460() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.m_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.m_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.m_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.m_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.m_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.m_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.m_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.m_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725073500460");
+    }
   }
   @Test
   public void testMin_item4_2152957725073500629() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725073500629");
+    }
   }
   @Test
   public void testMin_item5_2152957725073500828() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725073500828");
+    }
   }
   @Test
   public void testMin_item6_2152957725073500961() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.b_));
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725073500961");
+    }
   }
   @Test
   public void testMin_item7_2152957725073520665() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
-      return l;
-    }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
-      List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
-      ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
-      return l;
-    }).invoke(), false, null)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_minMax_Test.a_) + ", but was: " + (SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
+        return l;
+      }).invoke(), false, null)), EqualsTestOp.matches(Generated_minMax_Test.a_, SharedMinMaxHelper.min(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {
+        List<BigInteger> l = ListSequence.fromList(new ArrayList<BigInteger>());
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.a_));
+        ListSequence.fromList(l).addElement(((BigInteger) Generated_minMax_Test.c_));
+        return l;
+      }).invoke(), false, null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F2152957725073520665");
+    }
   }
 
 

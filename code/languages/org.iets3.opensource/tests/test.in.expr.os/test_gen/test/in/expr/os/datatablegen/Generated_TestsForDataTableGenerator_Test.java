@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -65,19 +66,35 @@ public class Generated_TestsForDataTableGenerator_Test {
   public static final Number number1_ = Table_Table.keyA.val1;
   @Test
   public void Tests_item0_7503962471789840464() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Table_Table.keyA.val1), EqualsTestOp.matches(((Number) new BigInteger("1")), Table_Table.keyA.val1));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Table_Table.keyA.val1), EqualsTestOp.matches(((Number) new BigInteger("1")), Table_Table.keyA.val1));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A12a7a296-b11b-4305-8259-d25f523b38d0%28test.in.expr.os.datatablegen%40tests%29%2F7503962471789840464");
+    }
   }
   @Test
   public void Tests_item1_7503962471791916850() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA)), (Object) true, (Object) Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA)), (Object) true, (Object) Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A12a7a296-b11b-4305-8259-d25f523b38d0%28test.in.expr.os.datatablegen%40tests%29%2F7503962471791916850");
+    }
   }
   @Test
   public void Tests_item2_7503962471791947803() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA, Table_Table.keyB)), (Object) true, (Object) Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA, Table_Table.keyB));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA, Table_Table.keyB)), (Object) true, (Object) Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA, Table_Table.keyB));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A12a7a296-b11b-4305-8259-d25f523b38d0%28test.in.expr.os.datatablegen%40tests%29%2F7503962471791947803");
+    }
   }
   @Test
   public void Tests_item3_7503962471791497471() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + ((Table_Table.lookup(0, ((Number) new BigInteger("3")))).val2), EqualsTestOp.matches(((Number) new BigInteger("4")), (Table_Table.lookup(0, ((Number) new BigInteger("3")))).val2));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + ((Table_Table.lookup(0, ((Number) new BigInteger("3")))).val2), EqualsTestOp.matches(((Number) new BigInteger("4")), (Table_Table.lookup(0, ((Number) new BigInteger("3")))).val2));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A12a7a296-b11b-4305-8259-d25f523b38d0%28test.in.expr.os.datatablegen%40tests%29%2F7503962471791497471");
+    }
   }
 
 

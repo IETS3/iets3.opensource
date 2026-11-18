@@ -4,6 +4,7 @@ package test.in.expr.os.tests;
 
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 
@@ -14,31 +15,59 @@ public class Generated_tests_Test {
 
   @Test
   public void equalsOption_item0_9212286833109889934() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F9212286833109889934");
+    }
   }
   @Test
   public void equalsOption_item1_8293507652873818411() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F8293507652873818411");
+    }
   }
   @Test
   public void equalsError_item0_9212286833123158268() throws Throwable {
-    Assert.assertEquals("Expected: " + ("") + ", but was: " + (""), (Object) "", (Object) "");
+    try {
+      Assert.assertEquals("Expected: " + ("") + ", but was: " + (""), (Object) "", (Object) "");
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F9212286833123158268");
+    }
   }
   @Test
   public void equalsPrimitive_item0_9212286833111962765() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F9212286833111962765");
+    }
   }
   @Test
   public void equalsPrimitive_item1_9212286833111962771() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (false), (Object) false, (Object) false);
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (false), (Object) false, (Object) false);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F9212286833111962771");
+    }
   }
   @Test
   public void equalsPrimitive_item2_9212286833111904743() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (((Number) new BigInteger("1"))), EqualsTestOp.matches(((Number) new BigInteger("1")), ((Number) new BigInteger("1"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (((Number) new BigInteger("1"))), EqualsTestOp.matches(((Number) new BigInteger("1")), ((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F9212286833111904743");
+    }
   }
   @Test
   public void equalsPrimitive_item3_9212286833112076409() throws Throwable {
-    Assert.assertEquals("Expected: " + ("text") + ", but was: " + ("text"), (Object) "text", (Object) "text");
+    try {
+      Assert.assertEquals("Expected: " + ("text") + ", but was: " + ("text"), (Object) "text", (Object) "text");
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F9212286833112076409");
+    }
   }
 
 

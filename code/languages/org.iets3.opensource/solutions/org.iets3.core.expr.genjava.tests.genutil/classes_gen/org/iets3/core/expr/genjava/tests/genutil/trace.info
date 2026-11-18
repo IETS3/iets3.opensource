@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:37ada7c3-2030-4316-b30e-07f9ebf097cf(org.iets3.core.expr.genjava.tests.genutil)/1751826472182566543">
+    <file name="SourceNodeUrls.java">
+      <node id="1751826472182566545" at="26,0,27,0" concept="5" trace="URL_PREFIX" />
+      <node id="1751826472182566593" at="31,77,32,67" concept="3" />
+      <node id="1751826472182566605" at="39,55,40,18" concept="3" />
+      <node id="1751826472182566611" at="41,5,42,45" concept="3" />
+      <node id="1751826472182566618" at="49,28,50,18" concept="3" />
+      <node id="1751826472182566627" at="51,5,52,99" concept="3" />
+      <node id="1751826472182566638" at="61,51,62,18" concept="3" />
+      <node id="1751826472182566642" at="63,5,64,26" concept="2" />
+      <node id="1751826472182566651" at="65,9,66,78" concept="0" />
+      <node id="1751826472182566657" at="67,34,68,82" concept="7" />
+      <node id="1751826472182566681" at="70,93,71,114" concept="7" />
+      <node id="1751826472182566689" at="72,5,73,32" concept="3" />
+      <node id="1751826472182566696" at="82,23,83,18" concept="3" />
+      <node id="1751826472182566710" at="84,5,85,97" concept="2" />
+      <node id="1751826472182566721" at="86,63,87,18" concept="3" />
+      <node id="1751826472182566729" at="88,5,89,77" concept="3" />
+      <node id="1751826472182566736" at="92,52,93,61" concept="3" />
+      <node id="1751826472182566738" at="96,46,97,106" concept="4" />
+      <node id="1751826472182566767" at="97,106,98,100" concept="3" />
+      <node id="1751826472182566549" at="31,0,34,0" concept="6" trace="forNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/generator/template/TemplateQueryContext;)Ljava/lang/String;" />
+      <node id="1751826472182566595" at="38,44,41,5" concept="1" />
+      <node id="1751826472182566613" at="48,63,51,5" concept="1" />
+      <node id="1751826472182566629" at="60,61,63,5" concept="1" />
+      <node id="1751826472182566664" at="69,5,72,5" concept="1" />
+      <node id="1751826472182566691" at="81,87,84,5" concept="1" />
+      <node id="1751826472182566711" at="85,97,88,5" concept="1" />
+      <node id="1751826472182566578" at="92,0,95,0" concept="6" trace="isTransient#(Lorg/jetbrains/mps/openapi/model/SModel;)Z" />
+      <node id="1751826472182566583" at="96,0,100,0" concept="6" trace="encode#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="1751826472182566643" at="64,26,69,5" concept="8" />
+      <node id="1751826472182566556" at="38,0,44,0" concept="6" trace="forNode#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1751826472182566561" at="48,0,54,0" concept="6" trace="forReference#(Lorg/jetbrains/mps/openapi/model/SNodeReference;)Ljava/lang/String;" />
+      <node id="1751826472182566571" at="81,0,91,0" concept="6" trace="originalReference#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/generator/template/TemplateQueryContext;)Ljava/lang/String;" />
+      <node id="1751826472182566566" at="60,0,75,0" concept="6" trace="forReferenceString#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="1751826472182566588" at="31,77,32,67" />
+      <scope id="1751826472182566604" at="39,55,40,18" />
+      <scope id="1751826472182566617" at="49,28,50,18" />
+      <scope id="1751826472182566637" at="61,51,62,18" />
+      <scope id="1751826472182566644" at="65,9,66,78" />
+      <scope id="1751826472182566656" at="67,34,68,82" />
+      <scope id="1751826472182566680" at="70,93,71,114" />
+      <scope id="1751826472182566695" at="82,23,83,18" />
+      <scope id="1751826472182566720" at="86,63,87,18" />
+      <scope id="1751826472182566730" at="92,52,93,61" />
+      <scope id="1751826472182566652" at="67,5,69,5">
+        <var name="e" id="1751826472182566653" />
+      </scope>
+      <scope id="1751826472182566737" at="96,46,98,100" />
+      <scope id="1751826472182566549" at="31,0,34,0">
+        <var name="genContext" id="1751826472182566554" />
+        <var name="node" id="1751826472182566552" />
+      </scope>
+      <scope id="1751826472182566578" at="92,0,95,0">
+        <var name="model" id="1751826472182566581" />
+      </scope>
+      <scope id="1751826472182566594" at="38,44,42,45" />
+      <scope id="1751826472182566612" at="48,63,52,99" />
+      <scope id="1751826472182566583" at="96,0,100,0">
+        <var name="value" id="1751826472182566586" />
+      </scope>
+      <scope id="1751826472182566556" at="38,0,44,0">
+        <var name="node" id="1751826472182566559" />
+      </scope>
+      <scope id="1751826472182566561" at="48,0,54,0">
+        <var name="reference" id="1751826472182566564" />
+      </scope>
+      <scope id="1751826472182566690" at="81,87,89,77">
+        <var name="original" id="1751826472182566698" />
+      </scope>
+      <scope id="1751826472182566571" at="81,0,91,0">
+        <var name="genContext" id="1751826472182566576" />
+        <var name="node" id="1751826472182566574" />
+      </scope>
+      <scope id="1751826472182566628" at="60,61,73,32">
+        <var name="parsed" id="1751826472182566640" />
+      </scope>
+      <scope id="1751826472182566566" at="60,0,75,0">
+        <var name="reference" id="1751826472182566569" />
+      </scope>
+      <unit id="1751826472182566543" at="22,0,101,0" name="org.iets3.core.expr.genjava.tests.genutil.SourceNodeUrls" />
+    </file>
+  </root>
+</debug-info>
+

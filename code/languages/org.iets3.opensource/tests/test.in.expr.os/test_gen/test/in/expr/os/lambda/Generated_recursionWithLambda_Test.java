@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.genjava.base.rt.rt.AlternativesException;
 
@@ -33,7 +34,11 @@ public class Generated_recursionWithLambda_Test {
   };
   @Test
   public void recursionWithLambda_res_7740953487930954651() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1327"))) + ", but was: " + (Generated_recursionWithLambda_Test.f(AH.add(((Number) new BigInteger("10")), AH.add(((Number) new BigInteger("30")), AH.add(((Number) new BigInteger("1")), ((Number) new BigInteger("10"))))), Generated_recursionWithLambda_Test.plus_)), EqualsTestOp.matches(((Number) new BigInteger("1327")), Generated_recursionWithLambda_Test.f(AH.add(((Number) new BigInteger("10")), AH.add(((Number) new BigInteger("30")), AH.add(((Number) new BigInteger("1")), ((Number) new BigInteger("10"))))), Generated_recursionWithLambda_Test.plus_)));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1327"))) + ", but was: " + (Generated_recursionWithLambda_Test.f(AH.add(((Number) new BigInteger("10")), AH.add(((Number) new BigInteger("30")), AH.add(((Number) new BigInteger("1")), ((Number) new BigInteger("10"))))), Generated_recursionWithLambda_Test.plus_)), EqualsTestOp.matches(((Number) new BigInteger("1327")), Generated_recursionWithLambda_Test.f(AH.add(((Number) new BigInteger("10")), AH.add(((Number) new BigInteger("30")), AH.add(((Number) new BigInteger("1")), ((Number) new BigInteger("10"))))), Generated_recursionWithLambda_Test.plus_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F7740953487930954651");
+    }
   }
   public static Number f(Number a, Function<ParameterSetWrapper, Number> op) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {

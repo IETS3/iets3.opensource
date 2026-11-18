@@ -6,6 +6,7 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.pcollections.TreePVector;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
@@ -33,31 +34,59 @@ public class Generated_option_records_Test {
   public static final Empty e_ = new Empty();
   @Test
   public void records_hdh_8613480905440585685() throws Throwable {
-    Assert.assertEquals("Expected: " + ("Heidenheim") + ", but was: " + (Generated_option_records_Test.a_.getcity()), (Object) "Heidenheim", (Object) Generated_option_records_Test.a_.getcity());
+    try {
+      Assert.assertEquals("Expected: " + ("Heidenheim") + ", but was: " + (Generated_option_records_Test.a_.getcity()), (Object) "Heidenheim", (Object) Generated_option_records_Test.a_.getcity());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905440585685");
+    }
   }
   @Test
   public void records_item1_8613480905440585692() throws Throwable {
-    Assert.assertEquals("Expected: " + ("hasChanged") + ", but was: " + (Generated_option_records_Test.a_.setcity("hasChanged").getcity()), (Object) "hasChanged", (Object) Generated_option_records_Test.a_.setcity("hasChanged").getcity());
+    try {
+      Assert.assertEquals("Expected: " + ("hasChanged") + ", but was: " + (Generated_option_records_Test.a_.setcity("hasChanged").getcity()), (Object) "hasChanged", (Object) Generated_option_records_Test.a_.setcity("hasChanged").getcity());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905440585692");
+    }
   }
   @Test
   public void records_item2_8613480905440585702() throws Throwable {
-    Assert.assertEquals("Expected: " + ("z2") + ", but was: " + (Generated_option_records_Test.a_.setcity("hasChanged").setzip("z2").getzip()), (Object) "z2", (Object) Generated_option_records_Test.a_.setcity("hasChanged").setzip("z2").getzip());
+    try {
+      Assert.assertEquals("Expected: " + ("z2") + ", but was: " + (Generated_option_records_Test.a_.setcity("hasChanged").setzip("z2").getzip()), (Object) "z2", (Object) Generated_option_records_Test.a_.setcity("hasChanged").setzip("z2").getzip());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905440585702");
+    }
   }
   @Test
   public void records_item3_8613480905440585714() throws Throwable {
-    Assert.assertEquals("Expected: " + ("Heidenheim") + ", but was: " + (Generated_option_records_Test.a_.getcity()), (Object) "Heidenheim", (Object) Generated_option_records_Test.a_.getcity());
+    try {
+      Assert.assertEquals("Expected: " + ("Heidenheim") + ", but was: " + (Generated_option_records_Test.a_.getcity()), (Object) "Heidenheim", (Object) Generated_option_records_Test.a_.getcity());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905440585714");
+    }
   }
   @Test
   public void records_item4_8613480905440585722() throws Throwable {
-    Assert.assertEquals("Expected: " + ("HeidenheimX") + ", but was: " + (Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getcity(), "X")).getcity()), (Object) "HeidenheimX", (Object) Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getcity(), "X")).getcity());
+    try {
+      Assert.assertEquals("Expected: " + ("HeidenheimX") + ", but was: " + (Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getcity(), "X")).getcity()), (Object) "HeidenheimX", (Object) Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getcity(), "X")).getcity());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905440585722");
+    }
   }
   @Test
   public void records_item5_8613480905440585734() throws Throwable {
-    Assert.assertEquals("Expected: " + ("89555X") + ", but was: " + (Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getzip(), "X")).getcity()), (Object) "89555X", (Object) Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getzip(), "X")).getcity());
+    try {
+      Assert.assertEquals("Expected: " + ("89555X") + ", but was: " + (Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getzip(), "X")).getcity()), (Object) "89555X", (Object) Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getzip(), "X")).getcity());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905440585734");
+    }
   }
   @Test
   public void records_item6_8613480905440585746() throws Throwable {
-    Assert.assertEquals("Expected: " + (new Empty()) + ", but was: " + (Generated_option_records_Test.e_), (Object) new Empty(), (Object) Generated_option_records_Test.e_);
+    try {
+      Assert.assertEquals("Expected: " + (new Empty()) + ", but was: " + (Generated_option_records_Test.e_), (Object) new Empty(), (Object) Generated_option_records_Test.e_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905440585746");
+    }
   }
   public static class AgeRange implements Comparable<AgeRange> {
     private Number from;
@@ -425,7 +454,11 @@ public class Generated_option_records_Test {
   }).invoke());
   @Test
   public void Builder_item0_8613480905440585815() throws Throwable {
-    Assert.assertEquals("Expected: " + ("Voelter") + ", but was: " + (Generated_option_records_Test.markus_.getname()), (Object) "Voelter", (Object) Generated_option_records_Test.markus_.getname());
+    try {
+      Assert.assertEquals("Expected: " + ("Voelter") + ", but was: " + (Generated_option_records_Test.markus_.getname()), (Object) "Voelter", (Object) Generated_option_records_Test.markus_.getname());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905440585815");
+    }
   }
   public static final Person1 o1_ = new Person1("Voelter", "Markus", null, ((_FunctionTypes._return_P0_E0<TreePVector<Address>>) () -> {
     TreePVector<Address> tpv = TreePVector.empty();
@@ -434,7 +467,11 @@ public class Generated_option_records_Test {
   }).invoke());
   @Test
   public void opt_item0_8613480905455083315() throws Throwable {
-    Assert.assertEquals("Expected: " + ("Markus") + ", but was: " + (Generated_option_records_Test.o1_.getfirstName()), (Object) "Markus", (Object) Generated_option_records_Test.o1_.getfirstName());
+    try {
+      Assert.assertEquals("Expected: " + ("Markus") + ", but was: " + (Generated_option_records_Test.o1_.getfirstName()), (Object) "Markus", (Object) Generated_option_records_Test.o1_.getfirstName());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905455083315");
+    }
   }
 
 

@@ -16,6 +16,7 @@ import org.iets3.core.expr.collections.rt.rt.CollectionHelper;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -310,75 +311,115 @@ public class Generated_doubleLambda_Test {
   }).collect(Collectors.<PVector<Number>>toList()));
   @Test
   public void resTest_item0_8293738266734930393() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.sums_.size())), EqualsTestOp.matches(((Number) new BigInteger("2")), BigInteger.valueOf(Generated_doubleLambda_Test.sums_.size())));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.sums_.size())), EqualsTestOp.matches(((Number) new BigInteger("2")), BigInteger.valueOf(Generated_doubleLambda_Test.sums_.size())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266734930393");
+    }
   }
   @Test
   public void resTest_item1_8293738266734995394() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.numbers2_.size())), EqualsTestOp.matches(((Number) new BigInteger("3")), BigInteger.valueOf(Generated_doubleLambda_Test.numbers2_.size())));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.numbers2_.size())), EqualsTestOp.matches(((Number) new BigInteger("3")), BigInteger.valueOf(Generated_doubleLambda_Test.numbers2_.size())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266734995394");
+    }
   }
   @Test
   public void resTest_item2_8293738266735009052() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (Generated_doubleLambda_Test.sum_), EqualsTestOp.matches(((Number) new BigInteger("6")), Generated_doubleLambda_Test.sum_));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (Generated_doubleLambda_Test.sum_), EqualsTestOp.matches(((Number) new BigInteger("6")), Generated_doubleLambda_Test.sum_));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266735009052");
+    }
   }
   @Test
   public void resTest_item3_8293738266735012819() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_doubleLambda_Test.sum2_), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_doubleLambda_Test.sum2_));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_doubleLambda_Test.sum2_), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_doubleLambda_Test.sum2_));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266735012819");
+    }
   }
   @Test
   public void resTest_item4_8293738266735025888() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.mappedItems_.size())), EqualsTestOp.matches(((Number) new BigInteger("2")), BigInteger.valueOf(Generated_doubleLambda_Test.mappedItems_.size())));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.mappedItems_.size())), EqualsTestOp.matches(((Number) new BigInteger("2")), BigInteger.valueOf(Generated_doubleLambda_Test.mappedItems_.size())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266735025888");
+    }
   }
   @Test
   public void resTest_item5_8293738266735043301() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_doubleLambda_Test.mappedItemsSum_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_doubleLambda_Test.mappedItemsSum_));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_doubleLambda_Test.mappedItemsSum_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_doubleLambda_Test.mappedItemsSum_));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266735043301");
+    }
   }
   @Test
   public void resTest_item6_8293738266735060810() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.nested1_.size())), EqualsTestOp.matches(((Number) new BigInteger("2")), BigInteger.valueOf(Generated_doubleLambda_Test.nested1_.size())));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.nested1_.size())), EqualsTestOp.matches(((Number) new BigInteger("2")), BigInteger.valueOf(Generated_doubleLambda_Test.nested1_.size())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266735060810");
+    }
   }
   @Test
   public void resTest_item7_8293738266735099816() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.nested2a_.size())), EqualsTestOp.matches(((Number) new BigInteger("2")), BigInteger.valueOf(Generated_doubleLambda_Test.nested2a_.size())));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (BigInteger.valueOf(Generated_doubleLambda_Test.nested2a_.size())), EqualsTestOp.matches(((Number) new BigInteger("2")), BigInteger.valueOf(Generated_doubleLambda_Test.nested2a_.size())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266735099816");
+    }
   }
   @Test
   public void resTest_item8_8293738266735105483() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2a_;
-      return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2a_;
-      return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke());
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+        PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2a_;
+        return (listResult.isEmpty() ? null : listResult.get(0));
+      }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+        PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2a_;
+        return (listResult.isEmpty() ? null : listResult.get(0));
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266735105483");
+    }
   }
   @Test
   public void resTest_item9_8293738266735142596() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2b_;
-      return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2b_;
-      return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke());
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+        PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2b_;
+        return (listResult.isEmpty() ? null : listResult.get(0));
+      }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+        PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2b_;
+        return (listResult.isEmpty() ? null : listResult.get(0));
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F8293738266735142596");
+    }
   }
 
 

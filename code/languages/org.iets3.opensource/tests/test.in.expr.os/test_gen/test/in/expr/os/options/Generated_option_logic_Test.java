@@ -4,6 +4,7 @@ package test.in.expr.os.options;
 
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -12,55 +13,107 @@ public class Generated_option_logic_Test {
 
   @Test
   public void logic_b1_8613480905484986509() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905484986509");
+    }
   }
   @Test
   public void logic_b11_8613480905484987125() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905484987125");
+    }
   }
   @Test
   public void logic_b12_8613480905484987613() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905484987613");
+    }
   }
   @Test
   public void logic_b2_8613480905487620268() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905487620268");
+    }
   }
   @Test
   public void logic_b21_8613480905484986514() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905484986514");
+    }
   }
   @Test
   public void logic_b22_8613480905487620641() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905487620641");
+    }
   }
   @Test
   public void logic_b23_8613480905487620818() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905487620818");
+    }
   }
   @Test
   public void logic_b3_8613480905484986521() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (true || true && false), (Object) true, (Object) (true || true && false));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (true || true && false), (Object) true, (Object) (true || true && false));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905484986521");
+    }
   }
   @Test
   public void logic_b31_8613480905487623386() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (true || true && false), (Object) true, (Object) (true || true && false));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (true || true && false), (Object) true, (Object) (true || true && false));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905487623386");
+    }
   }
   @Test
   public void logic_b4_8613480905487624029() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905487624029");
+    }
   }
   @Test
   public void logic_b41_8613480905484986528() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905484986528");
+    }
   }
   @Test
   public void logic_b42_8613480905487624417() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905487624417");
+    }
   }
   @Test
   public void logic_b43_8613480905487624632() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905487624632");
+    }
   }
 
 

@@ -7967,9 +7967,9 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2Bi$RVuoPWK" role="3bR37C">
-          <node concept="3bR9La" id="2Bi$RVuoPWL" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+        <node concept="1SiIV0" id="1xfJekm$yEc" role="3bR37C">
+          <node concept="3bR9La" id="1xfJekm$yEd" role="1SiIV1">
+            <ref role="3bR37D" node="1xfJekm$mwt" resolve="org.iets3.core.expr.genjava.tests.genutil" />
           </node>
         </node>
       </node>
@@ -10975,6 +10975,81 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="1xfJekm$mwt" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.iets3.core.expr.genjava.tests.genutil" />
+        <property role="3LESm3" value="c51317cf-7edb-4089-991b-42c7b3a5f8e5" />
+        <node concept="398BVA" id="1xfJekm$mwu" role="3LF7KH">
+          <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="1xfJekm$mwv" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="1xfJekm$mww" role="2Ry0An">
+              <property role="2Ry0Am" value="org.iets3.core.expr.genjava.tests.genutil" />
+              <node concept="2Ry0Ak" id="1xfJekm$mwx" role="2Ry0An">
+                <property role="2Ry0Am" value="org.iets3.core.expr.genjava.tests.genutil.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1xfJekm$mwy" role="3bR37C">
+          <node concept="3bR9La" id="1xfJekm$mwz" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1xfJekm$mw$" role="3bR31x">
+          <node concept="3LXTmp" id="1xfJekm$mw_" role="3rtmxm">
+            <node concept="3qWCbU" id="1xfJekm$mwA" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="1xfJekm$mwB" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="1xfJekm$mwC" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1xfJekm$mwD" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.genjava.tests.genutil" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="1xfJekm$mwE" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="1xfJekm$mwF" role="1HemKq">
+            <node concept="398BVA" id="1xfJekm$mwG" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="1xfJekm$mwH" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1xfJekm$mwI" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.genjava.tests.genutil" />
+                  <node concept="2Ry0Ak" id="1xfJekm$mwJ" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1xfJekm$mwK" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1xfJekm$mEd" role="3bR37C">
+          <node concept="3bR9La" id="1xfJekm$mEe" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1xfJekm$mEf" role="3bR37C">
+          <node concept="3bR9La" id="1xfJekm$mEg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1xfJekm$mEh" role="3bR37C">
+          <node concept="3bR9La" id="1xfJekm$mEi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="7uAdOXh22Xw" role="3989C9">
       <property role="TrG5h" value="iets3.core.expr.devkits" />
@@ -12755,6 +12830,11 @@
           <node concept="1SiIV0" id="7DfYVnp3kR8" role="3bR37C">
             <node concept="3bR9La" id="7DfYVnp3kR7" role="1SiIV1">
               <ref role="3bR37D" node="26tZ$Z4rnV1" resolve="org.iets3.core.expr.genjava.base#8286534136181746510" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="1xfJekm$yEe" role="3bR37C">
+            <node concept="3bR9La" id="1xfJekm$yEf" role="1SiIV1">
+              <ref role="3bR37D" node="1xfJekm$mwt" resolve="org.iets3.core.expr.genjava.tests.genutil" />
             </node>
           </node>
         </node>
@@ -16439,6 +16519,15 @@
         <node concept="L2wRC" id="76EiapPSb0Y" role="39821P">
           <ref role="L2wRA" node="4Ifs9kimNd8" resolve="test.org.iets3.core.expr.typetags.physunits" />
         </node>
+        <node concept="L2wRC" id="23vWPXftHzz" role="39821P">
+          <ref role="L2wRA" node="23vWPXftHuu" resolve="test.org.iets3.genjava.nodeurl.example" />
+        </node>
+        <node concept="L2wRC" id="23vWPXftHz$" role="39821P">
+          <ref role="L2wRA" node="23vWPXftHuN" resolve="test.org.iets3.genjava.nodeurl" />
+        </node>
+        <node concept="L2wRC" id="4WvvJVThd4w" role="39821P">
+          <ref role="L2wRA" node="4WvvJVTh5k1" resolve="test.org.iets3.genjava.nodeurl.fixtures" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
@@ -18008,6 +18097,192 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="23vWPXftHuu" role="2G$12L">
+        <property role="TrG5h" value="test.org.iets3.genjava.nodeurl.example" />
+        <property role="3LESm3" value="08f92e62-6243-46b2-b786-8c306d6dd401" />
+        <property role="BnDLt" value="true" />
+        <node concept="398BVA" id="23vWPXftHuv" role="3LF7KH">
+          <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="23vWPXftHuw" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="23vWPXftHux" role="2Ry0An">
+              <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.example" />
+              <node concept="2Ry0Ak" id="23vWPXftHuy" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.example.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="23vWPXftHuz" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1HemKv" value="true" />
+          <property role="1Hdu6h" value="true" />
+          <node concept="3LXTmp" id="23vWPXftHu$" role="1HemKq">
+            <node concept="398BVA" id="23vWPXftHu_" role="3LXTmr">
+              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="23vWPXftHuA" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="23vWPXftHuB" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.example" />
+                  <node concept="2Ry0Ak" id="23vWPXftHuC" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="23vWPXftHuD" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="23vWPXftHuE" role="1TViLv">
+          <property role="TrG5h" value="test.org.iets3.genjava.nodeurl.example.generator" />
+          <property role="3LESm3" value="7cb06506-1241-4291-bc42-b59435dbeefe" />
+          <property role="BnDLt" value="true" />
+          <node concept="1BupzO" id="23vWPXftHuF" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1HemKv" value="true" />
+            <property role="1Hdu6h" value="true" />
+            <node concept="3LXTmp" id="23vWPXftHuG" role="1HemKq">
+              <node concept="398BVA" id="23vWPXftHuH" role="3LXTmr">
+                <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+                <node concept="2Ry0Ak" id="23vWPXftHuI" role="iGT6I">
+                  <property role="2Ry0Am" value="tests" />
+                  <node concept="2Ry0Ak" id="23vWPXftHuJ" role="2Ry0An">
+                    <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.example" />
+                    <node concept="2Ry0Ak" id="23vWPXftHuK" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="23vWPXftHuL" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="23vWPXftHuM" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+          <node concept="1SiIV0" id="23vWPXftHx9" role="3bR37C">
+            <node concept="3bR9La" id="23vWPXftHxa" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="23vWPXftHxb" role="3bR37C">
+            <node concept="3bR9La" id="23vWPXftHxc" role="1SiIV1">
+              <ref role="3bR37D" node="5v$Gz_MUO6K" resolve="org.iets3.core.expr.genjava.tests.rt" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="23vWPXftHxd" role="3bR37C">
+            <node concept="3bR9La" id="23vWPXftHxe" role="1SiIV1">
+              <ref role="3bR37D" node="1xfJekm$mwt" resolve="org.iets3.core.expr.genjava.tests.genutil" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6UF$AWNs9_H" role="3bR31x">
+          <node concept="3LXTmp" id="6UF$AWNs9_I" role="3rtmxm">
+            <node concept="3qWCbU" id="6UF$AWNs9_J" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6UF$AWNs9_K" role="3LXTmr">
+              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="6UF$AWNs9_L" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6UF$AWNs9_M" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.example" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="23vWPXftHuN" role="2G$12L">
+        <property role="TrG5h" value="test.org.iets3.genjava.nodeurl" />
+        <property role="3LESm3" value="2783c34f-1fa1-4e6b-bb12-c318c26054dd" />
+        <property role="BnDLt" value="true" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="23vWPXftHuO" role="3LF7KH">
+          <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="23vWPXftHuP" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="23vWPXftHuQ" role="2Ry0An">
+              <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl" />
+              <node concept="2Ry0Ak" id="23vWPXftHuR" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="23vWPXftHuS" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1HemKv" value="true" />
+          <property role="1Hdu6h" value="true" />
+          <node concept="3LXTmp" id="23vWPXftHuT" role="1HemKq">
+            <node concept="398BVA" id="23vWPXftHuU" role="3LXTmr">
+              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="23vWPXftHuV" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="23vWPXftHuW" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl" />
+                  <node concept="2Ry0Ak" id="23vWPXftHuX" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="23vWPXftHuY" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="23vWPXftHxf" role="3bR37C">
+          <node concept="3bR9La" id="23vWPXftHxg" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="23vWPXftHxh" role="3bR37C">
+          <node concept="3bR9La" id="23vWPXftHxi" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="23vWPXftHxj" role="3bR37C">
+          <node concept="3bR9La" id="23vWPXftHxk" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="23vWPXftHxl" role="3bR37C">
+          <node concept="3bR9La" id="23vWPXftHxm" role="1SiIV1">
+            <ref role="3bR37D" node="5v$Gz_MUO6K" resolve="org.iets3.core.expr.genjava.tests.rt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="23vWPXftHxn" role="3bR37C">
+          <node concept="3bR9La" id="23vWPXftHxo" role="1SiIV1">
+            <ref role="3bR37D" node="1xfJekm$mwt" resolve="org.iets3.core.expr.genjava.tests.genutil" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6UF$AWNs9_A" role="3bR31x">
+          <node concept="3LXTmp" id="6UF$AWNs9_B" role="3rtmxm">
+            <node concept="3qWCbU" id="6UF$AWNs9_C" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6UF$AWNs9_D" role="3LXTmr">
+              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="6UF$AWNs9_E" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6UF$AWNs9_F" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4WvvJVThd4x" role="3bR37C">
+          <node concept="3bR9La" id="4WvvJVThd4y" role="1SiIV1">
+            <ref role="3bR37D" node="4WvvJVTh5k1" resolve="test.org.iets3.genjava.nodeurl.fixtures" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="4O1MtdoYzuV" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -18494,6 +18769,74 @@
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
       <ref role="2vP9LP" node="OJuIQq2vpw" resolve="tests" />
+    </node>
+    <node concept="2G$12M" id="4WvvJVTh5k0" role="3989C9">
+      <property role="TrG5h" value="tests.fixtures" />
+      <node concept="1E1JtA" id="4WvvJVTh5k1" role="2G$12L">
+        <property role="TrG5h" value="test.org.iets3.genjava.nodeurl.fixtures" />
+        <property role="3LESm3" value="0ddd5441-b2b2-4080-b60a-69d74bfd8935" />
+        <property role="BnDLt" value="true" />
+        <node concept="398BVA" id="4WvvJVTh5k2" role="3LF7KH">
+          <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+          <node concept="2Ry0Ak" id="4WvvJVTh5k3" role="iGT6I">
+            <property role="2Ry0Am" value="tests" />
+            <node concept="2Ry0Ak" id="4WvvJVTh5k4" role="2Ry0An">
+              <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.fixtures" />
+              <node concept="2Ry0Ak" id="4WvvJVTh5k5" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.fixtures.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4WvvJVTh5k6" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1HemKv" value="true" />
+          <property role="1Hdu6h" value="true" />
+          <node concept="3LXTmp" id="4WvvJVTh5k7" role="1HemKq">
+            <node concept="398BVA" id="4WvvJVTh5k8" role="3LXTmr">
+              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="4WvvJVTh5k9" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4WvvJVTh5ka" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.fixtures" />
+                  <node concept="2Ry0Ak" id="4WvvJVTh5kb" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4WvvJVTh5kc" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4WvvJVTh5kd" role="3bR37C">
+          <node concept="3bR9La" id="4WvvJVTh5ke" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4WvvJVTh5kf" role="3bR37C">
+          <node concept="3bR9La" id="4WvvJVTh5kg" role="1SiIV1">
+            <ref role="3bR37D" node="5v$Gz_MUO6K" resolve="org.iets3.core.expr.genjava.tests.rt" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="72raHjw41G$" role="3bR31x">
+          <node concept="3LXTmp" id="72raHjw41G_" role="3rtmxm">
+            <node concept="3qWCbU" id="72raHjw41GA" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="72raHjw41GB" role="3LXTmr">
+              <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="72raHjw41GC" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="72raHjw41GD" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.org.iets3.genjava.nodeurl.fixtures" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="71zSQigYEMA">

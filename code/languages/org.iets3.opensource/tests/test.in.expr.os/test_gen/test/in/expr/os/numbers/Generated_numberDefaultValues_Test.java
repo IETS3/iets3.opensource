@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -14,35 +15,67 @@ public class Generated_numberDefaultValues_Test {
 
   @Test
   public void TestDefaultValues_item0_6932772747670725921() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F6932772747670725921");
+    }
   }
   @Test
   public void TestDefaultValues_item1_6932772747675505890() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F6932772747675505890");
+    }
   }
   @Test
   public void TestDefaultValues_item2_3182514044104489645() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F3182514044104489645");
+    }
   }
   @Test
   public void TestDefaultValues_item3_6932772747675506037() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F6932772747675506037");
+    }
   }
   @Test
   public void TestDefaultValues_item4_6932772747675506238() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F6932772747675506238");
+    }
   }
   @Test
   public void TestDefaultValues_item5_6932772747675576391() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F6932772747675576391");
+    }
   }
   @Test
   public void TestDefaultValues_item6_3438105021040252500() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F3438105021040252500");
+    }
   }
   @Test
   public void TestDefaultValues_item7_3438105021040253491() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((Number) new BigInteger("0"))), EqualsTestOp.matches(((Number) new BigInteger("0")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F3438105021040253491");
+    }
   }
 
 

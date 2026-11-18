@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-6l4tvpvodmbt67nthlwjnr5uq073ocx">
-  <files names="EqualsTestOp.java:RealEqualsTestOp.java" />
+<product version="3" modelHash="-aztwws97b6vkkwjnb5s7f6ckdekx1dw">
+  <files names="EqualsTestOp.java:RealEqualsTestOp.java:SourceNodeFailures.java:SourceNodeTestException.java" />
 </product>
 

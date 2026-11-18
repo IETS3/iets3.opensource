@@ -6,6 +6,7 @@ import java.math.BigInteger;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import java.util.Objects;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
@@ -36,143 +37,259 @@ public class Generated_option_strings_Test {
   public static final String e6_ = AH.addString(AH.addString(((Number) new BigInteger("42")), "Hallo"), ((Number) new BigInteger("33")));
   @Test
   public void stringTests_item0_8613480905418735379() throws Throwable {
-    Assert.assertEquals("Expected: " + ("Hallo") + ", but was: " + (Generated_option_strings_Test.a_), (Object) "Hallo", (Object) Generated_option_strings_Test.a_);
+    try {
+      Assert.assertEquals("Expected: " + ("Hallo") + ", but was: " + (Generated_option_strings_Test.a_), (Object) "Hallo", (Object) Generated_option_strings_Test.a_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735379");
+    }
   }
   @Test
   public void stringTests_item1_8613480905418735383() throws Throwable {
-    Assert.assertEquals("Expected: " + ("HalloPerson") + ", but was: " + (Generated_option_strings_Test.b_), (Object) "HalloPerson", (Object) Generated_option_strings_Test.b_);
+    try {
+      Assert.assertEquals("Expected: " + ("HalloPerson") + ", but was: " + (Generated_option_strings_Test.b_), (Object) "HalloPerson", (Object) Generated_option_strings_Test.b_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735383");
+    }
   }
   @Test
   public void stringTests_item2_8613480905418805825() throws Throwable {
-    Assert.assertEquals("Expected: " + ("HalloPerson") + ", but was: " + (Generated_option_strings_Test.b1_), (Object) "HalloPerson", (Object) Generated_option_strings_Test.b1_);
+    try {
+      Assert.assertEquals("Expected: " + ("HalloPerson") + ", but was: " + (Generated_option_strings_Test.b1_), (Object) "HalloPerson", (Object) Generated_option_strings_Test.b1_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418805825");
+    }
   }
   @Test
   public void stringTests_item3_8613480905418806102() throws Throwable {
-    Assert.assertEquals("Expected: " + ("HalloPerson") + ", but was: " + (Generated_option_strings_Test.b2_), (Object) "HalloPerson", (Object) Generated_option_strings_Test.b2_);
+    try {
+      Assert.assertEquals("Expected: " + ("HalloPerson") + ", but was: " + (Generated_option_strings_Test.b2_), (Object) "HalloPerson", (Object) Generated_option_strings_Test.b2_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418806102");
+    }
   }
   @Test
   public void stringTests_item6_8613480905418735387() throws Throwable {
-    Assert.assertEquals("Expected: " + ("Hallo22") + ", but was: " + (Generated_option_strings_Test.c_), (Object) "Hallo22", (Object) Generated_option_strings_Test.c_);
+    try {
+      Assert.assertEquals("Expected: " + ("Hallo22") + ", but was: " + (Generated_option_strings_Test.c_), (Object) "Hallo22", (Object) Generated_option_strings_Test.c_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735387");
+    }
   }
   @Test
   public void stringTests_item7_8613480905418806440() throws Throwable {
-    Assert.assertEquals("Expected: " + ("Hallo22") + ", but was: " + (Generated_option_strings_Test.c1_), (Object) "Hallo22", (Object) Generated_option_strings_Test.c1_);
+    try {
+      Assert.assertEquals("Expected: " + ("Hallo22") + ", but was: " + (Generated_option_strings_Test.c1_), (Object) "Hallo22", (Object) Generated_option_strings_Test.c1_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418806440");
+    }
   }
   @Test
   public void stringTests_item8_8613480905418806601() throws Throwable {
-    Assert.assertEquals("Expected: " + ("Hallo22") + ", but was: " + (Generated_option_strings_Test.c2_), (Object) "Hallo22", (Object) Generated_option_strings_Test.c2_);
+    try {
+      Assert.assertEquals("Expected: " + ("Hallo22") + ", but was: " + (Generated_option_strings_Test.c2_), (Object) "Hallo22", (Object) Generated_option_strings_Test.c2_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418806601");
+    }
   }
   @Test
   public void stringTests_item10_8613480905418735391() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo") + ", but was: " + (Generated_option_strings_Test.d_), (Object) "42Hallo", (Object) Generated_option_strings_Test.d_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo") + ", but was: " + (Generated_option_strings_Test.d_), (Object) "42Hallo", (Object) Generated_option_strings_Test.d_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735391");
+    }
   }
   @Test
   public void stringTests_item11_8613480905418810212() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo") + ", but was: " + (Generated_option_strings_Test.d1_), (Object) "42Hallo", (Object) Generated_option_strings_Test.d1_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo") + ", but was: " + (Generated_option_strings_Test.d1_), (Object) "42Hallo", (Object) Generated_option_strings_Test.d1_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418810212");
+    }
   }
   @Test
   public void stringTests_item12_8613480905418810565() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo") + ", but was: " + (Generated_option_strings_Test.d2_), (Object) "42Hallo", (Object) Generated_option_strings_Test.d2_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo") + ", but was: " + (Generated_option_strings_Test.d2_), (Object) "42Hallo", (Object) Generated_option_strings_Test.d2_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418810565");
+    }
   }
   @Test
   public void stringTests_item15_8613480905418735395() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735395");
+    }
   }
   @Test
   public void stringTests_item16_8613480905418811339() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e1_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e1_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e1_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e1_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418811339");
+    }
   }
   @Test
   public void stringTests_item17_8613480905418811732() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e2_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e2_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e2_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e2_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418811732");
+    }
   }
   @Test
   public void stringTests_item18_8613480905418812145() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e3_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e3_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e3_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e3_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418812145");
+    }
   }
   @Test
   public void stringTests_item19_8613480905418812578() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e4_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e4_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e4_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e4_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418812578");
+    }
   }
   @Test
   public void stringTests_item20_8613480905418813031() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e5_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e5_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e5_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e5_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418813031");
+    }
   }
   @Test
   public void stringTests_item21_8613480905418813504() throws Throwable {
-    Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e6_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e6_);
+    try {
+      Assert.assertEquals("Expected: " + ("42Hallo33") + ", but was: " + (Generated_option_strings_Test.e6_), (Object) "42Hallo33", (Object) Generated_option_strings_Test.e6_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418813504");
+    }
   }
   @Test
   public void stringTests_item23_8613480905418735399() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (AH.stringLength(Generated_option_strings_Test.a_)), EqualsTestOp.matches(((Number) new BigInteger("5")), AH.stringLength(Generated_option_strings_Test.a_)));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (AH.stringLength(Generated_option_strings_Test.a_)), EqualsTestOp.matches(((Number) new BigInteger("5")), AH.stringLength(Generated_option_strings_Test.a_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735399");
+    }
   }
   @Test
   public void stringTests_item24_8613480905418735405() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (AH.stringLength(Generated_option_strings_Test.empty_)), EqualsTestOp.matches(((Number) new BigInteger("0")), AH.stringLength(Generated_option_strings_Test.empty_)));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (AH.stringLength(Generated_option_strings_Test.empty_)), EqualsTestOp.matches(((Number) new BigInteger("0")), AH.stringLength(Generated_option_strings_Test.empty_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735405");
+    }
   }
   @Test
   public void stringEquals_item0_8613480905435210202() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Objects.equals(Generated_option_strings_Test.a_, "Hallo")), (Object) true, (Object) Objects.equals(Generated_option_strings_Test.a_, "Hallo"));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Objects.equals(Generated_option_strings_Test.a_, "Hallo")), (Object) true, (Object) Objects.equals(Generated_option_strings_Test.a_, "Hallo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905435210202");
+    }
   }
   @Test
   public void stringEquals_item1_8613480905435213677() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Objects.equals("Hallo", Generated_option_strings_Test.a_)), (Object) true, (Object) Objects.equals("Hallo", Generated_option_strings_Test.a_));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Objects.equals("Hallo", Generated_option_strings_Test.a_)), (Object) true, (Object) Objects.equals("Hallo", Generated_option_strings_Test.a_));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905435213677");
+    }
   }
   @Test
   public void stringEquals_item2_8613480905435225121() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Objects.equals(Generated_option_strings_Test.a_, Generated_option_strings_Test.a_)), (Object) true, (Object) Objects.equals(Generated_option_strings_Test.a_, Generated_option_strings_Test.a_));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Objects.equals(Generated_option_strings_Test.a_, Generated_option_strings_Test.a_)), (Object) true, (Object) Objects.equals(Generated_option_strings_Test.a_, Generated_option_strings_Test.a_));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905435225121");
+    }
   }
   @Test
   public void stringEquals_item3_8613480905435231442() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(Objects.equals(Generated_option_strings_Test.a_, "Hallo"))), (Object) false, (Object) !(Objects.equals(Generated_option_strings_Test.a_, "Hallo")));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(Objects.equals(Generated_option_strings_Test.a_, "Hallo"))), (Object) false, (Object) !(Objects.equals(Generated_option_strings_Test.a_, "Hallo")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905435231442");
+    }
   }
   @Test
   public void stringEquals_item4_8613480905435231448() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(Objects.equals("Hallo", Generated_option_strings_Test.a_))), (Object) false, (Object) !(Objects.equals("Hallo", Generated_option_strings_Test.a_)));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(Objects.equals("Hallo", Generated_option_strings_Test.a_))), (Object) false, (Object) !(Objects.equals("Hallo", Generated_option_strings_Test.a_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905435231448");
+    }
   }
   @Test
   public void stringEquals_item5_8613480905435231454() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(Objects.equals(Generated_option_strings_Test.a_, Generated_option_strings_Test.a_))), (Object) false, (Object) !(Objects.equals(Generated_option_strings_Test.a_, Generated_option_strings_Test.a_)));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(Objects.equals(Generated_option_strings_Test.a_, Generated_option_strings_Test.a_))), (Object) false, (Object) !(Objects.equals(Generated_option_strings_Test.a_, Generated_option_strings_Test.a_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905435231454");
+    }
   }
   @Test
   public void optionStuff_item0_8613480905418735444() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (AH.stringLength(Generated_option_strings_Test.a_)), EqualsTestOp.matches(((Number) new BigInteger("5")), AH.stringLength(Generated_option_strings_Test.a_)));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (AH.stringLength(Generated_option_strings_Test.a_)), EqualsTestOp.matches(((Number) new BigInteger("5")), AH.stringLength(Generated_option_strings_Test.a_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735444");
+    }
   }
   @Test
   public void optionStuff_item1_8613480905418735450() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
-        return AH.stringLength("Hello");
-      } else {
-        return ((Number) new BigInteger("0"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("5")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
-        return AH.stringLength("Hello");
-      } else {
-        return ((Number) new BigInteger("0"));
-      }
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
+          return AH.stringLength("Hello");
+        } else {
+          return ((Number) new BigInteger("0"));
+        }
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("5")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
+          return AH.stringLength("Hello");
+        } else {
+          return ((Number) new BigInteger("0"));
+        }
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735450");
+    }
   }
   @Test
   public void optionStuff_item2_8613480905418735462() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.add(AH.stringLength("Hello"), ((Number) new BigInteger("1"))))) {
-        return AH.add(AH.stringLength("Hello"), ((Number) new BigInteger("1")));
-      } else {
-        return ((Number) new BigInteger("0"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("6")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.add(AH.stringLength("Hello"), ((Number) new BigInteger("1"))))) {
-        return AH.add(AH.stringLength("Hello"), ((Number) new BigInteger("1")));
-      } else {
-        return ((Number) new BigInteger("0"));
-      }
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.add(AH.stringLength("Hello"), ((Number) new BigInteger("1"))))) {
+          return AH.add(AH.stringLength("Hello"), ((Number) new BigInteger("1")));
+        } else {
+          return ((Number) new BigInteger("0"));
+        }
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("6")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.add(AH.stringLength("Hello"), ((Number) new BigInteger("1"))))) {
+          return AH.add(AH.stringLength("Hello"), ((Number) new BigInteger("1")));
+        } else {
+          return ((Number) new BigInteger("0"));
+        }
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735462");
+    }
   }
   @Test
   public void optionStuff_item3_8613480905418735476() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (AH.stringLength(null)), (Object) null, (Object) AH.stringLength(null));
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (AH.stringLength(null)), (Object) null, (Object) AH.stringLength(null));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905418735476");
+    }
   }
 
 
