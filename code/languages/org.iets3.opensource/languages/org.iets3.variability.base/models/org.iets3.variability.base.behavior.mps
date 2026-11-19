@@ -63,9 +63,14 @@
       </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+        <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
+        <reference id="1188214555875" name="key" index="2B6OnR" />
+        <child id="1188214607812" name="value" index="2B70Vg" />
       </concept>
       <concept id="4678410916365116210" name="jetbrains.mps.baseLanguage.structure.DefaultModifier" flags="ng" index="2JFqV2" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -217,6 +222,7 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
@@ -3067,54 +3073,76 @@
         </node>
       </node>
       <node concept="P$JXv" id="7SixFixE0Cz" role="lGtFl">
-        <node concept="1PaTwC" id="3MzwgoR0UtO" role="1Vez_I">
-          <node concept="3oM_SD" id="3MzwgoR0UtP" role="1PaTwD">
+        <node concept="TZ5HI" id="7QfxH97xaCo" role="3nqlJM">
+          <node concept="1PaTwC" id="2brRxNyraoM" role="1Vez_I">
+            <node concept="3oM_SD" id="2brRxNyraoN" role="1PaTwD">
+              <property role="3oM_SC" value="Use" />
+            </node>
+            <node concept="3oM_SD" id="2brRxNyraoO" role="1PaTwD">
+              <property role="3oM_SC" value="com.mbeddr.mpsutil.common.util.Traversal" />
+            </node>
+            <node concept="3oM_SD" id="2brRxNyraoP" role="1PaTwD">
+              <property role="3oM_SC" value="instead." />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2brRxNyraox" role="1Vez_I">
+          <node concept="3oM_SD" id="2brRxNyraoy" role="1PaTwD">
             <property role="3oM_SC" value="TODO:" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtQ" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoz" role="1PaTwD">
             <property role="3oM_SC" value="Replace" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtR" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyrao$" role="1PaTwD">
             <property role="3oM_SC" value="this" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtS" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyrao_" role="1PaTwD">
             <property role="3oM_SC" value="method's" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtT" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoA" role="1PaTwD">
             <property role="3oM_SC" value="body" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtU" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoB" role="1PaTwD">
             <property role="3oM_SC" value="by" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtV" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoC" role="1PaTwD">
             <property role="3oM_SC" value="some" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtW" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoD" role="1PaTwD">
             <property role="3oM_SC" value="method" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtX" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoE" role="1PaTwD">
             <property role="3oM_SC" value="from" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtY" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoF" role="1PaTwD">
             <property role="3oM_SC" value="class" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0UtZ" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoG" role="1PaTwD">
             <property role="3oM_SC" value="&quot;Traversal&quot;" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0Uu0" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoH" role="1PaTwD">
             <property role="3oM_SC" value="(from" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0Uu1" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoI" role="1PaTwD">
             <property role="3oM_SC" value="mpsutil)" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0Uu2" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoJ" role="1PaTwD">
             <property role="3oM_SC" value="and" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0Uu3" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoK" role="1PaTwD">
             <property role="3oM_SC" value="deprecate" />
           </node>
-          <node concept="3oM_SD" id="3MzwgoR0Uu4" role="1PaTwD">
+          <node concept="3oM_SD" id="2brRxNyraoL" role="1PaTwD">
             <property role="3oM_SC" value="it." />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7QfxH97xaCq" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+        <node concept="2B6LJw" id="7QfxH97xL_V" role="2B76xF">
+          <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
+          <node concept="Xl_RD" id="7QfxH97xNuR" role="2B70Vg">
+            <property role="Xl_RC" value="2026-09-25" />
           </node>
         </node>
       </node>

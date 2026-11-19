@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -2056,6 +2057,21 @@
       <node concept="3clFbS" id="3wrpJuuH6pQ" role="3clF47">
         <node concept="3clFbF" id="3wrpJuuH6JU" role="3cqZAp">
           <node concept="3clFbT" id="3wrpJuuH6JT" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6OI5j2OlTY_" role="13h7CS">
+      <property role="TrG5h" value="contributesToLiteralSideTransform" />
+      <property role="2Ki8OM" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="false" />
+      <node concept="3Tm1VV" id="6OI5j2OlTYA" role="1B3o_S" />
+      <node concept="10P_77" id="6OI5j2OlTYB" role="3clF45" />
+      <node concept="3clFbS" id="6OI5j2OlTYC" role="3clF47">
+        <node concept="3clFbF" id="6OI5j2O_JQd" role="3cqZAp">
+          <node concept="3clFbT" id="6OI5j2O_JQc" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
         </node>
       </node>
     </node>
