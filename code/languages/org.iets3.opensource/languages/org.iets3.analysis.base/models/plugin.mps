@@ -8004,8 +8004,11 @@
                                                   <node concept="3clFbF" id="2E$J0Gohe2U" role="3cqZAp">
                                                     <node concept="2OqwBi" id="2E$J0Gohfb2" role="3clFbG">
                                                       <node concept="2YIFZM" id="2E$J0Gohf2f" role="2Oq$k0">
-                                                        <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
+                                                        <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
                                                         <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
+                                                        <node concept="37vLTw" id="1mWIkUYKQFv" role="37wK5m">
+                                                          <ref role="3cqZAo" node="2E$J0GohUwH" resolve="mpsProject" />
+                                                        </node>
                                                       </node>
                                                       <node concept="liA8E" id="2E$J0Gohfqq" role="2OqNvi">
                                                         <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:77acc36f-5eb1-43af-9f80-e6d4d70bca5f(org.iets3.core.expr.genjava.toplevel@generator)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
@@ -4306,8 +4305,8 @@
                                                         </node>
                                                       </node>
                                                     </node>
-                                                    <node concept="3TrEf2" id="3meuf2aW3Dm" role="2OqNvi">
-                                                      <ref role="3Tt5mk" to="yv47:3meuf2aV0ef" resolve="literal" />
+                                                    <node concept="3zqWPK" id="5JqfPwQHGoq" role="2OqNvi">
+                                                      <ref role="37wK5l" to="nu60:48Zi1gznep_" resolve="effectiveLiteral" />
                                                     </node>
                                                   </node>
                                                   <node concept="1mfA1w" id="7hc$_$CPDE8" role="2OqNvi" />
@@ -4342,8 +4341,8 @@
                                                 </node>
                                               </node>
                                             </node>
-                                            <node concept="3TrEf2" id="3meuf2aW5my" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="yv47:3meuf2aV0ef" resolve="literal" />
+                                            <node concept="3zqWPK" id="5JqfPwQHGos" role="2OqNvi">
+                                              <ref role="37wK5l" to="nu60:48Zi1gznep_" resolve="effectiveLiteral" />
                                             </node>
                                           </node>
                                           <node concept="3TrcHB" id="7hc$_$CPDEm" role="2OqNvi">
@@ -6671,8 +6670,8 @@
                         <node concept="2OqwBi" id="6NLFGgCExwH" role="3clFbG">
                           <node concept="2OqwBi" id="6NLFGgCExwI" role="2Oq$k0">
                             <node concept="30H73N" id="6NLFGgCExwJ" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="3meuf2aVode" role="2OqNvi">
-                              <ref role="3Tt5mk" to="yv47:3meuf2aV0ef" resolve="literal" />
+                            <node concept="3zqWPK" id="5JqfPwQHGou" role="2OqNvi">
+                              <ref role="37wK5l" to="nu60:48Zi1gznep_" resolve="effectiveLiteral" />
                             </node>
                           </node>
                           <node concept="3TrcHB" id="6NLFGgCExwL" role="2OqNvi">
