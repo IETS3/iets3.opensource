@@ -82,6 +82,7 @@
   <uses module="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" kind="rt+dp" />
   <uses module="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" kind="dp" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt+dp" />
+  <uses module="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="dp" />
   <uses module="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" kind="dp" />
   <uses module="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" kind="dp" />
   <uses module="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" kind="dp" />
@@ -94,7 +95,7 @@
   <uses module="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" kind="dp" />
   <uses module="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" kind="dp" />
   <uses module="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" kind="dp" />
-  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt+dp" />
+  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
   <uses module="c1fcd3e0-0603-4035-834f-14c6337eec24(test.org.iets3.common.base)" kind="dp" />
   <uses module="69c0c18f-9200-46ca-96d1-e564692dce0c(test.org.iets3.variability.configuration.base)" kind="dp" />
   <uses module="964a5657-7374-4fbd-970e-fec8637b6a01(test.org.iets3.variability.configuration.base.ext)" kind="dp" />

@@ -152,7 +152,7 @@ public class ISolvableMonitorWidget implements StatusBarWidget, UISettingsListen
             final MPSProject mpsProject = MPSCommonDataKeys.MPS_PROJECT.getData(dataContext);
             if (mpsProject != null) {
               if ((solvable != null) && SNodeOperations.getModel(solvable) != null) {
-                SNodeOperations.getModel(solvable).getRepository().getModelAccess().runReadAction(() -> NavigationSupport.getInstance().openNode(mpsProject, solvable, true, true));
+                SNodeOperations.getModel(solvable).getRepository().getModelAccess().runReadAction(() -> NavigationSupport.getInstance(mpsProject).openNode(mpsProject, solvable, true, true));
               } else {
                 ApplicationManager.getApplication().invokeLater(() -> Messages.showWarningDialog(mpsProject.getProject(), "Solvable node is not available anymore", "Solvable not found"));
               }

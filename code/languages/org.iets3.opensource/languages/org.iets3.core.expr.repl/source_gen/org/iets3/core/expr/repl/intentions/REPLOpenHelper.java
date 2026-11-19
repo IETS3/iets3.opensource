@@ -46,7 +46,8 @@ public class REPLOpenHelper {
     SLinkOperations.setTarget(SNodeOperations.cast(first, CONCEPTS.DefaultEntry$YA), LINKS.expression$3Lmy, SNodeOperations.copyNode(n));
     IReplEntry__BehaviorDescriptor.evaluateEntry_id4nY0kF8p1AF.invoke(SNodeOperations.cast(first, CONCEPTS.DefaultEntry$YA));
     SNode second = REPL__BehaviorDescriptor.addEntry_id69FYpZqzT5W.invoke(repl, editorCtx);
-    NavigationSupport.getInstance().openNode(editorCtx.getOperationContext().getProject(), second, true, false);
+
+    NavigationSupport.getInstance(editorCtx.getOperationContext().getProject()).openNode(editorCtx.getOperationContext().getProject(), second, true, false);
 
   }
 

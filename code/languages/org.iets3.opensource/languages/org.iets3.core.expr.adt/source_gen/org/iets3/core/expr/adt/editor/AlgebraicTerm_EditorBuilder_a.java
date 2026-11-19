@@ -32,7 +32,6 @@ import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap;
@@ -46,6 +45,7 @@ import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.mbeddr.mpsutil.treenotation.runtime.AbstractInsertHandler;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import com.mbeddr.mpsutil.treenotation.runtime.TreeLayoutTypes;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -305,7 +305,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createRefNodeList_0() {
     AbstractCellListHandler handler = new argsListHandler_tyjz4v_a2a0(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_args");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
@@ -1047,7 +1047,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createRefNodeList_2() {
     AbstractCellListHandler handler = new argsListHandler_tyjz4v_a2a2a(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_args2");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;

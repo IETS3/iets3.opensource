@@ -75,6 +75,6 @@
   <uses module="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" kind="dp" />
   <uses module="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" kind="dp" />
   <uses module="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" kind="dp" />
-  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt+dp" />
+  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
 </dependenciesRoot>
 

@@ -71,7 +71,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ProjectIt;
   private ConceptPresentation props_ProjectMember;
   private ConceptPresentation props_ProjectOp;
-  private ConceptPresentation props_QualifierRef;
   private ConceptPresentation props_RecordChangeTarget;
   private ConceptPresentation props_RecordComparisonOrder;
   private ConceptPresentation props_RecordDeclaration;
@@ -559,14 +558,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ProjectOp = cpb.create();
         }
         return props_ProjectOp;
-      case LanguageConceptSwitch.QualifierRef:
-        if (props_QualifierRef == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("a qualified reference to an enumeration literal");
-          cpb.presentationByReference(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x48dc5b40f074fef7L, 0x48dc5b40f074fef8L, "enum", "", "");
-          props_QualifierRef = cpb.create();
-        }
-        return props_QualifierRef;
       case LanguageConceptSwitch.RecordChangeTarget:
         if (props_RecordChangeTarget == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

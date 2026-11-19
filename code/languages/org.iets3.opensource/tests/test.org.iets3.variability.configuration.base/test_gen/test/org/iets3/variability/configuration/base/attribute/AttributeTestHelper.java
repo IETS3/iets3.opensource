@@ -23,13 +23,14 @@ import de.itemis.mps.comparator.code.DiffView;
 import org.junit.Assert;
 
 public class AttributeTestHelper {
+
   public static void checkDefaultValueAccess(SNode afc, SNode... values) {
     List<SNode> faas = Sequence.fromIterable(AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(afc)).toList();
     for (int i = 0; i < ListSequence.fromList(faas).count(); i++) {
       {
-        final SNode expectedNode_a0b0a = values[i];
-        final SNode actualNode_a0b0a = FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(ListSequence.fromList(faas).getElement(i));
-        MPSNodeComparisonResult result_a0b0a = MPSNodeComparator.compare(expectedNode_a0b0a, actualNode_a0b0a, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+        final SNode expectedNode_a0b0b = values[i];
+        final SNode actualNode_a0b0b = FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(ListSequence.fromList(faas).getElement(i));
+        MPSNodeComparisonResult result_a0b0b = MPSNodeComparator.compare(expectedNode_a0b0b, actualNode_a0b0b, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
           MPSComparatorOptions options = new MPSComparatorOptions();
           options.compareChildren = true;
           options.compareAnnotations = true;
@@ -39,15 +40,15 @@ public class AttributeTestHelper {
           ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
           return options;
         }).invoke());
-        if (!(result_a0b0a.areEquals())) {
+        if (!(result_a0b0b.areEquals())) {
           if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
             {
               MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-              SNode input_a0b0a = (SNode) SNodePointer.deserialize("r:8d327ed1-fff7-46ea-9548-64471536244d(test.org.iets3.variability.configuration.base.attribute@tests)/6475083214319276476").resolve(repository);
-              DiffView.showNonEditibleDiff(expectedNode_a0b0a, actualNode_a0b0a, result_a0b0a, input_a0b0a, repository);
+              SNode input_a0b0b = (SNode) SNodePointer.deserialize("r:8d327ed1-fff7-46ea-9548-64471536244d(test.org.iets3.variability.configuration.base.attribute@tests)/6475083214319276476").resolve(repository);
+              DiffView.showNonEditibleDiff(expectedNode_a0b0b, actualNode_a0b0b, result_a0b0b, input_a0b0b, repository);
             }
           }
-          Assert.assertTrue(result_a0b0a.getDescription(), false);
+          Assert.assertTrue(result_a0b0b.getDescription(), false);
         }
       }
 

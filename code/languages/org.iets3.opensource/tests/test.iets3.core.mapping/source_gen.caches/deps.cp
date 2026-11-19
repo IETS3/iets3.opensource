@@ -94,7 +94,7 @@
   <uses module="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" kind="dp" />
   <uses module="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" kind="dp" />
   <uses module="8c1ef69a-bcac-4cb5-9619-6b27d0aefc0c(org.iets3.core.mapping)" kind="dp" />
-  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt+dp" />
+  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
   <uses module="12ae53bc-0d28-4b54-88e3-48a56519294d(test.iets3.core.mapping)" kind="dp" />
 </dependenciesRoot>
 

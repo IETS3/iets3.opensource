@@ -25,6 +25,7 @@
   <uses module="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" kind="rt+dp" />
   <uses module="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
   <uses module="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt+dp" />
+  <uses module="4368e872-3beb-47e5-b702-b599cefe324b(com.jetbrains.mpsext.stubs.jcef)" kind="dp" />
   <uses module="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" kind="dp" />
   <uses module="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" kind="dp" />
   <uses module="c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)" kind="dp" />

@@ -42,12 +42,17 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
   }
   /*package*/ static void fetchDependencies_id57YmpYyL8F1(@NotNull SNode __thisNode__, VisibleArtifacts artifacts, RequiredDependenciesBuilder builder) {
 
+    // since MPS 2026.1, genContext is no longer reachable from RequiredDependenciesBuilder/UnpackHelper; problems are logged
+    TemplateQueryContext genContext = null;
     final String gentestsRtSolutionName = RunKernelFGeneratedTests__BehaviorDescriptor.getGentestsRtSolutionName_id6Fs_Z9I$Bez.invokeSpecial(__thisNode__);
     SNode project = artifacts.getProject();
 
     // find gentests.rt
     SNode gentestsRtSolution = SNodeOperations.as(ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QFgX.invoke(project, CONCEPTS.BuildMps_Solution$R7, LINKS.parts$mGDj, ((int) 0)).resolve(project, gentestsRtSolutionName), CONCEPTS.BuildMps_Solution$R7);
     if ((gentestsRtSolution == null)) {
+      if (genContext != null) {
+        genContext.showErrorMessage(__thisNode__, "Cannot find solution " + gentestsRtSolutionName + " in scope");
+      }
       if (LOG.isErrorLevel()) {
         LOG.error("Cannot find solution " + gentestsRtSolutionName + " in scope (this: " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(__thisNode__) + ", concept: " + SNodeOperations.getConcept(__thisNode__) + ")");
       }
@@ -56,6 +61,9 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
 
     SNode gentestsLayoutNode = SNodeOperations.as(artifacts.findArtifact(gentestsRtSolution), CONCEPTS.BuildLayout_Node$Rb);
     if ((gentestsLayoutNode == null)) {
+      if (genContext != null) {
+        genContext.showErrorMessage(null, "Cannot find artifact for solution " + gentestsRtSolutionName);
+      }
       if (LOG.isErrorLevel()) {
         LOG.error("Cannot find artifact for solution " + gentestsRtSolutionName);
       }

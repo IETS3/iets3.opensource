@@ -58,6 +58,6 @@
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
   <uses module="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" kind="dp" />
   <uses module="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" kind="dp" />
-  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt+dp" />
+  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
 </dependenciesRoot>
 

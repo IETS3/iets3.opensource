@@ -14,7 +14,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class UpdateOneConfigTask extends AbstractUpdateConfigsTask {
+public class UpdateOneConfigTask extends ConfigFromFeatureModelUpdater {
   private static final Logger LOG = Logger.getLogger(UpdateOneConfigTask.class);
 
   private final SNode config;

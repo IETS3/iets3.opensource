@@ -81,7 +81,7 @@
   <uses module="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" kind="dp" />
   <uses module="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="dp" />
   <uses module="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" kind="dp" />
-  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt+dp" />
+  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
   <uses module="b80fab4e-53f2-409c-81d8-3475855e0e42(test.ts.expr.os.nix)" kind="dp" />
 </dependenciesRoot>
 

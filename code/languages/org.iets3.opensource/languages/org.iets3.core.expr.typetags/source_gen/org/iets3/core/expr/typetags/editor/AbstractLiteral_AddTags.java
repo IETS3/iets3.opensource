@@ -89,7 +89,7 @@ public class AbstractLiteral_AddTags extends TransformationMenuBase {
         List<SNode> parameters = ListSequence.fromList(new ArrayList<SNode>());
         List<SAbstractConcept> concepts = SConceptOperations.getAllSubConcepts(CONCEPTS.ITag$EI, _context.getModel());
 
-        for (SAbstractConcept concept : ListSequence.fromList(concepts).where((it) -> (boolean) ITag__BehaviorDescriptor.canTagExpression_id2Ux6GHgZEiG.invoke(SNodeOperations.asSConcept(it)))) {
+        for (SAbstractConcept concept : ListSequence.fromList(concepts).where((it) -> (boolean) ITag__BehaviorDescriptor.canTagExpression_id2Ux6GHgZEiG.invoke(SNodeOperations.asSConcept(it)) && (boolean) ITag__BehaviorDescriptor.contributesToLiteralSideTransform_id6OI5j2OlTY_.invoke(SNodeOperations.asSConcept(it)))) {
           ListSequence.fromList(parameters).addSequence(Sequence.fromIterable(ITag__BehaviorDescriptor.getTaggedExpressionScope_id76ZhK6XUPd6.invoke(SNodeOperations.asSConcept(concept), _context.getNode())));
         }
 

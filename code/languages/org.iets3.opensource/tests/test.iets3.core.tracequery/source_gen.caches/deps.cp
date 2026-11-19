@@ -81,7 +81,7 @@
   <uses module="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" kind="dp" />
   <uses module="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" kind="dp" />
   <uses module="7d21cc4b-4c24-41db-9868-8af4a7f3eba9(org.iets3.core.trace)" kind="dp" />
-  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt+dp" />
+  <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
   <uses module="785e2843-aa64-4743-afec-47634f9d78a4(test.iets3.core.tracequery)" kind="dp" />
 </dependenciesRoot>
 

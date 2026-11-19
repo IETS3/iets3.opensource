@@ -74,7 +74,7 @@ public final class AbstractComponentInstanceWithRef__BehaviorDescriptor extends 
         final SNode finalC = c.value;
         return oneAction(new TreeViewAction("Select Component in Editor", icon.value) {
           public void execute(final AbstractTreeViewNode treeNode, final Project project) {
-            SNodeOperations.getModel(__thisNode__).getRepository().getModelAccess().runWriteAction(() -> NavigationSupport.getInstance().openNode(project, finalC, true, true));
+            SNodeOperations.getModel(__thisNode__).getRepository().getModelAccess().runWriteAction(() -> NavigationSupport.getInstance(project).openNode(project, finalC, true, true));
           }
         });
       }

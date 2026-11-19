@@ -130,7 +130,7 @@ public final class REPL__BehaviorDescriptor extends BaseBHDescriptor {
     SNode sn = SLinkOperations.getTarget(__thisNode__, LINKS.sourceNode$DY$O);
     SNodeOperations.deleteNode(__thisNode__);
     if (sn != null) {
-      NavigationSupport.getInstance().openNode(ctx.getOperationContext().getProject(), sn, true, true);
+      NavigationSupport.getInstance(ctx.getOperationContext().getProject()).openNode(ctx.getOperationContext().getProject(), sn, true, true);
     }
   }
   /*package*/ static IContext getCurrentInterpreterContext_id4nY0kF8wP$O(@NotNull SNode __thisNode__) {
