@@ -13,6 +13,8 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 import java.util.Locale
+import org.gradle.kotlin.dsl.support.serviceOf
+import org.gradle.process.ExecOperations
 
 plugins {
     base
@@ -123,10 +125,38 @@ fun Configuration.registerTaskToResolveBundledDependency(
     }
 }
 
+// The generic MPS distribution unpacks the Linux x64 JCEF plugin into plugins/jcef-plugin. The variants for the other
+// platforms ship as platform-plugins/<platform>.tar. Without the matching variant, MPS rejects com.intellij.modules.jcef
+// and with it every plugin that depends on it (org.iets3.variability.os via com.jetbrains.mpsext.stubs.jcef).
+val hostPlatformPluginsArchive: String? = run {
+    val os = System.getProperty("os.name").lowercase()
+    val arm = System.getProperty("os.arch") in setOf("aarch64", "arm64")
+    when {
+        os.contains("mac") -> if (arm) "mac.aarch64" else null
+        os.contains("win") -> if (arm) null else "win.x64"
+        else -> if (arm) "unix.aarch64" else "unix.x64"
+    }
+}
+
 val resolveMPS by tasks.registering(Sync::class) {
     dependsOn(mps)
     from(mps.resolve().map { zipTree(it) })
     into(mpsHomeDir)
+
+    val fs = project.serviceOf<FileSystemOperations>()
+    val execOps = project.serviceOf<ExecOperations>()
+    doLast {
+        val mpsHome = mpsHomeDir.asFile
+        val archive = hostPlatformPluginsArchive?.let { mpsHome.resolve("platform-plugins/$it.tar") }
+        if (archive == null || !archive.isFile) {
+            logger.warn("No JCEF plugin for this host (${archive ?: "unsupported platform"}), keeping the one in $mpsHome/plugins/jcef-plugin")
+            return@doLast
+        }
+        fs.delete { delete(mpsHome.resolve("plugins/jcef-plugin")) }
+        // System tar keeps the symlinks and file modes of the native JCEF files (tarTree does not)
+        execOps.exec { commandLine("tar", "-xf", archive.absolutePath, "-C", mpsHome.resolve("plugins").absolutePath, "jcef-plugin") }
+        logger.lifecycle("Installed JCEF plugin from ${archive.name}")
+    }
 }
 
 val resolveLanguageLibs by tasks.registering(Sync::class) {

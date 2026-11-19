@@ -158,6 +158,7 @@
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
+        <property id="4972001163784560067" name="pluginXmlProvided" index="1NdglO" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -16297,6 +16298,21 @@
           <ref role="L2wRA" node="4Ifs9kimNd8" resolve="test.org.iets3.core.expr.typetags.physunits" />
         </node>
       </node>
+      <node concept="m$_wl" id="6F$RQ4WZI20" role="39821P">
+        <ref role="m_rDy" node="6F$RQ4WZI1T" resolve="com.intellij.modules.jcef" />
+        <node concept="pUk6x" id="6F$RQ4WZI21" role="pUk7w" />
+        <node concept="2HvfSZ" id="6F$RQ4WZI22" role="39821P">
+          <node concept="398BVA" id="6F$RQ4WZI23" role="2HvfZ0">
+            <ref role="398BVh" node="OJuIQp_qpo" resolve="mps.home" />
+            <node concept="2Ry0Ak" id="6F$RQ4WZI24" role="iGT6I">
+              <property role="2Ry0Am" value="plugins" />
+              <node concept="2Ry0Ak" id="6F$RQ4WZI25" role="2Ry0An">
+                <property role="2Ry0Am" value="jcef-plugin" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
     <node concept="3b7kt6" id="OJuIQpzfqZ" role="10PD9s" />
@@ -18224,7 +18240,7 @@
           <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         </node>
         <node concept="24YFd4" id="3ACnbdRHgqi" role="24YFd7">
-          <ref role="24YFd5" to="90a9:75qazhazME$" resolve="com.intellij.modules.jcef" />
+          <ref role="24YFd5" node="6F$RQ4WZI1T" resolve="com.intellij.modules.jcef" />
         </node>
       </node>
       <node concept="22LTRF" id="2mWlB9yWxMB" role="22LTRK">
@@ -18295,6 +18311,30 @@
           <node concept="3qWCbU" id="76EiapPSb0W" role="3LXTna">
             <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="6F$RQ4WZI1T" role="3989C9">
+      <property role="1NdglO" value="true" />
+      <property role="m$_wk" value="com.intellij.modules.jcef" />
+      <node concept="3_J27D" id="6F$RQ4WZI1U" role="m$_yQ">
+        <node concept="3Mxwew" id="6F$RQ4WZI1V" role="3MwsjC">
+          <property role="3MwjfP" value="Web Browser (JCEF)" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6F$RQ4WZI1W" role="m_cZH">
+        <node concept="3Mxwew" id="6F$RQ4WZI1X" role="3MwsjC">
+          <property role="3MwjfP" value="jcef-plugin" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6F$RQ4WZI1Y" role="m$_w8">
+        <node concept="3Mxwew" id="6F$RQ4WZI1Z" role="3MwsjC">
+          <property role="3MwjfP" value="provided" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6F$RQ4XcqUc" role="3s6cr7">
+        <node concept="3Mxwew" id="6F$RQ4XcqUd" role="3MwsjC">
+          <property role="3MwjfP" value="Workaround: puts the MPS JCEF plugin on the test plugin list, otherwise plugins depending on JCEF stubs don't load and their tests are skipped. OS variant: see Gradle task resolveMPS." />
         </node>
       </node>
     </node>
