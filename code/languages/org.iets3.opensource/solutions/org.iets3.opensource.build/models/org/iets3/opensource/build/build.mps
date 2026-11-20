@@ -1920,11 +1920,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3ZwMOJttUKF" role="3bR37C">
-          <node concept="3bR9La" id="3ZwMOJttUKG" role="1SiIV1">
-            <ref role="3bR37D" node="7yHH$DDpBOh" resolve="org.iets3.variability.featuremodel.base" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3ZwMOJttUKS" role="3bR37C">
           <node concept="1Busua" id="3ZwMOJttUKT" role="1SiIV1">
             <ref role="1Busuk" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
@@ -1938,6 +1933,11 @@
         <node concept="1SiIV0" id="2bkB5u6eDPT" role="3bR37C">
           <node concept="3bR9La" id="2bkB5u6eDPU" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6kGakk0c2H_" role="3bR37C">
+          <node concept="3bR9La" id="6kGakk0c2HA" role="1SiIV1">
+            <ref role="3bR37D" node="2uR5X5azttH" resolve="org.iets3.core.expr.toplevel" />
           </node>
         </node>
       </node>
