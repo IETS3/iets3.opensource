@@ -33,6 +33,7 @@
         <dependency reexport="true">68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)</dependency>
         <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">c51317cf-7edb-4089-991b-42c7b3a5f8e5(org.iets3.core.expr.genjava.tests.genutil)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -104,6 +105,7 @@
         <module reference="646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)" version="0" />
         <module reference="e75207bb-7b13-40bd-b80b-c8fe625c4ee2(org.iets3.core.expr.genjava.tests)" version="0" />
         <module reference="d8b3dc54-37d4-4d4c-a903-50fe428a2dd5(org.iets3.core.expr.genjava.tests#8286534136181927906)" version="0" />
+        <module reference="c51317cf-7edb-4089-991b-42c7b3a5f8e5(org.iets3.core.expr.genjava.tests.genutil)" version="0" />
         <module reference="68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)" version="0" />
         <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="5" />
         <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />

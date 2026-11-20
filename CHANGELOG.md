@@ -10,13 +10,18 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
+- Standalone generated Java tests (`genjava`, `Generated_*_Test`): failures and errors end with the node URL of the failing test item, also for exceptions thrown before the assertion. Failures stay failures, errors stay errors, the original exception is kept as cause.
+- Custom test generators can add the same node URLs to their own generated JUnit classes with `SourceNodeUrls` (generation time) and `SourceNodeFailures` (test runtime); see `docs/generated-test-node-urls.md`. An iets3 update alone does not change the output of custom generators.
+
+### Changed
+- Generated iets3 JUnit tests (`TestSuite` → `MPSTestCase`): the node URL in failure messages no longer depends on the MPS HTTP support plugin being available; it always uses the default port 63320.
 
 ### Changed
 
 - Variability: The cyclic dependency between `org.iets3.variability.base` and `org.iets3.variability.featuremodel.base` has been removed. For this, the extension point `tailorIETS3Variability` and its settings classes have been moved to `org.iets3.variability.base`. Projects which tailor IETS3 Variability have to migrate and rebuild, see [these instructions](https://github.com/IETS3/iets3.opensource/issues/2044#issuecomment-6920740399).
 
 ### Fixed
-
+- Java generation of models using `org.iets3.core.expr.genall.advanced.devkit` no longer fails with "No textgen" errors for smodel and baseLanguageInternal constructs left over by the test generators.
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
 
 
