@@ -4,9 +4,10 @@ package org.iets3.variability.base.plugin;
 
 import jetbrains.mps.smodel.structure.DefaultExtensionDescriptor;
 import java.util.Arrays;
+import jetbrains.mps.smodel.structure.ExtensionPoint;
 
 public class ExtensionDescriptor extends DefaultExtensionDescriptor {
   public ExtensionDescriptor() {
-    super(null, Arrays.asList(new SolverNotRunSolverTaskFactoryExtension()));
+    super(Arrays.asList(new ExtensionPoint("org.iets3.variability.base.tailorIETS3Variability")), Arrays.asList(new SolverNotRunSolverTaskFactoryExtension()));
   }
 }
