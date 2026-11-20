@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:8e69af59-5985-4fff-ac56-1dca944c6493(test.kernelf.editor.enums@tests)/8847333369145663095">
+    <file name="UnqualifiedLiteralTypedByBareName_Test.java">
+      <node id="8847333369145663095" at="19,51,20,60" concept="4" />
+      <node id="8847333369145663095" at="24,73,25,36" concept="1" />
+      <node id="8847333369145663095" at="30,52,31,19" concept="4" />
+      <node id="8847333369145663095" at="35,51,36,72" concept="1" />
+      <node id="8847333369145663097" at="36,72,37,24" concept="1" />
+      <node id="8847333369145663095" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="8847333369145663095" at="19,0,22,0" concept="0" trace="UnqualifiedLiteralTypedByBareName_Test#()V" />
+      <node id="8847333369145663095" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8847333369145663095" at="23,0,27,0" concept="2" trace="test_UnqualifiedLiteralTypedByBareName#()V" />
+      <node id="8847333369145663095" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8847333369145663095" at="19,51,20,60" />
+      <scope id="8847333369145663095" at="24,73,25,36" />
+      <scope id="8847333369145663095" at="30,52,31,19" />
+      <scope id="8847333369145663095" at="35,51,37,24" />
+      <scope id="8847333369145663095" at="19,0,22,0" />
+      <scope id="8847333369145663095" at="30,0,33,0">
+        <var name="owner" id="8847333369145663095" />
+      </scope>
+      <scope id="8847333369145663095" at="23,0,27,0" />
+      <scope id="8847333369145663095" at="34,0,39,0" />
+      <unit id="8847333369145663095" at="28,0,40,0" name="test.kernelf.editor.enums.UnqualifiedLiteralTypedByBareName_Test$TestBody" />
+      <unit id="8847333369145663095" at="14,0,41,0" name="test.kernelf.editor.enums.UnqualifiedLiteralTypedByBareName_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:8e69af59-5985-4fff-ac56-1dca944c6493(test.kernelf.editor.enums@tests)/8847333369146368169">
+    <file name="BareNameBindsToUnqualifiedEnumNotToQualifiedOne_Test.java">
+      <node id="8847333369146368169" at="19,65,20,60" concept="4" />
+      <node id="8847333369146368169" at="24,87,25,36" concept="1" />
+      <node id="8847333369146368169" at="30,52,31,19" concept="4" />
+      <node id="8847333369146368169" at="35,51,36,72" concept="1" />
+      <node id="8847333369146368171" at="36,72,37,26" concept="1" />
+      <node id="8847333369146368169" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="8847333369146368169" at="19,0,22,0" concept="0" trace="BareNameBindsToUnqualifiedEnumNotToQualifiedOne_Test#()V" />
+      <node id="8847333369146368169" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8847333369146368169" at="23,0,27,0" concept="2" trace="test_BareNameBindsToUnqualifiedEnumNotToQualifiedOne#()V" />
+      <node id="8847333369146368169" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8847333369146368169" at="19,65,20,60" />
+      <scope id="8847333369146368169" at="24,87,25,36" />
+      <scope id="8847333369146368169" at="30,52,31,19" />
+      <scope id="8847333369146368169" at="35,51,37,26" />
+      <scope id="8847333369146368169" at="19,0,22,0" />
+      <scope id="8847333369146368169" at="30,0,33,0">
+        <var name="owner" id="8847333369146368169" />
+      </scope>
+      <scope id="8847333369146368169" at="23,0,27,0" />
+      <scope id="8847333369146368169" at="34,0,39,0" />
+      <unit id="8847333369146368169" at="28,0,40,0" name="test.kernelf.editor.enums.BareNameBindsToUnqualifiedEnumNotToQualifiedOne_Test$TestBody" />
+      <unit id="8847333369146368169" at="14,0,41,0" name="test.kernelf.editor.enums.BareNameBindsToUnqualifiedEnumNotToQualifiedOne_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:8e69af59-5985-4fff-ac56-1dca944c6493(test.kernelf.editor.enums@tests)/8847333369146368324">
+    <file name="QualifiedLiteralTypedByQualifiedName_Test.java">
+      <node id="8847333369146368324" at="19,54,20,60" concept="4" />
+      <node id="8847333369146368324" at="24,76,25,36" concept="1" />
+      <node id="8847333369146368324" at="30,52,31,19" concept="4" />
+      <node id="8847333369146368324" at="35,51,36,72" concept="1" />
+      <node id="8847333369146368326" at="36,72,37,36" concept="1" />
+      <node id="8847333369146368324" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="8847333369146368324" at="19,0,22,0" concept="0" trace="QualifiedLiteralTypedByQualifiedName_Test#()V" />
+      <node id="8847333369146368324" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8847333369146368324" at="23,0,27,0" concept="2" trace="test_QualifiedLiteralTypedByQualifiedName#()V" />
+      <node id="8847333369146368324" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8847333369146368324" at="19,54,20,60" />
+      <scope id="8847333369146368324" at="24,76,25,36" />
+      <scope id="8847333369146368324" at="30,52,31,19" />
+      <scope id="8847333369146368324" at="35,51,37,36" />
+      <scope id="8847333369146368324" at="19,0,22,0" />
+      <scope id="8847333369146368324" at="30,0,33,0">
+        <var name="owner" id="8847333369146368324" />
+      </scope>
+      <scope id="8847333369146368324" at="23,0,27,0" />
+      <scope id="8847333369146368324" at="34,0,39,0" />
+      <unit id="8847333369146368324" at="28,0,40,0" name="test.kernelf.editor.enums.QualifiedLiteralTypedByQualifiedName_Test$TestBody" />
+      <unit id="8847333369146368324" at="14,0,41,0" name="test.kernelf.editor.enums.QualifiedLiteralTypedByQualifiedName_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:8e69af59-5985-4fff-ac56-1dca944c6493(test.kernelf.editor.enums@tests)/8847333369148717491">
+    <file name="RetypeQualifiedLiteralToSiblingLiteral_Test.java">
+      <node id="8847333369148717491" at="19,56,20,60" concept="4" />
+      <node id="8847333369148717491" at="24,78,25,36" concept="1" />
+      <node id="8847333369148717491" at="30,52,31,19" concept="4" />
+      <node id="8847333369148717491" at="35,51,36,72" concept="1" />
+      <node id="8847333369148717493" at="36,72,37,36" concept="1" />
+      <node id="8847333369148717491" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="8847333369148717491" at="19,0,22,0" concept="0" trace="RetypeQualifiedLiteralToSiblingLiteral_Test#()V" />
+      <node id="8847333369148717491" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8847333369148717491" at="23,0,27,0" concept="2" trace="test_RetypeQualifiedLiteralToSiblingLiteral#()V" />
+      <node id="8847333369148717491" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8847333369148717491" at="19,56,20,60" />
+      <scope id="8847333369148717491" at="24,78,25,36" />
+      <scope id="8847333369148717491" at="30,52,31,19" />
+      <scope id="8847333369148717491" at="35,51,37,36" />
+      <scope id="8847333369148717491" at="19,0,22,0" />
+      <scope id="8847333369148717491" at="30,0,33,0">
+        <var name="owner" id="8847333369148717491" />
+      </scope>
+      <scope id="8847333369148717491" at="23,0,27,0" />
+      <scope id="8847333369148717491" at="34,0,39,0" />
+      <unit id="8847333369148717491" at="28,0,40,0" name="test.kernelf.editor.enums.RetypeQualifiedLiteralToSiblingLiteral_Test$TestBody" />
+      <unit id="8847333369148717491" at="14,0,41,0" name="test.kernelf.editor.enums.RetypeQualifiedLiteralToSiblingLiteral_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:8e69af59-5985-4fff-ac56-1dca944c6493(test.kernelf.editor.enums@tests)/8847333369148990157">
+    <file name="QualifiedLiteralNotOfferedByBareName_Test.java">
+      <node id="8847333369148990157" at="19,54,20,60" concept="4" />
+      <node id="8847333369148990157" at="24,76,25,36" concept="1" />
+      <node id="8847333369148990157" at="30,52,31,19" concept="4" />
+      <node id="8847333369148990157" at="35,51,36,72" concept="1" />
+      <node id="8847333369148990159" at="36,72,37,26" concept="1" />
+      <node id="8847333369148990157" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="8847333369148990157" at="19,0,22,0" concept="0" trace="QualifiedLiteralNotOfferedByBareName_Test#()V" />
+      <node id="8847333369148990157" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8847333369148990157" at="23,0,27,0" concept="2" trace="test_QualifiedLiteralNotOfferedByBareName#()V" />
+      <node id="8847333369148990157" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8847333369148990157" at="19,54,20,60" />
+      <scope id="8847333369148990157" at="24,76,25,36" />
+      <scope id="8847333369148990157" at="30,52,31,19" />
+      <scope id="8847333369148990157" at="35,51,37,26" />
+      <scope id="8847333369148990157" at="19,0,22,0" />
+      <scope id="8847333369148990157" at="30,0,33,0">
+        <var name="owner" id="8847333369148990157" />
+      </scope>
+      <scope id="8847333369148990157" at="23,0,27,0" />
+      <scope id="8847333369148990157" at="34,0,39,0" />
+      <unit id="8847333369148990157" at="28,0,40,0" name="test.kernelf.editor.enums.QualifiedLiteralNotOfferedByBareName_Test$TestBody" />
+      <unit id="8847333369148990157" at="14,0,41,0" name="test.kernelf.editor.enums.QualifiedLiteralNotOfferedByBareName_Test" />
+    </file>
+  </root>
+</debug-info>
+

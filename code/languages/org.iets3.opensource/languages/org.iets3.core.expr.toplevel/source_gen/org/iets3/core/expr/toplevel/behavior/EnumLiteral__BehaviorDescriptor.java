@@ -26,8 +26,10 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> nameWithEnum_id67Y8mp$HuPC = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nameWithEnum").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7061117989423541608L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<SNode> enumDecl_id67Y8mp$M9$v = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("enumDecl").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7061117989424765215L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<String> presentableName_id7F82HbPdxFa = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("presentableName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8847333369142713034L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<String> getPresentation_id69Qfsw3IoJg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234040272L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nameWithEnum_id67Y8mp$HuPC, enumDecl_id67Y8mp$M9$v);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nameWithEnum_id67Y8mp$HuPC, enumDecl_id67Y8mp$M9$v, presentableName_id7F82HbPdxFa, getPresentation_id69Qfsw3IoJg);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -37,6 +39,16 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static SNode enumDecl_id67Y8mp$M9$v(@NotNull SNode __thisNode__) {
     return SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.EnumDeclaration$3b);
+  }
+  /*package*/ static String presentableName_id7F82HbPdxFa(@NotNull SNode __thisNode__) {
+    SNode ed = EnumLiteral__BehaviorDescriptor.enumDecl_id67Y8mp$M9$v.invoke(__thisNode__);
+    if ((ed != null) && SPropertyOperations.getBoolean(ed, PROPS.qualified$Uqnz)) {
+      return EnumLiteral__BehaviorDescriptor.nameWithEnum_id67Y8mp$HuPC.invoke(__thisNode__);
+    }
+    return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
+  }
+  /*package*/ static String getPresentation_id69Qfsw3IoJg(@NotNull SNode __thisNode__, SNode reference) {
+    return ((String) EnumLiteral__BehaviorDescriptor.presentableName_id7F82HbPdxFa.invoke(__thisNode__));
   }
 
   /*package*/ EnumLiteral__BehaviorDescriptor() {
@@ -58,6 +70,10 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((String) nameWithEnum_id67Y8mp$HuPC(node));
       case 1:
         return (T) ((SNode) enumDecl_id67Y8mp$M9$v(node));
+      case 2:
+        return (T) ((String) presentableName_id7F82HbPdxFa(node));
+      case 3:
+        return (T) ((String) getPresentation_id69Qfsw3IoJg(node, (SNode) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -89,6 +105,7 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty qualified$Uqnz = MetaAdapterFactory.getProperty(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664c89321L, "qualified");
   }
 
   private static final class CONCEPTS {

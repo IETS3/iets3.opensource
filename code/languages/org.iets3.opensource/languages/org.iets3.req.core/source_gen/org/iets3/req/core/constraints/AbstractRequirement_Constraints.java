@@ -31,7 +31,7 @@ public class AbstractRequirement_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -71,7 +71,7 @@ public class AbstractRequirement_Constraints extends BaseConstraintsDescriptor {
     }
     return true;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:a0b77e6a-d550-4d53-89a1-371db09001b8(org.iets3.req.core.constraints)", "7126186526844795714");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:a0b77e6a-d550-4d53-89a1-371db09001b8(org.iets3.req.core.constraints)", "7126186526844795714");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept AbstractRequirement$yu = MetaAdapterFactory.getConcept(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc8195aeL, "org.iets3.req.core.structure.AbstractRequirement");
