@@ -23,7 +23,6 @@
     <import index="4ndm" ref="r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="2rbz" ref="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)" />
-    <import index="quv7" ref="r:1b5a3de4-b200-4da6-9671-97911d423210(org.iets3.variability.featuremodel.base.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1403,7 +1402,7 @@
               <node concept="3cpWsn" id="3inUwOJP3de" role="3cpWs9">
                 <property role="TrG5h" value="verb" />
                 <node concept="3uibUv" id="3inUwOJP21u" role="1tU5fm">
-                  <ref role="3uigEE" to="quv7:3inUwOJLEYK" resolve="IETS3VariabilitySettings.VerbosityLevel" />
+                  <ref role="3uigEE" to="2rbz:3inUwOJLEYK" resolve="IETS3VariabilitySettings.VerbosityLevel" />
                 </node>
                 <node concept="2YIFZM" id="3inUwOJP3df" role="33vP2m">
                   <ref role="37wK5l" to="2rbz:3inUwOJN1k3" resolve="showForAllVariantsExecutionWarning" />
@@ -1488,8 +1487,8 @@
                         <ref role="3cqZAo" node="3inUwOJP3de" resolve="verb" />
                       </node>
                       <node concept="Rm8GO" id="3inUwOJPuns" role="3uHU7w">
-                        <ref role="Rm8GQ" to="quv7:3inUwOJLFu_" resolve="REDUCED" />
-                        <ref role="1Px2BO" to="quv7:3inUwOJLEYK" resolve="IETS3VariabilitySettings.VerbosityLevel" />
+                        <ref role="Rm8GQ" to="2rbz:3inUwOJLFu_" resolve="REDUCED" />
+                        <ref role="1Px2BO" to="2rbz:3inUwOJLEYK" resolve="IETS3VariabilitySettings.VerbosityLevel" />
                       </node>
                     </node>
                   </node>
@@ -1499,8 +1498,8 @@
                     <ref role="3cqZAo" node="3inUwOJP3de" resolve="verb" />
                   </node>
                   <node concept="Rm8GO" id="3inUwOJPiX1" role="3uHU7w">
-                    <ref role="Rm8GQ" to="quv7:3inUwOJLFz5" resolve="FULL" />
-                    <ref role="1Px2BO" to="quv7:3inUwOJLEYK" resolve="IETS3VariabilitySettings.VerbosityLevel" />
+                    <ref role="Rm8GQ" to="2rbz:3inUwOJLFz5" resolve="FULL" />
+                    <ref role="1Px2BO" to="2rbz:3inUwOJLEYK" resolve="IETS3VariabilitySettings.VerbosityLevel" />
                   </node>
                 </node>
               </node>
