@@ -196,7 +196,7 @@
     <module reference="9914d82b-ab8a-44d1-9c65-9f2954c3b4df(org.iets3.variability.artifacts.typesystem)" version="0" />
     <module reference="c6ff3b3b-aff6-455e-9637-7955ccbfec22(org.iets3.variability.artifacts.vanguard)" version="0" />
     <module reference="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" version="0" />
-    <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="36" />
+    <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="37" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">f7909506-a68f-4575-8f79-ef5e0e0ae091(org.iets3.variability.artifacts.typesystem.runtime)</dependency>
