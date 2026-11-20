@@ -53,7 +53,7 @@ public class PolynomialExpressionUtil {
   }
 
   /**
-   * Transforms an Expression into the form c * x^n, ie. 3 x^3 + x^2 + 2x + 9 ---> 
+   * Transforms an Expression into the form c * x^n, ie. 3 x^3 + x^2 + 2x + 9 --->
    * 3 x^3 + 1 x^2 + 2 x^1 + 9 x^0.
    */
   public static SNode mapToPowerExpressions(SNode expr, SNode arg) {

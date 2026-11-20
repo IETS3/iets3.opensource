@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,13 +22,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x1e46270cae7d32fL, "org.iets3.components.functional.structure.EnumLiteral");
 
-  public static final SMethod<Integer> numericValue_id7$oB3aTXdd = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("numericValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(136342125308007245L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<String> refString_id7$oB3aUcMO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("refString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(136342125308071092L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Integer> numericValue_id7$oB3aTXdd = new SMethodBuilder<>(Integer.TYPE).name("numericValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(136342125308007245L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<String> refString_id7$oB3aUcMO = new SMethodBuilder<>(String.class).name("refString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(136342125308071092L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(numericValue_id7$oB3aTXdd, refString_id7$oB3aUcMO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(numericValue_id7$oB3aTXdd, refString_id7$oB3aUcMO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int numericValue_id7$oB3aTXdd(@NotNull SNode __thisNode__) {
     return SNodeOperations.getIndexInParent(__thisNode__);
@@ -42,10 +38,6 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ EnumLiteral__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

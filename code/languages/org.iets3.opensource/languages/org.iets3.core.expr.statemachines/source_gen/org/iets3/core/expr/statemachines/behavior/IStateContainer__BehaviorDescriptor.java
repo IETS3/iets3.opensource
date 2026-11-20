@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -23,14 +21,12 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IStateContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcd87ddab6434448eL, 0xa0111e1c898de18eL, 0x3b44f043528cc45cL, "org.iets3.core.expr.statemachines.structure.IStateContainer");
 
-  public static final SMethod<Iterable<SNode>> states_id3H4W4dizcin = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("states").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592504983L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<SNode> initialState_id3H4W4dizefM = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("initialState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592513010L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> visibleStates_id3H4W4diAzs8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleStates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518593386248L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> states_id3H4W4dizcin = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("states").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592504983L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<SNode> initialState_id3H4W4dizefM = new SMethodBuilder<>(SNode.class).name("initialState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592513010L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> visibleStates_id3H4W4diAzs8 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleStates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518593386248L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(states_id3H4W4dizcin, initialState_id3H4W4dizefM, visibleStates_id3H4W4diAzs8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(states_id3H4W4dizcin, initialState_id3H4W4dizefM, visibleStates_id3H4W4diAzs8);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode initialState_id3H4W4dizefM(@NotNull SNode __thisNode__) {
     if (Sequence.fromIterable(IStateContainer__BehaviorDescriptor.states_id3H4W4dizcin.invoke(__thisNode__)).isNotEmpty()) {
@@ -51,10 +47,6 @@ public final class IStateContainer__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IStateContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

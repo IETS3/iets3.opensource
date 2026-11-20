@@ -8,11 +8,17 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## November 2026
 
 ### Added
+
 - Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
+
+### Changed
+
+- Variability: The cyclic dependency between `org.iets3.variability.base` and `org.iets3.variability.featuremodel.base` has been removed. For this, the extension point `tailorIETS3Variability` and its settings classes have been moved to `org.iets3.variability.base`. Projects which tailor IETS3 Variability have to migrate and rebuild, see [these instructions](https://github.com/IETS3/iets3.opensource/issues/2044#issuecomment-6920740399).
 
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
+
 
 ## October 2026
 
@@ -230,11 +236,15 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The renderReadable/getPresentation implementations were improved and are now equivalent in all concepts.
 - Variability: For feature attributes, the inspector in the configuration editor shows the current value of the attribute and what caused this value (manual input by user, default, forced by tool, etc). This assignment cause is read-only now. An intention is added to manually set it to 'manual' state.
+- Updated API for build.gentests and junit.interpreter.run.configuration
 - Variability: In the configuration editor, pressing Return/Enter anywhere will create an empty line after the configuration. Pressing Shift-Return/Enter on the header line of a configuration will create an empty line before the configuration.
 
 ### Added
 
 - Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse.
+
+### Removed
+- To enable github release the usage of `listMergedPRs` script is removed for the time beeing.
 
 ## July 2025
 

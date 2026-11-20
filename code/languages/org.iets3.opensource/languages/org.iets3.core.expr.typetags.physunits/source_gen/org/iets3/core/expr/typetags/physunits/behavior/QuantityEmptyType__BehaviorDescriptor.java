@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.module.SRepository;
 import java.util.List;
@@ -16,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.core.expr.typetags.physunits.plugin.PhysUnitLangConfigHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -27,13 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class QuantityEmptyType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x414a129fbf752ee9L, "org.iets3.core.expr.typetags.physunits.structure.QuantityEmptyType");
 
-  public static final SMethod<SNode> getDimension_id4RImAbhGmuV = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDimension").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5615525165848946619L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SRepository.class, ""));
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> getDimension_id4RImAbhGmuV = new SMethodBuilder<>(SNode.class).name("getDimension").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5615525165848946619L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SRepository.class, "repository"));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDimension_id4RImAbhGmuV, getPresentation_idhEwIMiw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDimension_id4RImAbhGmuV, getPresentation_idhEwIMiw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getDimension_id4RImAbhGmuV(@NotNull SNode __thisNode__, SRepository repository) {
     return createDimensionReference_xpd616_a0a0(SLinkOperations.getTarget(SLinkOperations.getTarget(StandardUnitHelper.getUnitLessUnit(repository), LINKS.quantity$tnl1), LINKS.dimension$Zkyw));
@@ -45,10 +41,6 @@ public final class QuantityEmptyType__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ QuantityEmptyType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

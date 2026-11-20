@@ -1906,20 +1906,17 @@
       <node id="5585772046594087118" at="22,50,23,38" concept="7" />
       <node id="5585772046594087118" at="25,68,26,102" concept="7" />
       <node id="5585772046594087118" at="28,27,29,17" concept="7" />
-      <node id="5585772046594087118" at="31,39,32,16" concept="7" />
-      <node id="5585772046594087118" at="36,0,37,0" concept="10" trace="CollectionType$kS" />
+      <node id="5585772046594087118" at="33,0,34,0" concept="10" trace="CollectionType$kS" />
       <node id="5585772046594087118" at="17,0,19,0" concept="1" trace="supertypeOf_CollectionType_SubtypingRule#()V" />
       <node id="5585772046594087118" at="19,0,22,0" concept="5" trace="getSubOrSuperTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Ljava/util/List;" />
       <node id="5585772046594087118" at="22,0,25,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5585772046594087118" at="25,0,28,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="5585772046594087118" at="28,0,31,0" concept="5" trace="isWeak#()Z" />
-      <node id="5585772046594087118" at="31,0,34,0" concept="5" trace="surelyKeepsConcept#()Z" />
       <scope id="5585772046594087118" at="17,53,17,53" />
       <scope id="5585772046594087119" at="19,119,20,89" />
       <scope id="5585772046594087118" at="22,50,23,38" />
       <scope id="5585772046594087118" at="25,68,26,102" />
       <scope id="5585772046594087118" at="28,27,29,17" />
-      <scope id="5585772046594087118" at="31,39,32,16" />
       <scope id="5585772046594087118" at="17,0,19,0" />
       <scope id="5585772046594087118" at="19,0,22,0">
         <var name="ct" id="5585772046594087118" />
@@ -1931,9 +1928,8 @@
         <var name="argument" id="5585772046594087118" />
       </scope>
       <scope id="5585772046594087118" at="28,0,31,0" />
-      <scope id="5585772046594087118" at="31,0,34,0" />
-      <unit id="5585772046594087118" at="35,0,38,0" name="org.iets3.core.expr.collections.typesystem.supertypeOf_CollectionType_SubtypingRule$CONCEPTS" />
-      <unit id="5585772046594087118" at="16,0,39,0" name="org.iets3.core.expr.collections.typesystem.supertypeOf_CollectionType_SubtypingRule" />
+      <unit id="5585772046594087118" at="32,0,35,0" name="org.iets3.core.expr.collections.typesystem.supertypeOf_CollectionType_SubtypingRule$CONCEPTS" />
+      <unit id="5585772046594087118" at="16,0,36,0" name="org.iets3.core.expr.collections.typesystem.supertypeOf_CollectionType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5585772046595951136">

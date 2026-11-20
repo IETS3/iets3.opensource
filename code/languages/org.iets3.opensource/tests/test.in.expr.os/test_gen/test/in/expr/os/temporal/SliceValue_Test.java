@@ -27,8 +27,8 @@ public class SliceValue_Test {
   }
   @Test
   public void test_testingSliceValueHashCode() throws Exception {
-    Assert.assertEquals("Hashcodes of the same SliceValue", slice1.hashCode(), slice1.hashCode());
-    Assert.assertEquals("Hashcodes of equal SliceValues", slice1.hashCode(), slice2.hashCode());
+    Assert.assertEquals("Hashcodes of the same SliceValue", Integer.valueOf(slice1.hashCode()), Integer.valueOf(slice1.hashCode()));
+    Assert.assertEquals("Hashcodes of equal SliceValues", Integer.valueOf(slice1.hashCode()), Integer.valueOf(slice2.hashCode()));
     Assert.assertFalse("Hashcodes of SliceValues with different values: actual: " + slice3.hashCode() + " expected: " + slice1.hashCode(), slice1.hashCode() == slice3.hashCode());
     Assert.assertFalse("Hashcodes of SliceValues with different points in time: actual: " + slice3.hashCode() + " expected: " + slice1.hashCode(), slice1.hashCode() == slice4.hashCode());
   }
@@ -38,8 +38,8 @@ public class SliceValue_Test {
     TT.slices().add(slice1);
     TT.slices().add(slice6);
 
-    Assert.assertEquals("Amount of contained slices wrong", 3, TT.numberOfSlices());
-    Assert.assertEquals("TemporalValue should contain 1x slides after joining identical slices", 2, TemporalOps.joinSlices(TT).numberOfSlices());
+    Assert.assertEquals("Amount of contained slices wrong", Integer.valueOf(3), Integer.valueOf(TT.numberOfSlices()));
+    Assert.assertEquals("TemporalValue should contain 1x slides after joining identical slices", Integer.valueOf(2), Integer.valueOf(TemporalOps.joinSlices(TT).numberOfSlices()));
   }
   @Test
   public void test_TestingJoinSlicesContainingNull() throws Exception {
@@ -48,8 +48,8 @@ public class SliceValue_Test {
     TT.slices().add(null);
     TT.slices().add(slice6);
 
-    Assert.assertEquals("Amount of contained slices wrong", 3, TT.numberOfSlices());
-    Assert.assertEquals("TemporalValue should contain 1x slides after joining identical slices", 2, TemporalOps.joinSlices(TT).numberOfSlices());
+    Assert.assertEquals("Amount of contained slices wrong", Integer.valueOf(3), Integer.valueOf(TT.numberOfSlices()));
+    Assert.assertEquals("TemporalValue should contain 1x slides after joining identical slices", Integer.valueOf(2), Integer.valueOf(TemporalOps.joinSlices(TT).numberOfSlices()));
   }
   @Test
   public void test_TestingJoinSlicesWithNull() throws Exception {
@@ -57,8 +57,8 @@ public class SliceValue_Test {
     TT.slices().add(slice5WithNulLValue);
     TT.slices().add(slice6);
 
-    Assert.assertEquals("Amount of contained slices wrong", 3, TT.numberOfSlices());
-    Assert.assertEquals("TemporalValue should contain 1x slides after joining identical slices", 2, TemporalOps.joinSlices(TT).numberOfSlices());
+    Assert.assertEquals("Amount of contained slices wrong", Integer.valueOf(3), Integer.valueOf(TT.numberOfSlices()));
+    Assert.assertEquals("TemporalValue should contain 1x slides after joining identical slices", Integer.valueOf(2), Integer.valueOf(TemporalOps.joinSlices(TT).numberOfSlices()));
   }
   @BeforeEach
   public void setUp() {

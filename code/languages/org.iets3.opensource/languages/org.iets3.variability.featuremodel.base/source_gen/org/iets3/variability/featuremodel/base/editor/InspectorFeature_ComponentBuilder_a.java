@@ -41,7 +41,7 @@ import jetbrains.mps.nodeEditor.MPSColors;
     editorCell.setCellId("Collection_qz3dvz_a");
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createComponent_0());
-    editorCell.addEditorCell(createHorizontalLineCell_1());
+    editorCell.addEditorCell(createHorizontalLineCell_0());
     editorCell.addEditorCell(createComponent_1());
     return editorCell;
   }
@@ -55,17 +55,14 @@ import jetbrains.mps.nodeEditor.MPSColors;
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "org.iets3.variability.featuremodel.base.editor.Attribute_Editor_Inspector");
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_0(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_0() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_qz3dvz_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.black));
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_1() {
-    return createHorizontalLineCell_0(getEditorContext(), myNode);
   }
   private EditorCell createComponent_1() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "org.iets3.variability.featuremodel.base.editor.InspectorFeatureBase");

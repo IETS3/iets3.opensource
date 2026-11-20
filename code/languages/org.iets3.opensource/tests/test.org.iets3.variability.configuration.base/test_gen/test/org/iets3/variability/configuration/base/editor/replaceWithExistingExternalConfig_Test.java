@@ -76,7 +76,7 @@ public class replaceWithExistingExternalConfig_Test extends BaseTransformationTe
       initTestNodes();
       runWithinCommand(() -> {
         List<SNode> candidates = FeatureModelIncludeUtil.findEligibleIncludes(getAnnotatedNode("n"));
-        Assert.assertEquals(2, ListSequence.fromList(candidates).count());
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(ListSequence.fromList(candidates).count()));
 
         Assert.assertEquals(Sets.newHashSet(getAnnotatedNode("cincl1"), getAnnotatedNode("cincl3")), Sets.newHashSet(candidates));
       });
@@ -85,7 +85,7 @@ public class replaceWithExistingExternalConfig_Test extends BaseTransformationTe
       initTestNodes();
       runWithinCommand(() -> {
         List<SNode> candidates = FeatureModelIncludeUtil.findEligibleIncludes(getAnnotatedNode("n2"));
-        Assert.assertEquals(1, ListSequence.fromList(candidates).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(candidates).count()));
 
         SNode fmcObserved = ListSequence.fromList(candidates).getElement(0);
         Assert.assertEquals(getAnnotatedNode("cincl3"), fmcObserved);
@@ -95,7 +95,7 @@ public class replaceWithExistingExternalConfig_Test extends BaseTransformationTe
       initTestNodes();
       runWithinCommand(() -> {
         List<SNode> candidates = FeatureModelIncludeUtil.findEligibleIncludes(getAnnotatedNode("n3"));
-        Assert.assertEquals(3, ListSequence.fromList(candidates).count());
+        Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(ListSequence.fromList(candidates).count()));
 
         Assert.assertEquals(Sets.newHashSet(getAnnotatedNode("cincl1"), getAnnotatedNode("cincl3"), getAnnotatedNode("cincl2")), Sets.newHashSet(candidates));
       });
@@ -104,14 +104,14 @@ public class replaceWithExistingExternalConfig_Test extends BaseTransformationTe
       initTestNodes();
       runWithinCommand(() -> {
         List<SNode> candidates = FeatureModelIncludeUtil.findEligibleIncludes(getAnnotatedNode("n4"));
-        Assert.assertEquals(0, ListSequence.fromList(candidates).count());
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(ListSequence.fromList(candidates).count()));
       });
     }
     public void test_unrestrictedByUnspecifiedInExtendedConfig() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         List<SNode> candidates = FeatureModelIncludeUtil.findEligibleIncludes(getAnnotatedNode("n5"));
-        Assert.assertEquals(3, ListSequence.fromList(candidates).count());
+        Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(ListSequence.fromList(candidates).count()));
 
         Assert.assertEquals(Sets.newHashSet(getAnnotatedNode("cincl1"), getAnnotatedNode("cincl3"), getAnnotatedNode("cincl2")), Sets.newHashSet(candidates));
       });

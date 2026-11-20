@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-4mld8t1wlzyxn1339pecg11rnbt9eqm">
-  <files names="Base_ApplicationPlugin.java:DefaultIETS3VariabilitySettings.java:DotExpressionUtil.java:EditorUtils.java:EvalConstants.java:ExpressionListUtil.java:ExtensionDescriptor.java:FeatureModelScopeProvider.java:FeatureModelTraversal.java:FeatureShape.java:FeatureTreeNodeUtil.java:Group_RootConstraintsAcrossModel_ActionGroup.java:IETS3VariabilitySettings.java:ToggleRootConstraintsAcrossModel.java" />
+<product version="3" modelHash="d8a9g7uwddortycwzt3yn9j9jief070">
+  <files names="Base_ApplicationPlugin.java:DotExpressionUtil.java:EditorUtils.java:EvalConstants.java:ExpressionListUtil.java:FeatureModelScopeProvider.java:FeatureModelTraversal.java:FeatureShape.java:FeatureTreeNodeUtil.java:Group_RootConstraintsAcrossModel_ActionGroup.java:ToggleRootConstraintsAcrossModel.java" />
 </product>
 

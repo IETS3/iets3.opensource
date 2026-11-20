@@ -13,7 +13,7 @@
       <unit at="11,0,46,0" name="test.ts.expr.os.nix.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,32,0" name="test.ts.expr.os.nix.structure.LanguageConceptSwitch" />
+      <unit at="12,0,40,0" name="test.ts.expr.os.nix.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,88,0" name="test.ts.expr.os.nix.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="1559345515802742701" at="35,54,41,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1559345515802742701" at="14,0,15,0" concept="6" trace="RecordingManualCheck" />
-      <node id="1559345515802742701" at="19,46,20,58" concept="0" />
+      <node id="1559345515802742701" at="16,0,17,0" concept="6" trace="RecordingManualCheck" />
+      <node id="1559345515802742701" at="21,46,22,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1559345515802742701" at="17,0,18,0" concept="1" trace="myConceptRecordingManualCheck" />
@@ -68,8 +68,8 @@
       <scope id="8823320991986392782" at="21,44,27,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8823320991986392782" at="12,0,13,0" concept="6" trace="NixLiteral" />
-      <node id="8823320991986392782" at="17,116,18,49" concept="0" />
+      <node id="8823320991986392782" at="14,0,15,0" concept="6" trace="NixLiteral" />
+      <node id="8823320991986392782" at="19,116,20,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8823320991986392782" at="15,0,16,0" concept="1" trace="myConceptNixLiteral" />
@@ -105,8 +105,8 @@
       <scope id="8823320991986431923" at="28,41,34,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8823320991986431923" at="13,0,14,0" concept="6" trace="NixType" />
-      <node id="8823320991986431923" at="18,49,19,46" concept="0" />
+      <node id="8823320991986431923" at="15,0,16,0" concept="6" trace="NixType" />
+      <node id="8823320991986431923" at="20,49,21,46" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8823320991986431923" at="16,0,17,0" concept="1" trace="myConceptNixType" />

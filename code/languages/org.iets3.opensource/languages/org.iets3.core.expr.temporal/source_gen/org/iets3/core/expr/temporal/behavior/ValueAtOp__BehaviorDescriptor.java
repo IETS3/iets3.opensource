@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,19 +15,16 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ValueAtOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x4621d3e3b8a34bbeL, 0xb7ac234b6e2d1d68L, 0x501c5b607b3a1ef2L, "org.iets3.core.expr.temporal.structure.ValueAtOp");
 
-  public static final SMethod<Iterable<SContainmentLink>> getOptionalParts_id5kIYKlplRcn = new SMethodBuilder<Iterable<SContainmentLink>>(new SJavaCompoundTypeImpl((Class<Iterable<SContainmentLink>>) ((Class) Object.class))).name("getOptionalParts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6138119342544876311L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2();
+  public static final SMethod<Iterable<SContainmentLink>> getOptionalParts_id5kIYKlplRcn = new SMethodBuilder<>((Class<Iterable<SContainmentLink>>) ((Class) Object.class)).name("getOptionalParts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6138119342544876311L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOptionalParts_id5kIYKlplRcn);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOptionalParts_id5kIYKlplRcn);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SContainmentLink> getOptionalParts_id5kIYKlplRcn(@NotNull SNode __thisNode__) {
     return ListSequence.fromListAndArray(new ArrayList<SContainmentLink>(), LINKS.time$oJNH);
@@ -37,10 +33,6 @@ public final class ValueAtOp__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ValueAtOp__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

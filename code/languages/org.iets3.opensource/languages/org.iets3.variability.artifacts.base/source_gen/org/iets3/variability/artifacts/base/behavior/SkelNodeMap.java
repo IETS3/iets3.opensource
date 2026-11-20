@@ -20,7 +20,7 @@ import jetbrains.mps.internal.collections.runtime.IMapping;
 /**
  * A mapping from AST nodes to the corresponding skeleton tree nodes.
  * 
- * Note: Due to instantiation there might be more than one skeleton node for 
+ * Note: Due to instantiation there might be more than one skeleton node for
  *       an AST node, thus we have to provide an ArtifactPath to distinguish between
  *       these skeleton node instances.
  */

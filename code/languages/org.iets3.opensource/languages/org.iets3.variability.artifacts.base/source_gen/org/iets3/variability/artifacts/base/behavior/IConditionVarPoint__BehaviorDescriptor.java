@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -26,7 +25,6 @@ import de.itemis.mps.utils.serializer.xml.serializer.NodeSerializer;
 import org.iets3.core.expr.path.behavior.IPathPart__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -37,23 +35,21 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IConditionVarPoint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0xe86d1af52aae5ceL, "org.iets3.variability.artifacts.base.structure.IConditionVarPoint");
 
-  public static final SMethod<String> getConditionAsString_id7Ca9tj9CeW1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getConditionAsString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8793882818240376577L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Boolean> isPresent_idU6OqXiEInN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isPresent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1046754514346632691L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(IContext.class, ""));
-  public static final SMethod<Boolean> isPresentTernary_id1R5hpWYhU60 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.class)).name("isPresentTernary").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2145197347758907776L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(IContext.class, ""));
-  public static final SMethod<SNode> extractFeatureModelInclude_id5LihCoMh79S = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("extractFeatureModelInclude").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6652457141762552440L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> getSingleFeatureInclude_id5LihCoMgKPo = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSingleFeatureInclude").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6652457141762461016L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> conditionedNode_id1S98ztUiKtj = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("conditionedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2164298717598517075L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> featureExpression_id3MG6jbHWLn_ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("featureExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4371897044801099237L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Optional<SNode>> getPresenceCondition_id4G1C74Q8D4_ = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("getPresenceCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5404777435921289509L).languageId(0x96377955ccbfec22L, 0xc6ff3b3baff6455eL).build2();
-  public static final SMethod<Integer> computeHash_id6s5puhjUPSP = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("computeHash").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7423451592125013557L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Iterable<SNode>> occuringFeatures_idwoVoSdvbmN = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("occuringFeatures").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(583477346111894963L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Iterable<SNode>> featureModelRefs_id5BGbpGNak1r = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("featureModelRefs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6479604108480823387L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  /*package*/ static final SMethod<SNode> featureType_idwoVoSdviMI = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("featureType").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(583477346111925422L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> getConditionAsString_id7Ca9tj9CeW1 = new SMethodBuilder<>(String.class).name("getConditionAsString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8793882818240376577L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Boolean> isPresent_idU6OqXiEInN = new SMethodBuilder<>(Boolean.TYPE).name("isPresent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1046754514346632691L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(IContext.class, "context"));
+  public static final SMethod<Boolean> isPresentTernary_id1R5hpWYhU60 = new SMethodBuilder<>(Boolean.class).name("isPresentTernary").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2145197347758907776L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(IContext.class, "context"));
+  public static final SMethod<SNode> extractFeatureModelInclude_id5LihCoMh79S = new SMethodBuilder<>(SNode.class).name("extractFeatureModelInclude").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6652457141762552440L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> getSingleFeatureInclude_id5LihCoMgKPo = new SMethodBuilder<>(SNode.class).name("getSingleFeatureInclude").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6652457141762461016L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> conditionedNode_id1S98ztUiKtj = new SMethodBuilder<>(SNode.class).name("conditionedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2164298717598517075L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> featureExpression_id3MG6jbHWLn_ = new SMethodBuilder<>(SNode.class).name("featureExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4371897044801099237L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Optional<SNode>> getPresenceCondition_id4G1C74Q8D4_ = new SMethodBuilder<>((Class<Optional<SNode>>) ((Class) Object.class)).name("getPresenceCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5404777435921289509L).languageId(0x96377955ccbfec22L, 0xc6ff3b3baff6455eL).build2();
+  public static final SMethod<Integer> computeHash_id6s5puhjUPSP = new SMethodBuilder<>(Integer.TYPE).name("computeHash").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7423451592125013557L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Iterable<SNode>> occuringFeatures_idwoVoSdvbmN = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("occuringFeatures").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(583477346111894963L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Iterable<SNode>> featureModelRefs_id5BGbpGNak1r = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("featureModelRefs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6479604108480823387L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  /*package*/ static final SMethod<SNode> featureType_idwoVoSdviMI = new SMethodBuilder<>(SNode.class).name("featureType").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(583477346111925422L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "node"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConditionAsString_id7Ca9tj9CeW1, isPresent_idU6OqXiEInN, isPresentTernary_id1R5hpWYhU60, extractFeatureModelInclude_id5LihCoMh79S, getSingleFeatureInclude_id5LihCoMgKPo, conditionedNode_id1S98ztUiKtj, featureExpression_id3MG6jbHWLn_, getPresenceCondition_id4G1C74Q8D4_, computeHash_id6s5puhjUPSP, occuringFeatures_idwoVoSdvbmN, featureModelRefs_id5BGbpGNak1r, featureType_idwoVoSdviMI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getConditionAsString_id7Ca9tj9CeW1, isPresent_idU6OqXiEInN, isPresentTernary_id1R5hpWYhU60, extractFeatureModelInclude_id5LihCoMh79S, getSingleFeatureInclude_id5LihCoMgKPo, conditionedNode_id1S98ztUiKtj, featureExpression_id3MG6jbHWLn_, getPresenceCondition_id4G1C74Q8D4_, computeHash_id6s5puhjUPSP, occuringFeatures_idwoVoSdvbmN, featureModelRefs_id5BGbpGNak1r, featureType_idwoVoSdviMI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getConditionAsString_id7Ca9tj9CeW1(@NotNull SNode __thisNode__) {
     return (String) BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.featureExpr$cJRc));
@@ -136,10 +132,6 @@ public final class IConditionVarPoint__BehaviorDescriptor extends BaseBHDescript
   /*package*/ IConditionVarPoint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

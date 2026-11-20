@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.core.expr.simpleTypes.runtime.RealEqualsHelper;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class RealEqualsTestOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x453b2742c9f59d00L, "org.iets3.core.expr.tests.structure.RealEqualsTestOp");
 
-  public static final SMethod<Boolean> matches_id252QIDys5fU = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("matches").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2396718651923256314L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(Object.class, ""), SMethodBuilder.createJavaParameter(Object.class, ""));
+  public static final SMethod<Boolean> matches_id252QIDys5fU = new SMethodBuilder<>(Boolean.TYPE).name("matches").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2396718651923256314L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(Object.class, "act"), SMethodBuilder.createJavaParameter(Object.class, "exp"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id252QIDys5fU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(matches_id252QIDys5fU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean matches_id252QIDys5fU(@NotNull SNode __thisNode__, Object act, Object exp) {
     return RealEqualsHelper.matches(act, exp, SPropertyOperations.getInteger(__thisNode__, PROPS.decimals$60Cz));
@@ -37,10 +33,6 @@ public final class RealEqualsTestOp__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ RealEqualsTestOp__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

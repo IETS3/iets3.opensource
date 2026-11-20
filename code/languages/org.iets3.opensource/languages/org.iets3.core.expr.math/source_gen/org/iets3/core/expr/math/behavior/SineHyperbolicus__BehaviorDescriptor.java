@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class SineHyperbolicus__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6fadc44e69c24a4aL, 0x9d167ebf5f8d3ba0L, 0xc873bfda6d2eb4cL, "org.iets3.core.expr.math.structure.SineHyperbolicus");
 
-  public static final SMethod<String> alias_idM7eZQBbr0D = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("alias").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(902756210928627753L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2();
+  public static final SMethod<String> alias_idM7eZQBbr0D = new SMethodBuilder<>(String.class).name("alias").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(902756210928627753L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(alias_idM7eZQBbr0D);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(alias_idM7eZQBbr0D);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String alias_idM7eZQBbr0D(@NotNull SNode __thisNode__) {
     return "sinh";
@@ -34,10 +30,6 @@ public final class SineHyperbolicus__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ SineHyperbolicus__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
