@@ -943,6 +943,90 @@
       <unit id="7598187151660691121" at="15,0,42,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurationsApplicable_Test" />
     </file>
   </root>
+  <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/8573733161979165382">
+    <file name="NonUniqueAttributeAssignments_Test.java">
+      <node id="8573733161979165382" at="23,47,24,60" concept="8" />
+      <node id="8573733161979165396" at="28,99,29,90" concept="1" />
+      <node id="8573733161979165400" at="32,99,33,90" concept="1" />
+      <node id="8573733161979165382" at="38,52,39,19" concept="8" />
+      <node id="8573733161979165382" at="43,36,44,46" concept="1" />
+      <node id="8573733161979165396" at="47,101,48,22" concept="1" />
+      <node id="8573733161979165396" at="49,30,50,63" concept="3" />
+      <node id="8573733161979165396" at="50,63,51,306" concept="1" />
+      <node id="8573733161979165400" at="54,101,55,22" concept="1" />
+      <node id="8573733161979165400" at="56,30,57,63" concept="3" />
+      <node id="8573733161979165400" at="57,63,58,306" concept="1" />
+      <node id="8573733161979165382" at="20,0,22,0" concept="7" trace="ourParametersCacheExtension" />
+      <node id="8573733161979165382" at="23,0,26,0" concept="0" trace="NonUniqueAttributeAssignments_Test#()V" />
+      <node id="8573733161979165382" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8573733161979165396" at="27,0,31,0" concept="2" trace="test_Nodenon_unique_attribute_assignmentCheck8573733161979165396#()V" />
+      <node id="8573733161979165400" at="31,0,35,0" concept="2" trace="test_Nodenon_unique_attribute_assignmentCheck8573733161979165400#()V" />
+      <node id="8573733161979165382" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8573733161979165396" at="48,22,52,9" concept="1" />
+      <node id="8573733161979165400" at="55,22,59,9" concept="1" />
+      <node id="8573733161979165396" at="47,0,54,0" concept="2" trace="test_Nodenon_unique_attribute_assignmentCheck8573733161979165396#()V" />
+      <node id="8573733161979165400" at="54,0,61,0" concept="2" trace="test_Nodenon_unique_attribute_assignmentCheck8573733161979165400#()V" />
+      <scope id="8573733161979165382" at="23,47,24,60" />
+      <scope id="8573733161979165396" at="28,99,29,90" />
+      <scope id="8573733161979165400" at="32,99,33,90" />
+      <scope id="8573733161979165382" at="38,52,39,19" />
+      <scope id="8573733161979165382" at="43,36,44,46" />
+      <scope id="8573733161979165396" at="49,30,51,306">
+        <var name="nodeToCheck" id="8573733161979165396" />
+      </scope>
+      <scope id="8573733161979165400" at="56,30,58,306">
+        <var name="nodeToCheck" id="8573733161979165400" />
+      </scope>
+      <scope id="8573733161979165382" at="23,0,26,0" />
+      <scope id="8573733161979165382" at="38,0,41,0">
+        <var name="owner" id="8573733161979165382" />
+      </scope>
+      <scope id="8573733161979165396" at="27,0,31,0" />
+      <scope id="8573733161979165400" at="31,0,35,0" />
+      <scope id="8573733161979165382" at="42,0,46,0" />
+      <scope id="8573733161979165396" at="47,101,52,9" />
+      <scope id="8573733161979165400" at="54,101,59,9" />
+      <scope id="8573733161979165396" at="47,0,54,0" />
+      <scope id="8573733161979165400" at="54,0,61,0" />
+      <unit id="8573733161979165382" at="36,0,63,0" name="test.org.iets3.variability.configuration.base.checking_rules.NonUniqueAttributeAssignments_Test$TestBody" />
+      <unit id="8573733161979165382" at="18,0,64,0" name="test.org.iets3.variability.configuration.base.checking_rules.NonUniqueAttributeAssignments_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/8573733161979222405">
+    <file name="FixDuplicateAttributeAssignment_Test.java">
+      <node id="8573733161979222405" at="22,49,23,60" concept="8" />
+      <node id="8573733161979222405" at="27,71,28,36" concept="1" />
+      <node id="8573733161979222405" at="33,52,34,19" concept="8" />
+      <node id="8573733161979222405" at="38,51,39,72" concept="1" />
+      <node id="8573733161979222422" at="39,72,40,26" concept="1" />
+      <node id="8573733161979222423" at="40,26,41,0" concept="6" />
+      <node id="8573733161979222424" at="41,0,42,104" concept="5" />
+      <node id="8573733161979222445" at="43,71,44,175" concept="1" />
+      <node id="8573733161979222456" at="44,175,45,80" concept="1" />
+      <node id="8573733161979222405" at="51,0,52,0" concept="7" trace="__updateHash$vTMx" />
+      <node id="8573733161979222405" at="52,0,53,0" concept="7" trace="__hash$uJSm" />
+      <node id="8573733161979222405" at="19,0,21,0" concept="7" trace="ourParametersCacheExtension" />
+      <node id="8573733161979222405" at="22,0,25,0" concept="0" trace="FixDuplicateAttributeAssignment_Test#()V" />
+      <node id="8573733161979222405" at="33,0,36,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8573733161979222405" at="26,0,30,0" concept="2" trace="test_FixDuplicateAttributeAssignment#()V" />
+      <node id="8573733161979222442" at="42,104,46,9" concept="1" />
+      <node id="8573733161979222405" at="37,0,48,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8573733161979222405" at="22,49,23,60" />
+      <scope id="8573733161979222405" at="27,71,28,36" />
+      <scope id="8573733161979222405" at="33,52,34,19" />
+      <scope id="8573733161979222444" at="43,71,45,80" />
+      <scope id="8573733161979222405" at="22,0,25,0" />
+      <scope id="8573733161979222405" at="33,0,36,0">
+        <var name="owner" id="8573733161979222405" />
+      </scope>
+      <scope id="8573733161979222405" at="26,0,30,0" />
+      <scope id="8573733161979222405" at="38,51,46,9" />
+      <scope id="8573733161979222405" at="37,0,48,0" />
+      <unit id="8573733161979222405" at="50,0,54,0" name="test.org.iets3.variability.configuration.base.checking_rules.FixDuplicateAttributeAssignment_Test$PROPS" />
+      <unit id="8573733161979222405" at="31,0,49,0" name="test.org.iets3.variability.configuration.base.checking_rules.FixDuplicateAttributeAssignment_Test$TestBody" />
+      <unit id="8573733161979222405" at="17,0,55,0" name="test.org.iets3.variability.configuration.base.checking_rules.FixDuplicateAttributeAssignment_Test" />
+    </file>
+  </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/8924895748870136941">
     <file name="WarningUnselectedFeature_Test.java">
       <node id="8924895748870136941" at="24,42,25,60" concept="8" />
