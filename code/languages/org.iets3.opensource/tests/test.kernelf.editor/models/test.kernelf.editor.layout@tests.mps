@@ -17,6 +17,7 @@
   <imports>
     <import index="hhnx" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="ukm0" ref="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
@@ -24,6 +25,16 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
+        <property id="1883175908513350760" name="description" index="3YCmrE" />
+        <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
+        <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
+        <child id="1229187755283" name="code" index="LjaKd" />
+      </concept>
+      <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
+        <property id="1229194968596" name="caretPosition" index="LIFWa" />
+        <property id="1229194968595" name="cellId" index="LIFWd" />
+      </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
@@ -39,9 +50,13 @@
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+      <concept id="1225989773458" name="jetbrains.mps.lang.test.structure.InvokeIntentionStatement" flags="nn" index="1MFPAf">
+        <reference id="1225989811227" name="intention" index="1MFYO6" />
+      </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="7554398283339759319" name="org.iets3.core.expr.collections.structure.ListLiteral" flags="ng" index="3iBYfx">
+        <property id="1736600265398767994" name="useVerticalLayout" index="2nUfn7" />
         <child id="7554398283339759320" name="elements" index="3iBYfI" />
       </concept>
     </language>
@@ -1216,6 +1231,46 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="2X9_X20Egfv">
+    <property role="TrG5h" value="toggleListLiteralVerticalLayout" />
+    <property role="3YCmrE" value="The intention 'Switch To Vertical Layout', invoked on an element of a list literal, sets useVerticalLayout on the literal" />
+    <node concept="1qefOq" id="2X9_X20Egfw" role="25YQCW">
+      <node concept="2zPypq" id="2X9_X20Egfx" role="1qenE9">
+        <property role="TrG5h" value="toggled" />
+        <node concept="3iBYfx" id="2X9_X20Egfy" role="2lDidJ">
+          <node concept="30bXRB" id="2X9_X20Egfz" role="3iBYfI">
+            <property role="30bXRw" value="1" />
+            <node concept="LIFWc" id="2X9_X20Egf$" role="lGtFl">
+              <property role="LIFWd" value="property_value" />
+              <property role="LIFWa" value="0" />
+            </node>
+          </node>
+          <node concept="30bXRB" id="2X9_X20Egf_" role="3iBYfI">
+            <property role="30bXRw" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2X9_X20EgfA" role="25YQFr">
+      <node concept="2zPypq" id="2X9_X20EgfB" role="1qenE9">
+        <property role="TrG5h" value="toggled" />
+        <node concept="3iBYfx" id="2X9_X20EgfC" role="2lDidJ">
+          <property role="2nUfn7" value="true" />
+          <node concept="30bXRB" id="2X9_X20EgfD" role="3iBYfI">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="30bXRB" id="2X9_X20EgfE" role="3iBYfI">
+            <property role="30bXRw" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="2X9_X20EgfF" role="LjaKd">
+      <node concept="1MFPAf" id="2X9_X20EgfG" role="3cqZAp">
+        <ref role="1MFYO6" to="ukm0:1wpDbQg2m0G" resolve="toggleListLiteralVerticalLayout" />
       </node>
     </node>
   </node>
