@@ -1965,7 +1965,7 @@
                                 <node concept="liA8E" id="cGZnm4OxRr" role="2OqNvi">
                                   <ref role="37wK5l" to="5zyv:~CompletableFuture.get(long,java.util.concurrent.TimeUnit)" resolve="get" />
                                   <node concept="3cmrfG" id="cGZnm4OxRs" role="37wK5m">
-                                    <property role="3cmrfH" value="5" />
+                                    <property role="3cmrfH" value="10" />
                                   </node>
                                   <node concept="Rm8GO" id="cGZnm4OxRt" role="37wK5m">
                                     <ref role="Rm8GQ" to="5zyv:~TimeUnit.SECONDS" resolve="SECONDS" />

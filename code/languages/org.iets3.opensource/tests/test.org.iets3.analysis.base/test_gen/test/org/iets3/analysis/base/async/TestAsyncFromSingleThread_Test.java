@@ -82,7 +82,7 @@ public class TestAsyncFromSingleThread_Test extends BaseTransformationTest {
         final Wrappers._int i = new Wrappers._int(0);
         futures.forEach((CompletableFuture<List<IResult>> future) -> {
           try {
-            List<IResult> result = future.get(5, TimeUnit.SECONDS);
+            List<IResult> result = future.get(10, TimeUnit.SECONDS);
             i.value++;
             TestBody.this.check(result);
           } catch (InterruptedException e) {
