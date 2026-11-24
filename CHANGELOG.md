@@ -5,13 +5,23 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## November 2026
+
+### Added
+- Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
+- Variability: Duplicate feature attribute assignments in configurations are now reported, with a quickfix to remove them (#2046).
+
+### Changed
+- Variability: The cyclic dependency between `org.iets3.variability.base` and `org.iets3.variability.featuremodel.base` has been removed. For this, the extension point `tailorIETS3Variability` and its settings classes have been moved to `org.iets3.variability.base`. Projects which tailor IETS3 Variability have to migrate and rebuild, see [these instructions](https://github.com/IETS3/iets3.opensource/issues/2044#issuecomment-6920740399).
+
+
 ## October 2026
 
 ### Added
 - Build: `checkmodels` (MPS model checker) now runs as part of `check`/`build` and fails the build on model-check errors.
 
 ### Changed
-- Variability: Better editing of feature decision tables: the caret moves to the new row on insert (Shift+Enter inserts above) and to the neighbouring row on delete. The last row can no longer be deleted.
+- Variability: Better editing of feature decision tables: the caret moves to the new row on insert (Shift+Enter inserts above) and to the neighbouring row on delete. The last row can no longer be deleted. Typing a character in an empty feature decision table now creates the first row and starts the feature expression with that character.
 
 
 ## September 2026
