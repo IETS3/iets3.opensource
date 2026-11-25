@@ -1491,10 +1491,20 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
 
           PVector l = Empty.vector();
           for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.elements$_r5J))) {
-            Object evaledElement = context.getRootInterpreter().evaluate(e, context, coverage, trace, false);
+            SNode element = e;
+            if (SNodeOperations.isInstanceOf(element, CONCEPTS.ConditionalCollectionElement$VV)) {
+              if (!((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(SNodeOperations.cast(element, CONCEPTS.ConditionalCollectionElement$VV), LINKS.condition$DTiY), context, coverage, trace, false))) {
+                continue;
+              }
+              element = SLinkOperations.getTarget(SNodeOperations.cast(element, CONCEPTS.ConditionalCollectionElement$VV), LINKS.then$bDV2);
+            }
             // I don't think we have to check the constraint,
             // the type checker should find those
-            l = l.plus(evaledElement);
+            if (SNodeOperations.isInstanceOf(element, CONCEPTS.SpreadCollectionElement$Vp)) {
+              l = l.plusAll((Collection) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(SNodeOperations.cast(element, CONCEPTS.SpreadCollectionElement$Vp), LINKS.collection$1kgD), context, coverage, trace, false));
+            } else {
+              l = l.plus(context.getRootInterpreter().evaluate(element, context, coverage, trace, false));
+            }
           }
           return l;
         } catch (StopAndReturnException stop) {
@@ -1540,10 +1550,20 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
 
           PSet s = Empty.set();
           for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.elements$psbq))) {
-            Object evaledElement = context.getRootInterpreter().evaluate(e, context, coverage, trace, false);
+            SNode element = e;
+            if (SNodeOperations.isInstanceOf(element, CONCEPTS.ConditionalCollectionElement$VV)) {
+              if (!((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(SNodeOperations.cast(element, CONCEPTS.ConditionalCollectionElement$VV), LINKS.condition$DTiY), context, coverage, trace, false))) {
+                continue;
+              }
+              element = SLinkOperations.getTarget(SNodeOperations.cast(element, CONCEPTS.ConditionalCollectionElement$VV), LINKS.then$bDV2);
+            }
             // I don't think we have to check the constraint,
             // the type checker should find those
-            s = s.plus(evaledElement);
+            if (SNodeOperations.isInstanceOf(element, CONCEPTS.SpreadCollectionElement$Vp)) {
+              s = s.plusAll((Collection) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(SNodeOperations.cast(element, CONCEPTS.SpreadCollectionElement$Vp), LINKS.collection$1kgD), context, coverage, trace, false));
+            } else {
+              s = s.plus(context.getRootInterpreter().evaluate(element, context, coverage, trace, false));
+            }
           }
           return s;
         } catch (StopAndReturnException stop) {
@@ -2978,6 +2998,8 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
     /*package*/ static final SConcept IndexOfOp$oH = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x13852680b69974b5L, "org.iets3.core.expr.collections.structure.IndexOfOp");
     /*package*/ static final SConcept ReverseOp$Ln = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4ae5cd1ee330aa31L, "org.iets3.core.expr.collections.structure.ReverseOp");
     /*package*/ static final SConcept ListLiteral$zq = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497ed7L, "org.iets3.core.expr.collections.structure.ListLiteral");
+    /*package*/ static final SConcept ConditionalCollectionElement$VV = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, "org.iets3.core.expr.collections.structure.ConditionalCollectionElement");
+    /*package*/ static final SConcept SpreadCollectionElement$Vp = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L, "org.iets3.core.expr.collections.structure.SpreadCollectionElement");
     /*package*/ static final SConcept SetLiteral$Js = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2f0b98dL, "org.iets3.core.expr.collections.structure.SetLiteral");
     /*package*/ static final SConcept MapSizeOp$ta = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6d0156b2L, "org.iets3.core.expr.collections.structure.MapSizeOp");
     /*package*/ static final SConcept SizeOp$Uh = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4a11b3L, "org.iets3.core.expr.collections.structure.SizeOp");
@@ -3017,6 +3039,9 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
     /*package*/ static final SContainmentLink val$DF_s = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x753e449f1c8cdb69L, 0x753e449f1c8cdb6cL, "val");
     /*package*/ static final SContainmentLink elements$7Qes = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x753e449f1c8cdb68L, 0x753e449f1c8d0096L, "elements");
     /*package*/ static final SContainmentLink elements$_r5J = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497ed7L, 0x68d69d36ba497ed8L, "elements");
+    /*package*/ static final SContainmentLink condition$DTiY = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, 0x56d76c6508318f54L, "condition");
+    /*package*/ static final SContainmentLink then$bDV2 = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, 0x1d0a68ad9c70a2faL, "then");
+    /*package*/ static final SContainmentLink collection$1kgD = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L, 0x2d2639add91db0ccL, "collection");
     /*package*/ static final SContainmentLink elements$psbq = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2f0b98dL, 0x7b20a1e3c2f0b98eL, "elements");
     /*package*/ static final SContainmentLink index$mMKU = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x512d73b7f3ebd38aL, 0x512d73b7f3ebd38bL, "index");
     /*package*/ static final SContainmentLink seed$l9w1 = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4471391c39ffd310L, 0x4471391c3a005345L, "seed");

@@ -59,6 +59,7 @@ import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap;
+import org.iets3.core.expr.collections.behavior.ListLiteral__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -364,6 +365,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     AbstractCellListHandler handler = new elementsListHandler_hq0mv1_d0a(myNode, getEditorContext());
     jetbrains.mps.nodeEditor.cells.EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_elements");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, _StyleParameter_QueryFunction_hq0mv1_a0d0a());
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, _StyleParameter_QueryFunction_hq0mv1_a1d0a());
+    editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
@@ -442,6 +447,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       style.set(StyleAttributes.LAYOUT_CONSTRAINT, "noflow");
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
       style.set(StyleAttributes.INDENT_LAYOUT_NO_WRAP, true);
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, _StyleParameter_QueryFunction_hq0mv1_a1a3a0(prevNode, nextNode));
       editorCell.getStyle().putAll(style);
       editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
@@ -456,15 +462,28 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       editorCell.setDefaultText("");
       return editorCell;
     }
+    private boolean _StyleParameter_QueryFunction_hq0mv1_a1a3a0(SNode prevNode, SNode nextNode) {
+      return (boolean) ListLiteral__BehaviorDescriptor.isVerticalLayout_id1wpDbQfWl5W.invoke(getNode());
+    }
+  }
+  private boolean _StyleParameter_QueryFunction_hq0mv1_a0d0a() {
+    return (boolean) ListLiteral__BehaviorDescriptor.isVerticalLayout_id1wpDbQfWl5W.invoke(getNode());
+  }
+  private boolean _StyleParameter_QueryFunction_hq0mv1_a1d0a() {
+    return (boolean) ListLiteral__BehaviorDescriptor.isVerticalLayout_id1wpDbQfWl5W.invoke(getNode());
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ")");
     editorCell.setCellId("Constant_hq0mv1_e0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, _StyleParameter_QueryFunction_hq0mv1_a1e0a());
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
+  }
+  private boolean _StyleParameter_QueryFunction_hq0mv1_a1e0a() {
+    return (boolean) ListLiteral__BehaviorDescriptor.isVerticalLayout_id1wpDbQfWl5W.invoke(getNode());
   }
   private boolean _StyleParameter_QueryFunction_hq0mv1_a0a() {
     final int THRESHOLD_FOR_NEW_LINES = 3;

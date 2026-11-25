@@ -16,10 +16,16 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SInterfaceConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class ListLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497ed7L, "org.iets3.core.expr.collections.structure.ListLiteral");
@@ -27,8 +33,10 @@ public final class ListLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
   public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
   public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> hasConditionalOrSpreadElements_id7SXhoe9Hw7Y = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasConditionalOrSpreadElements").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9096503253611708926L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<Boolean> isVerticalLayout_id1wpDbQfWl5W = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isVerticalLayout").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1736600265398767996L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getChildrenForCoverage_id5IKJrJHNCE8, effectDescriptor_id6GySMNjjWfO);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getChildrenForCoverage_id5IKJrJHNCE8, effectDescriptor_id6GySMNjjWfO, hasConditionalOrSpreadElements_id7SXhoe9Hw7Y, isVerticalLayout_id1wpDbQfWl5W);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -41,6 +49,26 @@ public final class ListLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static EffectDescriptor effectDescriptor_id6GySMNjjWfO(@NotNull SNode __thisNode__) {
     return EffectDescriptor.forNodes(SLinkOperations.getChildren(__thisNode__, LINKS.elements$_r5J));
+  }
+  /*package*/ static boolean hasConditionalOrSpreadElements_id7SXhoe9Hw7Y(@NotNull SNode __thisNode__) {
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.elements$_r5J)).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.ConditionalCollectionElement$VV) || SNodeOperations.isInstanceOf(it, CONCEPTS.SpreadCollectionElement$Vp));
+  }
+  /*package*/ static boolean isVerticalLayout_id1wpDbQfWl5W(@NotNull SNode __thisNode__) {
+    final int MAX_INLINE_LENGTH = 80;
+    if (SPropertyOperations.getBoolean(__thisNode__, PROPS.useVerticalLayout$Iucy)) {
+      return true;
+    }
+    if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.elements$_r5J)).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.IBigExpression$gz) || ListSequence.fromList(SLinkOperations.getChildren(it, LINKS.smodelAttribute$KJ43)).any((a) -> SNodeOperations.isInstanceOf(a, CONCEPTS.IIsDocumentationComment$W9)))) {
+      return true;
+    }
+    int length = 0;
+    for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.elements$_r5J))) {
+      length += Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(e).length() + 2;
+      if (length > MAX_INLINE_LENGTH) {
+        return true;
+      }
+    }
+    return false;
   }
 
   /*package*/ ListLiteral__BehaviorDescriptor() {
@@ -64,6 +92,10 @@ public final class ListLiteral__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((Iterable<SNode>) getChildrenForCoverage_id5IKJrJHNCE8(node));
       case 2:
         return (T) ((EffectDescriptor) effectDescriptor_id6GySMNjjWfO(node));
+      case 3:
+        return (T) ((Boolean) hasConditionalOrSpreadElements_id7SXhoe9Hw7Y(node));
+      case 4:
+        return (T) ((Boolean) isVerticalLayout_id1wpDbQfWl5W(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -95,5 +127,17 @@ public final class ListLiteral__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink elements$_r5J = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497ed7L, 0x68d69d36ba497ed8L, "elements");
+    /*package*/ static final SContainmentLink smodelAttribute$KJ43 = MetaAdapterFactory.getContainmentLink(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x47bf8397520e5942L, "smodelAttribute");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept ConditionalCollectionElement$VV = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, "org.iets3.core.expr.collections.structure.ConditionalCollectionElement");
+    /*package*/ static final SConcept SpreadCollectionElement$Vp = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L, "org.iets3.core.expr.collections.structure.SpreadCollectionElement");
+    /*package*/ static final SInterfaceConcept IBigExpression$gz = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x6cef3d81a56f93b4L, "org.iets3.core.expr.base.structure.IBigExpression");
+    /*package*/ static final SInterfaceConcept IIsDocumentationComment$W9 = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x688edd0a007a6aa9L, "com.mbeddr.core.base.structure.IIsDocumentationComment");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty useVerticalLayout$Iucy = MetaAdapterFactory.getProperty(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497ed7L, 0x1819a4bd8ff1517aL, "useVerticalLayout");
   }
 }

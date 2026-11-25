@@ -23,6 +23,7 @@
   <uses language="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
   <uses language="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
   <uses language="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+  <uses language="l:b4244272-c048-403b-93da-1c4a1df18d3f:org.iets3.analysis.logic.operator" />
   <uses language="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" />
   <uses language="l:5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1:org.iets3.core.expr.adt" />
   <uses language="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
