@@ -1,0 +1,10 @@
+# PR titles that must fail the title check (commit rules plus: no issue references).
+# Regression tests for the rules in .cz.toml (not examples), run by `cc_check.py selftest` and the CI job cc-selftest.
+%%
+fix(variability): keep empty line after inserted content (#2032)
+%%
+fix(variability): keep empty line after inserted content #2032
+%%
+Fix vertical layout of unrelated nested binary expressions
+%%
+Merge maintenance/mps20241 into maintenance/mps20251
