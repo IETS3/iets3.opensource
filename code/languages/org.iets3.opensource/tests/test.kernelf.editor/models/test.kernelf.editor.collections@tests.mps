@@ -23,6 +23,7 @@
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
         <property id="6268941039745498163" name="selectionStart" index="p6zMq" />
         <property id="6268941039745498165" name="selectionEnd" index="p6zMs" />
+        <property id="1229194968596" name="caretPosition" index="LIFWa" />
         <property id="1229194968595" name="cellId" index="LIFWd" />
         <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
         <property id="1229432188737" name="isLastPosition" index="ZRATv" />
@@ -35,8 +36,13 @@
       </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
-      <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7" />
-      <concept id="8694548031078300776" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintMap" flags="ng" index="ylO4Q" />
+      <concept id="8694548031077039769" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintSingle" flags="ng" index="ygwf7">
+        <child id="8694548031077039770" name="typeConstraint" index="ygwf4" />
+      </concept>
+      <concept id="8694548031078300776" name="org.iets3.core.expr.collections.structure.ElementTypeConstraintMap" flags="ng" index="ylO4Q">
+        <child id="8694548031078300782" name="typeConstraint2" index="ylO4K" />
+        <child id="8694548031078300777" name="typeConstraint1" index="ylO4R" />
+      </concept>
       <concept id="8872269265520081293" name="org.iets3.core.expr.collections.structure.SetLiteral" flags="ng" index="2TO1xI">
         <child id="8694548031077660261" name="typeConstraint" index="ynoGV" />
       </concept>
@@ -61,6 +67,7 @@
       <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
+      <concept id="7425695345928349204" name="org.iets3.core.expr.base.structure.Type" flags="ng" index="2vmvy6" />
       <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -113,13 +120,12 @@
       <node concept="2zPypq" id="6$BuUXzcaKM" role="1qenE9">
         <property role="TrG5h" value="x" />
         <node concept="3iBYfx" id="6$BuUXzcaKN" role="2lDidJ">
-          <node concept="ygwf7" id="6$BuUXzcaKO" role="ygBzB">
-            <node concept="LIFWc" id="6$BuUXzcaKP" role="lGtFl">
-              <property role="LIFWd" value="empty_typeConstraint" />
-              <property role="ZRATv" value="false" />
-              <property role="OXtK3" value="true" />
-              <property role="p6zMq" value="0" />
-              <property role="p6zMs" value="0" />
+          <node concept="ygwf7" id="6$BuUXzjMP_" role="ygBzB">
+            <node concept="2vmvy6" id="6$BuUXzjMPA" role="ygwf4">
+              <node concept="LIFWc" id="6$BuUXzjMPB" role="lGtFl">
+                <property role="LIFWd" value="Error" />
+                <property role="LIFWa" value="0" />
+              </node>
             </node>
           </node>
         </node>
@@ -158,13 +164,12 @@
       <node concept="2zPypq" id="6$BuUXzcaL1" role="1qenE9">
         <property role="TrG5h" value="x" />
         <node concept="2TO1xI" id="6$BuUXzcaL2" role="2lDidJ">
-          <node concept="ygwf7" id="6$BuUXzcaL3" role="ynoGV">
-            <node concept="LIFWc" id="6$BuUXzcaL4" role="lGtFl">
-              <property role="LIFWd" value="empty_typeConstraint" />
-              <property role="ZRATv" value="false" />
-              <property role="OXtK3" value="true" />
-              <property role="p6zMq" value="0" />
-              <property role="p6zMs" value="0" />
+          <node concept="ygwf7" id="6$BuUXzjMPC" role="ynoGV">
+            <node concept="2vmvy6" id="6$BuUXzjMPD" role="ygwf4">
+              <node concept="LIFWc" id="6$BuUXzjMPE" role="lGtFl">
+                <property role="LIFWd" value="Error" />
+                <property role="LIFWa" value="0" />
+              </node>
             </node>
           </node>
         </node>
@@ -203,14 +208,14 @@
       <node concept="2zPypq" id="6$BuUXzcaLg" role="1qenE9">
         <property role="TrG5h" value="x" />
         <node concept="1DGDZR" id="6$BuUXzcaLh" role="2lDidJ">
-          <node concept="ylO4Q" id="6$BuUXzcaLi" role="ylO0F">
-            <node concept="LIFWc" id="6$BuUXzcaLj" role="lGtFl">
-              <property role="LIFWd" value="empty_typeConstraint1" />
-              <property role="ZRATv" value="false" />
-              <property role="OXtK3" value="true" />
-              <property role="p6zMq" value="0" />
-              <property role="p6zMs" value="0" />
+          <node concept="ylO4Q" id="6$BuUXzjMPF" role="ylO0F">
+            <node concept="2vmvy6" id="6$BuUXzjMPG" role="ylO4R">
+              <node concept="LIFWc" id="6$BuUXzjMPH" role="lGtFl">
+                <property role="LIFWd" value="Error" />
+                <property role="LIFWa" value="0" />
+              </node>
             </node>
+            <node concept="2vmvy6" id="6$BuUXzjMPI" role="ylO4K" />
           </node>
         </node>
       </node>
