@@ -15,15 +15,15 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="11,0,267,0" name="org.iets3.core.expr.collections.typesystem.TypesystemDescriptor" />
+      <unit at="11,0,275,0" name="org.iets3.core.expr.collections.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/1406572792884327635">
     <file name="TypesystemDescriptor.java">
-      <node id="1406572792884327635" at="125,5,126,81" concept="6" />
-      <node id="1406572792884327635" at="126,81,127,47" concept="2" />
-      <node id="1406572792884327635" at="124,5,128,5" concept="0" />
-      <scope id="1406572792884327635" at="125,5,127,47">
+      <node id="1406572792884327635" at="129,5,130,81" concept="6" />
+      <node id="1406572792884327635" at="130,81,131,47" concept="2" />
+      <node id="1406572792884327635" at="128,5,132,5" concept="0" />
+      <scope id="1406572792884327635" at="129,5,131,47">
         <var name="inferenceRule" id="1406572792884327635" />
       </scope>
     </file>
@@ -67,10 +67,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/2156530943179854334">
     <file name="TypesystemDescriptor.java">
-      <node id="2156530943179854334" at="101,5,102,84" concept="6" />
-      <node id="2156530943179854334" at="102,84,103,47" concept="2" />
-      <node id="2156530943179854334" at="100,5,104,5" concept="0" />
-      <scope id="2156530943179854334" at="101,5,103,47">
+      <node id="2156530943179854334" at="105,5,106,84" concept="6" />
+      <node id="2156530943179854334" at="106,84,107,47" concept="2" />
+      <node id="2156530943179854334" at="104,5,108,5" concept="0" />
+      <scope id="2156530943179854334" at="105,5,107,47">
         <var name="inferenceRule" id="2156530943179854334" />
       </scope>
     </file>
@@ -238,10 +238,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/24388123215626347">
     <file name="TypesystemDescriptor.java">
-      <node id="24388123215626347" at="169,5,170,81" concept="6" />
-      <node id="24388123215626347" at="170,81,171,47" concept="2" />
-      <node id="24388123215626347" at="168,5,172,5" concept="0" />
-      <scope id="24388123215626347" at="169,5,171,47">
+      <node id="24388123215626347" at="173,5,174,81" concept="6" />
+      <node id="24388123215626347" at="174,81,175,47" concept="2" />
+      <node id="24388123215626347" at="172,5,176,5" concept="0" />
+      <scope id="24388123215626347" at="173,5,175,47">
         <var name="inferenceRule" id="24388123215626347" />
       </scope>
     </file>
@@ -285,10 +285,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/24388123216554152">
     <file name="TypesystemDescriptor.java">
-      <node id="24388123216554152" at="73,5,74,83" concept="6" />
-      <node id="24388123216554152" at="74,83,75,47" concept="2" />
-      <node id="24388123216554152" at="72,5,76,5" concept="0" />
-      <scope id="24388123216554152" at="73,5,75,47">
+      <node id="24388123216554152" at="77,5,78,83" concept="6" />
+      <node id="24388123216554152" at="78,83,79,47" concept="2" />
+      <node id="24388123216554152" at="76,5,80,5" concept="0" />
+      <scope id="24388123216554152" at="77,5,79,47">
         <var name="inferenceRule" id="24388123216554152" />
       </scope>
     </file>
@@ -360,10 +360,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/2479124080995243327">
     <file name="TypesystemDescriptor.java">
-      <node id="2479124080995243327" at="249,5,250,112" concept="6" />
-      <node id="2479124080995243327" at="250,112,251,61" concept="2" />
-      <node id="2479124080995243327" at="248,5,252,5" concept="0" />
-      <scope id="2479124080995243327" at="249,5,251,61">
+      <node id="2479124080995243327" at="257,5,258,112" concept="6" />
+      <node id="2479124080995243327" at="258,112,259,61" concept="2" />
+      <node id="2479124080995243327" at="256,5,260,5" concept="0" />
+      <scope id="2479124080995243327" at="257,5,259,61">
         <var name="eliminationRule" id="2479124080995243327" />
       </scope>
     </file>
@@ -472,10 +472,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/2479124080996058045">
     <file name="TypesystemDescriptor.java">
-      <node id="2479124080996058045" at="253,5,254,117" concept="6" />
-      <node id="2479124080996058045" at="254,117,255,61" concept="2" />
-      <node id="2479124080996058045" at="252,5,256,5" concept="0" />
-      <scope id="2479124080996058045" at="253,5,255,61">
+      <node id="2479124080996058045" at="261,5,262,117" concept="6" />
+      <node id="2479124080996058045" at="262,117,263,61" concept="2" />
+      <node id="2479124080996058045" at="260,5,264,5" concept="0" />
+      <scope id="2479124080996058045" at="261,5,263,61">
         <var name="eliminationRule" id="2479124080996058045" />
       </scope>
     </file>
@@ -563,10 +563,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/2554784455264835985">
     <file name="TypesystemDescriptor.java">
-      <node id="2554784455264835985" at="77,5,78,81" concept="6" />
-      <node id="2554784455264835985" at="78,81,79,47" concept="2" />
-      <node id="2554784455264835985" at="76,5,80,5" concept="0" />
-      <scope id="2554784455264835985" at="77,5,79,47">
+      <node id="2554784455264835985" at="81,5,82,81" concept="6" />
+      <node id="2554784455264835985" at="82,81,83,47" concept="2" />
+      <node id="2554784455264835985" at="80,5,84,5" concept="0" />
+      <scope id="2554784455264835985" at="81,5,83,47">
         <var name="inferenceRule" id="2554784455264835985" />
       </scope>
     </file>
@@ -648,10 +648,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/362871314062750040">
     <file name="TypesystemDescriptor.java">
-      <node id="362871314062750040" at="149,5,150,85" concept="6" />
-      <node id="362871314062750040" at="150,85,151,47" concept="2" />
-      <node id="362871314062750040" at="148,5,152,5" concept="0" />
-      <scope id="362871314062750040" at="149,5,151,47">
+      <node id="362871314062750040" at="153,5,154,85" concept="6" />
+      <node id="362871314062750040" at="154,85,155,47" concept="2" />
+      <node id="362871314062750040" at="152,5,156,5" concept="0" />
+      <scope id="362871314062750040" at="153,5,155,47">
         <var name="inferenceRule" id="362871314062750040" />
       </scope>
     </file>
@@ -756,10 +756,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/3989687177013571124">
     <file name="TypesystemDescriptor.java">
-      <node id="3989687177013571124" at="217,5,218,86" concept="6" />
-      <node id="3989687177013571124" at="218,86,219,47" concept="2" />
-      <node id="3989687177013571124" at="216,5,220,5" concept="0" />
-      <scope id="3989687177013571124" at="217,5,219,47">
+      <node id="3989687177013571124" at="225,5,226,86" concept="6" />
+      <node id="3989687177013571124" at="226,86,227,47" concept="2" />
+      <node id="3989687177013571124" at="224,5,228,5" concept="0" />
+      <scope id="3989687177013571124" at="225,5,227,47">
         <var name="inferenceRule" id="3989687177013571124" />
       </scope>
     </file>
@@ -826,10 +826,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/444732437356159684">
     <file name="TypesystemDescriptor.java">
-      <node id="444732437356159684" at="213,5,214,99" concept="6" />
-      <node id="444732437356159684" at="214,99,215,47" concept="2" />
-      <node id="444732437356159684" at="212,5,216,5" concept="0" />
-      <scope id="444732437356159684" at="213,5,215,47">
+      <node id="444732437356159684" at="221,5,222,99" concept="6" />
+      <node id="444732437356159684" at="222,99,223,47" concept="2" />
+      <node id="444732437356159684" at="220,5,224,5" concept="0" />
+      <scope id="444732437356159684" at="221,5,223,47">
         <var name="inferenceRule" id="444732437356159684" />
       </scope>
     </file>
@@ -1093,10 +1093,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/4618483580248255333">
     <file name="TypesystemDescriptor.java">
-      <node id="4618483580248255333" at="221,5,222,86" concept="6" />
-      <node id="4618483580248255333" at="222,86,223,47" concept="2" />
-      <node id="4618483580248255333" at="220,5,224,5" concept="0" />
-      <scope id="4618483580248255333" at="221,5,223,47">
+      <node id="4618483580248255333" at="229,5,230,86" concept="6" />
+      <node id="4618483580248255333" at="230,86,231,47" concept="2" />
+      <node id="4618483580248255333" at="228,5,232,5" concept="0" />
+      <scope id="4618483580248255333" at="229,5,231,47">
         <var name="inferenceRule" id="4618483580248255333" />
       </scope>
     </file>
@@ -1181,10 +1181,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/4931785860342371432">
     <file name="TypesystemDescriptor.java">
-      <node id="4931785860342371432" at="81,5,82,78" concept="6" />
-      <node id="4931785860342371432" at="82,78,83,47" concept="2" />
-      <node id="4931785860342371432" at="80,5,84,5" concept="0" />
-      <scope id="4931785860342371432" at="81,5,83,47">
+      <node id="4931785860342371432" at="85,5,86,78" concept="6" />
+      <node id="4931785860342371432" at="86,78,87,47" concept="2" />
+      <node id="4931785860342371432" at="84,5,88,5" concept="0" />
+      <scope id="4931785860342371432" at="85,5,87,47">
         <var name="inferenceRule" id="4931785860342371432" />
       </scope>
     </file>
@@ -1305,10 +1305,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/4931785860343554589">
     <file name="TypesystemDescriptor.java">
-      <node id="4931785860343554589" at="229,5,230,89" concept="6" />
-      <node id="4931785860343554589" at="230,89,231,55" concept="2" />
-      <node id="4931785860343554589" at="228,5,232,5" concept="0" />
-      <scope id="4931785860343554589" at="229,5,231,55">
+      <node id="4931785860343554589" at="237,5,238,89" concept="6" />
+      <node id="4931785860343554589" at="238,89,239,55" concept="2" />
+      <node id="4931785860343554589" at="236,5,240,5" concept="0" />
+      <scope id="4931785860343554589" at="237,5,239,55">
         <var name="nonTypesystemRule" id="4931785860343554589" />
       </scope>
     </file>
@@ -1456,10 +1456,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/527291771330973793">
     <file name="TypesystemDescriptor.java">
-      <node id="527291771330973793" at="97,5,98,85" concept="6" />
-      <node id="527291771330973793" at="98,85,99,47" concept="2" />
-      <node id="527291771330973793" at="96,5,100,5" concept="0" />
-      <scope id="527291771330973793" at="97,5,99,47">
+      <node id="527291771330973793" at="101,5,102,85" concept="6" />
+      <node id="527291771330973793" at="102,85,103,47" concept="2" />
+      <node id="527291771330973793" at="100,5,104,5" concept="0" />
+      <scope id="527291771330973793" at="101,5,103,47">
         <var name="inferenceRule" id="527291771330973793" />
       </scope>
     </file>
@@ -1524,10 +1524,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5291952221899496666">
     <file name="TypesystemDescriptor.java">
-      <node id="5291952221899496666" at="257,5,258,119" concept="6" />
-      <node id="5291952221899496666" at="258,119,259,61" concept="2" />
-      <node id="5291952221899496666" at="256,5,260,5" concept="0" />
-      <scope id="5291952221899496666" at="257,5,259,61">
+      <node id="5291952221899496666" at="265,5,266,119" concept="6" />
+      <node id="5291952221899496666" at="266,119,267,61" concept="2" />
+      <node id="5291952221899496666" at="264,5,268,5" concept="0" />
+      <scope id="5291952221899496666" at="265,5,267,61">
         <var name="eliminationRule" id="5291952221899496666" />
       </scope>
     </file>
@@ -1614,10 +1614,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/531692237848505542">
     <file name="TypesystemDescriptor.java">
-      <node id="531692237848505542" at="145,5,146,82" concept="6" />
-      <node id="531692237848505542" at="146,82,147,47" concept="2" />
-      <node id="531692237848505542" at="144,5,148,5" concept="0" />
-      <scope id="531692237848505542" at="145,5,147,47">
+      <node id="531692237848505542" at="149,5,150,82" concept="6" />
+      <node id="531692237848505542" at="150,82,151,47" concept="2" />
+      <node id="531692237848505542" at="148,5,152,5" concept="0" />
+      <scope id="531692237848505542" at="149,5,151,47">
         <var name="inferenceRule" id="531692237848505542" />
       </scope>
     </file>
@@ -1684,10 +1684,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5396945261030615008">
     <file name="TypesystemDescriptor.java">
-      <node id="5396945261030615008" at="197,5,198,82" concept="6" />
-      <node id="5396945261030615008" at="198,82,199,47" concept="2" />
-      <node id="5396945261030615008" at="196,5,200,5" concept="0" />
-      <scope id="5396945261030615008" at="197,5,199,47">
+      <node id="5396945261030615008" at="201,5,202,82" concept="6" />
+      <node id="5396945261030615008" at="202,82,203,47" concept="2" />
+      <node id="5396945261030615008" at="200,5,204,5" concept="0" />
+      <scope id="5396945261030615008" at="201,5,203,47">
         <var name="inferenceRule" id="5396945261030615008" />
       </scope>
     </file>
@@ -1754,10 +1754,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5396945261038439478">
     <file name="TypesystemDescriptor.java">
-      <node id="5396945261038439478" at="193,5,194,81" concept="6" />
-      <node id="5396945261038439478" at="194,81,195,47" concept="2" />
-      <node id="5396945261038439478" at="192,5,196,5" concept="0" />
-      <scope id="5396945261038439478" at="193,5,195,47">
+      <node id="5396945261038439478" at="197,5,198,81" concept="6" />
+      <node id="5396945261038439478" at="198,81,199,47" concept="2" />
+      <node id="5396945261038439478" at="196,5,200,5" concept="0" />
+      <scope id="5396945261038439478" at="197,5,199,47">
         <var name="inferenceRule" id="5396945261038439478" />
       </scope>
     </file>
@@ -1824,10 +1824,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5585772046587930331">
     <file name="TypesystemDescriptor.java">
-      <node id="5585772046587930331" at="173,5,174,77" concept="6" />
-      <node id="5585772046587930331" at="174,77,175,47" concept="2" />
-      <node id="5585772046587930331" at="172,5,176,5" concept="0" />
-      <scope id="5585772046587930331" at="173,5,175,47">
+      <node id="5585772046587930331" at="177,5,178,77" concept="6" />
+      <node id="5585772046587930331" at="178,77,179,47" concept="2" />
+      <node id="5585772046587930331" at="176,5,180,5" concept="0" />
+      <scope id="5585772046587930331" at="177,5,179,47">
         <var name="inferenceRule" id="5585772046587930331" />
       </scope>
     </file>
@@ -1894,10 +1894,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5585772046594087118">
     <file name="TypesystemDescriptor.java">
-      <node id="5585772046594087118" at="237,5,238,91" concept="6" />
-      <node id="5585772046594087118" at="238,91,239,47" concept="2" />
-      <node id="5585772046594087118" at="236,5,240,5" concept="0" />
-      <scope id="5585772046594087118" at="237,5,239,47">
+      <node id="5585772046594087118" at="245,5,246,91" concept="6" />
+      <node id="5585772046594087118" at="246,91,247,47" concept="2" />
+      <node id="5585772046594087118" at="244,5,248,5" concept="0" />
+      <scope id="5585772046594087118" at="245,5,247,47">
         <var name="subtypingRule" id="5585772046594087118" />
       </scope>
     </file>
@@ -1938,10 +1938,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5585772046595951136">
     <file name="TypesystemDescriptor.java">
-      <node id="5585772046595951136" at="209,5,210,77" concept="6" />
-      <node id="5585772046595951136" at="210,77,211,47" concept="2" />
-      <node id="5585772046595951136" at="208,5,212,5" concept="0" />
-      <scope id="5585772046595951136" at="209,5,211,47">
+      <node id="5585772046595951136" at="217,5,218,77" concept="6" />
+      <node id="5585772046595951136" at="218,77,219,47" concept="2" />
+      <node id="5585772046595951136" at="216,5,220,5" concept="0" />
+      <scope id="5585772046595951136" at="217,5,219,47">
         <var name="inferenceRule" id="5585772046595951136" />
       </scope>
     </file>
@@ -2008,10 +2008,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5585772046596642243">
     <file name="TypesystemDescriptor.java">
-      <node id="5585772046596642243" at="85,5,86,78" concept="6" />
-      <node id="5585772046596642243" at="86,78,87,47" concept="2" />
-      <node id="5585772046596642243" at="84,5,88,5" concept="0" />
-      <scope id="5585772046596642243" at="85,5,87,47">
+      <node id="5585772046596642243" at="89,5,90,78" concept="6" />
+      <node id="5585772046596642243" at="90,78,91,47" concept="2" />
+      <node id="5585772046596642243" at="88,5,92,5" concept="0" />
+      <scope id="5585772046596642243" at="89,5,91,47">
         <var name="inferenceRule" id="5585772046596642243" />
       </scope>
     </file>
@@ -2057,10 +2057,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5585772046597818748">
     <file name="TypesystemDescriptor.java">
-      <node id="5585772046597818748" at="141,5,142,79" concept="6" />
-      <node id="5585772046597818748" at="142,79,143,47" concept="2" />
-      <node id="5585772046597818748" at="140,5,144,5" concept="0" />
-      <scope id="5585772046597818748" at="141,5,143,47">
+      <node id="5585772046597818748" at="145,5,146,79" concept="6" />
+      <node id="5585772046597818748" at="146,79,147,47" concept="2" />
+      <node id="5585772046597818748" at="144,5,148,5" concept="0" />
+      <scope id="5585772046597818748" at="145,5,147,47">
         <var name="inferenceRule" id="5585772046597818748" />
       </scope>
     </file>
@@ -2279,10 +2279,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/5947032420323191980">
     <file name="TypesystemDescriptor.java">
-      <node id="5947032420323191980" at="261,5,262,111" concept="6" />
-      <node id="5947032420323191980" at="262,111,263,61" concept="2" />
-      <node id="5947032420323191980" at="260,5,264,5" concept="0" />
-      <scope id="5947032420323191980" at="261,5,263,61">
+      <node id="5947032420323191980" at="269,5,270,111" concept="6" />
+      <node id="5947032420323191980" at="270,111,271,61" concept="2" />
+      <node id="5947032420323191980" at="268,5,272,5" concept="0" />
+      <scope id="5947032420323191980" at="269,5,271,61">
         <var name="eliminationRule" id="5947032420323191980" />
       </scope>
     </file>
@@ -2390,10 +2390,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/6095949300270588142">
     <file name="TypesystemDescriptor.java">
-      <node id="6095949300270588142" at="133,5,134,84" concept="6" />
-      <node id="6095949300270588142" at="134,84,135,47" concept="2" />
-      <node id="6095949300270588142" at="132,5,136,5" concept="0" />
-      <scope id="6095949300270588142" at="133,5,135,47">
+      <node id="6095949300270588142" at="137,5,138,84" concept="6" />
+      <node id="6095949300270588142" at="138,84,139,47" concept="2" />
+      <node id="6095949300270588142" at="136,5,140,5" concept="0" />
+      <scope id="6095949300270588142" at="137,5,139,47">
         <var name="inferenceRule" id="6095949300270588142" />
       </scope>
     </file>
@@ -2529,10 +2529,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/654499056495169902">
     <file name="TypesystemDescriptor.java">
-      <node id="654499056495169902" at="225,5,226,101" concept="6" />
-      <node id="654499056495169902" at="226,101,227,55" concept="2" />
-      <node id="654499056495169902" at="224,5,228,5" concept="0" />
-      <scope id="654499056495169902" at="225,5,227,55">
+      <node id="654499056495169902" at="233,5,234,101" concept="6" />
+      <node id="654499056495169902" at="234,101,235,55" concept="2" />
+      <node id="654499056495169902" at="232,5,236,5" concept="0" />
+      <scope id="654499056495169902" at="233,5,235,55">
         <var name="nonTypesystemRule" id="654499056495169902" />
       </scope>
     </file>
@@ -2590,29 +2590,67 @@
       <node id="552022434622417729" at="31,0,32,141" concept="6" />
       <node id="552022434622418728" at="32,141,33,132" concept="6" />
       <node id="6775284376064593066" at="34,103,35,157" concept="2" />
-      <node id="6775284376064593028" at="40,86,41,78" concept="6" />
-      <node id="6775284376064593028" at="41,78,42,39" concept="2" />
-      <node id="6775284376064593028" at="42,39,43,39" concept="2" />
-      <node id="6775284376064593028" at="43,39,44,26" concept="7" />
-      <node id="6775284376064588795" at="48,0,49,0" concept="10" trace="CollectionType$kS" />
-      <node id="6775284376064588795" at="49,0,50,0" concept="10" trace="CollectionSizeSpec$K3" />
-      <node id="6775284376064588795" at="53,0,54,0" concept="10" trace="sizeConstraint$C3Ch" />
-      <node id="6775284376064588795" at="57,0,58,0" concept="10" trace="min$H3xo" />
-      <node id="6775284376064588795" at="58,0,59,0" concept="10" trace="max$H3Kp" />
+      <node id="9096503253604717550" at="41,65,42,16" concept="6" />
+      <node id="9096503253604717570" at="44,161,45,14" concept="2" />
+      <node id="9096503253604717574" at="47,5,48,20" concept="7" />
+      <node id="9096503253604717587" at="51,65,52,16" concept="6" />
+      <node id="9096503253604717596" at="53,30,54,29" concept="6" />
+      <node id="9096503253604717610" at="55,86,56,133" concept="2" />
+      <node id="9096503253604717617" at="58,92,59,32" concept="7" />
+      <node id="9096503253604717672" at="60,7,61,12" concept="2" />
+      <node id="9096503253604717676" at="62,5,63,20" concept="7" />
+      <node id="6775284376064593028" at="65,86,66,78" concept="6" />
+      <node id="6775284376064593028" at="66,78,67,39" concept="2" />
+      <node id="6775284376064593028" at="67,39,68,39" concept="2" />
+      <node id="6775284376064593028" at="68,39,69,26" concept="7" />
+      <node id="6775284376064588795" at="73,0,74,0" concept="10" trace="CollectionType$kS" />
+      <node id="6775284376064588795" at="74,0,75,0" concept="10" trace="ConditionalCollectionElement$VV" />
+      <node id="6775284376064588795" at="75,0,76,0" concept="10" trace="SpreadCollectionElement$Vp" />
+      <node id="6775284376064588795" at="76,0,77,0" concept="10" trace="CollectionSizeSpec$K3" />
+      <node id="6775284376064588795" at="80,0,81,0" concept="10" trace="sizeConstraint$C3Ch" />
+      <node id="6775284376064588795" at="81,0,82,0" concept="10" trace="then$bDV2" />
+      <node id="6775284376064588795" at="85,0,86,0" concept="10" trace="min$H3xo" />
+      <node id="6775284376064588795" at="86,0,87,0" concept="10" trace="max$H3Kp" />
       <node id="552022434622384515" at="27,132,30,9" concept="4" />
       <node id="552022434622421128" at="33,132,36,9" concept="4" />
-      <node id="6775284376064593028" at="40,0,46,0" concept="11" trace="createCollectionSizeSpec_1hvc6r_a0b0a0a#(Ljava/lang/String;Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="9096503253604717556" at="43,30,46,7" concept="4" />
+      <node id="9096503253604717597" at="54,29,57,7" concept="4" />
+      <node id="9096503253604717611" at="57,7,60,7" concept="4" />
+      <node id="9096503253604717551" at="42,16,47,5" concept="3" />
+      <node id="6775284376064593028" at="65,0,71,0" concept="11" trace="createCollectionSizeSpec_1hvc6r_a0b0a0a#(Ljava/lang/String;Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="9096503253604713697" at="41,0,50,0" concept="11" trace="literalMinSize#(Ljava/lang/Iterable;)Ljava/lang/String;" />
+      <node id="9096503253604717588" at="52,16,62,5" concept="3" />
       <node id="6775284376064593041" at="24,0,37,7" concept="3" />
+      <node id="9096503253604717576" at="51,0,65,0" concept="11" trace="literalMaxSize#(Ljava/lang/Iterable;)Ljava/lang/String;" />
       <node id="6775284376064593011" at="20,81,38,5" concept="4" />
       <node id="6775284376064590636" at="20,0,40,0" concept="11" trace="addSizeConstraint#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/List;)V" />
       <scope id="552022434622384517" at="28,103,29,157" />
       <scope id="552022434622421130" at="34,103,35,157" />
-      <scope id="6775284376064593028" at="40,86,44,26">
+      <scope id="9096503253604717567" at="44,161,45,14" />
+      <scope id="9096503253604717602" at="55,86,56,133" />
+      <scope id="9096503253604717616" at="58,92,59,32" />
+      <scope id="9096503253604717555" at="43,30,46,7" />
+      <scope id="6775284376064593028" at="65,86,69,26">
         <var name="n0" id="6775284376064593028" />
       </scope>
-      <scope id="6775284376064593028" at="40,0,46,0">
+      <scope id="9096503253604717551" at="42,16,47,5">
+        <var name="e" id="9096503253604717552" />
+      </scope>
+      <scope id="6775284376064593028" at="65,0,71,0">
         <var name="p0" id="6775284376064593028" />
         <var name="p1" id="6775284376064593028" />
+      </scope>
+      <scope id="9096503253604717546" at="41,65,48,20">
+        <var name="min" id="9096503253604717547" />
+      </scope>
+      <scope id="9096503253604717592" at="53,30,61,12">
+        <var name="contribution" id="9096503253604717593" />
+      </scope>
+      <scope id="9096503253604713697" at="41,0,50,0">
+        <var name="elements" id="9096503253604717543" />
+      </scope>
+      <scope id="9096503253604717588" at="52,16,62,5">
+        <var name="e" id="9096503253604717589" />
       </scope>
       <scope id="6775284376064593047" at="25,118,36,9">
         <var name="leftMax" id="552022434622417730" />
@@ -2620,8 +2658,14 @@
         <var name="rightMax" id="552022434622418729" />
         <var name="rightMin" id="552022434622387924" />
       </scope>
+      <scope id="9096503253604717583" at="51,65,63,20">
+        <var name="max" id="9096503253604717584" />
+      </scope>
       <scope id="6775284376064593041" at="24,0,37,7">
         <var name="type" id="6775284376064593042" />
+      </scope>
+      <scope id="9096503253604717576" at="51,0,65,0">
+        <var name="elements" id="9096503253604717579" />
       </scope>
       <scope id="6775284376064593012" at="21,113,37,7">
         <var name="firstConstraint" id="6775284376064593014" />
@@ -2631,18 +2675,18 @@
         <var name="collectionType" id="6775284376064591751" />
         <var name="types" id="6775284376067470275" />
       </scope>
-      <unit id="6775284376064588795" at="52,0,55,0" name="org.iets3.core.expr.collections.typesystem.CollectionTypeHelper$LINKS" />
-      <unit id="6775284376064588795" at="47,0,51,0" name="org.iets3.core.expr.collections.typesystem.CollectionTypeHelper$CONCEPTS" />
-      <unit id="6775284376064588795" at="56,0,60,0" name="org.iets3.core.expr.collections.typesystem.CollectionTypeHelper$PROPS" />
-      <unit id="6775284376064588795" at="19,0,61,0" name="org.iets3.core.expr.collections.typesystem.CollectionTypeHelper" />
+      <unit id="6775284376064588795" at="79,0,83,0" name="org.iets3.core.expr.collections.typesystem.CollectionTypeHelper$LINKS" />
+      <unit id="6775284376064588795" at="84,0,88,0" name="org.iets3.core.expr.collections.typesystem.CollectionTypeHelper$PROPS" />
+      <unit id="6775284376064588795" at="72,0,78,0" name="org.iets3.core.expr.collections.typesystem.CollectionTypeHelper$CONCEPTS" />
+      <unit id="6775284376064588795" at="19,0,89,0" name="org.iets3.core.expr.collections.typesystem.CollectionTypeHelper" />
     </file>
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/75413091695536913">
     <file name="TypesystemDescriptor.java">
-      <node id="75413091695536913" at="189,5,190,79" concept="6" />
-      <node id="75413091695536913" at="190,79,191,47" concept="2" />
-      <node id="75413091695536913" at="188,5,192,5" concept="0" />
-      <scope id="75413091695536913" at="189,5,191,47">
+      <node id="75413091695536913" at="193,5,194,79" concept="6" />
+      <node id="75413091695536913" at="194,79,195,47" concept="2" />
+      <node id="75413091695536913" at="192,5,196,5" concept="0" />
+      <scope id="75413091695536913" at="193,5,195,47">
         <var name="inferenceRule" id="75413091695536913" />
       </scope>
     </file>
@@ -2686,10 +2730,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7554398283339757457">
     <file name="TypesystemDescriptor.java">
-      <node id="7554398283339757457" at="241,5,242,85" concept="6" />
-      <node id="7554398283339757457" at="242,85,243,47" concept="2" />
-      <node id="7554398283339757457" at="240,5,244,5" concept="0" />
-      <scope id="7554398283339757457" at="241,5,243,47">
+      <node id="7554398283339757457" at="249,5,250,85" concept="6" />
+      <node id="7554398283339757457" at="250,85,251,47" concept="2" />
+      <node id="7554398283339757457" at="248,5,252,5" concept="0" />
+      <scope id="7554398283339757457" at="249,5,251,47">
         <var name="subtypingRule" id="7554398283339757457" />
       </scope>
     </file>
@@ -2726,10 +2770,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7554398283339766305">
     <file name="TypesystemDescriptor.java">
-      <node id="7554398283339766305" at="109,5,110,92" concept="6" />
-      <node id="7554398283339766305" at="110,92,111,47" concept="2" />
-      <node id="7554398283339766305" at="108,5,112,5" concept="0" />
-      <scope id="7554398283339766305" at="109,5,111,47">
+      <node id="7554398283339766305" at="113,5,114,92" concept="6" />
+      <node id="7554398283339766305" at="114,92,115,47" concept="2" />
+      <node id="7554398283339766305" at="112,5,116,5" concept="0" />
+      <scope id="7554398283339766305" at="113,5,115,47">
         <var name="inferenceRule" id="7554398283339766305" />
       </scope>
     </file>
@@ -2751,13 +2795,13 @@
       <node id="6775284376059983332" at="71,9,72,0" concept="9" />
       <node id="8560722270289803212" at="74,11,75,55" concept="6" />
       <node id="8560722270289803212" at="75,55,76,214" concept="6" />
-      <node id="8560722270289803212" at="76,214,77,541" concept="2" />
+      <node id="8560722270289803212" at="76,214,77,543" concept="2" />
       <node id="8560722270289803249" at="80,11,81,109" concept="6" />
       <node id="8560722270289803249" at="81,109,82,214" concept="6" />
       <node id="8560722270289803249" at="82,214,83,297" concept="2" />
       <node id="8560722270289803257" at="85,11,86,55" concept="6" />
       <node id="8560722270289803257" at="86,55,87,214" concept="6" />
-      <node id="8560722270289803257" at="87,214,88,641" concept="2" />
+      <node id="8560722270289803257" at="87,214,88,643" concept="2" />
       <node id="7554398283339766305" at="94,50,95,35" concept="7" />
       <node id="7554398283339766305" at="97,68,98,102" concept="7" />
       <node id="7554398283339766305" at="100,30,101,17" concept="7" />
@@ -2841,7 +2885,7 @@
         <var name="_info_12389875345" id="2850607030363008876" />
         <var name="_nodeToCheck_1029348928467" id="2850607030363008876" />
       </scope>
-      <scope id="8560722270289803212" at="74,11,77,541">
+      <scope id="8560722270289803212" at="74,11,77,543">
         <var name="_info_12389875345" id="8560722270289803212" />
         <var name="_nodeToCheck_1029348928467" id="8560722270289803212" />
       </scope>
@@ -2849,7 +2893,7 @@
         <var name="_info_12389875345" id="8560722270289803249" />
         <var name="_nodeToCheck_1029348928467" id="8560722270289803249" />
       </scope>
-      <scope id="8560722270289803257" at="85,11,88,641">
+      <scope id="8560722270289803257" at="85,11,88,643">
         <var name="_info_12389875345" id="8560722270289803257" />
         <var name="_nodeToCheck_1029348928467" id="8560722270289803257" />
       </scope>
@@ -2923,10 +2967,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7554398283339796943">
     <file name="TypesystemDescriptor.java">
-      <node id="7554398283339796943" at="205,5,206,85" concept="6" />
-      <node id="7554398283339796943" at="206,85,207,47" concept="2" />
-      <node id="7554398283339796943" at="204,5,208,5" concept="0" />
-      <scope id="7554398283339796943" at="205,5,207,47">
+      <node id="7554398283339796943" at="209,5,210,85" concept="6" />
+      <node id="7554398283339796943" at="210,85,211,47" concept="2" />
+      <node id="7554398283339796943" at="208,5,212,5" concept="0" />
+      <scope id="7554398283339796943" at="209,5,211,47">
         <var name="inferenceRule" id="7554398283339796943" />
       </scope>
     </file>
@@ -2970,10 +3014,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7554398283339840516">
     <file name="TypesystemDescriptor.java">
-      <node id="7554398283339840516" at="129,5,130,88" concept="6" />
-      <node id="7554398283339840516" at="130,88,131,47" concept="2" />
-      <node id="7554398283339840516" at="128,5,132,5" concept="0" />
-      <scope id="7554398283339840516" at="129,5,131,47">
+      <node id="7554398283339840516" at="133,5,134,88" concept="6" />
+      <node id="7554398283339840516" at="134,88,135,47" concept="2" />
+      <node id="7554398283339840516" at="132,5,136,5" concept="0" />
+      <scope id="7554398283339840516" at="133,5,135,47">
         <var name="inferenceRule" id="7554398283339840516" />
       </scope>
     </file>
@@ -3017,10 +3061,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7554398283339850657">
     <file name="TypesystemDescriptor.java">
-      <node id="7554398283339850657" at="93,5,94,87" concept="6" />
-      <node id="7554398283339850657" at="94,87,95,47" concept="2" />
-      <node id="7554398283339850657" at="92,5,96,5" concept="0" />
-      <scope id="7554398283339850657" at="93,5,95,47">
+      <node id="7554398283339850657" at="97,5,98,87" concept="6" />
+      <node id="7554398283339850657" at="98,87,99,47" concept="2" />
+      <node id="7554398283339850657" at="96,5,100,5" concept="0" />
+      <scope id="7554398283339850657" at="97,5,99,47">
         <var name="inferenceRule" id="7554398283339850657" />
       </scope>
     </file>
@@ -3163,10 +3207,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7554398283340021095">
     <file name="TypesystemDescriptor.java">
-      <node id="7554398283340021095" at="89,5,90,88" concept="6" />
-      <node id="7554398283340021095" at="90,88,91,47" concept="2" />
-      <node id="7554398283340021095" at="88,5,92,5" concept="0" />
-      <scope id="7554398283340021095" at="89,5,91,47">
+      <node id="7554398283340021095" at="93,5,94,88" concept="6" />
+      <node id="7554398283340021095" at="94,88,95,47" concept="2" />
+      <node id="7554398283340021095" at="92,5,96,5" concept="0" />
+      <scope id="7554398283340021095" at="93,5,95,47">
         <var name="inferenceRule" id="7554398283340021095" />
       </scope>
     </file>
@@ -3223,10 +3267,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7554398283340649962">
     <file name="TypesystemDescriptor.java">
-      <node id="7554398283340649962" at="165,5,166,77" concept="6" />
-      <node id="7554398283340649962" at="166,77,167,47" concept="2" />
-      <node id="7554398283340649962" at="164,5,168,5" concept="0" />
-      <scope id="7554398283340649962" at="165,5,167,47">
+      <node id="7554398283340649962" at="169,5,170,77" concept="6" />
+      <node id="7554398283340649962" at="170,77,171,47" concept="2" />
+      <node id="7554398283340649962" at="168,5,172,5" concept="0" />
+      <scope id="7554398283340649962" at="169,5,171,47">
         <var name="inferenceRule" id="7554398283340649962" />
       </scope>
     </file>
@@ -3330,10 +3374,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7554398283340715431">
     <file name="TypesystemDescriptor.java">
-      <node id="7554398283340715431" at="181,5,182,99" concept="6" />
-      <node id="7554398283340715431" at="182,99,183,47" concept="2" />
-      <node id="7554398283340715431" at="180,5,184,5" concept="0" />
-      <scope id="7554398283340715431" at="181,5,183,47">
+      <node id="7554398283340715431" at="185,5,186,99" concept="6" />
+      <node id="7554398283340715431" at="186,99,187,47" concept="2" />
+      <node id="7554398283340715431" at="184,5,188,5" concept="0" />
+      <scope id="7554398283340715431" at="185,5,187,47">
         <var name="inferenceRule" id="7554398283340715431" />
       </scope>
     </file>
@@ -3443,10 +3487,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7556050311757632395">
     <file name="TypesystemDescriptor.java">
-      <node id="7556050311757632395" at="201,5,202,84" concept="6" />
-      <node id="7556050311757632395" at="202,84,203,47" concept="2" />
-      <node id="7556050311757632395" at="200,5,204,5" concept="0" />
-      <scope id="7556050311757632395" at="201,5,203,47">
+      <node id="7556050311757632395" at="205,5,206,84" concept="6" />
+      <node id="7556050311757632395" at="206,84,207,47" concept="2" />
+      <node id="7556050311757632395" at="204,5,208,5" concept="0" />
+      <scope id="7556050311757632395" at="205,5,207,47">
         <var name="inferenceRule" id="7556050311757632395" />
       </scope>
     </file>
@@ -3514,10 +3558,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7740953487940081999">
     <file name="TypesystemDescriptor.java">
-      <node id="7740953487940081999" at="177,5,178,77" concept="6" />
-      <node id="7740953487940081999" at="178,77,179,47" concept="2" />
-      <node id="7740953487940081999" at="176,5,180,5" concept="0" />
-      <scope id="7740953487940081999" at="177,5,179,47">
+      <node id="7740953487940081999" at="181,5,182,77" concept="6" />
+      <node id="7740953487940081999" at="182,77,183,47" concept="2" />
+      <node id="7740953487940081999" at="180,5,184,5" concept="0" />
+      <scope id="7740953487940081999" at="181,5,183,47">
         <var name="inferenceRule" id="7740953487940081999" />
       </scope>
     </file>
@@ -3585,10 +3629,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7757419675876236266">
     <file name="TypesystemDescriptor.java">
-      <node id="7757419675876236266" at="61,5,62,85" concept="6" />
-      <node id="7757419675876236266" at="62,85,63,47" concept="2" />
-      <node id="7757419675876236266" at="60,5,64,5" concept="0" />
-      <scope id="7757419675876236266" at="61,5,63,47">
+      <node id="7757419675876236266" at="65,5,66,85" concept="6" />
+      <node id="7757419675876236266" at="66,85,67,47" concept="2" />
+      <node id="7757419675876236266" at="64,5,68,5" concept="0" />
+      <scope id="7757419675876236266" at="65,5,67,47">
         <var name="inferenceRule" id="7757419675876236266" />
       </scope>
     </file>
@@ -3632,10 +3676,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7757419675876244727">
     <file name="TypesystemDescriptor.java">
-      <node id="7757419675876244727" at="157,5,158,87" concept="6" />
-      <node id="7757419675876244727" at="158,87,159,47" concept="2" />
-      <node id="7757419675876244727" at="156,5,160,5" concept="0" />
-      <scope id="7757419675876244727" at="157,5,159,47">
+      <node id="7757419675876244727" at="161,5,162,87" concept="6" />
+      <node id="7757419675876244727" at="162,87,163,47" concept="2" />
+      <node id="7757419675876244727" at="160,5,164,5" concept="0" />
+      <scope id="7757419675876244727" at="161,5,163,47">
         <var name="inferenceRule" id="7757419675876244727" />
       </scope>
     </file>
@@ -3725,10 +3769,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/7757419675876255298">
     <file name="TypesystemDescriptor.java">
-      <node id="7757419675876255298" at="153,5,154,85" concept="6" />
-      <node id="7757419675876255298" at="154,85,155,47" concept="2" />
-      <node id="7757419675876255298" at="152,5,156,5" concept="0" />
-      <scope id="7757419675876255298" at="153,5,155,47">
+      <node id="7757419675876255298" at="157,5,158,85" concept="6" />
+      <node id="7757419675876255298" at="158,85,159,47" concept="2" />
+      <node id="7757419675876255298" at="156,5,160,5" concept="0" />
+      <scope id="7757419675876255298" at="157,5,159,47">
         <var name="inferenceRule" id="7757419675876255298" />
       </scope>
     </file>
@@ -3818,10 +3862,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8448265401163111371">
     <file name="TypesystemDescriptor.java">
-      <node id="8448265401163111371" at="137,5,138,84" concept="6" />
-      <node id="8448265401163111371" at="138,84,139,47" concept="2" />
-      <node id="8448265401163111371" at="136,5,140,5" concept="0" />
-      <scope id="8448265401163111371" at="137,5,139,47">
+      <node id="8448265401163111371" at="141,5,142,84" concept="6" />
+      <node id="8448265401163111371" at="142,84,143,47" concept="2" />
+      <node id="8448265401163111371" at="140,5,144,5" concept="0" />
+      <scope id="8448265401163111371" at="141,5,143,47">
         <var name="inferenceRule" id="8448265401163111371" />
       </scope>
     </file>
@@ -3898,10 +3942,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8448265401163121111">
     <file name="TypesystemDescriptor.java">
-      <node id="8448265401163121111" at="161,5,162,82" concept="6" />
-      <node id="8448265401163121111" at="162,82,163,47" concept="2" />
-      <node id="8448265401163121111" at="160,5,164,5" concept="0" />
-      <scope id="8448265401163121111" at="161,5,163,47">
+      <node id="8448265401163121111" at="165,5,166,82" concept="6" />
+      <node id="8448265401163121111" at="166,82,167,47" concept="2" />
+      <node id="8448265401163121111" at="164,5,168,5" concept="0" />
+      <scope id="8448265401163121111" at="165,5,167,47">
         <var name="inferenceRule" id="8448265401163121111" />
       </scope>
     </file>
@@ -4019,10 +4063,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8448265401163466313">
     <file name="TypesystemDescriptor.java">
-      <node id="8448265401163466313" at="113,5,114,89" concept="6" />
-      <node id="8448265401163466313" at="114,89,115,47" concept="2" />
-      <node id="8448265401163466313" at="112,5,116,5" concept="0" />
-      <scope id="8448265401163466313" at="113,5,115,47">
+      <node id="8448265401163466313" at="117,5,118,89" concept="6" />
+      <node id="8448265401163466313" at="118,89,119,47" concept="2" />
+      <node id="8448265401163466313" at="116,5,120,5" concept="0" />
+      <scope id="8448265401163466313" at="117,5,119,47">
         <var name="inferenceRule" id="8448265401163466313" />
       </scope>
     </file>
@@ -4086,10 +4130,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8448265401163714158">
     <file name="TypesystemDescriptor.java">
-      <node id="8448265401163714158" at="117,5,118,92" concept="6" />
-      <node id="8448265401163714158" at="118,92,119,47" concept="2" />
-      <node id="8448265401163714158" at="116,5,120,5" concept="0" />
-      <scope id="8448265401163714158" at="117,5,119,47">
+      <node id="8448265401163714158" at="121,5,122,92" concept="6" />
+      <node id="8448265401163714158" at="122,92,123,47" concept="2" />
+      <node id="8448265401163714158" at="120,5,124,5" concept="0" />
+      <scope id="8448265401163714158" at="121,5,123,47">
         <var name="inferenceRule" id="8448265401163714158" />
       </scope>
     </file>
@@ -4157,10 +4201,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8694548031077039837">
     <file name="TypesystemDescriptor.java">
-      <node id="8694548031077039837" at="69,5,70,93" concept="6" />
-      <node id="8694548031077039837" at="70,93,71,47" concept="2" />
-      <node id="8694548031077039837" at="68,5,72,5" concept="0" />
-      <scope id="8694548031077039837" at="69,5,71,47">
+      <node id="8694548031077039837" at="73,5,74,93" concept="6" />
+      <node id="8694548031077039837" at="74,93,75,47" concept="2" />
+      <node id="8694548031077039837" at="72,5,76,5" concept="0" />
+      <scope id="8694548031077039837" at="73,5,75,47">
         <var name="inferenceRule" id="8694548031077039837" />
       </scope>
     </file>
@@ -4278,10 +4322,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8872269265514323735">
     <file name="TypesystemDescriptor.java">
-      <node id="8872269265514323735" at="65,5,66,82" concept="6" />
-      <node id="8872269265514323735" at="66,82,67,47" concept="2" />
-      <node id="8872269265514323735" at="64,5,68,5" concept="0" />
-      <scope id="8872269265514323735" at="65,5,67,47">
+      <node id="8872269265514323735" at="69,5,70,82" concept="6" />
+      <node id="8872269265514323735" at="70,82,71,47" concept="2" />
+      <node id="8872269265514323735" at="68,5,72,5" concept="0" />
+      <scope id="8872269265514323735" at="69,5,71,47">
         <var name="inferenceRule" id="8872269265514323735" />
       </scope>
     </file>
@@ -4325,10 +4369,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8872269265514351735">
     <file name="TypesystemDescriptor.java">
-      <node id="8872269265514351735" at="185,5,186,103" concept="6" />
-      <node id="8872269265514351735" at="186,103,187,47" concept="2" />
-      <node id="8872269265514351735" at="184,5,188,5" concept="0" />
-      <scope id="8872269265514351735" at="185,5,187,47">
+      <node id="8872269265514351735" at="189,5,190,103" concept="6" />
+      <node id="8872269265514351735" at="190,103,191,47" concept="2" />
+      <node id="8872269265514351735" at="188,5,192,5" concept="0" />
+      <scope id="8872269265514351735" at="189,5,191,47">
         <var name="inferenceRule" id="8872269265514351735" />
       </scope>
     </file>
@@ -4486,10 +4530,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8872269265520080860">
     <file name="TypesystemDescriptor.java">
-      <node id="8872269265520080860" at="245,5,246,84" concept="6" />
-      <node id="8872269265520080860" at="246,84,247,47" concept="2" />
-      <node id="8872269265520080860" at="244,5,248,5" concept="0" />
-      <scope id="8872269265520080860" at="245,5,247,47">
+      <node id="8872269265520080860" at="253,5,254,84" concept="6" />
+      <node id="8872269265520080860" at="254,84,255,47" concept="2" />
+      <node id="8872269265520080860" at="252,5,256,5" concept="0" />
+      <scope id="8872269265520080860" at="253,5,255,47">
         <var name="subtypingRule" id="8872269265520080860" />
       </scope>
     </file>
@@ -4526,10 +4570,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/8872269265520082270">
     <file name="TypesystemDescriptor.java">
-      <node id="8872269265520082270" at="121,5,122,91" concept="6" />
-      <node id="8872269265520082270" at="122,91,123,47" concept="2" />
-      <node id="8872269265520082270" at="120,5,124,5" concept="0" />
-      <scope id="8872269265520082270" at="121,5,123,47">
+      <node id="8872269265520082270" at="125,5,126,91" concept="6" />
+      <node id="8872269265520082270" at="126,91,127,47" concept="2" />
+      <node id="8872269265520082270" at="124,5,128,5" concept="0" />
+      <scope id="8872269265520082270" at="125,5,127,47">
         <var name="inferenceRule" id="8872269265520082270" />
       </scope>
     </file>
@@ -4548,13 +4592,13 @@
       <node id="1030245025704524123" at="60,13,61,19" concept="7" />
       <node id="2850607030362724111" at="65,11,66,55" concept="6" />
       <node id="2850607030362724111" at="66,55,67,214" concept="6" />
-      <node id="2850607030362724111" at="67,214,68,540" concept="2" />
+      <node id="2850607030362724111" at="67,214,68,542" concept="2" />
       <node id="8694548031077662884" at="71,11,72,109" concept="6" />
       <node id="8694548031077662884" at="72,109,73,214" concept="6" />
       <node id="8694548031077662884" at="73,214,74,297" concept="2" />
       <node id="2850607030362375632" at="76,11,77,55" concept="6" />
       <node id="2850607030362375632" at="77,55,78,214" concept="6" />
-      <node id="2850607030362375632" at="78,214,79,640" concept="2" />
+      <node id="2850607030362375632" at="78,214,79,642" concept="2" />
       <node id="8872269265520082270" at="85,50,86,34" concept="7" />
       <node id="8872269265520082270" at="88,68,89,102" concept="7" />
       <node id="8872269265520082270" at="91,30,92,17" concept="7" />
@@ -4630,7 +4674,7 @@
         <var name="_info_12389875345" id="2850607030362306143" />
         <var name="_nodeToCheck_1029348928467" id="2850607030362306143" />
       </scope>
-      <scope id="2850607030362724111" at="65,11,68,540">
+      <scope id="2850607030362724111" at="65,11,68,542">
         <var name="_info_12389875345" id="2850607030362724111" />
         <var name="_nodeToCheck_1029348928467" id="2850607030362724111" />
       </scope>
@@ -4638,7 +4682,7 @@
         <var name="_info_12389875345" id="8694548031077662884" />
         <var name="_nodeToCheck_1029348928467" id="8694548031077662884" />
       </scope>
-      <scope id="2850607030362375632" at="76,11,79,640">
+      <scope id="2850607030362375632" at="76,11,79,642">
         <var name="_info_12389875345" id="2850607030362375632" />
         <var name="_nodeToCheck_1029348928467" id="2850607030362375632" />
       </scope>
@@ -4778,10 +4822,10 @@
   </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/890442848561999771">
     <file name="TypesystemDescriptor.java">
-      <node id="890442848561999771" at="105,5,106,93" concept="6" />
-      <node id="890442848561999771" at="106,93,107,47" concept="2" />
-      <node id="890442848561999771" at="104,5,108,5" concept="0" />
-      <scope id="890442848561999771" at="105,5,107,47">
+      <node id="890442848561999771" at="109,5,110,93" concept="6" />
+      <node id="890442848561999771" at="110,93,111,47" concept="2" />
+      <node id="890442848561999771" at="108,5,112,5" concept="0" />
+      <scope id="890442848561999771" at="109,5,111,47">
         <var name="inferenceRule" id="890442848561999771" />
       </scope>
     </file>
@@ -4853,12 +4897,139 @@
       <unit id="890442848561999771" at="20,0,68,0" name="org.iets3.core.expr.collections.typesystem.typeof_ImmutableListInsertOp_InferenceRule" />
     </file>
   </root>
+  <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/9096503253604711137">
+    <file name="TypesystemDescriptor.java">
+      <node id="9096503253604711137" at="61,5,62,100" concept="6" />
+      <node id="9096503253604711137" at="62,100,63,47" concept="2" />
+      <node id="9096503253604711137" at="60,5,64,5" concept="0" />
+      <scope id="9096503253604711137" at="61,5,63,47">
+        <var name="inferenceRule" id="9096503253604711137" />
+      </scope>
+    </file>
+    <file name="typeof_ConditionalCollectionElement_InferenceRule.java">
+      <node id="9096503253604711140" at="22,5,23,94" concept="6" />
+      <node id="9096503253604711140" at="23,94,24,208" concept="6" />
+      <node id="9096503253604711140" at="24,208,25,295" concept="2" />
+      <node id="9096503253604711148" at="27,5,28,45" concept="6" />
+      <node id="9096503253604711148" at="28,45,29,208" concept="6" />
+      <node id="9096503253604711148" at="29,208,30,439" concept="2" />
+      <node id="9096503253604711137" at="33,50,34,52" concept="7" />
+      <node id="9096503253604711137" at="36,68,37,102" concept="7" />
+      <node id="9096503253604711137" at="39,30,40,17" concept="7" />
+      <node id="9096503253604711137" at="44,0,45,0" concept="10" trace="condition$DTiY" />
+      <node id="9096503253604711137" at="45,0,46,0" concept="10" trace="then$bDV2" />
+      <node id="9096503253604711137" at="49,0,50,0" concept="10" trace="ConditionalCollectionElement$VV" />
+      <node id="9096503253604711137" at="19,0,21,0" concept="1" trace="typeof_ConditionalCollectionElement_InferenceRule#()V" />
+      <node id="9096503253604711137" at="33,0,36,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="9096503253604711137" at="36,0,39,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="9096503253604711137" at="39,0,42,0" concept="5" trace="overrides#()Z" />
+      <node id="9096503253604711140" at="21,116,26,5" concept="0" />
+      <node id="9096503253604711148" at="26,5,31,5" concept="0" />
+      <node id="9096503253604711137" at="21,0,33,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="9096503253604711137" at="19,62,19,62" />
+      <scope id="9096503253604711137" at="33,50,34,52" />
+      <scope id="9096503253604711137" at="36,68,37,102" />
+      <scope id="9096503253604711137" at="39,30,40,17" />
+      <scope id="9096503253604711137" at="19,0,21,0" />
+      <scope id="9096503253604711140" at="22,5,25,295">
+        <var name="_info_12389875345" id="9096503253604711140" />
+        <var name="_nodeToCheck_1029348928467" id="9096503253604711140" />
+      </scope>
+      <scope id="9096503253604711148" at="27,5,30,439">
+        <var name="_info_12389875345" id="9096503253604711148" />
+        <var name="_nodeToCheck_1029348928467" id="9096503253604711148" />
+      </scope>
+      <scope id="9096503253604711137" at="33,0,36,0" />
+      <scope id="9096503253604711137" at="36,0,39,0">
+        <var name="argument" id="9096503253604711137" />
+      </scope>
+      <scope id="9096503253604711137" at="39,0,42,0" />
+      <scope id="9096503253604711139" at="21,116,31,5" />
+      <scope id="9096503253604711137" at="21,0,33,0">
+        <var name="cce" id="9096503253604711137" />
+        <var name="status" id="9096503253604711137" />
+        <var name="typeCheckingContext" id="9096503253604711137" />
+      </scope>
+      <unit id="9096503253604711137" at="48,0,51,0" name="org.iets3.core.expr.collections.typesystem.typeof_ConditionalCollectionElement_InferenceRule$CONCEPTS" />
+      <unit id="9096503253604711137" at="43,0,47,0" name="org.iets3.core.expr.collections.typesystem.typeof_ConditionalCollectionElement_InferenceRule$LINKS" />
+      <unit id="9096503253604711137" at="18,0,52,0" name="org.iets3.core.expr.collections.typesystem.typeof_ConditionalCollectionElement_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/9096503253604711157">
+    <file name="TypesystemDescriptor.java">
+      <node id="9096503253604711157" at="213,5,214,95" concept="6" />
+      <node id="9096503253604711157" at="214,95,215,47" concept="2" />
+      <node id="9096503253604711157" at="212,5,216,5" concept="0" />
+      <scope id="9096503253604711157" at="213,5,215,47">
+        <var name="inferenceRule" id="9096503253604711157" />
+      </scope>
+    </file>
+    <file name="typeof_SpreadCollectionElement_InferenceRule.java">
+      <node id="9096503253604711160" at="25,5,26,232" concept="6" />
+      <node id="9096503253604711174" at="29,11,30,51" concept="6" />
+      <node id="9096503253604711174" at="30,51,31,214" concept="6" />
+      <node id="9096503253604711174" at="31,214,32,404" concept="2" />
+      <node id="9096503253604711186" at="35,11,36,70" concept="6" />
+      <node id="9096503253604711186" at="36,70,37,330" concept="6" />
+      <node id="9096503253604711157" at="43,50,44,47" concept="7" />
+      <node id="9096503253604711157" at="46,68,47,102" concept="7" />
+      <node id="9096503253604711157" at="49,30,50,17" concept="7" />
+      <node id="9096503253604711157" at="54,0,55,0" concept="10" trace="collection$1kgD" />
+      <node id="9096503253604711157" at="55,0,56,0" concept="10" trace="baseType$5NOJ" />
+      <node id="9096503253604711157" at="59,0,60,0" concept="10" trace="CollectionType$kS" />
+      <node id="9096503253604711157" at="60,0,61,0" concept="10" trace="SpreadCollectionElement$Vp" />
+      <node id="9096503253604711157" at="22,0,24,0" concept="1" trace="typeof_SpreadCollectionElement_InferenceRule#()V" />
+      <node id="9096503253604711157" at="43,0,46,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="9096503253604711157" at="46,0,49,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="9096503253604711157" at="49,0,52,0" concept="5" trace="overrides#()Z" />
+      <node id="9096503253604711186" at="34,16,38,11" concept="0" />
+      <node id="9096503253604711174" at="28,124,33,11" concept="0" />
+      <node id="9096503253604711184" at="34,14,39,9" concept="0" />
+      <node id="9096503253604711168" at="27,62,39,9" concept="4" />
+      <node id="9096503253604711160" at="26,232,40,132" concept="2" />
+      <node id="9096503253604711160" at="24,116,41,5" concept="0" />
+      <node id="9096503253604711157" at="24,0,43,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="9096503253604711157" at="22,57,22,57" />
+      <scope id="9096503253604711157" at="43,50,44,47" />
+      <scope id="9096503253604711157" at="46,68,47,102" />
+      <scope id="9096503253604711157" at="49,30,50,17" />
+      <scope id="9096503253604711157" at="22,0,24,0" />
+      <scope id="9096503253604711186" at="35,11,37,330">
+        <var name="_reporter_2309309498" id="9096503253604711186" />
+        <var name="errorTarget" id="9096503253604711186" />
+      </scope>
+      <scope id="9096503253604711174" at="29,11,32,404">
+        <var name="_info_12389875345" id="9096503253604711174" />
+        <var name="_nodeToCheck_1029348928467" id="9096503253604711174" />
+      </scope>
+      <scope id="9096503253604711157" at="43,0,46,0" />
+      <scope id="9096503253604711157" at="46,0,49,0">
+        <var name="argument" id="9096503253604711157" />
+      </scope>
+      <scope id="9096503253604711157" at="49,0,52,0" />
+      <scope id="9096503253604711185" at="34,16,38,11" />
+      <scope id="9096503253604711173" at="28,124,33,11" />
+      <scope id="9096503253604711167" at="27,62,39,9" />
+      <scope id="9096503253604711160" at="25,5,40,132">
+        <var name="collectionType" id="9096503253604711160" />
+      </scope>
+      <scope id="9096503253604711159" at="24,116,41,5" />
+      <scope id="9096503253604711157" at="24,0,43,0">
+        <var name="sce" id="9096503253604711157" />
+        <var name="status" id="9096503253604711157" />
+        <var name="typeCheckingContext" id="9096503253604711157" />
+      </scope>
+      <unit id="9096503253604711157" at="53,0,57,0" name="org.iets3.core.expr.collections.typesystem.typeof_SpreadCollectionElement_InferenceRule$LINKS" />
+      <unit id="9096503253604711157" at="58,0,62,0" name="org.iets3.core.expr.collections.typesystem.typeof_SpreadCollectionElement_InferenceRule$CONCEPTS" />
+      <unit id="9096503253604711157" at="21,0,63,0" name="org.iets3.core.expr.collections.typesystem.typeof_SpreadCollectionElement_InferenceRule" />
+    </file>
+  </root>
   <root nodeRef="r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)/9097157441620017345">
     <file name="TypesystemDescriptor.java">
-      <node id="9097157441620017345" at="233,5,234,92" concept="6" />
-      <node id="9097157441620017345" at="234,92,235,55" concept="2" />
-      <node id="9097157441620017345" at="232,5,236,5" concept="0" />
-      <scope id="9097157441620017345" at="233,5,235,55">
+      <node id="9097157441620017345" at="241,5,242,92" concept="6" />
+      <node id="9097157441620017345" at="242,92,243,55" concept="2" />
+      <node id="9097157441620017345" at="240,5,244,5" concept="0" />
+      <scope id="9097157441620017345" at="241,5,243,55">
         <var name="nonTypesystemRule" id="9097157441620017345" />
       </scope>
     </file>

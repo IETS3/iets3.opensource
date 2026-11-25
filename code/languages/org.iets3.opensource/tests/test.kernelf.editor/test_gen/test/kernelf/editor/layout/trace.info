@@ -10,6 +10,32 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:0584d616-8e57-4860-aa8c-c5911fef31e7(test.kernelf.editor.layout@tests)/3407421514850042847">
+    <file name="toggleListLiteralVerticalLayout_Test.java">
+      <node id="3407421514850042847" at="19,49,20,60" concept="8" />
+      <node id="3407421514850042847" at="24,71,25,36" concept="1" />
+      <node id="3407421514850042847" at="30,52,31,19" concept="8" />
+      <node id="3407421514850042847" at="35,51,36,72" concept="1" />
+      <node id="3407421514850042860" at="36,72,37,129" concept="1" />
+      <node id="3407421514850042847" at="16,0,18,0" concept="7" trace="ourParametersCacheExtension" />
+      <node id="3407421514850042847" at="19,0,22,0" concept="0" trace="toggleListLiteralVerticalLayout_Test#()V" />
+      <node id="3407421514850042847" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3407421514850042847" at="23,0,27,0" concept="4" trace="test_toggleListLiteralVerticalLayout#()V" />
+      <node id="3407421514850042847" at="34,0,39,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="3407421514850042847" at="19,49,20,60" />
+      <scope id="3407421514850042847" at="24,71,25,36" />
+      <scope id="3407421514850042847" at="30,52,31,19" />
+      <scope id="3407421514850042847" at="35,51,37,129" />
+      <scope id="3407421514850042847" at="19,0,22,0" />
+      <scope id="3407421514850042847" at="30,0,33,0">
+        <var name="owner" id="3407421514850042847" />
+      </scope>
+      <scope id="3407421514850042847" at="23,0,27,0" />
+      <scope id="3407421514850042847" at="34,0,39,0" />
+      <unit id="3407421514850042847" at="28,0,40,0" name="test.kernelf.editor.layout.toggleListLiteralVerticalLayout_Test$TestBody" />
+      <unit id="3407421514850042847" at="14,0,41,0" name="test.kernelf.editor.layout.toggleListLiteralVerticalLayout_Test" />
+    </file>
+  </root>
   <root nodeRef="r:0584d616-8e57-4860-aa8c-c5911fef31e7(test.kernelf.editor.layout@tests)/6627915934851844240">
     <file name="BracketLayout_Test.java">
       <node id="6627915934851844240" at="25,31,26,60" concept="8" />

@@ -59,6 +59,10 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInferenceRules.add(inferenceRule);
     }
     {
+      InferenceRule_Runtime inferenceRule = new typeof_ConditionalCollectionElement_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
       InferenceRule_Runtime inferenceRule = new typeof_ContainsKeyOp_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
@@ -204,6 +208,10 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     {
       InferenceRule_Runtime inferenceRule = new typeof_SizeDotTarget_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_SpreadCollectionElement_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
     {

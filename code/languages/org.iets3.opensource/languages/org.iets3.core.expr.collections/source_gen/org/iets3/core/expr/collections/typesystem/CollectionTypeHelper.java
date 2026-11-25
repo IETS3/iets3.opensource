@@ -37,6 +37,31 @@ public class CollectionTypeHelper {
       }
     }
   }
+
+  public static String literalMinSize(Iterable<SNode> elements) {
+    int min = 0;
+    for (SNode e : elements) {
+      if (!(SNodeOperations.isInstanceOf(e, CONCEPTS.ConditionalCollectionElement$VV) || SNodeOperations.isInstanceOf(e, CONCEPTS.SpreadCollectionElement$Vp))) {
+        min++;
+      }
+    }
+    return min + "";
+  }
+
+  public static String literalMaxSize(Iterable<SNode> elements) {
+    int max = 0;
+    for (SNode e : elements) {
+      SNode contribution = e;
+      if (SNodeOperations.isInstanceOf(e, CONCEPTS.ConditionalCollectionElement$VV)) {
+        contribution = SLinkOperations.getTarget(SNodeOperations.cast(e, CONCEPTS.ConditionalCollectionElement$VV), LINKS.then$bDV2);
+      }
+      if (SNodeOperations.isInstanceOf(contribution, CONCEPTS.SpreadCollectionElement$Vp)) {
+        return InfHelper.POSINF;
+      }
+      max++;
+    }
+    return max + "";
+  }
   private static SNode createCollectionSizeSpec_1hvc6r_a0b0a0a(String p0, String p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.CollectionSizeSpec$K3);
     n0.setProperty(PROPS.min$H3xo, p0);
@@ -46,11 +71,14 @@ public class CollectionTypeHelper {
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept CollectionType$kS = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L, "org.iets3.core.expr.collections.structure.CollectionType");
+    /*package*/ static final SConcept ConditionalCollectionElement$VV = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, "org.iets3.core.expr.collections.structure.ConditionalCollectionElement");
+    /*package*/ static final SConcept SpreadCollectionElement$Vp = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L, "org.iets3.core.expr.collections.structure.SpreadCollectionElement");
     /*package*/ static final SConcept CollectionSizeSpec$K3 = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x127541598201af65L, "org.iets3.core.expr.collections.structure.CollectionSizeSpec");
   }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink sizeConstraint$C3Ch = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L, 0x375e37596567ed39L, "sizeConstraint");
+    /*package*/ static final SContainmentLink then$bDV2 = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, 0x1d0a68ad9c70a2faL, "then");
   }
 
   private static final class PROPS {

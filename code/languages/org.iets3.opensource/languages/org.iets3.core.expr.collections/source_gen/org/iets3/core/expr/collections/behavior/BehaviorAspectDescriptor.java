@@ -21,7 +21,9 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myListPickOp__BehaviorDescriptor = new ListPickOp__BehaviorDescriptor();
   private final BHDescriptor myListInsertOp__BehaviorDescriptor = new ListInsertOp__BehaviorDescriptor();
   private final BHDescriptor myCollectionSizeSpec__BehaviorDescriptor = new CollectionSizeSpec__BehaviorDescriptor();
+  private final BHDescriptor myConditionalCollectionElement__BehaviorDescriptor = new ConditionalCollectionElement__BehaviorDescriptor();
   private final BHDescriptor myUpToTarget__BehaviorDescriptor = new UpToTarget__BehaviorDescriptor();
+  private final BHDescriptor mySpreadCollectionElement__BehaviorDescriptor = new SpreadCollectionElement__BehaviorDescriptor();
   private final BHDescriptor myFoldOp__BehaviorDescriptor = new FoldOp__BehaviorDescriptor();
   private final BHDescriptor myIListOneArgOp__BehaviorDescriptor = new IListOneArgOp__BehaviorDescriptor();
   private final BHDescriptor mySetUnionOp__BehaviorDescriptor = new SetUnionOp__BehaviorDescriptor();
@@ -77,78 +79,82 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 6:
         return myCollectionType__BehaviorDescriptor;
       case 7:
-        return myFindFirstOp__BehaviorDescriptor;
+        return myConditionalCollectionElement__BehaviorDescriptor;
       case 8:
-        return myFirstOp__BehaviorDescriptor;
+        return myFindFirstOp__BehaviorDescriptor;
       case 9:
-        return myFoldOp__BehaviorDescriptor;
+        return myFirstOp__BehaviorDescriptor;
       case 10:
-        return myForeachOp__BehaviorDescriptor;
+        return myFoldOp__BehaviorDescriptor;
       case 11:
-        return myIElementTyped__BehaviorDescriptor;
+        return myForeachOp__BehaviorDescriptor;
       case 12:
-        return myIListOneArgOp__BehaviorDescriptor;
+        return myIElementTyped__BehaviorDescriptor;
       case 13:
-        return myIMapOneArgOp__BehaviorDescriptor;
+        return myIListOneArgOp__BehaviorDescriptor;
       case 14:
-        return myISetOneArgOp__BehaviorDescriptor;
+        return myIMapOneArgOp__BehaviorDescriptor;
       case 15:
-        return myIndexExpr__BehaviorDescriptor;
+        return myISetOneArgOp__BehaviorDescriptor;
       case 16:
-        return myKeyValuePair__BehaviorDescriptor;
+        return myIndexExpr__BehaviorDescriptor;
       case 17:
-        return myLastOp__BehaviorDescriptor;
+        return myKeyValuePair__BehaviorDescriptor;
       case 18:
-        return myListInsertOp__BehaviorDescriptor;
+        return myLastOp__BehaviorDescriptor;
       case 19:
-        return myListLiteral__BehaviorDescriptor;
+        return myListInsertOp__BehaviorDescriptor;
       case 20:
-        return myListPickOp__BehaviorDescriptor;
+        return myListLiteral__BehaviorDescriptor;
       case 21:
-        return myListType__BehaviorDescriptor;
+        return myListPickOp__BehaviorDescriptor;
       case 22:
-        return myListWithAllOp__BehaviorDescriptor;
+        return myListType__BehaviorDescriptor;
       case 23:
-        return myMapKeysOp__BehaviorDescriptor;
+        return myListWithAllOp__BehaviorDescriptor;
       case 24:
-        return myMapLiteral__BehaviorDescriptor;
+        return myMapKeysOp__BehaviorDescriptor;
       case 25:
-        return myMapOp__BehaviorDescriptor;
+        return myMapLiteral__BehaviorDescriptor;
       case 26:
-        return myMapSizeOp__BehaviorDescriptor;
+        return myMapOp__BehaviorDescriptor;
       case 27:
-        return myMapType__BehaviorDescriptor;
+        return myMapSizeOp__BehaviorDescriptor;
       case 28:
-        return myMapValuesOp__BehaviorDescriptor;
+        return myMapType__BehaviorDescriptor;
       case 29:
-        return myMaxOp__BehaviorDescriptor;
+        return myMapValuesOp__BehaviorDescriptor;
       case 30:
-        return myMinOp__BehaviorDescriptor;
+        return myMaxOp__BehaviorDescriptor;
       case 31:
-        return myNoArgCollectionOp__BehaviorDescriptor;
+        return myMinOp__BehaviorDescriptor;
       case 32:
-        return myOneArgCollectionOp__BehaviorDescriptor;
+        return myNoArgCollectionOp__BehaviorDescriptor;
       case 33:
-        return myOneArgPredicateCollectionOp__BehaviorDescriptor;
+        return myOneArgCollectionOp__BehaviorDescriptor;
       case 34:
-        return myOneCollBaseTypedArgCollectionOp__BehaviorDescriptor;
+        return myOneArgPredicateCollectionOp__BehaviorDescriptor;
       case 35:
-        return mySetDiffOp__BehaviorDescriptor;
+        return myOneCollBaseTypedArgCollectionOp__BehaviorDescriptor;
       case 36:
-        return mySetLiteral__BehaviorDescriptor;
+        return mySetDiffOp__BehaviorDescriptor;
       case 37:
-        return mySetType__BehaviorDescriptor;
+        return mySetLiteral__BehaviorDescriptor;
       case 38:
-        return mySetUnionOp__BehaviorDescriptor;
+        return mySetType__BehaviorDescriptor;
       case 39:
-        return myTwoArgPredicateCollectionOp__BehaviorDescriptor;
+        return mySetUnionOp__BehaviorDescriptor;
       case 40:
-        return myUpToTarget__BehaviorDescriptor;
+        return mySpreadCollectionElement__BehaviorDescriptor;
       case 41:
+        return myTwoArgPredicateCollectionOp__BehaviorDescriptor;
+      case 42:
+        return myUpToTarget__BehaviorDescriptor;
+      case 43:
         return myWhereOp__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2dcfdd2L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2aca5dbL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x5904507fab429027L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4d3ddaL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x512d73b7f3ebd38aL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x127541598201af65L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6d0fa863L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4ae34cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4471391c39ffd310L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7e3f987e8d8ffc3aL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4ae35cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4970ca8202b418b9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e41839911d59L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7515112832b3a95L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x10bebceaded2ac9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x753e449f1c8cdb69L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4aefeeL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0xc5b7d0d914eb88fL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497ed7L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x760f345f6cac7b9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497720L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x5092d899de38765L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e4183a3ae629L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x753e449f1c8cdb68L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba56f09cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6d0156b2L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x753e449f1c8cd9f6L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e4183a3aae3eL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4d84a614e92e2689L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6b6d642f177d57b0L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4a0c20L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4d7c1cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2a82f00L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2994c5cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4ae5cd1ee46c8a38L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2f0b98dL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2f0b587L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4ae5cd1ee3f51b95L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x62c01cba4b3652bL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x375e375966d32ccfL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba58158eL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2dcfdd2L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2aca5dbL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x5904507fab429027L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4d3ddaL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x512d73b7f3ebd38aL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x127541598201af65L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6d0fa863L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4ae34cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4471391c39ffd310L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7e3f987e8d8ffc3aL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4ae35cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4970ca8202b418b9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e41839911d59L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7515112832b3a95L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x10bebceaded2ac9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x753e449f1c8cdb69L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4aefeeL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0xc5b7d0d914eb88fL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497ed7L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x760f345f6cac7b9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497720L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x5092d899de38765L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e4183a3ae629L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x753e449f1c8cdb68L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba56f09cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6d0156b2L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x753e449f1c8cd9f6L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e4183a3aae3eL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4d84a614e92e2689L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6b6d642f177d57b0L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4a0c20L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4d7c1cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2a82f00L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2994c5cL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4ae5cd1ee46c8a38L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2f0b98dL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2f0b587L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4ae5cd1ee3f51b95L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x62c01cba4b3652bL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x375e375966d32ccfL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba58158eL)).seal();
 }

@@ -22,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_BracketOp;
   private ConceptPresentation props_CollectionSizeSpec;
   private ConceptPresentation props_CollectionType;
+  private ConceptPresentation props_ConditionalCollectionElement;
   private ConceptPresentation props_ContainsOp;
   private ConceptPresentation props_DistinctOp;
   private ConceptPresentation props_ElementTypeConstraintMap;
@@ -81,6 +82,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_SetWithoutOp;
   private ConceptPresentation props_SimpleSortOp;
   private ConceptPresentation props_SizeOp;
+  private ConceptPresentation props_SpreadCollectionElement;
   private ConceptPresentation props_StringJoinOp;
   private ConceptPresentation props_StringTerminateOp;
   private ConceptPresentation props_SumOp;
@@ -200,6 +202,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_CollectionType = cpb.create();
         }
         return props_CollectionType;
+      case LanguageConceptSwitch.ConditionalCollectionElement:
+        if (props_ConditionalCollectionElement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("collection literal element that is only added when the condition holds");
+          cpb.rawPresentation("when");
+          props_ConditionalCollectionElement = cpb.create();
+        }
+        return props_ConditionalCollectionElement;
       case LanguageConceptSwitch.ContainsOp:
         if (props_ContainsOp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -651,6 +661,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SizeOp = cpb.create();
         }
         return props_SizeOp;
+      case LanguageConceptSwitch.SpreadCollectionElement:
+        if (props_SpreadCollectionElement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("collection literal element that adds all elements of another collection");
+          cpb.rawPresentation("...");
+          props_SpreadCollectionElement = cpb.create();
+        }
+        return props_SpreadCollectionElement;
       case LanguageConceptSwitch.StringJoinOp:
         if (props_StringJoinOp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
