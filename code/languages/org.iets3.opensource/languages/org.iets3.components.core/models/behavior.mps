@@ -7115,8 +7115,11 @@
                                         <node concept="3clFbF" id="7NyyyjNuC1u" role="3cqZAp">
                                           <node concept="2OqwBi" id="7NyyyjNuC1w" role="3clFbG">
                                             <node concept="2YIFZM" id="7NyyyjNuC1x" role="2Oq$k0">
-                                              <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
+                                              <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
                                               <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
+                                              <node concept="37vLTw" id="1mWIkUZ0oja" role="37wK5m">
+                                                <ref role="3cqZAo" node="7Atos1y9EVX" resolve="project" />
+                                              </node>
                                             </node>
                                             <node concept="liA8E" id="7NyyyjNuC1y" role="2OqNvi">
                                               <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />
