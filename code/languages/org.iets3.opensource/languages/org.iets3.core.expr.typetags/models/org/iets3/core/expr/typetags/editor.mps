@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:92d50c8e-b748-4d10-be16-a16e598ca5a7(org.iets3.core.expr.typetags.editor)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -16,8 +17,8 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -1744,12 +1745,22 @@
                     <node concept="1bVj0M" id="76ZhK6Y0HRa" role="23t8la">
                       <node concept="3clFbS" id="76ZhK6Y0HRb" role="1bW5cS">
                         <node concept="3clFbF" id="76ZhK6Y0I6v" role="3cqZAp">
-                          <node concept="2OqwBi" id="76ZhK6Y0IqU" role="3clFbG">
-                            <node concept="37vLTw" id="76ZhK6Y0I6u" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4z0AnX817jK" resolve="it" />
+                          <node concept="1Wc70l" id="6OI5j2OmcQE" role="3clFbG">
+                            <node concept="2OqwBi" id="6OI5j2OmcQF" role="3uHU7B">
+                              <node concept="37vLTw" id="6OI5j2OmcQG" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4z0AnX817jK" resolve="it" />
+                              </node>
+                              <node concept="3zqWPK" id="2brRxNyp$mF" role="2OqNvi">
+                                <ref role="37wK5l" to="qlm2:2Ux6GHgZEiG" resolve="canTagExpression" />
+                              </node>
                             </node>
-                            <node concept="3zqWPK" id="5DJjBfj0bTV" role="2OqNvi">
-                              <ref role="37wK5l" to="qlm2:2Ux6GHgZEiG" resolve="canTagExpression" />
+                            <node concept="2OqwBi" id="6OI5j2OmcQI" role="3uHU7w">
+                              <node concept="37vLTw" id="6OI5j2OmcQJ" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4z0AnX817jK" resolve="it" />
+                              </node>
+                              <node concept="3zqWPK" id="2brRxNyp$mH" role="2OqNvi">
+                                <ref role="37wK5l" to="qlm2:6OI5j2OlTY_" resolve="contributesToLiteralSideTransform" />
+                              </node>
                             </node>
                           </node>
                         </node>

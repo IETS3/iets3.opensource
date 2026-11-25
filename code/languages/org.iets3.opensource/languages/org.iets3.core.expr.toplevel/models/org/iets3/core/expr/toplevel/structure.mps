@@ -27,9 +27,6 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
-      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
-        <property id="7862711839422615217" name="text" index="t5JxN" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="9005308665739310115" name="languageId" index="2eQzMB" />
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -45,9 +42,6 @@
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
-      </concept>
-      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
-        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
@@ -650,6 +644,9 @@
     <node concept="PrWs8" id="3U1bmSgHg4o" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
+    <node concept="PrWs8" id="7F82HbP94p3" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DN2V">
     <property role="3GE5qa" value="enum" />
@@ -1228,31 +1225,6 @@
     <property role="EcuMT" value="438389604712151896" />
     <property role="TrG5h" value="IDeclarationExtensionContext" />
   </node>
-  <node concept="1TIwiD" id="4zsmO3KtfVR">
-    <property role="EcuMT" value="5250171600077389559" />
-    <property role="3GE5qa" value="enum" />
-    <property role="TrG5h" value="QualifierRef" />
-    <property role="R4oN_" value="a qualified reference to an enumeration literal" />
-    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="4zsmO3KtfVS" role="1TKVEi">
-      <property role="IQ2ns" value="5250171600077389560" />
-      <property role="20kJfa" value="enum" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="67Y8mp$DMUI" resolve="EnumDeclaration" />
-    </node>
-    <node concept="1TJgyj" id="4zsmO3Kwq31" role="1TKVEi">
-      <property role="IQ2ns" value="5250171600078217409" />
-      <property role="20kJfa" value="lit" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
-    </node>
-    <node concept="RPilO" id="4zsmO3Kz$pa" role="lGtFl">
-      <ref role="RPilL" node="4zsmO3KtfVS" resolve="enum" />
-    </node>
-    <node concept="t5JxF" id="7hawBYG7tjX" role="lGtFl">
-      <property role="t5JxN" value="Auxiliary concept used only when creating EnumLiteralRefs to qualified enums (replaced by EnumLiteralRef when EnumLiteral is selected)" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2zwra1$QhrC">
     <property role="EcuMT" value="2945473592442820328" />
     <property role="3GE5qa" value="enum" />
@@ -1319,6 +1291,15 @@
     <property role="34LRSv" value="by literal" />
     <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
   </node>
+  <node concept="1TIwiD" id="3WZ76l1FQSK">
+    <property role="TrG5h" value="EnumIsNotTarget" />
+    <property role="34LRSv" value="isNot" />
+    <property role="R4oN_" value="check the enumeration literal is NOT equal to another literal" />
+    <property role="3GE5qa" value="enum" />
+    <property role="EcuMT" value="4557392569141521968" />
+    <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
+    <ref role="1TJDcQ" node="3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
+  </node>
   <node concept="1TIwiD" id="6NLFGgDxmkC">
     <property role="TrG5h" value="EnumIsNotInTarget" />
     <property role="34LRSv" value="isNotIn" />
@@ -1344,15 +1325,6 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="3WZ76l1FQSK">
-    <property role="TrG5h" value="EnumIsNotTarget" />
-    <property role="34LRSv" value="isNot" />
-    <property role="R4oN_" value="check the enumeration literal is NOT equal to another literal" />
-    <property role="3GE5qa" value="enum" />
-    <property role="EcuMT" value="4557392569141521968" />
-    <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
-    <ref role="1TJDcQ" node="3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
   </node>
   <node concept="1TIwiD" id="3fg81r5z3u3">
     <property role="EcuMT" value="3733519373265811331" />

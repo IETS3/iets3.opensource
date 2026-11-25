@@ -87,6 +87,7 @@
     <import index="707k" ref="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)" />
     <import index="jpm3" ref="r:e3e5593b-dfcd-4a2e-b10f-f1ed4a43f093(org.iets3.core.expr.plugin.plugin)" />
     <import index="lxc5" ref="r:b25f8540-4e18-427d-a8ac-60f947a3fbc1(jetbrains.mps.baselanguage.unitTest.execution)" />
+    <import index="9mrl" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.intellij.execution.executors(MPS.IDEA.Modules/)" />
     <import index="jtsr" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.project(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -1140,9 +1141,9 @@
               </node>
               <node concept="liA8E" id="a4sarQXWwf" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                <node concept="10M0yZ" id="a4sarQXWwg" role="37wK5m">
-                  <ref role="1PxDUh" to="9mrk:~DefaultDebugExecutor" resolve="DefaultDebugExecutor" />
-                  <ref role="3cqZAo" to="9mrk:~DefaultDebugExecutor.EXECUTOR_ID" resolve="EXECUTOR_ID" />
+                <node concept="10M0yZ" id="1mWIkUZ2Wmw" role="37wK5m">
+                  <ref role="3cqZAo" to="9mrl:~DefaultDebugExecutor.EXECUTOR_ID" resolve="EXECUTOR_ID" />
+                  <ref role="1PxDUh" to="9mrl:~DefaultDebugExecutor" resolve="DefaultDebugExecutor" />
                 </node>
               </node>
             </node>
@@ -4193,6 +4194,22 @@
           <node concept="3clFbS" id="6UkhXJgNFju" role="1zxBo7">
             <node concept="3clFbJ" id="57Vjo2T_5aL" role="3cqZAp">
               <node concept="3clFbS" id="57Vjo2T_5aN" role="3clFbx">
+                <node concept="3SKdUt" id="701pmZEYtlk" role="3cqZAp">
+                  <node concept="1PaTwC" id="701pmZEYtll" role="1aUNEU">
+                    <node concept="3oM_SD" id="701pmZEYu$f" role="1PaTwD">
+                      <property role="3oM_SC" value="this" />
+                    </node>
+                    <node concept="3oM_SD" id="701pmZEYuBR" role="1PaTwD">
+                      <property role="3oM_SC" value="actually" />
+                    </node>
+                    <node concept="3oM_SD" id="701pmZEYuBS" role="1PaTwD">
+                      <property role="3oM_SC" value="calls" />
+                    </node>
+                    <node concept="3oM_SD" id="701pmZEYuBT" role="1PaTwD">
+                      <property role="3oM_SC" value="doExecute" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="57Vjo2T_X48" role="3cqZAp">
                   <node concept="1rXfSq" id="57Vjo2T_YkC" role="3clFbG">
                     <ref role="37wK5l" node="2sMqeOJD_WE" resolve="handleNonEmptyItems" />
@@ -4269,32 +4286,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2N8OOfWqrLS" role="3cqZAp" />
-        <node concept="3clFbJ" id="3ZOWdXPxuGG" role="3cqZAp">
-          <node concept="3clFbS" id="3ZOWdXPxuGH" role="3clFbx">
-            <node concept="3clFbF" id="3ZOWdXPxuGI" role="3cqZAp">
-              <node concept="1rXfSq" id="3ZOWdXPxuGJ" role="3clFbG">
-                <ref role="37wK5l" node="3ZOWdXPxuGE" resolve="doExecute" />
-                <node concept="2OqwBi" id="3ZOWdXPxuGK" role="37wK5m">
-                  <node concept="37vLTw" id="3ZOWdXPxuGL" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3ZOWdXPxuGS" resolve="wrapper" />
-                  </node>
-                  <node concept="liA8E" id="3ZOWdXPxuGM" role="2OqNvi">
-                    <ref role="37wK5l" to="sfqd:56tRMpP_ejk" resolve="getTestCase" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="3ZOWdXPxuGN" role="3clFbw">
-            <node concept="37vLTw" id="3ZOWdXPxuGO" role="2Oq$k0">
-              <ref role="3cqZAo" node="3ZOWdXPxuGS" resolve="wrapper" />
-            </node>
-            <node concept="liA8E" id="3ZOWdXPxuGP" role="2OqNvi">
-              <ref role="37wK5l" to="sfqd:56tRMpP_ejg" resolve="isTestCase" />
             </node>
           </node>
         </node>
