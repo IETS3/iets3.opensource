@@ -3,8 +3,51 @@
   "extends": [
     "config:recommended"
   ],
+
+  // Conventional Commits for PR titles and commits (CONTRIBUTING.md): "build(deps): ..." by default,
+  // "build(platform): ..." for MPS and the MPS platform libraries (see the first package rule).
+  "semanticCommits": "enabled",
+  "semanticCommitType": "build",
+  "semanticCommitScope": "deps",
+
+  // Keep the commitizen version of the git hooks and the PR check (.pre-commit-config.yaml) up to date
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.pre-commit-config\\.yaml$/"],
+      "matchStrings": ["\"(?<depName>commitizen)==(?<currentValue>[0-9][0-9.]*)\""],
+      "datasourceTemplate": "pypi"
+    },
+    // git-cliff for the release notes (gradle/release-notes.gradle.kts)
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^gradle/libs\\.versions\\.toml$/"],
+      "matchStrings": ["gitCliff\\s*=\\s*\"(?<currentValue>[^\"]+)\""],
+      "depNameTemplate": "orhun/git-cliff",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.+)$"
+    }
+  ],
+
   "packageRules": [
     // Rules are evaluated top to bottom, all matching rules are applied
+
+    {
+      // config:recommended sets "fix"/"chore" per dependency type in its own package rules, which win over
+      // semanticCommitType above; without this, updates would be listed as fixes in the release notes
+      "matchPackageNames": ["*"],
+      "semanticCommitType": "build"
+    },
+
+    {
+      "matchPackageNames": [
+        "com.jetbrains:mps",
+        "com.jetbrains.mps:mps-prerelease",
+        "org.mpsqa:all-in-one",
+        "com.mbeddr:platform"
+      ],
+      "semanticCommitScope": "platform"
+    },
 
     {
       "matchPackageNames": [
@@ -31,6 +74,14 @@
       ],
       "matchUpdateTypes": ["major", "minor"],
       "enabled": false
+    },
+
+    {
+      // The build fails until the checksums are updated
+      "matchPackageNames": ["orhun/git-cliff"],
+      "prBodyNotes": [
+        "Update `rnGitCliffChecksums` in `gradle/release-notes.gradle.kts`, the build fails until then:\n```bash\nv={{{newVersion}}}; for t in x86_64-unknown-linux-gnu.tar.gz aarch64-unknown-linux-gnu.tar.gz x86_64-apple-darwin.tar.gz aarch64-apple-darwin.tar.gz x86_64-pc-windows-msvc.zip; do curl -fsSL -o /tmp/git-cliff-archive \"https://github.com/orhun/git-cliff/releases/download/v$v/git-cliff-$v-$t\" && echo \"$t $(shasum -a 512 /tmp/git-cliff-archive | cut -d' ' -f1)\" || echo \"$t DOWNLOAD FAILED\"; done\n```"
+      ]
     },
 
     // Disallow mps-gradle-plugin v2

@@ -2,15 +2,8 @@
 
 ## Build instructions
 
-### Using Gradle
-
-If you want to build the project, no prerequisites are required. Run `./gradlew build` from the checkout directory. This will download the required mbeddr platform language library from the itemis Nexus repository.
-When the build finishes, you can open the project in MPS in `<iets3.opensource>/code/languages/org.iets3.opensource`
-
-To publish this project's artifacts to the Maven local repository, run `./gradlew publishToMavenLocal`.
-
-If you want to use a custom version of `mbeddr` with Gradle, publish its artifacts to the local Maven repository
-(consult the mbeddr documentation).
+Run `./gradlew build` (no prerequisites), then open `code/languages/org.iets3.opensource` in MPS.
+Publishing to Maven local, custom mbeddr versions and more: [CONTRIBUTING.md](CONTRIBUTING.md#getting-started).
 
 ## Supported MPS versions
 
@@ -39,10 +32,6 @@ For details, see the [wiki](https://github.com/IETS3/iets3.opensource/wiki/Suppo
 
 ### Slack
 Ask your questions about KernelF and talk to other users and authors of the IETS3 language library on the public [Slack channel](https://jetbrains-mps.slack.com/archives/CBM449YG5).
-
-## Opening the project in MPS
-
-Open the folder [ROOT]/code/languages/org.iets3.opensource in MPS, where ROOT is the root folder of this project.
 
 ## Project Structure
 
@@ -232,11 +221,9 @@ The following devkits are available:
 | org.iets3.core.expr.genall.advanced.devkit | all advanced generation devkits |
 | org.iets3.req | requirements |
 
-## Creating a PR
+## Contributing
 
-When you open a PR, the build on TeamCity needs to be approved by a colleague at itemis, and a PR review is necessary. If this doesn't happen, please ask in the Slack channel. Often, builds fail at the following step: Check for dirty files.
-If that happens, some migrations were not executed in the project. Run `./gradlew migrate remigrate` or `gradlew.bat migrate remigrate` on the command line to execute them and commit the changes. You can also copy the diff from the build log and apply it with `git apply` as a patch. You need to strip the line numbers, though: 
-- Mac: `pbpaste | sed 's/^.\{13\}//' | git apply`
-- Windows Powershell: `Get-Clipboard | ForEach-Object { $_ -replace '^.{13}', '' } | git apply`
-- Linux solution 1: `xclip -o | sed 's/^.\{13\}//' | git apply`
-- Linux solution 2: `xsel --clipboard --output | sed 's/^.\{13\}//' | git apply`
+PRs target the oldest supported maintenance branch that needs the change; titles and commits follow
+[Conventional Commits](https://www.conventionalcommits.org/), and release notes are generated from the merged PRs
+([GitHub Releases](https://github.com/IETS3/iets3.opensource/releases)). Branches, PR rules, the TeamCity build,
+git hooks and merging: [CONTRIBUTING.md](CONTRIBUTING.md).

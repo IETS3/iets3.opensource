@@ -1,0 +1,47 @@
+# Messages that must fail the commit check. Blocks are separated by lines starting with %%.
+# Regression tests for the rules in .cz.toml (not examples), run by `cc_check.py selftest` and the CI job cc-selftest.
+%%
+Merge branch 'maintenance/mps20241' into feature/detect_duplicate_attribute_assignments_2046
+%%
+Merge remote-tracking branch 'origin/maintenance/mps20261' into merge/mps20261
+%%
+Merge pull request #2047 from IETS3/feature/detect_duplicate_attribute_assignments_2046
+%%
+Merge maintenance/mps20261 into merge/master
+%%
+Revert "Fix dependency cycle by moving tailorIETS3Variability extension point"
+%%
+fixup! fix(variability): keep empty line
+%%
+squash! fix(variability): keep empty line
+%%
+Run "Force Save All".
+%%
+Increase timeout value to improve flaky test (#2046).
+%%
+physunits: reset type prefix
+%%
+gradle: update wrapper
+%%
+feature(base): make concepts with a main expression a visible elements provider
+%%
+Fix: wrong layout
+%%
+fix(genjava.base): use Object for heterogeneous lists
+%%
+fix(Variability): wrong scope case
+%%
+fix(variability):missing space
+%%
+fix(variability): 
+%%
+fix (variability): space before scope
+%%
+[Breaking] remove QualifierRef
+%%
+fix(variability): subject
+body without blank line
+%%
+fix(variability):  two spaces after the colon
+%%
+fix(variability):	tab after the colon

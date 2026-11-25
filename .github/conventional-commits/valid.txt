@@ -1,0 +1,30 @@
+# Messages that must pass the commit check. Blocks are separated by lines starting with %%.
+# Regression tests for the rules in .cz.toml (not examples), run by `cc_check.py selftest` and the CI job cc-selftest.
+%%
+fix(variability): keep empty line after inserted variability content
+%%
+feat(kernelf)!: make EnumLiteral an ISmartReferent
+
+EnumLiterals can now be referenced via smart references.
+
+BREAKING CHANGE: QualifierRef was removed. Run the migration "Replace QualifierRef" on dependent models.
+%%
+fix(physunits): reset type prefix (#1784)
+%%
+chore(cascade): merge maintenance/mps20241 into maintenance/mps20251
+%%
+chore: merge maintenance/mps20241 into feature/conventional_commits_2062
+%%
+revert: fix(variability): keep empty line after inserted variability content
+
+This reverts commit 4d5aa9b8acd7f6182ba21d49beefc03f96f7b674.
+%%
+chore(migration): run migrate/remigrate
+%%
+build(platform): bump MPS to 2025.1.5
+%%
+build(deps): update third-party-minor
+%%
+docs!: drop the old build instructions
+%%
+test(variability): add failing tests reproducing the cyclic dependency (#2044)

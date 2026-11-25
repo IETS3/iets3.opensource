@@ -21,6 +21,7 @@ Like the other layers, this is a growing knowledge base fed by analyzing merged 
 - The repo [`README.md`](../../../README.md) is the **primary, team-maintained source** for the project structure: its `## Project Structure` section lists every virtual package with a one-line description per module (plus KernelF reference links), and `## Devkits` lists the devkits. Consult it before the structural maps below — they only add what the README does not cover, and where they overlap, the README wins.
 - os is the **upstream half** of the IETS3 family: core consumes it as a pinned binary build. Changes here often get a companion PR in iets3.core — see "The core ↔ opensource split" in `mps-platform-projects`.
 - Branching, tickets, and the PR workflow follow the IETS3 family conventions — see `mps-platform-projects`.
+- Commit messages, PR titles and PR descriptions follow the repo's [`CONTRIBUTING.md`](../../../CONTRIBUTING.md) — Conventional Commits for the PR title and **every commit** (no exceptions for merge/revert messages), no issue number in the PR title, PR description = release-notes text, console merge. Where it differs from the family conventions, CONTRIBUTING.md wins.
 
 ## References (load progressively — only the topic(s) your task touches)
 

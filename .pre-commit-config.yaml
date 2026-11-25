@@ -1,0 +1,26 @@
+# Git hooks for Conventional Commits, see CONTRIBUTING.md. Opt-in: install with `./gradlew installGitHooks`
+# (not `prek install` / `pre-commit install`: their hooks stash unstaged changes, see conventional-commits.gradle.kts).
+# Works with prek (recommended, no Python install needed) and pre-commit. Commit-message hooks only - no file
+# hooks, they would rewrite .mps files. The rules live in .cz.toml; the PR check runs the same script.
+# stage names commit-msg / pre-push / manual need pre-commit 3.2; prek ignores this key
+minimum_pre_commit_version: "3.2.0"
+default_install_hook_types: [commit-msg, pre-push]
+
+repos:
+  - repo: local
+    hooks:
+      - id: conventional-commit-msg
+        name: Conventional Commits (commit message)
+        language: python
+        additional_dependencies: ["commitizen==4.20.1"]
+        entry: python .github/conventional-commits/cc_check.py commit-msg
+        stages: [commit-msg]
+
+      - id: conventional-commits
+        name: Conventional Commits (all commits not yet on master/maintenance/mps*)
+        language: python
+        additional_dependencies: ["commitizen==4.20.1"]
+        entry: python .github/conventional-commits/cc_check.py commits
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push, manual]
