@@ -15,6 +15,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - Variability: The cyclic dependency between `org.iets3.variability.base` and `org.iets3.variability.featuremodel.base` has been removed. For this, the extension point `tailorIETS3Variability` and its settings classes have been moved to `org.iets3.variability.base`. Projects which tailor IETS3 Variability have to migrate and rebuild, see [these instructions](https://github.com/IETS3/iets3.opensource/issues/2044#issuecomment-6920740399).
+- Base: `ICanStoreCheckResult.storeLastResultWithDependencies` now takes the view model `Dependencies` instead of a `set<SNodeReference>`, following an API change in mps-extensions (JetBrains/MPS-extensions#2061).
 
 ### Fixed
 
