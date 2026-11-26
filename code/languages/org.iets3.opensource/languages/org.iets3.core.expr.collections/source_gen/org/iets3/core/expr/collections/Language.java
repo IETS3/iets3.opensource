@@ -88,6 +88,7 @@ public class Language extends LanguageRuntime {
   @Override
   protected void contribute(@NotNull LanguageExtensions extensions) {
     extensions.recordContribution("jetbrains.mps.lang.core", "ceab5195-25ea-4f22-9b92-103b95ca8c0c", EditorAspectDescriptor.class);
+    extensions.recordContribution("org.iets3.core.expr.base", "cfaa4966-b7d5-4b69-b66a-309a6e1a7290", EditorAspectDescriptor.class);
     extensions.recordContribution("org.iets3.core.expr.simpleTypes", "6b277d9a-d52d-416f-a209-1919bd737f50", EditorAspectDescriptor.class);
   }
 }

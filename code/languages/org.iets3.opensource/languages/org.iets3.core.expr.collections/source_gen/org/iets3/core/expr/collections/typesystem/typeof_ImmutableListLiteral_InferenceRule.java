@@ -12,6 +12,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
+import jetbrains.mps.errors.BaseQuickFixProvider;
 import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.typesystem.TypingHelper;
@@ -36,6 +37,11 @@ public class typeof_ImmutableListLiteral_InferenceRule extends AbstractInference
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(literal, "empty lists require a type", "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030363008863", null, errorTarget);
+          {
+            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.core.expr.collections.typesystem.fix_AddTypeConstraint_QuickFix", "7577160891290249035", false);
+            intentionProvider.putArgument("literal", literal);
+            _reporter_2309309498.addIntentionProvider(intentionProvider);
+          }
         }
         return;
       } else {
