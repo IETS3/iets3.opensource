@@ -678,5 +678,51 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="6$BuUXzpngk">
+    <property role="TrG5h" value="inferredTypeConstraintNotOfferedForMixedElementTypes" />
+    <node concept="1qefOq" id="6$BuUXzpngl" role="25YQCW">
+      <node concept="2zPypq" id="6$BuUXzpngm" role="1qenE9">
+        <property role="TrG5h" value="x" />
+        <node concept="3iBYfx" id="6$BuUXzpngn" role="2lDidJ">
+          <node concept="30bdrP" id="6$BuUXzpngo" role="3iBYfI">
+            <property role="30bdrQ" value="a" />
+          </node>
+          <node concept="2vmpnb" id="6$BuUXzpngp" role="3iBYfI" />
+          <node concept="LIFWc" id="6$BuUXzpngq" role="lGtFl">
+            <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
+            <property role="ZRATv" value="false" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="4" />
+            <property role="p6zMs" value="4" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6$BuUXzpngr" role="25YQFr">
+      <node concept="2zPypq" id="6$BuUXzpngs" role="1qenE9">
+        <property role="TrG5h" value="x" />
+        <node concept="3iBYfx" id="6$BuUXzpngt" role="2lDidJ">
+          <node concept="30bdrP" id="6$BuUXzpngu" role="3iBYfI">
+            <property role="30bdrQ" value="a" />
+          </node>
+          <node concept="2vmpnb" id="6$BuUXzpngv" role="3iBYfI" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6$BuUXzpngw" role="LjaKd">
+      <node concept="3vFxKo" id="6$BuUXzpngx" role="3cqZAp">
+        <node concept="2bRw2S" id="6$BuUXzpngy" role="3vFALc">
+          <ref role="2bRw2V" to="ukm0:6$BuUXzlBWI" resolve="addInferredTypeConstraint_ListLiteral" />
+        </node>
+      </node>
+    </node>
+    <node concept="2aEySx" id="6$BuUXzpngz" role="lGtFl">
+      <node concept="19SGf9" id="6$BuUXzpng$" role="2aEySw">
+        <node concept="19SUe$" id="6$BuUXzpng_" role="19SJt6">
+          <property role="19SUeA" value="The intention is not offered when the elements only share a join type such as string|boolean." />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

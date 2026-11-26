@@ -1057,26 +1057,54 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="6$BuUXzlBX4" role="3cqZAp">
-          <node concept="2OqwBi" id="6$BuUXzlBX5" role="3cqZAk">
-            <node concept="2OqwBi" id="6$BuUXzlBX6" role="2Oq$k0">
-              <node concept="1PxgMI" id="6$BuUXzlBX7" role="2Oq$k0">
+        <node concept="3cpWs8" id="6$BuUXzpnf3" role="3cqZAp">
+          <node concept="3cpWsn" id="6$BuUXzpnf4" role="3cpWs9">
+            <property role="TrG5h" value="elementType" />
+            <node concept="3Tqbb2" id="6$BuUXzpnf5" role="1tU5fm" />
+            <node concept="2OqwBi" id="6$BuUXzpnf6" role="33vP2m">
+              <node concept="1PxgMI" id="6$BuUXzpnf7" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
-                <node concept="2OqwBi" id="6$BuUXzlBX8" role="1m5AlR">
-                  <node concept="2Sf5sV" id="6$BuUXzlBX9" role="2Oq$k0" />
-                  <node concept="3JvlWi" id="6$BuUXzlBXa" role="2OqNvi" />
+                <node concept="2OqwBi" id="6$BuUXzpnf8" role="1m5AlR">
+                  <node concept="2Sf5sV" id="6$BuUXzpnf9" role="2Oq$k0" />
+                  <node concept="3JvlWi" id="6$BuUXzpnfa" role="2OqNvi" />
                 </node>
-                <node concept="chp4Y" id="6$BuUXzlBXb" role="3oSUPX">
+                <node concept="chp4Y" id="6$BuUXzpnfb" role="3oSUPX">
                   <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
                 </node>
               </node>
-              <node concept="3TrEf2" id="6$BuUXzlBXc" role="2OqNvi">
+              <node concept="3TrEf2" id="6$BuUXzpnfc" role="2OqNvi">
                 <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
               </node>
             </node>
-            <node concept="1mIQ4w" id="6$BuUXzlBXd" role="2OqNvi">
-              <node concept="chp4Y" id="6$BuUXzlBXe" role="cj9EA">
-                <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6$BuUXzpnfd" role="3cqZAp">
+          <node concept="3SKdUq" id="6$BuUXzpnfe" role="3SKWNk">
+            <property role="3SKdUp" value="a join type (e.g. string|boolean) means the elements have no common type" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6$BuUXzpnff" role="3cqZAp">
+          <node concept="1Wc70l" id="6$BuUXzpnfg" role="3cqZAk">
+            <node concept="2OqwBi" id="6$BuUXzpnfh" role="3uHU7B">
+              <node concept="37vLTw" id="6$BuUXzpnfi" role="2Oq$k0">
+                <ref role="3cqZAo" node="6$BuUXzpnf4" resolve="elementType" />
+              </node>
+              <node concept="1mIQ4w" id="6$BuUXzpnfj" role="2OqNvi">
+                <node concept="chp4Y" id="6$BuUXzpnfk" role="cj9EA">
+                  <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="6$BuUXzpnfl" role="3uHU7w">
+              <node concept="2OqwBi" id="6$BuUXzpnfm" role="3fr31v">
+                <node concept="37vLTw" id="6$BuUXzpnfn" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6$BuUXzpnf4" resolve="elementType" />
+                </node>
+                <node concept="1mIQ4w" id="6$BuUXzpnfo" role="2OqNvi">
+                  <node concept="chp4Y" id="6$BuUXzpnfp" role="cj9EA">
+                    <ref role="cht4Q" to="hm2y:7VuYlCQZ3ll" resolve="JoinType" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1185,26 +1213,54 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="6$BuUXzlCGc" role="3cqZAp">
-          <node concept="2OqwBi" id="6$BuUXzlCGd" role="3cqZAk">
-            <node concept="2OqwBi" id="6$BuUXzlCGe" role="2Oq$k0">
-              <node concept="1PxgMI" id="6$BuUXzlCGf" role="2Oq$k0">
+        <node concept="3cpWs8" id="6$BuUXzpnfr" role="3cqZAp">
+          <node concept="3cpWsn" id="6$BuUXzpnfs" role="3cpWs9">
+            <property role="TrG5h" value="elementType" />
+            <node concept="3Tqbb2" id="6$BuUXzpnft" role="1tU5fm" />
+            <node concept="2OqwBi" id="6$BuUXzpnfu" role="33vP2m">
+              <node concept="1PxgMI" id="6$BuUXzpnfv" role="2Oq$k0">
                 <property role="1BlNFB" value="true" />
-                <node concept="2OqwBi" id="6$BuUXzlCGg" role="1m5AlR">
-                  <node concept="2Sf5sV" id="6$BuUXzlCGh" role="2Oq$k0" />
-                  <node concept="3JvlWi" id="6$BuUXzlCGi" role="2OqNvi" />
+                <node concept="2OqwBi" id="6$BuUXzpnfw" role="1m5AlR">
+                  <node concept="2Sf5sV" id="6$BuUXzpnfx" role="2Oq$k0" />
+                  <node concept="3JvlWi" id="6$BuUXzpnfy" role="2OqNvi" />
                 </node>
-                <node concept="chp4Y" id="6$BuUXzlCGj" role="3oSUPX">
+                <node concept="chp4Y" id="6$BuUXzpnfz" role="3oSUPX">
                   <ref role="cht4Q" to="700h:6zmBjqUily5" resolve="CollectionType" />
                 </node>
               </node>
-              <node concept="3TrEf2" id="6$BuUXzlCGk" role="2OqNvi">
+              <node concept="3TrEf2" id="6$BuUXzpnf$" role="2OqNvi">
                 <ref role="3Tt5mk" to="700h:6zmBjqUily6" resolve="baseType" />
               </node>
             </node>
-            <node concept="1mIQ4w" id="6$BuUXzlCGl" role="2OqNvi">
-              <node concept="chp4Y" id="6$BuUXzlCGm" role="cj9EA">
-                <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6$BuUXzpnf_" role="3cqZAp">
+          <node concept="3SKdUq" id="6$BuUXzpnfA" role="3SKWNk">
+            <property role="3SKdUp" value="a join type (e.g. string|boolean) means the elements have no common type" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6$BuUXzpnfB" role="3cqZAp">
+          <node concept="1Wc70l" id="6$BuUXzpnfC" role="3cqZAk">
+            <node concept="2OqwBi" id="6$BuUXzpnfD" role="3uHU7B">
+              <node concept="37vLTw" id="6$BuUXzpnfE" role="2Oq$k0">
+                <ref role="3cqZAo" node="6$BuUXzpnfs" resolve="elementType" />
+              </node>
+              <node concept="1mIQ4w" id="6$BuUXzpnfF" role="2OqNvi">
+                <node concept="chp4Y" id="6$BuUXzpnfG" role="cj9EA">
+                  <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="6$BuUXzpnfH" role="3uHU7w">
+              <node concept="2OqwBi" id="6$BuUXzpnfI" role="3fr31v">
+                <node concept="37vLTw" id="6$BuUXzpnfJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6$BuUXzpnfs" resolve="elementType" />
+                </node>
+                <node concept="1mIQ4w" id="6$BuUXzpnfK" role="2OqNvi">
+                  <node concept="chp4Y" id="6$BuUXzpnfL" role="cj9EA">
+                    <ref role="cht4Q" to="hm2y:7VuYlCQZ3ll" resolve="JoinType" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1331,35 +1387,78 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="6$BuUXzlCHa" role="3cqZAp">
-          <node concept="1Wc70l" id="6$BuUXzlCHb" role="3cqZAk">
-            <node concept="2OqwBi" id="6$BuUXzlCHc" role="3uHU7B">
-              <node concept="2OqwBi" id="6$BuUXzlCHd" role="2Oq$k0">
-                <node concept="37vLTw" id="6$BuUXzlCHe" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6$BuUXzlCH3" resolve="mapType" />
+        <node concept="3SKdUt" id="6$BuUXzpnfN" role="3cqZAp">
+          <node concept="3SKdUq" id="6$BuUXzpnfO" role="3SKWNk">
+            <property role="3SKdUp" value="a join type (e.g. string|boolean) means the keys or values have no common type" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6$BuUXzpnfP" role="3cqZAp">
+          <node concept="1Wc70l" id="6$BuUXzpnfQ" role="3cqZAk">
+            <node concept="1Wc70l" id="6$BuUXzpnfR" role="3uHU7B">
+              <node concept="2OqwBi" id="6$BuUXzpnfS" role="3uHU7B">
+                <node concept="2OqwBi" id="6$BuUXzpnfT" role="2Oq$k0">
+                  <node concept="37vLTw" id="6$BuUXzpnfU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6$BuUXzlCH3" resolve="mapType" />
+                  </node>
+                  <node concept="3TrEf2" id="6$BuUXzpnfV" role="2OqNvi">
+                    <ref role="3Tt5mk" to="700h:7kYh9WszdBR" resolve="keyType" />
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="6$BuUXzlCHf" role="2OqNvi">
-                  <ref role="3Tt5mk" to="700h:7kYh9WszdBR" resolve="keyType" />
+                <node concept="1mIQ4w" id="6$BuUXzpnfW" role="2OqNvi">
+                  <node concept="chp4Y" id="6$BuUXzpnfX" role="cj9EA">
+                    <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                  </node>
                 </node>
               </node>
-              <node concept="1mIQ4w" id="6$BuUXzlCHg" role="2OqNvi">
-                <node concept="chp4Y" id="6$BuUXzlCHh" role="cj9EA">
-                  <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+              <node concept="3fqX7Q" id="6$BuUXzpnfY" role="3uHU7w">
+                <node concept="2OqwBi" id="6$BuUXzpnfZ" role="3fr31v">
+                  <node concept="2OqwBi" id="6$BuUXzpng0" role="2Oq$k0">
+                    <node concept="37vLTw" id="6$BuUXzpng1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6$BuUXzlCH3" resolve="mapType" />
+                    </node>
+                    <node concept="3TrEf2" id="6$BuUXzpng2" role="2OqNvi">
+                      <ref role="3Tt5mk" to="700h:7kYh9WszdBR" resolve="keyType" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="6$BuUXzpng3" role="2OqNvi">
+                    <node concept="chp4Y" id="6$BuUXzpng4" role="cj9EA">
+                      <ref role="cht4Q" to="hm2y:7VuYlCQZ3ll" resolve="JoinType" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="6$BuUXzlCHi" role="3uHU7w">
-              <node concept="2OqwBi" id="6$BuUXzlCHj" role="2Oq$k0">
-                <node concept="37vLTw" id="6$BuUXzlCHk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6$BuUXzlCH3" resolve="mapType" />
+            <node concept="1Wc70l" id="6$BuUXzpng5" role="3uHU7w">
+              <node concept="2OqwBi" id="6$BuUXzpng6" role="3uHU7B">
+                <node concept="2OqwBi" id="6$BuUXzpng7" role="2Oq$k0">
+                  <node concept="37vLTw" id="6$BuUXzpng8" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6$BuUXzlCH3" resolve="mapType" />
+                  </node>
+                  <node concept="3TrEf2" id="6$BuUXzpng9" role="2OqNvi">
+                    <ref role="3Tt5mk" to="700h:7kYh9WszdBT" resolve="valueType" />
+                  </node>
                 </node>
-                <node concept="3TrEf2" id="6$BuUXzlCHl" role="2OqNvi">
-                  <ref role="3Tt5mk" to="700h:7kYh9WszdBT" resolve="valueType" />
+                <node concept="1mIQ4w" id="6$BuUXzpnga" role="2OqNvi">
+                  <node concept="chp4Y" id="6$BuUXzpngb" role="cj9EA">
+                    <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+                  </node>
                 </node>
               </node>
-              <node concept="1mIQ4w" id="6$BuUXzlCHm" role="2OqNvi">
-                <node concept="chp4Y" id="6$BuUXzlCHn" role="cj9EA">
-                  <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
+              <node concept="3fqX7Q" id="6$BuUXzpngc" role="3uHU7w">
+                <node concept="2OqwBi" id="6$BuUXzpngd" role="3fr31v">
+                  <node concept="2OqwBi" id="6$BuUXzpnge" role="2Oq$k0">
+                    <node concept="37vLTw" id="6$BuUXzpngf" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6$BuUXzlCH3" resolve="mapType" />
+                    </node>
+                    <node concept="3TrEf2" id="6$BuUXzpngg" role="2OqNvi">
+                      <ref role="3Tt5mk" to="700h:7kYh9WszdBT" resolve="valueType" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="6$BuUXzpngh" role="2OqNvi">
+                    <node concept="chp4Y" id="6$BuUXzpngi" role="cj9EA">
+                      <ref role="cht4Q" to="hm2y:7VuYlCQZ3ll" resolve="JoinType" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
