@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -11,7 +12,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests">
@@ -78,6 +79,10 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7181125477683417252" name="jetbrains.mps.build.structure.BuildExternalLayoutDependency" flags="ng" index="13uUGR">
+        <reference id="7181125477683417255" name="layout" index="13uUGO" />
+        <child id="7181125477683417254" name="artifacts" index="13uUGP" />
+      </concept>
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
@@ -151,6 +156,7 @@
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
+        <property id="4972001163784560067" name="pluginXmlProvided" index="1NdglO" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -1254,6 +1260,9 @@
       <node concept="m$_yC" id="7yHH$DDpOn9" role="m$_yJ">
         <ref role="m$_y1" node="7yHH$DDoBdm" resolve="org.iets3.contextfilter" />
       </node>
+      <node concept="m$_yC" id="21ASjxbS1UN" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7jcf0001" resolve="com.jetbrains.mpsext.stubs.jcef" />
+      </node>
     </node>
     <node concept="m$_wf" id="65GA3KslQ1N" role="3989C9">
       <property role="m$_wk" value="org.iets3.interpreterExecutor" />
@@ -2068,6 +2077,11 @@
             <node concept="3qWCbU" id="7yHH$DDpK$0" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="21ASjxbRRs1" role="3bR37C">
+          <node concept="3bR9La" id="21ASjxbRRs2" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:7jcf0015" resolve="com.jetbrains.mpsext.stubs.jcef" />
           </node>
         </node>
       </node>
@@ -3062,6 +3076,11 @@
         <node concept="1SiIV0" id="3sFEKbxoGfN" role="3bR37C">
           <node concept="3bR9La" id="3sFEKbxoGfO" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1mWIkV03mIA" role="3bR37C">
+          <node concept="3bR9La" id="1mWIkV03mIB" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:uqqfP8JWSl" resolve="MPS.IDEA.Modules" />
           </node>
         </node>
         <node concept="1SiIV0" id="5Vm9DVze5zu" role="3bR37C">
@@ -16188,6 +16207,12 @@
       <property role="3UIfUI" value="10000" />
       <property role="1YnnvL" value="1024" />
     </node>
+    <node concept="13uUGR" id="75qazh66MtW" role="1l3spa">
+      <ref role="13uUGO" to="90a9:75qazh5EP1k" resolve="jcef-plugin" />
+      <node concept="398BVA" id="75qazh66MtX" role="13uUGP">
+        <ref role="398BVh" node="5wLtKNeSRPo" resolve="mps.home" />
+      </node>
+    </node>
     <node concept="2G$12M" id="65GA3KslPg9" role="3989C9">
       <property role="TrG5h" value="org.iets3.interpeterExecutor" />
       <node concept="1E1JtA" id="65GA3KslPpV" role="2G$12L">
@@ -16441,6 +16466,21 @@
         </node>
         <node concept="L2wRC" id="76EiapPSb0Y" role="39821P">
           <ref role="L2wRA" node="4Ifs9kimNd8" resolve="test.org.iets3.core.expr.typetags.physunits" />
+        </node>
+      </node>
+      <node concept="m$_wl" id="6F$RQ4WZI20" role="39821P">
+        <ref role="m_rDy" node="6F$RQ4WZI1T" resolve="com.intellij.modules.jcef" />
+        <node concept="pUk6x" id="6F$RQ4WZI21" role="pUk7w" />
+        <node concept="2HvfSZ" id="6F$RQ4WZI22" role="39821P">
+          <node concept="398BVA" id="6F$RQ4WZI23" role="2HvfZ0">
+            <ref role="398BVh" node="OJuIQp_qpo" resolve="mps.home" />
+            <node concept="2Ry0Ak" id="6F$RQ4WZI24" role="iGT6I">
+              <property role="2Ry0Am" value="plugins" />
+              <node concept="2Ry0Ak" id="6F$RQ4WZI25" role="2Ry0An">
+                <property role="2Ry0Am" value="jcef-plugin" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -18490,6 +18530,9 @@
         <node concept="398BVA" id="71RLIEFHzg5" role="1RZ71A">
           <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         </node>
+        <node concept="24YFd4" id="3ACnbdRHgqi" role="24YFd7">
+          <ref role="24YFd5" node="6F$RQ4WZI1T" resolve="com.intellij.modules.jcef" />
+        </node>
       </node>
       <node concept="22LTRF" id="2mWlB9yWxMB" role="22LTRK">
         <ref role="22LTRG" node="2mWlB9yWxGl" resolve="tests" />
@@ -18497,6 +18540,30 @@
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
       <ref role="2vP9LP" node="OJuIQq2vpw" resolve="tests" />
+    </node>
+    <node concept="m$_wf" id="6F$RQ4WZI1T" role="3989C9">
+      <property role="1NdglO" value="true" />
+      <property role="m$_wk" value="com.intellij.modules.jcef" />
+      <node concept="3_J27D" id="6F$RQ4WZI1U" role="m$_yQ">
+        <node concept="3Mxwew" id="6F$RQ4WZI1V" role="3MwsjC">
+          <property role="3MwjfP" value="Web Browser (JCEF)" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6F$RQ4WZI1W" role="m_cZH">
+        <node concept="3Mxwew" id="6F$RQ4WZI1X" role="3MwsjC">
+          <property role="3MwjfP" value="jcef-plugin" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6F$RQ4WZI1Y" role="m$_w8">
+        <node concept="3Mxwew" id="6F$RQ4WZI1Z" role="3MwsjC">
+          <property role="3MwjfP" value="provided" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="6F$RQ4XcqUc" role="3s6cr7">
+        <node concept="3Mxwew" id="6F$RQ4XcqUd" role="3MwsjC">
+          <property role="3MwjfP" value="Workaround: puts the MPS JCEF plugin on the test plugin list, otherwise plugins depending on JCEF stubs don't load and their tests are skipped. OS variant: see Gradle task resolveMPS." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="71zSQigYEMA">

@@ -2176,8 +2176,21 @@
             <node concept="3clFbF" id="3FexrMiQnAl" role="3cqZAp">
               <node concept="2OqwBi" id="3FexrMiQnAm" role="3clFbG">
                 <node concept="2YIFZM" id="3FexrMiQnAn" role="2Oq$k0">
-                  <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
+                  <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance(jetbrains.mps.project.Project)" resolve="getInstance" />
                   <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
+                  <node concept="2OqwBi" id="75qazh8qhV9" role="37wK5m">
+                    <node concept="2OqwBi" id="75qazh8qhVa" role="2Oq$k0">
+                      <node concept="37vLTw" id="75qazh8qhVb" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4150e4Ibu0X" resolve="ctx" />
+                      </node>
+                      <node concept="liA8E" id="75qazh8qhVc" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="75qazh8qhVd" role="2OqNvi">
+                      <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="liA8E" id="3FexrMiQnAo" role="2OqNvi">
                   <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />
