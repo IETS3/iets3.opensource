@@ -116,6 +116,9 @@
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -341,9 +344,6 @@
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
-      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
-        <child id="1226511765987" name="elementType" index="2hN53Y" />
-      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -502,7 +502,10 @@
             <node concept="37vLTw" id="55VuGTOFt9N" role="37wK5m">
               <ref role="3cqZAo" node="3R3AIvuq5LD" resolve="result" />
             </node>
-            <node concept="10Nm6u" id="55VuGTOFt9O" role="37wK5m" />
+            <node concept="10M0yZ" id="3k5K87YXGO6" role="37wK5m">
+              <ref role="1PxDUh" to="u3te:6mpWvTZTYKW" resolve="Dependencies" />
+              <ref role="3cqZAo" to="u3te:6mpWvTZTYL2" resolve="NONE" />
+            </node>
           </node>
         </node>
       </node>
@@ -526,10 +529,8 @@
       </node>
       <node concept="37vLTG" id="55VuGTOFj7c" role="3clF46">
         <property role="TrG5h" value="dependencies" />
-        <node concept="2hMVRd" id="55VuGTOFj7e" role="1tU5fm">
-          <node concept="3uibUv" id="55VuGTOFj7g" role="2hN53Y">
-            <ref role="3uigEE" to="mhbf:~SNodeReference" resolve="SNodeReference" />
-          </node>
+        <node concept="3uibUv" id="3k5K87YXCMk" role="1tU5fm">
+          <ref role="3uigEE" to="u3te:6mpWvTZTYKW" resolve="Dependencies" />
         </node>
       </node>
       <node concept="3clFbS" id="55VuGTOFj7h" role="3clF47">
