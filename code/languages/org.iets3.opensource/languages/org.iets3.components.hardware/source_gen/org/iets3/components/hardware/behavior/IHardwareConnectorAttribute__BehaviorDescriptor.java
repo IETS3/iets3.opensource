@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IHardwareConnectorAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x5e7e99335e966d47L, "org.iets3.components.hardware.structure.IHardwareConnectorAttribute");
 
-  public static final SMethod<SNode> kind_id6LfBX8Yl7Hz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594031459L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> kind_id6LfBX8Yl7Hz = new SMethodBuilder<>(SNode.class).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594031459L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kind_id6LfBX8Yl7Hz);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kind_id6LfBX8Yl7Hz);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode kind_id6LfBX8Yl7Hz(@NotNull SNode __thisNode__) {
     return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x952418520a360f2L, "org.iets3.components.hardware.structure.HardwareKind"));
@@ -35,10 +31,6 @@ public final class IHardwareConnectorAttribute__BehaviorDescriptor extends BaseB
   /*package*/ IHardwareConnectorAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

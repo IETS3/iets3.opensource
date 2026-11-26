@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -22,15 +20,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Cardinality__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47518dac4L, "org.iets3.variability.featuremodel.base.structure.Cardinality");
 
-  public static final SMethod<Void> setUpperBound_id7Wa2sv3EZOu = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setUpperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169924894L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Void> setInfinitePrecision_id7Wa2sv3F28v = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setInfinitePrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169934367L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Boolean> hasInfiniteUpperBound_id7Wa2sv3F32k = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasInfiniteUpperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169938068L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Integer> getUpperBound_id7Wa2sv3F4CL = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUpperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169944625L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Void> setUpperBound_id7Wa2sv3EZOu = new SMethodBuilder<>(Void.TYPE).name("setUpperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169924894L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "p"));
+  public static final SMethod<Void> setInfinitePrecision_id7Wa2sv3F28v = new SMethodBuilder<>(Void.TYPE).name("setInfinitePrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169934367L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Boolean> hasInfiniteUpperBound_id7Wa2sv3F32k = new SMethodBuilder<>(Boolean.TYPE).name("hasInfiniteUpperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169938068L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Integer> getUpperBound_id7Wa2sv3F4CL = new SMethodBuilder<>(Integer.TYPE).name("getUpperBound").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169944625L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setUpperBound_id7Wa2sv3EZOu, setInfinitePrecision_id7Wa2sv3F28v, hasInfiniteUpperBound_id7Wa2sv3F32k, getUpperBound_id7Wa2sv3F4CL);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setUpperBound_id7Wa2sv3EZOu, setInfinitePrecision_id7Wa2sv3F28v, hasInfiniteUpperBound_id7Wa2sv3F32k, getUpperBound_id7Wa2sv3F4CL);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void setUpperBound_id7Wa2sv3EZOu(@NotNull SNode __thisNode__, int p) {
     SPropertyOperations.assign(__thisNode__, PROPS.upperBound$U0OM, p + "");
@@ -54,10 +50,6 @@ public final class Cardinality__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Cardinality__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

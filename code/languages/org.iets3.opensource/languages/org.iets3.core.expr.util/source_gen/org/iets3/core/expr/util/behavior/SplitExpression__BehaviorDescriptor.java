@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,14 +24,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class SplitExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x20915a5023271309L, "org.iets3.core.expr.util.structure.SplitExpression");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getRangeType_id22hm_0zj$Sb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getRangeType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2346756181072956939L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createCorrespondingAlt_id5aHkq2wgwUU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createCorrespondingAlt").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5957507632406335162L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getRangeType_id22hm_0zj$Sb = new SMethodBuilder<>(SNode.class).name("getRangeType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2346756181072956939L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter(SNode.class, "currentNode"));
+  public static final SMethod<SNode> createCorrespondingAlt_id5aHkq2wgwUU = new SMethodBuilder<>(SNode.class).name("createCorrespondingAlt").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5957507632406335162L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getRangeType_id22hm_0zj$Sb, createCorrespondingAlt_id5aHkq2wgwUU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getRangeType_id22hm_0zj$Sb, createCorrespondingAlt_id5aHkq2wgwUU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     StringBuffer bf = new StringBuffer("split |" + SplitValue__BehaviorDescriptor.renderReadable_idHywGhj7VWH.invoke(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.ranges$OxTL)).first()) + "|");
@@ -60,10 +56,6 @@ public final class SplitExpression__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ SplitExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

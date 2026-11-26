@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,11 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class MappingContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8c1ef69abcac4cb5L, 0x96196b27d0aefc0cL, 0x2b39747c07e31163L, "org.iets3.core.mapping.structure.MappingContainer");
 
-  public static final SMethod<SNode> mappingSection_id3GbuJrdLq2n = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("mappingSection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4254629473414389911L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  public static final SMethod<SNode> instanceSection_id3GbuJrdLq2$ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("instanceSection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4254629473414389924L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> mappingSection_id3GbuJrdLq2n = new SMethodBuilder<>(SNode.class).name("mappingSection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4254629473414389911L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<SNode> instanceSection_id3GbuJrdLq2$ = new SMethodBuilder<>(SNode.class).name("instanceSection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4254629473414389924L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mappingSection_id3GbuJrdLq2n, instanceSection_id3GbuJrdLq2$, dependencies_id1WCh2the5Vh);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mappingSection_id3GbuJrdLq2n, instanceSection_id3GbuJrdLq2$, dependencies_id1WCh2the5Vh);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.mappingContent$6V2z, CONCEPTS.EmptyMappingContent$SS);

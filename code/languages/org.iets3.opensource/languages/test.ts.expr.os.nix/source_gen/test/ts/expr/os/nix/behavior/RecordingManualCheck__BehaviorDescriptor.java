@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,14 +22,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class RecordingManualCheck__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb80fab4e53f2409cL, 0x81d83475855e0e42L, 0x257bf7f218fe313L, "test.ts.expr.os.nix.structure.RecordingManualCheck");
 
-  public static final SMethod<Void> runManually_id3R3AIvumrTm = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430728278L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
-  public static final SMethod<Void> performAdditionalEditorUpdate_id3JvidvJx7iM = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("performAdditionalEditorUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4314247060317828274L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
-  public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRunManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Void> runManually_id3R3AIvumrTm = new SMethodBuilder<>(Void.TYPE).name("runManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430728278L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "edCtxOrNull"));
+  public static final SMethod<Void> performAdditionalEditorUpdate_id3JvidvJx7iM = new SMethodBuilder<>(Void.TYPE).name("performAdditionalEditorUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4314247060317828274L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "edCtxOrNull"));
+  public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<>(Boolean.TYPE).name("mustBeRunManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runManually_id3R3AIvumrTm, performAdditionalEditorUpdate_id3JvidvJx7iM, mustBeRunManually_id3R3AIvumAZH);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runManually_id3R3AIvumrTm, performAdditionalEditorUpdate_id3JvidvJx7iM, mustBeRunManually_id3R3AIvumAZH);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void runManually_id3R3AIvumrTm(@NotNull SNode __thisNode__, EditorContext edCtxOrNull) {
     ListSequence.fromList(RecordedManualChecks.CALLS).addElement("run " + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL));
@@ -46,10 +42,6 @@ public final class RecordingManualCheck__BehaviorDescriptor extends BaseBHDescri
   /*package*/ RecordingManualCheck__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

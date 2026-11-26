@@ -7,27 +7,23 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IMayAllowEffect__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0xd373e3929e06954L, "org.iets3.core.expr.base.structure.IMayAllowEffect");
 
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> genericError_idORfz$E_gVa = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("genericError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261460618954L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> noError_idORfz$ED07o = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("noError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261461598680L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<String> genericError_idORfz$E_gVa = new SMethodBuilder<>(String.class).name("genericError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261460618954L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> noError_idORfz$ED07o = new SMethodBuilder<>(String.class).name("noError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261461598680L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsEffectForNode_idORfz$DS6Ap, genericError_idORfz$E_gVa, noError_idORfz$ED07o);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsEffectForNode_idORfz$DS6Ap, genericError_idORfz$E_gVa, noError_idORfz$ED07o);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String allowsEffectForNode_idORfz$DS6Ap(@NotNull SNode __thisNode__, SNode n) {
     return null;
@@ -42,10 +38,6 @@ public final class IMayAllowEffect__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IMayAllowEffect__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

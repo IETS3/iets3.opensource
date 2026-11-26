@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class UDPProtocol__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x7ef7796277983bbL, "org.iets3.protocol.transport.structure.UDPProtocol");
 
-  public static final SMethod<String> simpleName_id6JtAeCuSn_1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("simpleName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7772536663219206465L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<String> simpleName_id6JtAeCuSn_1 = new SMethodBuilder<>(String.class).name("simpleName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7772536663219206465L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(simpleName_id6JtAeCuSn_1);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(simpleName_id6JtAeCuSn_1);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String simpleName_id6JtAeCuSn_1(@NotNull SNode __thisNode__) {
     return "udp";
@@ -34,10 +30,6 @@ public final class UDPProtocol__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ UDPProtocol__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

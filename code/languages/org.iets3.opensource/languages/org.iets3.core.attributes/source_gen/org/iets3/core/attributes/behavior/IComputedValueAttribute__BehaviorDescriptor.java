@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,18 +21,16 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IComputedValueAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x583939beded04735L, 0xa055a74f8477fc34L, 0x1b5a6519ee80ad54L, "org.iets3.core.attributes.structure.IComputedValueAttribute");
 
-  public static final SMethod<Iterable<SNode>> getContributingAttributes_id1HqphBIwqoi = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getContributingAttributes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948978075154L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<SNode> computedValue_id1HqphBIwaPM = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("computedValue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948978011506L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Iterable<SNode>> getContributingAttributeValues_id1HqphBIBEqw = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getContributingAttributeValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979975840L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Boolean> hasContributingAttributes_id1HqphBIBIo4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasContributingAttributes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979992068L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<SNode> getHighestAttributeValue_id1HqphBIBFu0 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getHighestAttributeValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979980160L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<SNode> getLowestAttributeValue_id1HqphBIBGLT = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getLowestAttributeValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979985529L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<SNode> getEffectiveValue_id1HqphBICm56 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getEffectiveValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948980154694L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Iterable<SNode>> getContributingAttributes_id1HqphBIwqoi = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getContributingAttributes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948978075154L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<SNode> computedValue_id1HqphBIwaPM = new SMethodBuilder<>(SNode.class).name("computedValue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948978011506L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Iterable<SNode>> getContributingAttributeValues_id1HqphBIBEqw = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getContributingAttributeValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979975840L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Boolean> hasContributingAttributes_id1HqphBIBIo4 = new SMethodBuilder<>(Boolean.TYPE).name("hasContributingAttributes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979992068L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<SNode> getHighestAttributeValue_id1HqphBIBFu0 = new SMethodBuilder<>(SNode.class).name("getHighestAttributeValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979980160L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<SNode> getLowestAttributeValue_id1HqphBIBGLT = new SMethodBuilder<>(SNode.class).name("getLowestAttributeValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979985529L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<SNode> getEffectiveValue_id1HqphBICm56 = new SMethodBuilder<>(SNode.class).name("getEffectiveValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948980154694L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContributingAttributes_id1HqphBIwqoi, computedValue_id1HqphBIwaPM, getContributingAttributeValues_id1HqphBIBEqw, hasContributingAttributes_id1HqphBIBIo4, getHighestAttributeValue_id1HqphBIBFu0, getLowestAttributeValue_id1HqphBIBGLT, getEffectiveValue_id1HqphBICm56);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContributingAttributes_id1HqphBIwqoi, computedValue_id1HqphBIwaPM, getContributingAttributeValues_id1HqphBIBEqw, hasContributingAttributes_id1HqphBIBIo4, getHighestAttributeValue_id1HqphBIBFu0, getLowestAttributeValue_id1HqphBIBGLT, getEffectiveValue_id1HqphBICm56);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getContributingAttributeValues_id1HqphBIBEqw(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(IComputedValueAttribute__BehaviorDescriptor.getContributingAttributes_id1HqphBIwqoi.invoke(__thisNode__)).select((it) -> (SNode) IValueAttribute__BehaviorDescriptor.getEffectiveValue_id1HqphBICm56.invoke(it));
@@ -59,10 +55,6 @@ public final class IComputedValueAttribute__BehaviorDescriptor extends BaseBHDes
   /*package*/ IComputedValueAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

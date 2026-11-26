@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.awt.Color;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.components.functional.editor.FunctionalColors;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -30,19 +28,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class DataItemPortType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x6c4f9fd23e4bfae2L, "org.iets3.components.functional.structure.DataItemPortType");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> kind_id6LfBX8Yl7Hz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594031459L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> isCompatibleWithGoverningType_idcJpacq1kKx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCompatibleWithProvidedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698186273L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getReferencedNode_idsiw10GjEcX = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReferencedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514797470525L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Color> characteristicColor_idmIQkxg4rmC = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("characteristicColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741504424L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> createConnectorType_id4KDeVD8s9TJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createConnectorType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5487983292192956015L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> item_id7NJy08a61vr = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("item").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9002563722477574107L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<SNode> applicableConstraint_id1YmHO72HLmR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("applicableConstraint").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2276208154749900215L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> kind_id6LfBX8Yl7Hz = new SMethodBuilder<>(SNode.class).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594031459L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isCompatibleWithGoverningType_idcJpacq1kKx = new SMethodBuilder<>(Boolean.TYPE).name("isCompatibleWithProvidedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698186273L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "governingPortType"));
+  public static final SMethod<SNode> getReferencedNode_idsiw10GjEcX = new SMethodBuilder<>(SNode.class).name("getReferencedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514797470525L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Color> characteristicColor_idmIQkxg4rmC = new SMethodBuilder<>(Color.class).name("characteristicColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741504424L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> createConnectorType_id4KDeVD8s9TJ = new SMethodBuilder<>(SNode.class).name("createConnectorType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5487983292192956015L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> item_id7NJy08a61vr = new SMethodBuilder<>(SNode.class).name("item").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9002563722477574107L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<SNode> applicableConstraint_id1YmHO72HLmR = new SMethodBuilder<>(SNode.class).name("applicableConstraint").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2276208154749900215L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, kind_id6LfBX8Yl7Hz, isCompatibleWithGoverningType_idcJpacq1kKx, getReferencedNode_idsiw10GjEcX, characteristicColor_idmIQkxg4rmC, createConnectorType_id4KDeVD8s9TJ, item_id7NJy08a61vr, applicableConstraint_id1YmHO72HLmR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, kind_id6LfBX8Yl7Hz, isCompatibleWithGoverningType_idcJpacq1kKx, getReferencedNode_idsiw10GjEcX, characteristicColor_idmIQkxg4rmC, createConnectorType_id4KDeVD8s9TJ, item_id7NJy08a61vr, applicableConstraint_id1YmHO72HLmR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     StringRepresentation text = new StringRepresentation();
@@ -92,10 +88,6 @@ public final class DataItemPortType__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ DataItemPortType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.awt.Color;
@@ -17,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.components.hardware.editor.HardwareColors;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -26,14 +24,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Ethernet100MBitPortType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x952418520a52283L, "org.iets3.components.hardware.structure.Ethernet100MBitPortType");
 
-  public static final SMethod<Boolean> isCompatibleWithGoverningType_idcJpacq1kKx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCompatibleWithGoverningType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698186273L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createConnectorType_id4KDeVD8s9TJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createConnectorType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5487983292192956015L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Color> characteristicColor_idmIQkxg4rmC = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("characteristicColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741504424L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isCompatibleWithGoverningType_idcJpacq1kKx = new SMethodBuilder<>(Boolean.TYPE).name("isCompatibleWithGoverningType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698186273L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "governingPortType"));
+  public static final SMethod<SNode> createConnectorType_id4KDeVD8s9TJ = new SMethodBuilder<>(SNode.class).name("createConnectorType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5487983292192956015L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Color> characteristicColor_idmIQkxg4rmC = new SMethodBuilder<>(Color.class).name("characteristicColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741504424L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleWithGoverningType_idcJpacq1kKx, createConnectorType_id4KDeVD8s9TJ, characteristicColor_idmIQkxg4rmC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleWithGoverningType_idcJpacq1kKx, createConnectorType_id4KDeVD8s9TJ, characteristicColor_idmIQkxg4rmC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isCompatibleWithGoverningType_idcJpacq1kKx(@NotNull SNode __thisNode__, SNode governingPortType) {
     return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(governingPortType)), CONCEPTS.Ethernet100MBitPortType$Go);
@@ -48,10 +44,6 @@ public final class Ethernet100MBitPortType__BehaviorDescriptor extends BaseBHDes
   /*package*/ Ethernet100MBitPortType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

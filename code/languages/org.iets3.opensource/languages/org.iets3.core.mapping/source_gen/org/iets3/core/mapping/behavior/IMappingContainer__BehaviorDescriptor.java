@@ -8,34 +8,26 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IMappingContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x8c1ef69abcac4cb5L, 0x96196b27d0aefc0cL, 0x4d9289db10ead280L, "org.iets3.core.mapping.structure.IMappingContainer");
 
-  public static final SMethod<SNode> mappingSection_id3GbuJrdLq2n = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("mappingSection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4254629473414389911L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  public static final SMethod<SNode> instanceSection_id3GbuJrdLq2$ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("instanceSection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4254629473414389924L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<SNode> mappingSection_id3GbuJrdLq2n = new SMethodBuilder<>(SNode.class).name("mappingSection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4254629473414389911L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<SNode> instanceSection_id3GbuJrdLq2$ = new SMethodBuilder<>(SNode.class).name("instanceSection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4254629473414389924L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mappingSection_id3GbuJrdLq2n, instanceSection_id3GbuJrdLq2$);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mappingSection_id3GbuJrdLq2n, instanceSection_id3GbuJrdLq2$);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IMappingContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
