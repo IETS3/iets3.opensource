@@ -9,6 +9,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 
+- Collections: Typing `<` directly after the `list`, `set` or `map` keyword adds the element type constraint without opening the completion menu. Empty collection literals offer the quick fix "Add Type Constraint" on their "require a type" error; non-empty ones offer the intention "Add Inferred Type Constraint", which adds the type inferred from the elements.
 - Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
 - Variability: Duplicate feature attribute assignments in configurations are now reported, with a quickfix to remove them (#2046).
 
