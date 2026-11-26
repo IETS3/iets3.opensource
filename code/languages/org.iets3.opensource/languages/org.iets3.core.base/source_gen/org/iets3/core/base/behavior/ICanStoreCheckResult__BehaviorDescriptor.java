@@ -9,8 +9,7 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
-import java.util.Set;
-import org.jetbrains.mps.openapi.model.SNodeReference;
+import com.jetbrains.mpsext.viewmodel.runtime.Dependencies;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -27,7 +26,7 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<String> userObjectKey_id3R3AIvum$_6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("userObjectKey").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430763846L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Void> storeLastResult_id3R3AIvuq5Dp = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("storeLastResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177431685721L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(IResult.class, ""));
-  public static final SMethod<Void> storeLastResultWithDependencies_id55VuGTOFj73 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("storeLastResultWithDependencies").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5871421566346932675L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(IResult.class, ""), SMethodBuilder.createJavaParameter((Class<Set<SNodeReference>>) ((Class) Object.class), ""));
+  public static final SMethod<Void> storeLastResultWithDependencies_id55VuGTOFj73 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("storeLastResultWithDependencies").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5871421566346932675L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(IResult.class, ""), SMethodBuilder.createJavaParameter(Dependencies.class, ""));
   public static final SMethod<IResult> deleteLastResult_id5yiuuzNYbce = new SMethodBuilder<IResult>(new SJavaCompoundTypeImpl(IResult.class)).name("deleteLastResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6382297663369949966L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> hasExistingResult_id3R3AIvumwpO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasExistingResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430746740L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> hasCounterExample_idhXRDtv5Cyz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasCounterExample").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(323659489957284003L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
@@ -43,9 +42,9 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
     return "ICanRunCheckManually.lastResult";
   }
   /*package*/ static void storeLastResult_id3R3AIvuq5Dp(@NotNull SNode __thisNode__, IResult result) {
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResultWithDependencies_id55VuGTOFj73.invoke(__thisNode__, result, null);
+    ICanStoreCheckResult__BehaviorDescriptor.storeLastResultWithDependencies_id55VuGTOFj73.invoke(__thisNode__, result, Dependencies.NONE);
   }
-  /*package*/ static void storeLastResultWithDependencies_id55VuGTOFj73(@NotNull SNode __thisNode__, IResult result, Set<SNodeReference> dependencies) {
+  /*package*/ static void storeLastResultWithDependencies_id55VuGTOFj73(@NotNull SNode __thisNode__, IResult result, Dependencies dependencies) {
     ViewModels.named("org.iets3.core.base.behavior.CheckResults").write(__thisNode__, result, dependencies);
     if (result instanceof IPersistentResult && SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.ICanStorePersistentResult$LT)) {
       ((IPersistentResult) result).writeToFile();
@@ -104,7 +103,7 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
         storeLastResult_id3R3AIvuq5Dp(node, (IResult) parameters[0]);
         return null;
       case 2:
-        storeLastResultWithDependencies_id55VuGTOFj73(node, (IResult) parameters[0], (Set<SNodeReference>) parameters[1]);
+        storeLastResultWithDependencies_id55VuGTOFj73(node, (IResult) parameters[0], (Dependencies) parameters[1]);
         return null;
       case 3:
         return (T) ((IResult) deleteLastResult_id5yiuuzNYbce(node));
