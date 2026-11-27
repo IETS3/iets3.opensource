@@ -30,6 +30,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">07e2118e-763f-4d93-8ae6-23cf5ede3d59(org.iets3.core.plugin)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
@@ -185,6 +186,7 @@
     <module reference="616c1a94-9ced-468d-8c3a-fbdcf9734823(org.iets3.core.expr.typetags.units.interpreter)" version="0" />
     <module reference="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" version="0" />
     <module reference="4289e037-cc03-4bfe-bf89-2db268aec73a(org.iets3.core.expr.util.interpreter)" version="0" />
+    <module reference="07e2118e-763f-4d93-8ae6-23cf5ede3d59(org.iets3.core.plugin)" version="0" />
     <module reference="2614fab6-e994-4127-9a5d-8c8cd7ba2833(test.in.expr.os)" version="0" />
   </dependencyVersions>
 </solution>

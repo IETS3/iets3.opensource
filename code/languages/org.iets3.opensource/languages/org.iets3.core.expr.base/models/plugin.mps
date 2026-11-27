@@ -66,6 +66,7 @@
     <import index="ntri" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context.typechecking(MPS.Core/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="h587" ref="r:cdcdec44-a636-42c8-b599-c146eb2ca77d(org.iets3.core.plugin.plugin)" />
     <import index="qurh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.typesystem.runtime(MPS.Core/)" implicit="true" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
   </imports>
@@ -18591,10 +18592,76 @@
             <ref role="37wK5l" node="34h6AY07jIf" resolve="ensureInstalled" />
           </node>
         </node>
+        <node concept="3SKdUt" id="5oh3yFSKj9T" role="3cqZAp">
+          <node concept="1PaTwC" id="5oh3yFSKj9X" role="1aUNEU">
+            <node concept="3oM_SD" id="5oh3yFSKj9Z" role="1PaTwD">
+              <property role="3oM_SC" value="so" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja0" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja1" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja2" role="1PaTwD">
+              <property role="3oM_SC" value="Run" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja3" role="1PaTwD">
+              <property role="3oM_SC" value="Manually" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja4" role="1PaTwD">
+              <property role="3oM_SC" value="actions" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja5" role="1PaTwD">
+              <property role="3oM_SC" value="run" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja6" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja7" role="1PaTwD">
+              <property role="3oM_SC" value="their" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja8" role="1PaTwD">
+              <property role="3oM_SC" value="checks" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKja9" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKjaa" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKjab" role="1PaTwD">
+              <property role="3oM_SC" value="interpreter" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFSKjac" role="1PaTwD">
+              <property role="3oM_SC" value="session" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oh3yFSKjad" role="3cqZAp">
+          <node concept="2YIFZM" id="5oh3yFSKjaf" role="3clFbG">
+            <ref role="1Pybhc" to="h587:5oh3yFSFlCE" resolve="RunManuallyScopes" />
+            <ref role="37wK5l" to="h587:5oh3yFSFlCZ" resolve="register" />
+            <node concept="10M0yZ" id="5oh3yFSKjag" role="37wK5m">
+              <ref role="1PxDUh" node="p7mnEsF_W6" resolve="InterpreterTestRunScope" />
+              <ref role="3cqZAo" node="5oh3yFSKalr" resolve="RUN_MANUALLY" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2uRRBI" id="34h6AY1Mnbu" role="2uRRBF">
       <node concept="3clFbS" id="34h6AY1Mnbw" role="2VODD2">
+        <node concept="3clFbF" id="5oh3yFSKjah" role="3cqZAp">
+          <node concept="2YIFZM" id="5oh3yFSKjaj" role="3clFbG">
+            <ref role="1Pybhc" to="h587:5oh3yFSFlCE" resolve="RunManuallyScopes" />
+            <ref role="37wK5l" to="h587:5oh3yFSFlEj" resolve="unregister" />
+            <node concept="10M0yZ" id="5oh3yFSKjak" role="37wK5m">
+              <ref role="1PxDUh" node="p7mnEsF_W6" resolve="InterpreterTestRunScope" />
+              <ref role="3cqZAo" node="5oh3yFSKalr" resolve="RUN_MANUALLY" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="34h6AY1Mnbx" role="3cqZAp">
           <node concept="2YIFZM" id="34h6AY1Mnbz" role="3clFbG">
             <ref role="1Pybhc" node="34h6AY07jHB" resolve="ScopedTypecheckingProvider" />
@@ -19549,6 +19616,51 @@
       <node concept="3cqZAl" id="1pVVBIr9LnF" role="3clF45" />
       <node concept="3Tm6S6" id="1pVVBIr9LnI" role="1B3o_S" />
       <node concept="3clFbS" id="1pVVBIr9LnJ" role="3clF47" />
+    </node>
+    <node concept="Wx3nA" id="5oh3yFSKalr" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="RUN_MANUALLY" />
+      <node concept="3UR2Jj" id="5oh3yFSKalu" role="lGtFl">
+        <node concept="TZ5HA" id="5oh3yFSKalv" role="TZ5H$">
+          <node concept="1dT_AC" id="5oh3yFSKalw" role="1dT_Ay">
+            <property role="1dT_AB" value="Registered with RunManuallyScopes by TypecheckingApplicationPlugin, so the Run Manually actions of org.iets3.core.plugin run their checks in one session.   " />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5oh3yFSKalx" role="1B3o_S" />
+      <node concept="3uibUv" id="5oh3yFSKaly" role="1tU5fm">
+        <ref role="3uigEE" to="h587:5oh3yFSES0e" resolve="IRunManuallyScope" />
+      </node>
+      <node concept="2ShNRf" id="5oh3yFSKalz" role="33vP2m">
+        <node concept="YeOm9" id="5oh3yFSKal_" role="2ShVmc">
+          <node concept="1Y3b0j" id="5oh3yFSKalC" role="YeSDq">
+            <property role="2bfB8j" value="true" />
+            <ref role="1Y3XeK" to="h587:5oh3yFSES0e" resolve="IRunManuallyScope" />
+            <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+            <node concept="3clFb_" id="5oh3yFSKalE" role="jymVt">
+              <property role="TrG5h" value="run" />
+              <node concept="3Tm1VV" id="5oh3yFSKalI" role="1B3o_S" />
+              <node concept="3cqZAl" id="5oh3yFSKalJ" role="3clF45" />
+              <node concept="37vLTG" id="5oh3yFSKalK" role="3clF46">
+                <property role="TrG5h" value="checks" />
+                <node concept="3uibUv" id="5oh3yFSKalM" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="5oh3yFSKalN" role="3clF47">
+                <node concept="3clFbF" id="5oh3yFSKalO" role="3cqZAp">
+                  <node concept="1rXfSq" id="5oh3yFSKalQ" role="3clFbG">
+                    <ref role="37wK5l" node="40zFNIruJkS" resolve="withScope" />
+                    <node concept="37vLTw" id="5oh3yFSKalR" role="37wK5m">
+                      <ref role="3cqZAo" node="5oh3yFSKalK" resolve="checks" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="p7mnEsF_Wk" role="jymVt" />
     <node concept="2YIFZL" id="40zFNIruJkS" role="jymVt">

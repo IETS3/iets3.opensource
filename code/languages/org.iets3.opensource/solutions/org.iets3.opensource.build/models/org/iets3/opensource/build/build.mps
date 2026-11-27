@@ -9730,6 +9730,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5oh3yFSLTXg" role="3bR37C">
+          <node concept="3bR9La" id="5oh3yFSLTXh" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396gt" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -10488,11 +10493,6 @@
             <node concept="3qWCbU" id="1RMC8GHEwRn" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1pVVBIrdzqC" role="3bR37C">
-          <node concept="3bR9La" id="1pVVBIrdzqB" role="1SiIV1">
-            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
       </node>
@@ -17008,6 +17008,11 @@
         <node concept="1SiIV0" id="3GrH80ZB_rm" role="3bR37C">
           <node concept="3bR9La" id="3GrH80ZB_rn" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5oh3yFSLUcC" role="3bR37C">
+          <node concept="3bR9La" id="5oh3yFSLUcD" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
           </node>
         </node>
       </node>
