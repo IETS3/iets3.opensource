@@ -788,7 +788,7 @@
       <node concept="3UR2Jj" id="6$6VD0NN0nB" role="lGtFl">
         <node concept="TZ5HA" id="6$6VD0NN0nC" role="TZ5H$">
           <node concept="1dT_AC" id="6$6VD0NN0nD" role="1dT_Ay">
-            <property role="1dT_AB" value="The copy of le that all values of le share while a TypecheckingSessionScope is open: built once per scope by TypecheckingSessionScope.derivedNode, so the types the interpreter asks for in its body are cached like those of the model, instead of being computed in a fresh typechecking context on every evaluation of a fresh copy. Returns null without a scope, for a lambda in a tree that may change (TypecheckingSessionScope.isStable), and for a body that refers to mutable state, which each value captures when it is created.   " />
+            <property role="1dT_AB" value="The copy of le that all values of le share while an InterpreterSession is open: built once per session by TypecheckingSessionScope.derivedNode, so the types the interpreter asks for in its body are cached like those of the model, instead of being computed in a fresh typechecking context on every evaluation of a fresh copy. Returns null without a session, for a lambda in a tree that may change (TypecheckingSessionScope.isStable), and for a body that refers to mutable state, which each value captures when it is created.   " />
           </node>
         </node>
       </node>
@@ -3632,7 +3632,7 @@
       <node concept="3UR2Jj" id="6$6VD0NQjvK" role="lGtFl">
         <node concept="TZ5HA" id="6$6VD0NQjvL" role="TZ5H$">
           <node concept="1dT_AC" id="6$6VD0NQjvM" role="1dT_Ay">
-            <property role="1dT_AB" value="The lambda that all values of le share while a TypecheckingSessionScope is open: expanded once per scope by TypecheckingSessionScope.derivedNode, so the types the interpreter asks for in its body are cached like those of the model, instead of being computed in a fresh typechecking context on every evaluation of a fresh expansion. Returns null without a scope, for a short lambda in a tree that may change (TypecheckingSessionScope.isStable), and for a body that refers to mutable state, which each value captures when it is created.   " />
+            <property role="1dT_AB" value="The lambda that all values of le share while an InterpreterSession is open: expanded once per session by TypecheckingSessionScope.derivedNode, so the types the interpreter asks for in its body are cached like those of the model, instead of being computed in a fresh typechecking context on every evaluation of a fresh expansion. Returns null without a session, for a short lambda in a tree that may change (TypecheckingSessionScope.isStable), and for a body that refers to mutable state, which each value captures when it is created.   " />
           </node>
         </node>
       </node>

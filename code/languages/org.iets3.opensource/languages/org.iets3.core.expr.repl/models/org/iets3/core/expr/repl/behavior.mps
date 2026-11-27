@@ -307,7 +307,6 @@
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -1951,17 +1950,6 @@
           <node concept="2YIFZM" id="fWrWhi6EB7" role="3clFbG">
             <ref role="1Pybhc" to="oq0c:p7mnEsF_W6" resolve="InterpreterTestRunScope" />
             <ref role="37wK5l" to="oq0c:40zFNIruJkS" resolve="withScope" />
-            <node concept="2OqwBi" id="fWrWhi6EB8" role="37wK5m">
-              <node concept="2JrnkZ" id="fWrWhi9TFh" role="2Oq$k0">
-                <node concept="2OqwBi" id="fWrWhi6EBb" role="2JrQYb">
-                  <node concept="13iPFW" id="fWrWhi9TFj" role="2Oq$k0" />
-                  <node concept="I4A8Y" id="fWrWhi9TFk" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="liA8E" id="fWrWhi6EBi" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-              </node>
-            </node>
             <node concept="1bVj0M" id="fWrWhi6EBj" role="37wK5m">
               <node concept="3clFbS" id="fWrWhi6EBl" role="1bW5cS">
                 <node concept="2Gpval" id="fWrWhi6EBm" role="3cqZAp">
@@ -2840,17 +2828,6 @@
           <node concept="2YIFZM" id="fWrWhi7N$n" role="3clFbG">
             <ref role="1Pybhc" to="oq0c:p7mnEsF_W6" resolve="InterpreterTestRunScope" />
             <ref role="37wK5l" to="oq0c:40zFNIruJkS" resolve="withScope" />
-            <node concept="2OqwBi" id="fWrWhi7N$o" role="37wK5m">
-              <node concept="2JrnkZ" id="fWrWhiabRf" role="2Oq$k0">
-                <node concept="2OqwBi" id="fWrWhi7N$p" role="2JrQYb">
-                  <node concept="13iPFW" id="fWrWhiabRh" role="2Oq$k0" />
-                  <node concept="I4A8Y" id="fWrWhiabRi" role="2OqNvi" />
-                </node>
-              </node>
-              <node concept="liA8E" id="fWrWhi7N$t" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-              </node>
-            </node>
             <node concept="1bVj0M" id="fWrWhi7N$u" role="37wK5m">
               <node concept="3clFbS" id="fWrWhi7N$v" role="1bW5cS">
                 <node concept="2Gpval" id="5xEoEMrw1OU" role="3cqZAp">

@@ -445,12 +445,6 @@
           <node concept="2YIFZM" id="fWrWhi6sST" role="3clFbG">
             <ref role="1Pybhc" to="oq0c:p7mnEsF_W6" resolve="InterpreterTestRunScope" />
             <ref role="37wK5l" to="oq0c:40zFNIruJkS" resolve="withScope" />
-            <node concept="2OqwBi" id="fWrWhi6sSU" role="37wK5m">
-              <node concept="1XNTG" id="fWrWhi6sSX" role="2Oq$k0" />
-              <node concept="liA8E" id="fWrWhi6sSY" role="2OqNvi">
-                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-              </node>
-            </node>
             <node concept="1bVj0M" id="fWrWhi6sSZ" role="37wK5m">
               <node concept="3clFbS" id="fWrWhi6sT1" role="1bW5cS">
                 <node concept="3clFbF" id="fWrWhi6sT2" role="3cqZAp">

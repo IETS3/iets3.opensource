@@ -3903,7 +3903,7 @@
               <property role="3oM_SC" value="the" />
             </node>
             <node concept="3oM_SD" id="fWrWhg0bge" role="1PaTwD">
-              <property role="3oM_SC" value="scope" />
+              <property role="3oM_SC" value="session" />
             </node>
             <node concept="3oM_SD" id="fWrWhg0bgf" role="1PaTwD">
               <property role="3oM_SC" value="spans" />
@@ -3931,7 +3931,7 @@
         <node concept="3SKdUt" id="fWrWhg0bgl" role="3cqZAp">
           <node concept="1PaTwC" id="fWrWhg0bgp" role="1aUNEU">
             <node concept="3oM_SD" id="fWrWhg0bgr" role="1PaTwD">
-              <property role="3oM_SC" value="scope" />
+              <property role="3oM_SC" value="session" />
             </node>
             <node concept="3oM_SD" id="fWrWhg0bgs" role="1PaTwD">
               <property role="3oM_SC" value="caches" />
@@ -4039,9 +4039,6 @@
           <node concept="2YIFZM" id="40zFNIrxrWd" role="3clFbG">
             <ref role="1Pybhc" to="oq0c:p7mnEsF_W6" resolve="InterpreterTestRunScope" />
             <ref role="37wK5l" to="oq0c:40zFNIruJkS" resolve="withScope" />
-            <node concept="37vLTw" id="p7mnEveGXM" role="37wK5m">
-              <ref role="3cqZAo" node="4Q8dWC73sz1" resolve="repo" />
-            </node>
             <node concept="1bVj0M" id="40zFNIrxrWb" role="37wK5m">
               <node concept="3clFbS" id="40zFNIrxrWc" role="1bW5cS">
                 <node concept="1DcWWT" id="p7mnEsBp8D" role="3cqZAp">

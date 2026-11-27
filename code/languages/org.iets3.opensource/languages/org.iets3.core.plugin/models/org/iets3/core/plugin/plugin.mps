@@ -5697,14 +5697,6 @@
                   <node concept="2YIFZM" id="4KEpWP$foug" role="3clFbG">
                     <ref role="1Pybhc" to="oq0c:p7mnEsF_W6" resolve="InterpreterTestRunScope" />
                     <ref role="37wK5l" to="oq0c:40zFNIruJkS" resolve="withScope" />
-                    <node concept="2OqwBi" id="4KEpWP$fouh" role="37wK5m">
-                      <node concept="37vLTw" id="4KEpWP$fouk" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7KGO58TOrwm" resolve="project" />
-                      </node>
-                      <node concept="liA8E" id="4KEpWP$foul" role="2OqNvi">
-                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-                      </node>
-                    </node>
                     <node concept="1bVj0M" id="4KEpWP$foum" role="37wK5m">
                       <node concept="3clFbS" id="4KEpWP$fouo" role="1bW5cS">
                         <node concept="3clFbF" id="4KEpWP$foup" role="3cqZAp">

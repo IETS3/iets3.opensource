@@ -67,7 +67,6 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="qurh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.typesystem.runtime(MPS.Core/)" implicit="true" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" implicit="true" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -600,7 +599,6 @@
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
-      <concept id="1226934395923" name="jetbrains.mps.baseLanguage.collections.structure.ClearSetOperation" flags="nn" index="2EZike" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -620,7 +618,6 @@
       <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
-      <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
@@ -16118,50 +16115,12 @@
     <node concept="3UR2Jj" id="k8qAQxC3T2" role="lGtFl">
       <node concept="TZ5HA" id="k8qAQxC3T3" role="TZ5H$">
         <node concept="1dT_AC" id="k8qAQxC3T4" role="1dT_Ay">
-          <property role="1dT_AB" value="Caches the types an interpreter run asks for. Without a scope, getTypeOf goes through TargetLegacyTypecheckingQueries, which creates and disposes a fresh TypeCheckingContext for every call: it infers just the queried node, from the rules that apply to it and the nodes they ask the type of, but keeps nothing. The interpreter asks for the same types very often (e.g. PlusExpression, DataMemberRef), which made single tests run for minutes. Within a scope each type is computed once in the same way and then answered from the scope (typeOf). No root is checked as a whole, so a scope pays off for one evaluation as well as for a whole run. The types are not invalidated: a scope spans one run of checks, in which the models do not change in ways that affect types, and it drops everything on close. They are served by ScopedTypecheckingProvider, which MPS asks before its default provider and which answers only on the thread that opened the scope. So it works on any thread: Run Manually runs on the EDT, whereas Run Tests and the CI interpreter runner (JUnitInterpreterExecutor) run on a pooled thread, where MPS keeps no per-root sessions. Roots an editor holds a session for are still answered by that session. Use a scope only on the thread that opened it; typeOf and the queries it serves need read access like any type query, close needs no model lock." />
+          <property role="1dT_AB" value="The type cache of an InterpreterSession: caches the types an interpreter run asks for. Without a session, getTypeOf goes through TargetLegacyTypecheckingQueries, which creates and disposes a fresh TypeCheckingContext for every call: it infers just the queried node, from the rules that apply to it and the nodes they ask the type of, but keeps nothing. The interpreter asks for the same types very often (e.g. PlusExpression, DataMemberRef), which made single tests run for minutes. Within a session each type is computed once in the same way and then answered from its cache (typeOf). No root is checked as a whole, so the cache pays off for one evaluation as well as for a whole run. The types are not invalidated: a session spans one run of checks, in which the models do not change in ways that affect types, and the cache is dropped with the session. The types are served by ScopedTypecheckingProvider, which MPS asks before its default provider and which answers only on the thread of the session. So it works on any thread: Run Manually runs on the EDT, whereas Run Tests and the CI interpreter runner (JUnitInterpreterExecutor) run on a pooled thread, where MPS keeps no per-root sessions. Roots an editor holds a session for are still answered by that session. typeOf and the queries it serves need read access like any type query. The cache holds no listeners and nothing to dispose." />
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="k8qAQxC3T5" role="1B3o_S" />
-    <node concept="Wx3nA" id="k8qAQxC3T6" role="jymVt">
-      <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="CURRENT" />
-      <node concept="3Tm6S6" id="k8qAQxC3T9" role="1B3o_S" />
-      <node concept="3uibUv" id="k8qAQxC3Ta" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~ThreadLocal" resolve="ThreadLocal" />
-        <node concept="3uibUv" id="k8qAQxC3Tb" role="11_B2D">
-          <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-        </node>
-      </node>
-      <node concept="2ShNRf" id="k8qAQxC3Tc" role="33vP2m">
-        <node concept="1pGfFk" id="k8qAQxC3Te" role="2ShVmc">
-          <ref role="37wK5l" to="wyt6:~ThreadLocal.&lt;init&gt;()" resolve="ThreadLocal" />
-          <node concept="3uibUv" id="k8qAQxC3Tf" role="1pMfVU">
-            <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="k8qAQxC3Tg" role="jymVt" />
-    <node concept="312cEg" id="k8qAQxC3Th" role="jymVt">
-      <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="contexts" />
-      <node concept="3Tm6S6" id="k8qAQxC3Tk" role="1B3o_S" />
-      <node concept="3rvAFt" id="k8qAQxC3Tl" role="1tU5fm">
-        <node concept="3Tqbb2" id="k8qAQxC3To" role="3rvQeY" />
-        <node concept="3uibUv" id="k8qAQxC3Tp" role="3rvSg0">
-          <ref role="3uigEE" to="evo:~IncrementalTypecheckingContext" resolve="IncrementalTypecheckingContext" />
-        </node>
-      </node>
-      <node concept="2ShNRf" id="k8qAQxC3Tq" role="33vP2m">
-        <node concept="3rGOSV" id="k8qAQxC3Ts" role="2ShVmc">
-          <node concept="3Tqbb2" id="k8qAQxC3Tt" role="3rHrn6" />
-          <node concept="3uibUv" id="k8qAQxC3Tu" role="3rHtpV">
-            <ref role="3uigEE" to="evo:~IncrementalTypecheckingContext" resolve="IncrementalTypecheckingContext" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="312cEg" id="k8qAQ_vn3I" role="jymVt">
       <property role="3TUv4t" value="true" />
       <property role="TrG5h" value="derivedNodes" />
@@ -16205,255 +16164,19 @@
         </node>
       </node>
     </node>
-    <node concept="312cEg" id="34h6AY05_di" role="jymVt">
-      <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="registry" />
-      <node concept="3Tm6S6" id="34h6AY05_dl" role="1B3o_S" />
-      <node concept="3uibUv" id="34h6AY05_dm" role="1tU5fm">
-        <ref role="3uigEE" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-      </node>
-    </node>
     <node concept="2tJIrI" id="k8qAQxC3Tv" role="jymVt" />
     <node concept="3clFbW" id="k8qAQxC3Tw" role="jymVt">
       <node concept="3cqZAl" id="k8qAQxC3Tx" role="3clF45" />
-      <node concept="3Tm6S6" id="k8qAQxC3T$" role="1B3o_S" />
-      <node concept="3clFbS" id="k8qAQxC3T_" role="3clF47">
-        <node concept="3clFbF" id="34h6AY05_dq" role="3cqZAp">
-          <node concept="37vLTI" id="34h6AY05_ds" role="3clFbG">
-            <node concept="2OqwBi" id="34h6AY05_dv" role="37vLTJ">
-              <node concept="Xjq3P" id="34h6AY05_dy" role="2Oq$k0" />
-              <node concept="2OwXpG" id="34h6AY05_dz" role="2OqNvi">
-                <ref role="2Oxat5" node="34h6AY05_di" resolve="registry" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="34h6AY05_d$" role="37vLTx">
-              <ref role="3cqZAo" node="34h6AY05_dn" resolve="registry" />
-            </node>
+      <node concept="3clFbS" id="k8qAQxC3T_" role="3clF47" />
+      <node concept="3UR2Jj" id="5oh3yFRUf9P" role="lGtFl">
+        <node concept="TZ5HA" id="5oh3yFRUf9Q" role="TZ5H$">
+          <node concept="1dT_AC" id="5oh3yFRUf9R" role="1dT_Ay">
+            <property role="1dT_AB" value="Created only by InterpreterSession.typecheckingScope, once per session.   " />
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="34h6AY05_dn" role="3clF46">
-        <property role="TrG5h" value="registry" />
-        <node concept="3uibUv" id="34h6AY05_dp" role="1tU5fm">
-          <ref role="3uigEE" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
         </node>
       </node>
     </node>
     <node concept="2tJIrI" id="k8qAQxC3TA" role="jymVt" />
-    <node concept="2YIFZL" id="p7mnEsDHv8" role="jymVt">
-      <property role="TrG5h" value="registryOf" />
-      <node concept="3Tm6S6" id="p7mnEsDHvc" role="1B3o_S" />
-      <node concept="3uibUv" id="p7mnEsDHvd" role="3clF45">
-        <ref role="3uigEE" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-      </node>
-      <node concept="37vLTG" id="p7mnEsDHve" role="3clF46">
-        <property role="TrG5h" value="anchor" />
-        <node concept="3Tqbb2" id="p7mnEsDHvg" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="p7mnEsDHvh" role="3clF47">
-        <node concept="3clFbJ" id="p7mnEsDHvi" role="3cqZAp">
-          <node concept="3clFbC" id="fWrWhfYrlf" role="3clFbw">
-            <node concept="37vLTw" id="fWrWhfYrli" role="3uHU7B">
-              <ref role="3cqZAo" node="p7mnEsDHve" resolve="anchor" />
-            </node>
-            <node concept="10Nm6u" id="fWrWhfYrlj" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="p7mnEsDHvA" role="3clFbx">
-            <node concept="3cpWs6" id="p7mnEsDHvB" role="3cqZAp">
-              <node concept="10Nm6u" id="p7mnEsDHvC" role="3cqZAk" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="fWrWhfYrlk" role="3cqZAp">
-          <node concept="3cpWsn" id="fWrWhfYrln" role="3cpWs9">
-            <property role="TrG5h" value="anchorModel" />
-            <node concept="H_c77" id="fWrWhfYrlp" role="1tU5fm" />
-            <node concept="2OqwBi" id="fWrWhfYrlq" role="33vP2m">
-              <node concept="37vLTw" id="fWrWhfYrlt" role="2Oq$k0">
-                <ref role="3cqZAo" node="p7mnEsDHve" resolve="anchor" />
-              </node>
-              <node concept="I4A8Y" id="fWrWhfYrlu" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="fWrWhfYrlv" role="3cqZAp">
-          <node concept="3clFbC" id="fWrWhfYrly" role="3clFbw">
-            <node concept="37vLTw" id="fWrWhfYrl_" role="3uHU7B">
-              <ref role="3cqZAo" node="fWrWhfYrln" resolve="anchorModel" />
-            </node>
-            <node concept="10Nm6u" id="fWrWhfYrlA" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="fWrWhfYrlB" role="3clFbx">
-            <node concept="3cpWs6" id="fWrWhfYrlC" role="3cqZAp">
-              <node concept="10Nm6u" id="fWrWhfYrlD" role="3cqZAk" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="fWrWhfYrlE" role="3cqZAp">
-          <node concept="2YIFZM" id="fWrWhfYrlF" role="3cqZAk">
-            <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-            <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
-            <node concept="2OqwBi" id="fWrWhfYrlG" role="37wK5m">
-              <node concept="2JrnkZ" id="fWrWhfYrlJ" role="2Oq$k0">
-                <node concept="37vLTw" id="fWrWhfYrlL" role="2JrQYb">
-                  <ref role="3cqZAo" node="fWrWhfYrln" resolve="anchorModel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="fWrWhfYrlM" role="2OqNvi">
-                <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2YIFZL" id="p7mnEsDSoZ" role="jymVt">
-      <property role="TrG5h" value="openWith" />
-      <node concept="3Tm6S6" id="p7mnEsDSp3" role="1B3o_S" />
-      <node concept="3uibUv" id="p7mnEsDSp4" role="3clF45">
-        <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-      </node>
-      <node concept="37vLTG" id="p7mnEsDSp5" role="3clF46">
-        <property role="TrG5h" value="registry" />
-        <node concept="3uibUv" id="p7mnEsDSp7" role="1tU5fm">
-          <ref role="3uigEE" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="p7mnEsDSp8" role="3clF47">
-        <node concept="3clFbJ" id="p7mnEsDSp9" role="3cqZAp">
-          <node concept="22lmx$" id="p7mnEsDSpc" role="3clFbw">
-            <node concept="3y3z36" id="p7mnEsDSpf" role="3uHU7B">
-              <node concept="2OqwBi" id="p7mnEsDSpi" role="3uHU7B">
-                <node concept="37vLTw" id="p7mnEsDSpl" role="2Oq$k0">
-                  <ref role="3cqZAo" node="k8qAQxC3T6" resolve="CURRENT" />
-                </node>
-                <node concept="liA8E" id="p7mnEsDSpm" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~ThreadLocal.get()" resolve="get" />
-                </node>
-              </node>
-              <node concept="10Nm6u" id="p7mnEsDSpn" role="3uHU7w" />
-            </node>
-            <node concept="3fqX7Q" id="p7mnEsDSpo" role="3uHU7w">
-              <node concept="1eOMI4" id="p7mnEsDSpq" role="3fr31v">
-                <node concept="2YIFZM" id="p7mnEsDSps" role="1eOMHV">
-                  <ref role="1Pybhc" node="34h6AY07jHB" resolve="ScopedTypecheckingProvider" />
-                  <ref role="37wK5l" node="fWrWheCfAA" resolve="isInstalled" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="p7mnEsDSpt" role="3clFbx">
-            <node concept="3cpWs6" id="p7mnEsDSpu" role="3cqZAp">
-              <node concept="10Nm6u" id="p7mnEsDSpv" role="3cqZAk" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="p7mnEsDSpw" role="3cqZAp">
-          <node concept="3cpWsn" id="p7mnEsDSpz" role="3cpWs9">
-            <property role="TrG5h" value="scope" />
-            <node concept="3uibUv" id="p7mnEsDSp_" role="1tU5fm">
-              <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-            </node>
-            <node concept="2ShNRf" id="p7mnEsDSpA" role="33vP2m">
-              <node concept="1pGfFk" id="p7mnEsDSpC" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="k8qAQxC3Tw" resolve="TypecheckingSessionScope" />
-                <node concept="37vLTw" id="p7mnEsDSpD" role="37wK5m">
-                  <ref role="3cqZAo" node="p7mnEsDSp5" resolve="registry" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="p7mnEsDSpE" role="3cqZAp">
-          <node concept="2OqwBi" id="p7mnEsDSpG" role="3clFbG">
-            <node concept="37vLTw" id="p7mnEsDSpJ" role="2Oq$k0">
-              <ref role="3cqZAo" node="k8qAQxC3T6" resolve="CURRENT" />
-            </node>
-            <node concept="liA8E" id="p7mnEsDSpK" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~ThreadLocal.set(java.lang.Object)" resolve="set" />
-              <node concept="37vLTw" id="p7mnEsDSpL" role="37wK5m">
-                <ref role="3cqZAo" node="p7mnEsDSpz" resolve="scope" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="p7mnEsDSpM" role="3cqZAp">
-          <node concept="37vLTw" id="p7mnEsDSpN" role="3cqZAk">
-            <ref role="3cqZAo" node="p7mnEsDSpz" resolve="scope" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2YIFZL" id="k8qAQxC3TB" role="jymVt">
-      <property role="TrG5h" value="open" />
-      <node concept="3UR2Jj" id="k8qAQxC3TF" role="lGtFl">
-        <node concept="TZ5HA" id="k8qAQxC3TG" role="TZ5H$">
-          <node concept="1dT_AC" id="k8qAQxC3TH" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns null if a scope is already open on this thread or the provider serving it is not installed (TypecheckingApplicationPlugin installs it when this module's plugins are loaded); type queries then go to MPS's own provider as before.   " />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="k8qAQxC3TI" role="1B3o_S" />
-      <node concept="3uibUv" id="k8qAQxC3TJ" role="3clF45">
-        <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-      </node>
-      <node concept="37vLTG" id="k8qAQxC3TK" role="3clF46">
-        <property role="TrG5h" value="anchor" />
-        <node concept="3Tqbb2" id="k8qAQxC3TM" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="k8qAQxC3TN" role="3clF47">
-        <node concept="3cpWs6" id="p7mnEsE_oJ" role="3cqZAp">
-          <node concept="1rXfSq" id="p7mnEsE_oK" role="3cqZAk">
-            <ref role="37wK5l" node="p7mnEsDSoZ" resolve="openWith" />
-            <node concept="1rXfSq" id="p7mnEsE_oL" role="37wK5m">
-              <ref role="37wK5l" node="p7mnEsDHv8" resolve="registryOf" />
-              <node concept="37vLTw" id="p7mnEsE_oM" role="37wK5m">
-                <ref role="3cqZAo" node="k8qAQxC3TK" resolve="anchor" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2YIFZL" id="1pVVBIpIQjz" role="jymVt">
-      <property role="TrG5h" value="open" />
-      <node concept="3Tm1VV" id="1pVVBIpIQjB" role="1B3o_S" />
-      <node concept="3uibUv" id="1pVVBIpIQjC" role="3clF45">
-        <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-      </node>
-      <node concept="37vLTG" id="1pVVBIpIQjD" role="3clF46">
-        <property role="TrG5h" value="repository" />
-        <node concept="3uibUv" id="1pVVBIpIQjF" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="1pVVBIpIQjG" role="3clF47">
-        <node concept="3cpWs6" id="1pVVBIpIQjH" role="3cqZAp">
-          <node concept="1rXfSq" id="1pVVBIpIQjI" role="3cqZAk">
-            <ref role="37wK5l" node="p7mnEsDSoZ" resolve="openWith" />
-            <node concept="1eOMI4" id="1pVVBIpIQjJ" role="37wK5m">
-              <node concept="3K4zz7" id="1pVVBIpIQjL" role="1eOMHV">
-                <node concept="3clFbC" id="1pVVBIpIQjP" role="3K4Cdx">
-                  <node concept="37vLTw" id="1pVVBIpIQjS" role="3uHU7B">
-                    <ref role="3cqZAo" node="1pVVBIpIQjD" resolve="repository" />
-                  </node>
-                  <node concept="10Nm6u" id="1pVVBIpIQjT" role="3uHU7w" />
-                </node>
-                <node concept="10Nm6u" id="1pVVBIpIQjU" role="3K4E3e" />
-                <node concept="2YIFZM" id="1pVVBIpIQjV" role="3K4GZi">
-                  <ref role="1Pybhc" to="vndm:~LanguageRegistry" resolve="LanguageRegistry" />
-                  <ref role="37wK5l" to="vndm:~LanguageRegistry.getInstance(org.jetbrains.mps.openapi.module.SRepository)" resolve="getInstance" />
-                  <node concept="37vLTw" id="1pVVBIpIQjW" role="37wK5m">
-                    <ref role="3cqZAo" node="1pVVBIpIQjD" resolve="repository" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="k8qAQxC3UX" role="jymVt" />
     <node concept="2YIFZL" id="k8qAQxC3UY" role="jymVt">
       <property role="TrG5h" value="current" />
@@ -16462,98 +16185,44 @@
         <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
       </node>
       <node concept="3clFbS" id="k8qAQxC3V7" role="3clF47">
-        <node concept="3cpWs6" id="34h6AY058Rc" role="3cqZAp">
-          <node concept="2OqwBi" id="34h6AY058Rd" role="3cqZAk">
-            <node concept="37vLTw" id="34h6AY058Rg" role="2Oq$k0">
-              <ref role="3cqZAo" node="k8qAQxC3T6" resolve="CURRENT" />
+        <node concept="3cpWs8" id="5oh3yFRU_fe" role="3cqZAp">
+          <node concept="3cpWsn" id="5oh3yFRU_fh" role="3cpWs9">
+            <property role="TrG5h" value="session" />
+            <node concept="3uibUv" id="5oh3yFRU_fj" role="1tU5fm">
+              <ref role="3uigEE" node="3QECrxVxkzU" resolve="InterpreterSession" />
             </node>
-            <node concept="liA8E" id="34h6AY058Rh" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~ThreadLocal.get()" resolve="get" />
+            <node concept="2YIFZM" id="5oh3yFRU_fk" role="33vP2m">
+              <ref role="1Pybhc" node="3QECrxVxkzU" resolve="InterpreterSession" />
+              <ref role="37wK5l" node="3QECrxVxkAf" resolve="current" />
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="2YIFZL" id="40zFNIr$tnx" role="jymVt">
-      <property role="TrG5h" value="withScope" />
-      <node concept="3UR2Jj" id="40zFNIr$tn_" role="lGtFl">
-        <node concept="TZ5HA" id="40zFNIr$tnA" role="TZ5H$">
-          <node concept="1dT_AC" id="40zFNIr$tnB" role="1dT_Ay">
-            <property role="1dT_AB" value="Runs the computation in the current scope, or opens and closes one for the anchor when none exists. " />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="40zFNIr$tnC" role="1B3o_S" />
-      <node concept="16euLQ" id="40zFNIr$tnD" role="16eVyc">
-        <property role="TrG5h" value="T" />
-      </node>
-      <node concept="16syzq" id="40zFNIr$tnE" role="3clF45">
-        <ref role="16sUi3" node="40zFNIr$tnD" resolve="T" />
-      </node>
-      <node concept="37vLTG" id="40zFNIr$tnF" role="3clF46">
-        <property role="TrG5h" value="anchor" />
-        <node concept="3Tqbb2" id="40zFNIr$tnH" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="40zFNIr$tnI" role="3clF46">
-        <property role="TrG5h" value="computation" />
-        <node concept="3uibUv" id="40zFNIr$tnK" role="1tU5fm">
-          <ref role="3uigEE" to="82uw:~Supplier" resolve="Supplier" />
-          <node concept="16syzq" id="40zFNIr$tnL" role="11_B2D">
-            <ref role="16sUi3" node="40zFNIr$tnD" resolve="T" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbS" id="40zFNIr$tnM" role="3clF47">
-        <node concept="3cpWs8" id="40zFNIr$tnN" role="3cqZAp">
-          <node concept="3cpWsn" id="40zFNIr$tnQ" role="3cpWs9">
-            <property role="TrG5h" value="scope" />
-            <node concept="3uibUv" id="40zFNIr$tnS" role="1tU5fm">
-              <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-            </node>
-            <node concept="1rXfSq" id="40zFNIr$tnT" role="33vP2m">
-              <ref role="37wK5l" node="k8qAQxC3TB" resolve="open" />
-              <node concept="37vLTw" id="40zFNIr$tnU" role="37wK5m">
-                <ref role="3cqZAo" node="40zFNIr$tnF" resolve="anchor" />
+        <node concept="3cpWs6" id="5oh3yFRU_fl" role="3cqZAp">
+          <node concept="1eOMI4" id="5oh3yFRU_fm" role="3cqZAk">
+            <node concept="3K4zz7" id="5oh3yFRU_fo" role="1eOMHV">
+              <node concept="3clFbC" id="5oh3yFRU_fs" role="3K4Cdx">
+                <node concept="37vLTw" id="5oh3yFRU_fv" role="3uHU7B">
+                  <ref role="3cqZAo" node="5oh3yFRU_fh" resolve="session" />
+                </node>
+                <node concept="10Nm6u" id="5oh3yFRU_fw" role="3uHU7w" />
+              </node>
+              <node concept="10Nm6u" id="5oh3yFRU_fx" role="3K4E3e" />
+              <node concept="2OqwBi" id="5oh3yFRU_fy" role="3K4GZi">
+                <node concept="37vLTw" id="5oh3yFRU_f_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5oh3yFRU_fh" resolve="session" />
+                </node>
+                <node concept="liA8E" id="5oh3yFRU_fA" role="2OqNvi">
+                  <ref role="37wK5l" node="5oh3yFRUuxK" resolve="typecheckingScope" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3J1_TO" id="40zFNIr$tnV" role="3cqZAp">
-          <node concept="3clFbS" id="40zFNIr$tnX" role="1zxBo7">
-            <node concept="3cpWs6" id="40zFNIr$tnY" role="3cqZAp">
-              <node concept="2OqwBi" id="40zFNIr$tnZ" role="3cqZAk">
-                <node concept="37vLTw" id="40zFNIr$to2" role="2Oq$k0">
-                  <ref role="3cqZAo" node="40zFNIr$tnI" resolve="computation" />
-                </node>
-                <node concept="liA8E" id="40zFNIr$to3" role="2OqNvi">
-                  <ref role="37wK5l" to="82uw:~Supplier.get()" resolve="get" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1wplmZ" id="40zFNIr$to4" role="1zxBo6">
-            <node concept="3clFbS" id="40zFNIr$to6" role="1wplMD">
-              <node concept="3clFbJ" id="40zFNIr$to7" role="3cqZAp">
-                <node concept="3y3z36" id="40zFNIr$toa" role="3clFbw">
-                  <node concept="37vLTw" id="40zFNIr$tod" role="3uHU7B">
-                    <ref role="3cqZAo" node="40zFNIr$tnQ" resolve="scope" />
-                  </node>
-                  <node concept="10Nm6u" id="40zFNIr$toe" role="3uHU7w" />
-                </node>
-                <node concept="3clFbS" id="40zFNIr$tof" role="3clFbx">
-                  <node concept="3clFbF" id="40zFNIr$tog" role="3cqZAp">
-                    <node concept="2OqwBi" id="40zFNIr$toi" role="3clFbG">
-                      <node concept="37vLTw" id="40zFNIr$tol" role="2Oq$k0">
-                        <ref role="3cqZAo" node="40zFNIr$tnQ" resolve="scope" />
-                      </node>
-                      <node concept="liA8E" id="40zFNIr$tom" role="2OqNvi">
-                        <ref role="37wK5l" node="k8qAQxC3VL" resolve="close" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+      </node>
+      <node concept="3UR2Jj" id="5oh3yFRU_fb" role="lGtFl">
+        <node concept="TZ5HA" id="5oh3yFRU_fc" role="TZ5H$">
+          <node concept="1dT_AC" id="5oh3yFRU_fd" role="1dT_Ay">
+            <property role="1dT_AB" value="The type cache of the InterpreterSession open on this thread, created on first use; null without a session.   " />
           </node>
         </node>
       </node>
@@ -16564,7 +16233,7 @@
       <node concept="3UR2Jj" id="k8qAQ_vn40" role="lGtFl">
         <node concept="TZ5HA" id="k8qAQ_vn41" role="TZ5H$">
           <node concept="1dT_AC" id="k8qAQ_vn42" role="1dT_Ay">
-            <property role="1dT_AB" value="Builds a detached node for key once per scope, so its types are cached like those of the model; without an open scope it is built on every call." />
+            <property role="1dT_AB" value="Builds a detached node for key once per session, so its types are cached like those of the model; without a session it is built on every call." />
           </node>
         </node>
       </node>
@@ -16587,13 +16256,8 @@
             <node concept="3uibUv" id="k8qAQ_vn4j" role="1tU5fm">
               <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
             </node>
-            <node concept="2OqwBi" id="k8qAQ_vn4k" role="33vP2m">
-              <node concept="37vLTw" id="k8qAQ_vn4n" role="2Oq$k0">
-                <ref role="3cqZAo" node="k8qAQxC3T6" resolve="CURRENT" />
-              </node>
-              <node concept="liA8E" id="k8qAQ_vn4o" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~ThreadLocal.get()" resolve="get" />
-              </node>
+            <node concept="1rXfSq" id="5oh3yFRVicc" role="33vP2m">
+              <ref role="37wK5l" node="k8qAQxC3UY" resolve="current" />
             </node>
           </node>
         </node>
@@ -16721,7 +16385,7 @@
       <node concept="3UR2Jj" id="3QECrxVxYMF" role="lGtFl">
         <node concept="TZ5HA" id="3QECrxVxYMG" role="TZ5H$">
           <node concept="1dT_AC" id="3QECrxVxYMH" role="1dT_Ay">
-            <property role="1dT_AB" value="Whether node stays unchanged while this scope is open, so its type may be cached and it may serve as the key of derivedNode: true for nodes in a model of a repository, which a run of checks does not change, and in trees built by derivedNode. Other detached trees and models outside a repository are built, and may be changed, by the code that runs.   " />
+            <property role="1dT_AB" value="Whether node stays unchanged while this session is open, so its type may be cached and it may serve as the key of derivedNode: true for nodes in a model of a repository, which a run of checks does not change, and in trees built by derivedNode. Other detached trees and models outside a repository are built, and may be changed, by the code that runs.   " />
           </node>
         </node>
       </node>
@@ -16795,134 +16459,12 @@
         </node>
       </node>
     </node>
-    <node concept="3clFb_" id="34h6AY058R_" role="jymVt">
-      <property role="TrG5h" value="contextFor" />
-      <node concept="3Tm1VV" id="34h6AY058RD" role="1B3o_S" />
-      <node concept="3uibUv" id="34h6AY058RE" role="3clF45">
-        <ref role="3uigEE" to="evo:~IncrementalTypecheckingContext" resolve="IncrementalTypecheckingContext" />
-      </node>
-      <node concept="37vLTG" id="34h6AY058RF" role="3clF46">
-        <property role="TrG5h" value="node" />
-        <node concept="3Tqbb2" id="34h6AY058RH" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="34h6AY058RI" role="3clF46">
-        <property role="TrG5h" value="helper" />
-        <node concept="3uibUv" id="34h6AY058RK" role="1tU5fm">
-          <ref role="3uigEE" to="u78q:~TypeCheckerHelper" resolve="TypeCheckerHelper" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="34h6AY058RL" role="3clF47">
-        <node concept="3cpWs8" id="34h6AY058RM" role="3cqZAp">
-          <node concept="3cpWsn" id="34h6AY058RP" role="3cpWs9">
-            <property role="TrG5h" value="root" />
-            <node concept="3Tqbb2" id="34h6AY058RR" role="1tU5fm" />
-            <node concept="2OqwBi" id="34h6AY058RS" role="33vP2m">
-              <node concept="37vLTw" id="34h6AY058RV" role="2Oq$k0">
-                <ref role="3cqZAo" node="34h6AY058RF" resolve="node" />
-              </node>
-              <node concept="2Rxl7S" id="34h6AY058RW" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="34h6AY058RX" role="3cqZAp">
-          <node concept="3cpWsn" id="34h6AY058S0" role="3cpWs9">
-            <property role="TrG5h" value="context" />
-            <node concept="3uibUv" id="34h6AY058S2" role="1tU5fm">
-              <ref role="3uigEE" to="evo:~IncrementalTypecheckingContext" resolve="IncrementalTypecheckingContext" />
-            </node>
-            <node concept="3EllGN" id="34h6AY058S3" role="33vP2m">
-              <node concept="37vLTw" id="34h6AY058S6" role="3ElQJh">
-                <ref role="3cqZAo" node="k8qAQxC3Th" resolve="contexts" />
-              </node>
-              <node concept="37vLTw" id="34h6AY058S7" role="3ElVtu">
-                <ref role="3cqZAo" node="34h6AY058RP" resolve="root" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="34h6AY058S8" role="3cqZAp">
-          <node concept="3clFbC" id="34h6AY058Sb" role="3clFbw">
-            <node concept="37vLTw" id="34h6AY058Se" role="3uHU7B">
-              <ref role="3cqZAo" node="34h6AY058S0" resolve="context" />
-            </node>
-            <node concept="10Nm6u" id="34h6AY058Sf" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="34h6AY058Sg" role="3clFbx">
-            <node concept="3clFbJ" id="34h6AY0dhQB" role="3cqZAp">
-              <node concept="3fqX7Q" id="3QECrxVylZG" role="3clFbw">
-                <node concept="1eOMI4" id="3QECrxVylZI" role="3fr31v">
-                  <node concept="1rXfSq" id="3QECrxVylZK" role="1eOMHV">
-                    <ref role="37wK5l" node="3QECrxVxYMB" resolve="isStable" />
-                    <node concept="37vLTw" id="3QECrxVylZL" role="37wK5m">
-                      <ref role="3cqZAo" node="34h6AY058RP" resolve="root" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="34h6AY0dhR1" role="3clFbx">
-                <node concept="3cpWs6" id="34h6AY0dhR2" role="3cqZAp">
-                  <node concept="10Nm6u" id="34h6AY0dhR3" role="3cqZAk" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="34h6AY058Sh" role="3cqZAp">
-              <node concept="37vLTI" id="34h6AY058Sj" role="3clFbG">
-                <node concept="37vLTw" id="34h6AY058Sm" role="37vLTJ">
-                  <ref role="3cqZAo" node="34h6AY058S0" resolve="context" />
-                </node>
-                <node concept="2ShNRf" id="34h6AY058Sn" role="37vLTx">
-                  <node concept="1pGfFk" id="34h6AY058Sp" role="2ShVmc">
-                    <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.smodel.language.LanguageRegistry)" resolve="IncrementalTypecheckingContext" />
-                    <node concept="37vLTw" id="34h6AY058Sq" role="37wK5m">
-                      <ref role="3cqZAo" node="34h6AY058RP" resolve="root" />
-                    </node>
-                    <node concept="37vLTw" id="34h6AY058Sr" role="37wK5m">
-                      <ref role="3cqZAo" node="34h6AY058RI" resolve="helper" />
-                    </node>
-                    <node concept="37vLTw" id="34h6AY05_es" role="37wK5m">
-                      <ref role="3cqZAo" node="34h6AY05_di" resolve="registry" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="34h6AY058St" role="3cqZAp">
-              <node concept="37vLTI" id="34h6AY058Sv" role="3clFbG">
-                <node concept="3EllGN" id="34h6AY058Sy" role="37vLTJ">
-                  <node concept="37vLTw" id="34h6AY058S_" role="3ElQJh">
-                    <ref role="3cqZAo" node="k8qAQxC3Th" resolve="contexts" />
-                  </node>
-                  <node concept="37vLTw" id="34h6AY058SA" role="3ElVtu">
-                    <ref role="3cqZAo" node="34h6AY058RP" resolve="root" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="34h6AY058SB" role="37vLTx">
-                  <ref role="3cqZAo" node="34h6AY058S0" resolve="context" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="34h6AY058SC" role="3cqZAp">
-          <node concept="37vLTw" id="34h6AY058SD" role="3cqZAk">
-            <ref role="3cqZAo" node="34h6AY058S0" resolve="context" />
-          </node>
-        </node>
-      </node>
-      <node concept="3UR2Jj" id="34h6AY0dhQ$" role="lGtFl">
-        <node concept="TZ5HA" id="34h6AY0dhQ_" role="TZ5H$">
-          <node concept="1dT_AC" id="34h6AY0dhQA" role="1dT_Ay">
-            <property role="1dT_AB" value="The incremental typechecking context of the root of node, created on first use, through which checkRecursively reports the errors of a whole root. Returns null for a root that is not stable (isStable)." />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3clFb_" id="6$6VD0WxXam" role="jymVt">
       <property role="TrG5h" value="typeOf" />
       <node concept="3UR2Jj" id="6$6VD0WxXaq" role="lGtFl">
         <node concept="TZ5HA" id="6$6VD0WxXar" role="TZ5H$">
           <node concept="1dT_AC" id="6$6VD0WxXas" role="1dT_Ay">
-            <property role="1dT_AB" value="The type of node, computed once per scope by computeType and then answered from this scope. A first query costs what it costs without a scope, and no root is checked as a whole. The types are not invalidated: a scope spans one run of checks, in which the models do not change in ways that affect types, and it is dropped when the run ends. A node that is not stable (isStable) is typed on every call.   " />
+            <property role="1dT_AB" value="The type of node, computed once per session by computeType and then answered from this cache. A first query costs what it costs without a session, and no root is checked as a whole. The types are not invalidated: a session spans one run of checks, in which the models do not change in ways that affect types, and the cache is dropped with it. A node that is not stable (isStable) is typed on every call.   " />
           </node>
         </node>
       </node>
@@ -17091,7 +16633,7 @@
       <node concept="3UR2Jj" id="2zySNzimV6k" role="lGtFl">
         <node concept="TZ5HA" id="2zySNzimV6l" role="TZ5H$">
           <node concept="1dT_AC" id="2zySNzimV6m" role="1dT_Ay">
-            <property role="1dT_AB" value="Drops the cached types of node's root, and clears its incremental context if this scope holds one; creates none.   " />
+            <property role="1dT_AB" value="Drops the cached types of the nodes in node's root.    " />
           </node>
         </node>
       </node>
@@ -17168,331 +16710,9 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="6$6VD0WymfB" role="3cqZAp">
-          <node concept="3cpWsn" id="6$6VD0WymfE" role="3cpWs9">
-            <property role="TrG5h" value="rootContext" />
-            <node concept="3uibUv" id="6$6VD0WymfG" role="1tU5fm">
-              <ref role="3uigEE" to="evo:~IncrementalTypecheckingContext" resolve="IncrementalTypecheckingContext" />
-            </node>
-            <node concept="3EllGN" id="6$6VD0WymfH" role="33vP2m">
-              <node concept="37vLTw" id="6$6VD0WymfK" role="3ElQJh">
-                <ref role="3cqZAo" node="k8qAQxC3Th" resolve="contexts" />
-              </node>
-              <node concept="37vLTw" id="6$6VD0WymfL" role="3ElVtu">
-                <ref role="3cqZAo" node="2zySNzimV6w" resolve="root" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2zySNzimV6G" role="3cqZAp">
-          <node concept="3y3z36" id="2zySNzimV6J" role="3clFbw">
-            <node concept="37vLTw" id="2zySNzimV6M" role="3uHU7B">
-              <ref role="3cqZAo" node="6$6VD0WymfE" resolve="rootContext" />
-            </node>
-            <node concept="10Nm6u" id="2zySNzimV6N" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="2zySNzimV6O" role="3clFbx">
-            <node concept="3clFbF" id="2zySNzimV6P" role="3cqZAp">
-              <node concept="2OqwBi" id="2zySNzimV6R" role="3clFbG">
-                <node concept="37vLTw" id="2zySNzimV6U" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6$6VD0WymfE" resolve="rootContext" />
-                </node>
-                <node concept="liA8E" id="2zySNzimV6V" role="2OqNvi">
-                  <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.clear()" resolve="clear" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="34h6AY058SE" role="jymVt" />
-    <node concept="3clFb_" id="k8qAQxC3VL" role="jymVt">
-      <property role="TrG5h" value="close" />
-      <node concept="3Tm1VV" id="k8qAQxC3VP" role="1B3o_S" />
-      <node concept="3cqZAl" id="k8qAQxC3VQ" role="3clF45" />
-      <node concept="3clFbS" id="k8qAQxC3VR" role="3clF47">
-        <node concept="3cpWs8" id="fWrWheCU1u" role="3cqZAp">
-          <node concept="3cpWsn" id="fWrWheCU1x" role="3cpWs9">
-            <property role="TrG5h" value="failures" />
-            <node concept="3uibUv" id="fWrWheCU1z" role="1tU5fm">
-              <ref role="3uigEE" node="2zySNzilhGw" resolve="CleanupFailures" />
-            </node>
-            <node concept="2ShNRf" id="2zySNzim9wh" role="33vP2m">
-              <node concept="1pGfFk" id="2zySNzim9wj" role="2ShVmc">
-                <ref role="37wK5l" node="2zySNzilhGG" resolve="CleanupFailures" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="2zySNzim9wk" role="3cqZAp">
-          <node concept="2GrKxI" id="2zySNzim9wo" role="2Gsz3X">
-            <property role="TrG5h" value="scopedContext" />
-          </node>
-          <node concept="2OqwBi" id="2zySNzim9wp" role="2GsD0m">
-            <node concept="37vLTw" id="2zySNzim9ws" role="2Oq$k0">
-              <ref role="3cqZAo" node="k8qAQxC3Th" resolve="contexts" />
-            </node>
-            <node concept="T8wYR" id="2zySNzim9wt" role="2OqNvi" />
-          </node>
-          <node concept="3clFbS" id="2zySNzim9wu" role="2LFqv$">
-            <node concept="3clFbF" id="2zySNzim9wv" role="3cqZAp">
-              <node concept="2OqwBi" id="2zySNzim9wx" role="3clFbG">
-                <node concept="37vLTw" id="2zySNzim9w$" role="2Oq$k0">
-                  <ref role="3cqZAo" node="fWrWheCU1x" resolve="failures" />
-                </node>
-                <node concept="liA8E" id="2zySNzim9w_" role="2OqNvi">
-                  <ref role="37wK5l" node="2zySNzilhGN" resolve="run" />
-                  <node concept="1bVj0M" id="2zySNzim9wA" role="37wK5m">
-                    <node concept="3clFbS" id="2zySNzim9wC" role="1bW5cS">
-                      <node concept="3clFbF" id="2zySNzim9wD" role="3cqZAp">
-                        <node concept="2OqwBi" id="2zySNzim9wF" role="3clFbG">
-                          <node concept="2GrUjf" id="2zySNzim9wI" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="2zySNzim9wo" resolve="scopedContext" />
-                          </node>
-                          <node concept="liA8E" id="2zySNzim9wJ" role="2OqNvi">
-                            <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.dispose()" resolve="dispose" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2zySNzim9wK" role="3cqZAp">
-          <node concept="2OqwBi" id="2zySNzim9wM" role="3clFbG">
-            <node concept="37vLTw" id="2zySNzim9wP" role="2Oq$k0">
-              <ref role="3cqZAo" node="k8qAQxC3Th" resolve="contexts" />
-            </node>
-            <node concept="1yHZxX" id="2zySNzim9wQ" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="6$6VD0WyIrS" role="3cqZAp">
-          <node concept="2OqwBi" id="6$6VD0WyIrU" role="3clFbG">
-            <node concept="37vLTw" id="6$6VD0WyIrX" role="2Oq$k0">
-              <ref role="3cqZAo" node="6$6VD0Wx7UE" resolve="types" />
-            </node>
-            <node concept="1yHZxX" id="6$6VD0WyIrY" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2zySNzim9wR" role="3cqZAp">
-          <node concept="2OqwBi" id="2zySNzim9wT" role="3clFbG">
-            <node concept="37vLTw" id="2zySNzim9wW" role="2Oq$k0">
-              <ref role="3cqZAo" node="k8qAQ_vn3I" resolve="derivedNodes" />
-            </node>
-            <node concept="1yHZxX" id="2zySNzim9wX" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2zySNzim9wY" role="3cqZAp">
-          <node concept="2OqwBi" id="2zySNzim9x0" role="3clFbG">
-            <node concept="37vLTw" id="2zySNzim9x3" role="2Oq$k0">
-              <ref role="3cqZAo" node="34h6AY0cT0_" resolve="derivedRoots" />
-            </node>
-            <node concept="2EZike" id="2zySNzim9x4" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2zySNzim9x5" role="3cqZAp">
-          <node concept="2OqwBi" id="2zySNzim9x7" role="3clFbG">
-            <node concept="37vLTw" id="2zySNzim9xa" role="2Oq$k0">
-              <ref role="3cqZAo" node="k8qAQxC3T6" resolve="CURRENT" />
-            </node>
-            <node concept="liA8E" id="2zySNzim9xb" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~ThreadLocal.remove()" resolve="remove" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2zySNzim9xc" role="3cqZAp">
-          <node concept="2OqwBi" id="2zySNzim9xe" role="3clFbG">
-            <node concept="37vLTw" id="2zySNzim9xh" role="2Oq$k0">
-              <ref role="3cqZAo" node="fWrWheCU1x" resolve="failures" />
-            </node>
-            <node concept="liA8E" id="2zySNzim9xi" role="2OqNvi">
-              <ref role="37wK5l" node="2zySNzilhHQ" resolve="rethrowFirst" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3UR2Jj" id="fWrWheCU1r" role="lGtFl">
-        <node concept="TZ5HA" id="fWrWheCU1s" role="TZ5H$">
-          <node concept="1dT_AC" id="fWrWheCU1t" role="1dT_Ay">
-            <property role="1dT_AB" value="Drops the cached types and disposes every context, also when one of them fails to (each holds listeners on its models), and rethrows the first failure afterwards.   " />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2YIFZL" id="1pVVBIpJ20H" role="jymVt">
-      <property role="TrG5h" value="joinSession" />
-      <node concept="3Tm1VV" id="1pVVBIpJ20L" role="1B3o_S" />
-      <node concept="3cqZAl" id="1pVVBIpJ20M" role="3clF45" />
-      <node concept="37vLTG" id="1pVVBIpJ20N" role="3clF46">
-        <property role="TrG5h" value="anchor" />
-        <node concept="3Tqbb2" id="1pVVBIpJ20P" role="1tU5fm" />
-      </node>
-      <node concept="3clFbS" id="1pVVBIpJ20Q" role="3clF47">
-        <node concept="3cpWs8" id="1pVVBIpJ20R" role="3cqZAp">
-          <node concept="3cpWsn" id="1pVVBIpJ20U" role="3cpWs9">
-            <property role="TrG5h" value="session" />
-            <node concept="3uibUv" id="1pVVBIpJ20W" role="1tU5fm">
-              <ref role="3uigEE" node="3QECrxVxkzU" resolve="InterpreterSession" />
-            </node>
-            <node concept="2YIFZM" id="1pVVBIpJ20X" role="33vP2m">
-              <ref role="1Pybhc" node="3QECrxVxkzU" resolve="InterpreterSession" />
-              <ref role="37wK5l" node="3QECrxVxkAf" resolve="current" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="1pVVBIpJ20Y" role="3cqZAp">
-          <node concept="3clFbC" id="1pVVBIpJ211" role="3clFbw">
-            <node concept="37vLTw" id="1pVVBIpJ214" role="3uHU7B">
-              <ref role="3cqZAo" node="1pVVBIpJ20U" resolve="session" />
-            </node>
-            <node concept="10Nm6u" id="1pVVBIpJ215" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="1pVVBIpJ216" role="3clFbx">
-            <node concept="3cpWs6" id="1pVVBIpJ217" role="3cqZAp" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1pVVBIpJ218" role="3cqZAp">
-          <node concept="3cpWsn" id="1pVVBIpJ21b" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="scope" />
-            <node concept="3uibUv" id="1pVVBIpJ21d" role="1tU5fm">
-              <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-            </node>
-            <node concept="2YIFZM" id="1pVVBIpJ21e" role="33vP2m">
-              <ref role="1Pybhc" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-              <ref role="37wK5l" node="k8qAQxC3TB" resolve="open" />
-              <node concept="37vLTw" id="1pVVBIpJ21f" role="37wK5m">
-                <ref role="3cqZAo" node="1pVVBIpJ20N" resolve="anchor" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="1pVVBIpJ21g" role="3cqZAp">
-          <node concept="3y3z36" id="1pVVBIpJ21j" role="3clFbw">
-            <node concept="37vLTw" id="1pVVBIpJ21m" role="3uHU7B">
-              <ref role="3cqZAo" node="1pVVBIpJ21b" resolve="scope" />
-            </node>
-            <node concept="10Nm6u" id="1pVVBIpJ21n" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="1pVVBIpJ21o" role="3clFbx">
-            <node concept="3clFbF" id="1pVVBIpJ21p" role="3cqZAp">
-              <node concept="2OqwBi" id="1pVVBIpJ21r" role="3clFbG">
-                <node concept="37vLTw" id="1pVVBIpJ21u" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1pVVBIpJ20U" resolve="session" />
-                </node>
-                <node concept="liA8E" id="1pVVBIpJ21v" role="2OqNvi">
-                  <ref role="37wK5l" node="3QECrxVxkAt" resolve="onClose" />
-                  <node concept="1bVj0M" id="1pVVBIpJ21w" role="37wK5m">
-                    <node concept="3clFbS" id="1pVVBIpJ21y" role="1bW5cS">
-                      <node concept="3clFbF" id="1pVVBIpJ21z" role="3cqZAp">
-                        <node concept="2OqwBi" id="1pVVBIpJ21_" role="3clFbG">
-                          <node concept="37vLTw" id="1pVVBIpJ21C" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1pVVBIpJ21b" resolve="scope" />
-                          </node>
-                          <node concept="liA8E" id="1pVVBIpJ21D" role="2OqNvi">
-                            <ref role="37wK5l" node="k8qAQxC3VL" resolve="close" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2YIFZL" id="1pVVBIpJ21F" role="jymVt">
-      <property role="TrG5h" value="joinSession" />
-      <node concept="3Tm1VV" id="1pVVBIpJ21J" role="1B3o_S" />
-      <node concept="3cqZAl" id="1pVVBIpJ21K" role="3clF45" />
-      <node concept="37vLTG" id="1pVVBIpJ21L" role="3clF46">
-        <property role="TrG5h" value="repository" />
-        <node concept="3uibUv" id="1pVVBIpJ21N" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="1pVVBIpJ21O" role="3clF47">
-        <node concept="3cpWs8" id="1pVVBIpJ21P" role="3cqZAp">
-          <node concept="3cpWsn" id="1pVVBIpJ21S" role="3cpWs9">
-            <property role="TrG5h" value="session" />
-            <node concept="3uibUv" id="1pVVBIpJ21U" role="1tU5fm">
-              <ref role="3uigEE" node="3QECrxVxkzU" resolve="InterpreterSession" />
-            </node>
-            <node concept="2YIFZM" id="1pVVBIpJ21V" role="33vP2m">
-              <ref role="1Pybhc" node="3QECrxVxkzU" resolve="InterpreterSession" />
-              <ref role="37wK5l" node="3QECrxVxkAf" resolve="current" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="1pVVBIpJ21W" role="3cqZAp">
-          <node concept="3clFbC" id="1pVVBIpJ21Z" role="3clFbw">
-            <node concept="37vLTw" id="1pVVBIpJ222" role="3uHU7B">
-              <ref role="3cqZAo" node="1pVVBIpJ21S" resolve="session" />
-            </node>
-            <node concept="10Nm6u" id="1pVVBIpJ223" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="1pVVBIpJ224" role="3clFbx">
-            <node concept="3cpWs6" id="1pVVBIpJ225" role="3cqZAp" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1pVVBIpJ226" role="3cqZAp">
-          <node concept="3cpWsn" id="1pVVBIpJ229" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="scope" />
-            <node concept="3uibUv" id="1pVVBIpJ22b" role="1tU5fm">
-              <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-            </node>
-            <node concept="2YIFZM" id="1pVVBIpJ22c" role="33vP2m">
-              <ref role="1Pybhc" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-              <ref role="37wK5l" node="1pVVBIpIQjz" resolve="open" />
-              <node concept="37vLTw" id="1pVVBIpJ22d" role="37wK5m">
-                <ref role="3cqZAo" node="1pVVBIpJ21L" resolve="repository" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="1pVVBIpJ22e" role="3cqZAp">
-          <node concept="3y3z36" id="1pVVBIpJ22h" role="3clFbw">
-            <node concept="37vLTw" id="1pVVBIpJ22k" role="3uHU7B">
-              <ref role="3cqZAo" node="1pVVBIpJ229" resolve="scope" />
-            </node>
-            <node concept="10Nm6u" id="1pVVBIpJ22l" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="1pVVBIpJ22m" role="3clFbx">
-            <node concept="3clFbF" id="1pVVBIpJ22n" role="3cqZAp">
-              <node concept="2OqwBi" id="1pVVBIpJ22p" role="3clFbG">
-                <node concept="37vLTw" id="1pVVBIpJ22s" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1pVVBIpJ21S" resolve="session" />
-                </node>
-                <node concept="liA8E" id="1pVVBIpJ22t" role="2OqNvi">
-                  <ref role="37wK5l" node="3QECrxVxkAt" resolve="onClose" />
-                  <node concept="1bVj0M" id="1pVVBIpJ22u" role="37wK5m">
-                    <node concept="3clFbS" id="1pVVBIpJ22w" role="1bW5cS">
-                      <node concept="3clFbF" id="1pVVBIpJ22x" role="3cqZAp">
-                        <node concept="2OqwBi" id="1pVVBIpJ22z" role="3clFbG">
-                          <node concept="37vLTw" id="1pVVBIpJ22A" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1pVVBIpJ229" resolve="scope" />
-                          </node>
-                          <node concept="liA8E" id="1pVVBIpJ22B" role="2OqNvi">
-                            <ref role="37wK5l" node="k8qAQxC3VL" resolve="close" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="34h6AY04REf">
     <property role="1EXbeo" value="true" />
@@ -17712,7 +16932,7 @@
     <node concept="3UR2Jj" id="34h6AY06W_M" role="lGtFl">
       <node concept="TZ5HA" id="34h6AY06W_N" role="TZ5H$">
         <node concept="1dT_AC" id="34h6AY06W_O" role="1dT_Ay">
-          <property role="1dT_AB" value="Answers type queries from the TypecheckingSessionScope open on the current thread: getTypeOf computes a type like MPS's TargetLegacyTypecheckingQueries and keeps it in the scope (TypecheckingSessionScope.typeOf); checkRecursively reports the errors of a whole root through an incremental context the scope keeps for that root, like MPS's incremental queries.  " />
+          <property role="1dT_AB" value="Answers type queries while an InterpreterSession is open on the current thread: getTypeOf computes a type like MPS's TargetLegacyTypecheckingQueries and keeps it in the session's TypecheckingSessionScope (typeOf). checkRecursively reports nothing, like MPS's own queries for sessions without a root: MPS asks it only with a root (model checker, editor checks), and this provider declines those sessions.   " />
         </node>
       </node>
     </node>
@@ -18588,137 +17808,43 @@
         </node>
       </node>
       <node concept="3clFbS" id="34h6AY06WHE" role="3clF47">
-        <node concept="3cpWs8" id="34h6AY06WHF" role="3cqZAp">
-          <node concept="3cpWsn" id="34h6AY06WHI" role="3cpWs9">
-            <property role="TrG5h" value="scope" />
-            <node concept="3uibUv" id="34h6AY06WHK" role="1tU5fm">
-              <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
+        <node concept="3SKdUt" id="5oh3yFRNKqx" role="3cqZAp">
+          <node concept="1PaTwC" id="5oh3yFRNKq_" role="1aUNEU">
+            <node concept="3oM_SD" id="5oh3yFRNKqB" role="1PaTwD">
+              <property role="3oM_SC" value="Like" />
             </node>
-            <node concept="2YIFZM" id="34h6AY06WHL" role="33vP2m">
-              <ref role="1Pybhc" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-              <ref role="37wK5l" node="k8qAQxC3UY" resolve="current" />
+            <node concept="3oM_SD" id="5oh3yFRNKqC" role="1PaTwD">
+              <property role="3oM_SC" value="MPS's" />
             </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="34h6AY0eT6w" role="3cqZAp">
-          <node concept="3cpWsn" id="34h6AY0eT6z" role="3cpWs9">
-            <property role="TrG5h" value="context" />
-            <node concept="3uibUv" id="34h6AY0eT6_" role="1tU5fm">
-              <ref role="3uigEE" to="evo:~IncrementalTypecheckingContext" resolve="IncrementalTypecheckingContext" />
+            <node concept="3oM_SD" id="5oh3yFRNKqD" role="1PaTwD">
+              <property role="3oM_SC" value="TargetLegacyTypecheckingQueries" />
             </node>
-            <node concept="1eOMI4" id="34h6AY0eT6A" role="33vP2m">
-              <node concept="3K4zz7" id="34h6AY0eT6C" role="1eOMHV">
-                <node concept="3clFbC" id="34h6AY0eT6G" role="3K4Cdx">
-                  <node concept="37vLTw" id="34h6AY0eT6J" role="3uHU7B">
-                    <ref role="3cqZAo" node="34h6AY06WHI" resolve="scope" />
-                  </node>
-                  <node concept="10Nm6u" id="34h6AY0eT6K" role="3uHU7w" />
-                </node>
-                <node concept="10Nm6u" id="34h6AY0eT6L" role="3K4E3e" />
-                <node concept="2OqwBi" id="34h6AY0eT6M" role="3K4GZi">
-                  <node concept="37vLTw" id="34h6AY0eT6P" role="2Oq$k0">
-                    <ref role="3cqZAo" node="34h6AY06WHI" resolve="scope" />
-                  </node>
-                  <node concept="liA8E" id="34h6AY0eT6Q" role="2OqNvi">
-                    <ref role="37wK5l" node="34h6AY058R_" resolve="contextFor" />
-                    <node concept="37vLTw" id="34h6AY0eT6R" role="37wK5m">
-                      <ref role="3cqZAo" node="34h6AY06WHx" resolve="root" />
-                    </node>
-                    <node concept="37vLTw" id="34h6AY0eT6S" role="37wK5m">
-                      <ref role="3cqZAo" node="34h6AY06W_R" resolve="helper" />
-                    </node>
-                  </node>
-                </node>
-              </node>
+            <node concept="3oM_SD" id="5oh3yFRNKqE" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
             </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="34h6AY0eT6T" role="3cqZAp">
-          <node concept="3clFbC" id="34h6AY0eT6W" role="3clFbw">
-            <node concept="37vLTw" id="34h6AY0eT6Z" role="3uHU7B">
-              <ref role="3cqZAo" node="34h6AY0eT6z" resolve="context" />
+            <node concept="3oM_SD" id="5oh3yFRNKqF" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
             </node>
-            <node concept="10Nm6u" id="34h6AY0eT70" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="34h6AY0eT71" role="3clFbx">
-            <node concept="3cpWs6" id="34h6AY0eT72" role="3cqZAp" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="34h6AY06WIm" role="3cqZAp">
-          <node concept="2OqwBi" id="34h6AY06WIo" role="3clFbG">
-            <node concept="37vLTw" id="34h6AY06WIr" role="2Oq$k0">
-              <ref role="3cqZAo" node="34h6AY0eT6z" resolve="context" />
+            <node concept="3oM_SD" id="5oh3yFRNKqG" role="1PaTwD">
+              <property role="3oM_SC" value="session" />
             </node>
-            <node concept="liA8E" id="34h6AY06WIs" role="2OqNvi">
-              <ref role="37wK5l" to="evo:~SimpleTypecheckingContext.checkIfNotChecked(org.jetbrains.mps.openapi.model.SNode,boolean)" resolve="checkIfNotChecked" />
-              <node concept="37vLTw" id="34h6AY06WIt" role="37wK5m">
-                <ref role="3cqZAo" node="34h6AY06WHx" resolve="root" />
-              </node>
-              <node concept="3clFbT" id="34h6AY06WIu" role="37wK5m">
-                <property role="3clFbU" value="false" />
-              </node>
+            <node concept="3oM_SD" id="5oh3yFRNKqH" role="1PaTwD">
+              <property role="3oM_SC" value="without" />
             </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="34h6AY06WIv" role="3cqZAp">
-          <node concept="2GrKxI" id="34h6AY06WIz" role="2Gsz3X">
-            <property role="TrG5h" value="pair" />
-          </node>
-          <node concept="2OqwBi" id="34h6AY06WI$" role="2GsD0m">
-            <node concept="37vLTw" id="34h6AY06WIB" role="2Oq$k0">
-              <ref role="3cqZAo" node="34h6AY0eT6z" resolve="context" />
+            <node concept="3oM_SD" id="5oh3yFRNKqI" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
             </node>
-            <node concept="liA8E" id="34h6AY06WIC" role="2OqNvi">
-              <ref role="37wK5l" to="evo:~SimpleTypecheckingContext.getNodesWithErrors(boolean)" resolve="getNodesWithErrors" />
-              <node concept="3clFbT" id="34h6AY06WID" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+            <node concept="3oM_SD" id="5oh3yFRNKqJ" role="1PaTwD">
+              <property role="3oM_SC" value="root:" />
             </node>
-          </node>
-          <node concept="3clFbS" id="34h6AY06WIE" role="2LFqv$">
-            <node concept="2Gpval" id="34h6AY06WIF" role="3cqZAp">
-              <node concept="2GrKxI" id="34h6AY06WIJ" role="2Gsz3X">
-                <property role="TrG5h" value="reporter" />
-              </node>
-              <node concept="2OqwBi" id="34h6AY06WIK" role="2GsD0m">
-                <node concept="2GrUjf" id="34h6AY06WIN" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="34h6AY06WIz" resolve="pair" />
-                </node>
-                <node concept="2OwXpG" id="34h6AY06WIO" role="2OqNvi">
-                  <ref role="2Oxat5" to="18ew:~Pair.o2" resolve="o2" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="34h6AY06WIP" role="2LFqv$">
-                <node concept="3cpWs8" id="2zySNziomTK" role="3cqZAp">
-                  <node concept="3cpWsn" id="2zySNziomTN" role="3cpWs9">
-                    <property role="TrG5h" value="item" />
-                    <node concept="3uibUv" id="2zySNziomTP" role="1tU5fm">
-                      <ref role="3uigEE" to="d6hs:~NodeReportItem" resolve="NodeReportItem" />
-                    </node>
-                    <node concept="2ShNRf" id="2zySNziomTQ" role="33vP2m">
-                      <node concept="1pGfFk" id="2zySNziomTS" role="2ShVmc">
-                        <ref role="37wK5l" to="d6hs:~TypesystemReportItemAdapter.&lt;init&gt;(jetbrains.mps.errors.IErrorReporter)" resolve="TypesystemReportItemAdapter" />
-                        <node concept="2GrUjf" id="2zySNziomTT" role="37wK5m">
-                          <ref role="2Gs0qQ" node="34h6AY06WIJ" resolve="reporter" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="2zySNziomTU" role="3cqZAp">
-                  <node concept="2OqwBi" id="2zySNziomTW" role="3clFbG">
-                    <node concept="37vLTw" id="2zySNziomTZ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="34h6AY06WH$" resolve="errorsConsumer" />
-                    </node>
-                    <node concept="liA8E" id="2zySNziomU0" role="2OqNvi">
-                      <ref role="37wK5l" to="82uw:~Consumer.accept(java.lang.Object)" resolve="accept" />
-                      <node concept="37vLTw" id="2zySNziomU1" role="37wK5m">
-                        <ref role="3cqZAo" node="2zySNziomTN" resolve="item" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+            <node concept="3oM_SD" id="5oh3yFRNKqK" role="1PaTwD">
+              <property role="3oM_SC" value="nothing" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRNKqL" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRNKqM" role="1PaTwD">
+              <property role="3oM_SC" value="report." />
             </node>
           </node>
         </node>
@@ -18802,7 +17928,7 @@
     <node concept="3UR2Jj" id="34h6AY07jHD" role="lGtFl">
       <node concept="TZ5HA" id="34h6AY07jHE" role="TZ5H$">
         <node concept="1dT_AC" id="34h6AY07jHF" role="1dT_Ay">
-          <property role="1dT_AB" value="Serves type queries from the TypecheckingSessionScope open on the current thread. MPS asks it before its default provider. It declines whenever no scope is open on the asking thread, for sessions of a particular root (an editor's) and during generation, so everything else keeps going to MPS's own provider. Installed and uninstalled only by TypecheckingApplicationPlugin, whose dispose runs when this module's classes are unloaded. Where no application plugins are loaded it is not installed, TypecheckingSessionScope.open returns null and nothing is cached.  " />
+          <property role="1dT_AB" value="Serves type queries from the TypecheckingSessionScope of the InterpreterSession open on the current thread. MPS asks it before its default provider. It declines whenever no session is open on the asking thread, for sessions of a particular root (an editor's) and during generation, so everything else keeps going to MPS's own provider. Installed and uninstalled only by TypecheckingApplicationPlugin, whose dispose runs when this module's classes are unloaded. Where no application plugins are loaded it is not installed and no type is cached; a session still keeps its other caches.   " />
         </node>
       </node>
     </node>
@@ -19100,7 +18226,7 @@
       <node concept="3UR2Jj" id="fWrWheCfAE" role="lGtFl">
         <node concept="TZ5HA" id="fWrWheCfAF" role="TZ5H$">
           <node concept="1dT_AC" id="fWrWheCfAG" role="1dT_Ay">
-            <property role="1dT_AB" value="Whether the provider is installed. Takes no lock: token is volatile, and a scope opened just before an uninstall only finds no provider asking it. TypecheckingSessionScope opens no scope without it, rather than installing it from whatever thread asks: TypecheckingBackend is not synchronized against threads selecting a provider.  " />
+            <property role="1dT_AB" value="Whether the provider is installed. Takes no lock: token is volatile, and a session opened just before an uninstall only finds no provider asking it. The provider is not installed lazily from whatever thread asks: TypecheckingBackend is not synchronized against threads selecting a provider.   " />
           </node>
         </node>
       </node>
@@ -19333,8 +18459,8 @@
             </node>
             <node concept="3y3z36" id="34h6AY07jMt" role="3uHU7w">
               <node concept="2YIFZM" id="34h6AY07jMw" role="3uHU7B">
-                <ref role="1Pybhc" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-                <ref role="37wK5l" node="k8qAQxC3UY" resolve="current" />
+                <ref role="1Pybhc" node="3QECrxVxkzU" resolve="InterpreterSession" />
+                <ref role="37wK5l" node="3QECrxVxkAf" resolve="current" />
               </node>
               <node concept="10Nm6u" id="34h6AY07jMx" role="3uHU7w" />
             </node>
@@ -19543,6 +18669,14 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="5oh3yFRUuxk" role="jymVt">
+      <property role="TrG5h" value="typecheckingScope" />
+      <node concept="3Tm6S6" id="5oh3yFRUuxn" role="1B3o_S" />
+      <node concept="3uibUv" id="5oh3yFRUuxo" role="1tU5fm">
+        <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
+      </node>
+      <node concept="10Nm6u" id="5oh3yFRUuxp" role="33vP2m" />
+    </node>
     <node concept="2tJIrI" id="3QECrxVxk$j" role="jymVt" />
     <node concept="3clFbW" id="3QECrxVxk$k" role="jymVt">
       <node concept="3cqZAl" id="3QECrxVxk$l" role="3clF45" />
@@ -19686,6 +18820,58 @@
             </node>
             <node concept="3oM_SD" id="fWrWhfXDSS" role="1PaTwD">
               <property role="3oM_SC" value="onClose." />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxq" role="1PaTwD">
+              <property role="3oM_SC" value="While" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxr" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxs" role="1PaTwD">
+              <property role="3oM_SC" value="session" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxt" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxu" role="1PaTwD">
+              <property role="3oM_SC" value="open," />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxv" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxw" role="1PaTwD">
+              <property role="3oM_SC" value="types" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxx" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxy" role="1PaTwD">
+              <property role="3oM_SC" value="interpreter" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxz" role="1PaTwD">
+              <property role="3oM_SC" value="asks" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUux$" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUux_" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="5oh3yFRUuxA" role="3cqZAp">
+          <node concept="1PaTwC" id="5oh3yFRUuxE" role="1aUNEU">
+            <node concept="3oM_SD" id="5oh3yFRUuxG" role="1PaTwD">
+              <property role="3oM_SC" value="cached" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxH" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxI" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="5oh3yFRUuxJ" role="1PaTwD">
+              <property role="3oM_SC" value="(TypecheckingSessionScope)." />
             </node>
           </node>
         </node>
@@ -20180,6 +19366,49 @@
       </node>
     </node>
     <node concept="2tJIrI" id="p7mnEx$E67" role="jymVt" />
+    <node concept="3clFb_" id="5oh3yFRUuxK" role="jymVt">
+      <property role="TrG5h" value="typecheckingScope" />
+      <node concept="3UR2Jj" id="5oh3yFRUuxO" role="lGtFl">
+        <node concept="TZ5HA" id="5oh3yFRUuxP" role="TZ5H$">
+          <node concept="1dT_AC" id="5oh3yFRUuxQ" role="1dT_Ay">
+            <property role="1dT_AB" value="The type cache of this session, created on first use (TypecheckingSessionScope.current).   " />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="5oh3yFRUuxR" role="3clF45">
+        <ref role="3uigEE" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
+      </node>
+      <node concept="3clFbS" id="5oh3yFRUuxS" role="3clF47">
+        <node concept="3clFbJ" id="5oh3yFRUuxT" role="3cqZAp">
+          <node concept="3clFbC" id="5oh3yFRUuxW" role="3clFbw">
+            <node concept="37vLTw" id="5oh3yFRUuxZ" role="3uHU7B">
+              <ref role="3cqZAo" node="5oh3yFRUuxk" resolve="typecheckingScope" />
+            </node>
+            <node concept="10Nm6u" id="5oh3yFRUuy0" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5oh3yFRUuy1" role="3clFbx">
+            <node concept="3clFbF" id="5oh3yFRUuy2" role="3cqZAp">
+              <node concept="37vLTI" id="5oh3yFRUuy4" role="3clFbG">
+                <node concept="37vLTw" id="5oh3yFRUuy7" role="37vLTJ">
+                  <ref role="3cqZAo" node="5oh3yFRUuxk" resolve="typecheckingScope" />
+                </node>
+                <node concept="2ShNRf" id="5oh3yFRUuy8" role="37vLTx">
+                  <node concept="1pGfFk" id="5oh3yFRUuya" role="2ShVmc">
+                    <ref role="37wK5l" node="k8qAQxC3Tw" resolve="TypecheckingSessionScope" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5oh3yFRUuyb" role="3cqZAp">
+          <node concept="37vLTw" id="5oh3yFRUuyc" role="3cqZAk">
+            <ref role="3cqZAo" node="5oh3yFRUuxk" resolve="typecheckingScope" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5oh3yFRUuyd" role="jymVt" />
     <node concept="3clFb_" id="3QECrxVxkAL" role="jymVt">
       <property role="TrG5h" value="close" />
       <node concept="3Tm1VV" id="3QECrxVxkAP" role="1B3o_S" />
@@ -20266,6 +19495,14 @@
             <node concept="1yHZxX" id="2zySNzilC5x" role="2OqNvi" />
           </node>
         </node>
+        <node concept="3clFbF" id="5oh3yFRUuye" role="3cqZAp">
+          <node concept="37vLTI" id="5oh3yFRUuyg" role="3clFbG">
+            <node concept="37vLTw" id="5oh3yFRUuyj" role="37vLTJ">
+              <ref role="3cqZAo" node="5oh3yFRUuxk" resolve="typecheckingScope" />
+            </node>
+            <node concept="10Nm6u" id="5oh3yFRUuyk" role="37vLTx" />
+          </node>
+        </node>
         <node concept="3clFbF" id="2zySNzilC5y" role="3cqZAp">
           <node concept="2OqwBi" id="2zySNzilC5$" role="3clFbG">
             <node concept="37vLTw" id="2zySNzilC5B" role="2Oq$k0">
@@ -20290,7 +19527,7 @@
       <node concept="3UR2Jj" id="fWrWheBRPD" role="lGtFl">
         <node concept="TZ5HA" id="fWrWheBRPE" role="TZ5H$">
           <node concept="1dT_AC" id="fWrWheBRPF" role="1dT_Ay">
-            <property role="1dT_AB" value="Runs every close action, in reverse order of registration, even when one throws (an Error included): a skipped release would leave its thread-local state on a pooled thread, where the next run finds it. The first failure is rethrown afterwards, later ones are added to it as suppressed.  " />
+            <property role="1dT_AB" value="Runs every close action, in reverse order of registration, even when one throws (an Error included): a skipped release would leave its thread-local state on a pooled thread, where the next run finds it. The first failure is rethrown afterwards, later ones are added to it as suppressed. The cached types are dropped with the session.   " />
           </node>
         </node>
       </node>
@@ -20303,7 +19540,7 @@
     <node concept="3UR2Jj" id="p7mnEsF_W8" role="lGtFl">
       <node concept="TZ5HA" id="p7mnEsF_W9" role="TZ5H$">
         <node concept="1dT_AC" id="p7mnEsF_Wa" role="1dT_Ay">
-          <property role="1dT_AB" value="Keeps one interpreter and typechecking session open for a whole run of checks in the JUnit interpreter runner and the manual root/model/children actions. Use withScope to run checks with automatic cleanup on the current thread. Nested runs leave the outer session open. Takes no model lock and needs none: the checks take the read or write access they need, possibly several in turn. The types the typechecking session caches are kept until the run ends, because a run does not change the models in ways that affect types." />
+          <property role="1dT_AB" value="Keeps one InterpreterSession open for a whole run of checks in the JUnit interpreter runner and the manual root/model/children actions, so the checks share its caches, the types among them (TypecheckingSessionScope). Unlike InterpreterSession.withSession, a failure to open or close the session is logged and does not fail the run. Nested runs leave the outer session open. Takes no model lock and needs none: the checks take the read or write access they need, possibly several in turn. The cached types are kept until the run ends, because a run does not change the models in ways that affect types." />
         </node>
       </node>
     </node>
@@ -20325,12 +19562,6 @@
       </node>
       <node concept="3Tm1VV" id="40zFNIruJkZ" role="1B3o_S" />
       <node concept="3cqZAl" id="40zFNIruJl0" role="3clF45" />
-      <node concept="37vLTG" id="40zFNIruJl1" role="3clF46">
-        <property role="TrG5h" value="repo" />
-        <node concept="3uibUv" id="40zFNIruJl3" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
-      </node>
       <node concept="37vLTG" id="40zFNIruJl4" role="3clF46">
         <property role="TrG5h" value="checks" />
         <node concept="3uibUv" id="40zFNIruJl6" role="1tU5fm">
@@ -20346,9 +19577,6 @@
             </node>
             <node concept="1rXfSq" id="40zFNIruJle" role="33vP2m">
               <ref role="37wK5l" node="1pVVBIr9LnK" resolve="beforeRun" />
-              <node concept="37vLTw" id="40zFNIruJlf" role="37wK5m">
-                <ref role="3cqZAo" node="40zFNIruJl1" resolve="repo" />
-              </node>
             </node>
           </node>
         </node>
@@ -20387,60 +19615,13 @@
       <node concept="3uibUv" id="1pVVBIr9LnP" role="3clF45">
         <ref role="3uigEE" node="3QECrxVxkzU" resolve="InterpreterSession" />
       </node>
-      <node concept="37vLTG" id="1pVVBIr9LnQ" role="3clF46">
-        <property role="TrG5h" value="repo" />
-        <node concept="3uibUv" id="1pVVBIr9LnS" role="1tU5fm">
-          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-        </node>
-      </node>
       <node concept="3clFbS" id="1pVVBIr9LnT" role="3clF47">
-        <node concept="3cpWs8" id="1pVVBIr9LnU" role="3cqZAp">
-          <node concept="3cpWsn" id="1pVVBIr9LnX" role="3cpWs9">
-            <property role="TrG5h" value="session" />
-            <node concept="3uibUv" id="1pVVBIr9LnZ" role="1tU5fm">
-              <ref role="3uigEE" node="3QECrxVxkzU" resolve="InterpreterSession" />
-            </node>
-            <node concept="10Nm6u" id="1pVVBIr9Lo0" role="33vP2m" />
-          </node>
-        </node>
         <node concept="3J1_TO" id="1pVVBIr9Lo1" role="3cqZAp">
           <node concept="3clFbS" id="1pVVBIr9Lo3" role="1zxBo7">
-            <node concept="3clFbF" id="1pVVBIr9Lo4" role="3cqZAp">
-              <node concept="37vLTI" id="1pVVBIr9Lo6" role="3clFbG">
-                <node concept="37vLTw" id="1pVVBIr9Lo9" role="37vLTJ">
-                  <ref role="3cqZAo" node="1pVVBIr9LnX" resolve="session" />
-                </node>
-                <node concept="2YIFZM" id="1pVVBIr9Loa" role="37vLTx">
-                  <ref role="1Pybhc" node="3QECrxVxkzU" resolve="InterpreterSession" />
-                  <ref role="37wK5l" node="3QECrxVxk$r" resolve="open" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="1pVVBIr9Lob" role="3cqZAp">
-              <node concept="3clFbC" id="1pVVBIr9Loe" role="3clFbw">
-                <node concept="37vLTw" id="1pVVBIr9Loh" role="3uHU7B">
-                  <ref role="3cqZAo" node="1pVVBIr9LnX" resolve="session" />
-                </node>
-                <node concept="10Nm6u" id="1pVVBIr9Loi" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="1pVVBIr9Loj" role="3clFbx">
-                <node concept="3cpWs6" id="1pVVBIr9Lok" role="3cqZAp">
-                  <node concept="10Nm6u" id="1pVVBIr9Lol" role="3cqZAk" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1pVVBIr9Lom" role="3cqZAp">
-              <node concept="2YIFZM" id="1pVVBIr9Loo" role="3clFbG">
-                <ref role="1Pybhc" node="k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-                <ref role="37wK5l" node="1pVVBIpJ21F" resolve="joinSession" />
-                <node concept="37vLTw" id="1pVVBIr9Lop" role="37wK5m">
-                  <ref role="3cqZAo" node="1pVVBIr9LnQ" resolve="repo" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="1pVVBIr9Loq" role="3cqZAp">
-              <node concept="37vLTw" id="1pVVBIr9Lor" role="3cqZAk">
-                <ref role="3cqZAo" node="1pVVBIr9LnX" resolve="session" />
+            <node concept="3cpWs6" id="5oh3yFRQfZk" role="3cqZAp">
+              <node concept="2YIFZM" id="5oh3yFRQfZl" role="3cqZAk">
+                <ref role="1Pybhc" node="3QECrxVxkzU" resolve="InterpreterSession" />
+                <ref role="37wK5l" node="3QECrxVxk$r" resolve="open" />
               </node>
             </node>
           </node>
@@ -20454,14 +19635,6 @@
               </node>
             </node>
             <node concept="3clFbS" id="1pVVBIr9Lo_" role="1zc67A">
-              <node concept="3clFbF" id="1pVVBIr9LoA" role="3cqZAp">
-                <node concept="1rXfSq" id="1pVVBIr9LoC" role="3clFbG">
-                  <ref role="37wK5l" node="1pVVBIr9LoL" resolve="afterRun" />
-                  <node concept="37vLTw" id="1pVVBIr9LoD" role="37wK5m">
-                    <ref role="3cqZAo" node="1pVVBIr9LnX" resolve="session" />
-                  </node>
-                </node>
-              </node>
               <node concept="RRSsy" id="1pVVBIr9LoE" role="3cqZAp">
                 <property role="RRSoG" value="gZ5fh_4/error" />
                 <node concept="Xl_RD" id="1pVVBIr9LoG" role="RRSoy">

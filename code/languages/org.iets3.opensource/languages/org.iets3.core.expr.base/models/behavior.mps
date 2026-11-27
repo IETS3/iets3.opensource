@@ -20535,10 +20535,10 @@
                           <node concept="3SKdUt" id="6$6VD0Oaxxu" role="3cqZAp">
                             <node concept="1PaTwC" id="6$6VD0Oaxxy" role="1aUNEU">
                               <node concept="3oM_SD" id="6$6VD0Oaxx$" role="1PaTwD">
-                                <property role="3oM_SC" value="the" />
+                                <property role="3oM_SC" value="a" />
                               </node>
                               <node concept="3oM_SD" id="6$6VD0Oaxx_" role="1PaTwD">
-                                <property role="3oM_SC" value="scope" />
+                                <property role="3oM_SC" value="session" />
                               </node>
                               <node concept="3oM_SD" id="6$6VD0OaxxA" role="1PaTwD">
                                 <property role="3oM_SC" value="caches" />
@@ -20559,25 +20559,25 @@
                                 <property role="3oM_SC" value="or" />
                               </node>
                               <node concept="3oM_SD" id="6$6VD0OaxxG" role="1PaTwD">
-                                <property role="3oM_SC" value="joins" />
-                              </node>
-                              <node concept="3oM_SD" id="6$6VD0OaxxH" role="1PaTwD">
                                 <property role="3oM_SC" value="the" />
                               </node>
-                              <node concept="3oM_SD" id="6$6VD0OaxxI" role="1PaTwD">
-                                <property role="3oM_SC" value="scope" />
+                              <node concept="3oM_SD" id="6$6VD0OaxxH" role="1PaTwD">
+                                <property role="3oM_SC" value="session" />
                               </node>
-                              <node concept="3oM_SD" id="6$6VD0OaxxJ" role="1PaTwD">
+                              <node concept="3oM_SD" id="6$6VD0OaxxI" role="1PaTwD">
                                 <property role="3oM_SC" value="of" />
                               </node>
-                              <node concept="3oM_SD" id="6$6VD0OaxxK" role="1PaTwD">
+                              <node concept="3oM_SD" id="6$6VD0OaxxJ" role="1PaTwD">
                                 <property role="3oM_SC" value="an" />
                               </node>
-                              <node concept="3oM_SD" id="6$6VD0OaxxL" role="1PaTwD">
+                              <node concept="3oM_SD" id="6$6VD0OaxxK" role="1PaTwD">
                                 <property role="3oM_SC" value="enclosing" />
                               </node>
+                              <node concept="3oM_SD" id="6$6VD0OaxxL" role="1PaTwD">
+                                <property role="3oM_SC" value="run" />
+                              </node>
                               <node concept="3oM_SD" id="6$6VD0OaxxM" role="1PaTwD">
-                                <property role="3oM_SC" value="run." />
+                                <property role="3oM_SC" value="does." />
                               </node>
                             </node>
                           </node>
@@ -20588,11 +20588,8 @@
                                 <ref role="3uigEE" node="7LZDtvhtD$G" resolve="IValueAndTraceAndEnv" />
                               </node>
                               <node concept="2YIFZM" id="6$6VD0OaxxX" role="33vP2m">
-                                <ref role="1Pybhc" to="oq0c:k8qAQxC3T0" resolve="TypecheckingSessionScope" />
-                                <ref role="37wK5l" to="oq0c:40zFNIr$tnx" resolve="withScope" />
-                                <node concept="37vLTw" id="6$6VD0OaxxY" role="37wK5m">
-                                  <ref role="3cqZAo" node="5IR_boHRjde" resolve="n" />
-                                </node>
+                                <ref role="1Pybhc" to="oq0c:3QECrxVxkzU" resolve="InterpreterSession" />
+                                <ref role="37wK5l" to="oq0c:40zFNIrpMvh" resolve="withSession" />
                                 <node concept="1bVj0M" id="6$6VD0OaxxZ" role="37wK5m">
                                   <node concept="3clFbS" id="6$6VD0Oaxy1" role="1bW5cS">
                                     <node concept="3clFbF" id="6$6VD0Oaxy2" role="3cqZAp">
