@@ -5,11 +5,51 @@ on:
     branches:
       - 'maintenance/mps*'
 
+permissions:
+  contents: read
+
 jobs:
   create-pr:
+    # forks have no cascade App credentials
+    if: github.repository == 'IETS3/iets3.opensource'
     runs-on: ubuntu-latest
     steps:
+      # A GitHub App token instead of GITHUB_TOKEN: PRs created with GITHUB_TOKEN do not trigger workflows, so the
+      # required checks would never run on cascade PRs.
+      - name: Create GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc # v3.4.0
+        with:
+          app-id: ${{ vars.CASCADE_APP_ID }}
+          private-key: ${{ secrets.CASCADE_APP_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
+          # cascade merges can contain changes to .github/workflows
+          permission-workflows: write
+
       - name: Create PR
-        uses: specificlanguages/cascading-merge@v2
+        id: cascade
+        # pinned by commit: the action runs with an App token that has workflows write
+        uses: specificlanguages/cascading-merge@45ff28026d2055e60a36edbe61443df4b37a8290 # v2.1.0
         with:
           exclude_branch_prefix: maintenance/mps3
+          token: ${{ steps.app-token.outputs.token }}
+          # {current_branch}: the pushed branch, {next_branch}: the PR base, {merge_branch}: the PR head (merge/*)
+          pr_title: 'chore(cascade): merge {current_branch} into {next_branch}'
+          merge_commit_message: 'chore(cascade): merge {current_branch} into {merge_branch}'
+          update_from_base_message: 'chore(cascade): merge {next_branch} into {merge_branch}'
+
+      # Also covers cascade PRs that were created before, or by a version of the action without pr_title.
+      # A title change re-triggers the Conventional Commits check, because the App token is used.
+      - name: Label and title the cascade PR
+        if: steps.cascade.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_NUMBER: ${{ steps.cascade.outputs.pr_number }}
+        run: |
+          base=$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" --jq .base.ref)
+          title="chore(cascade): merge $GITHUB_REF_NAME into $base"
+          gh api --method POST "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/labels" -f 'labels[]=cascade' > /dev/null
+          if [ "$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" --jq .title)" != "$title" ]; then
+            gh api --method PATCH "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" -f "title=$title" > /dev/null
+          fi

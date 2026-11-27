@@ -1,0 +1,184 @@
+# Conventional Commits check for PR titles, PR commits and CHANGELOG.md, see CONTRIBUTING.md.
+#
+# Modes come from repository variables, so they switch for all branches at once without a code change:
+#   CC_PR_TITLE_MODE, CC_COMMIT_MODE: off | warn | enforce   (unset = enforce)
+#   CC_CHANGELOG_MODE:                open | frozen          (unset = open)
+# In warn mode the jobs succeed and report violations as annotations and as a PR comment. Unknown values fail.
+#
+# The rules (.cz.toml, .github/conventional-commits/) are taken from the PR's base branch: the jobs check out
+# only the base's rule files, read the PR's commits as git objects and run Python isolated (-I), so a PR's own
+# rule changes do not apply to itself. Only if the base branch has no rules yet, the PR's own are used.
+# Limitation of pull_request: this workflow file itself comes from the PR, so changes to it need careful review.
+# Required checks in branch protection: cc-pr-title, cc-commits, cc-changelog and cc-selftest (cc-selftest keeps a
+# broken rule change or commitizen update from reaching a branch, where it would break the checks of every PR).
+# In warn mode, continue-on-error additionally keeps a crashing check from blocking PRs.
+name: Conventional Commits
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: conventional-commits-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+env:
+  TITLE_MODE: ${{ vars.CC_PR_TITLE_MODE || 'enforce' }}
+  COMMIT_MODE: ${{ vars.CC_COMMIT_MODE || 'enforce' }}
+  CHANGELOG_MODE: ${{ vars.CC_CHANGELOG_MODE || 'open' }}
+  BASE_SHA: ${{ github.event.pull_request.base.sha }}
+  HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+  HEAD_REF: ${{ github.event.pull_request.head.ref }}
+
+jobs:
+  cc-pr-title:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      report: ${{ steps.check.outputs.report }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          # cone mode: root files (.cz.toml, .pre-commit-config.yaml) are always included
+          sparse-checkout: &rule-files .github/conventional-commits
+          persist-credentials: false
+      - &use-pr-rules-if-missing
+        name: Use the PR's rules if the base branch has none yet (first PR)
+        run: |
+          if [ ! -f .github/conventional-commits/cc_check.py ]; then
+            echo "::notice::Base branch has no Conventional Commits rules yet, using the PR's own"
+            # keep the history complete where the job needs it (cc-commits); shallow jobs stay shallow
+            depth=()
+            [ "$(git rev-parse --is-shallow-repository)" = true ] && depth=(--depth=1)
+            git fetch --quiet --no-tags "${depth[@]}" origin "$GITHUB_SHA"
+            git checkout FETCH_HEAD -- .cz.toml .pre-commit-config.yaml .github/conventional-commits
+          fi
+      - name: Install commitizen
+        run: .github/conventional-commits/install-commitizen.sh
+      - name: Check PR title
+        id: check
+        continue-on-error: ${{ env.TITLE_MODE == 'warn' }}
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          "$RUNNER_TEMP/cz/bin/python" -I .github/conventional-commits/cc_check.py title \
+            --mode "$TITLE_MODE" -- "$PR_TITLE"
+
+  cc-commits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      report: ${{ steps.check.outputs.report }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          # all branches (commits already on master/maintenance/mps* are skipped), commits only
+          fetch-depth: 0
+          filter: tree:0
+          sparse-checkout: *rule-files
+          persist-credentials: false
+      - *use-pr-rules-if-missing
+      - name: Fetch the PR's commits
+        run: git fetch --quiet --no-tags origin "$HEAD_SHA"
+      - name: Install commitizen
+        run: .github/conventional-commits/install-commitizen.sh
+      - name: Check PR commits
+        id: check
+        continue-on-error: ${{ env.COMMIT_MODE == 'warn' }}
+        run: |
+          "$RUNNER_TEMP/cz/bin/python" -I .github/conventional-commits/cc_check.py commits \
+            --head "$HEAD_SHA" --exclude "$BASE_SHA" --mode "$COMMIT_MODE"
+
+  cc-changelog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      report: ${{ steps.check.outputs.report }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          filter: blob:none
+          sparse-checkout: *rule-files
+          persist-credentials: false
+      - *use-pr-rules-if-missing
+      - name: Fetch the PR's merge commit and its parents
+        run: git fetch --quiet --no-tags --depth=2 origin "$GITHUB_SHA"
+      - name: Check CHANGELOG.md
+        id: check
+        # GITHUB_SHA is the PR's merge commit, its first parent the base it was computed against; no commitizen needed
+        run: |
+          python3 -I .github/conventional-commits/cc_check.py changelog \
+            --base "$GITHUB_SHA^1" --head "$GITHUB_SHA" --head-ref "$HEAD_REF" --mode "$CHANGELOG_MODE"
+
+  cc-selftest:
+    # checks the PR's own rules against the fixtures, so a broken .cz.toml is caught before it is merged
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          sparse-checkout: *rule-files
+          persist-credentials: false
+      - name: Install commitizen
+        run: .github/conventional-commits/install-commitizen.sh
+      - name: Self-test
+        run: '"$RUNNER_TEMP/cz/bin/python" -I .github/conventional-commits/cc_check.py selftest'
+
+  cc-report:
+    # sticky PR comment; not possible for PRs from forks (read-only token), the annotations remain
+    needs: [cc-pr-title, cc-commits, cc-changelog]
+    if: ${{ !cancelled() && github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Update PR comment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+          A_CHECK_FAILED: ${{ contains(needs.*.result, 'failure') }}
+          TITLE_REPORT: ${{ needs.cc-pr-title.outputs.report }}
+          COMMITS_REPORT: ${{ needs.cc-commits.outputs.report }}
+          CHANGELOG_REPORT: ${{ needs.cc-changelog.outputs.report }}
+        run: |
+          marker='<!-- conventional-commits-report -->'
+          existing=$(gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" \
+            --jq ".[] | select(.user.login == \"github-actions[bot]\" and (.body | startswith(\"$marker\"))) | .id" \
+            | head -n 1)
+
+          if [ -z "$TITLE_REPORT$COMMITS_REPORT$CHANGELOG_REPORT" ]; then
+            # a check that failed without a report (e.g. a crash) proves nothing: keep the old comment
+            if [ -n "$existing" ] && [ "$A_CHECK_FAILED" != true ]; then
+              gh api --method DELETE "repos/$GITHUB_REPOSITORY/issues/comments/$existing"
+            fi
+            exit 0
+          fi
+
+          body_file="$RUNNER_TEMP/comment.md"
+          {
+            echo "$marker"
+            echo "### Conventional Commits"
+            echo
+            echo "Modes: PR title \`$TITLE_MODE\`, commits \`$COMMIT_MODE\`, CHANGELOG \`$CHANGELOG_MODE\`." \
+                 "In \`warn\` mode this does not block the merge yet."
+            echo
+            for report in "$TITLE_REPORT" "$COMMITS_REPORT" "$CHANGELOG_REPORT"; do
+              [ -n "$report" ] && printf '%s\n\n' "$report"
+            done
+            echo "How to fix: [CONTRIBUTING.md](https://github.com/$GITHUB_REPOSITORY/blob/$BASE_REF/CONTRIBUTING.md)." \
+                 "Reword commits with \`git rebase -i origin/<base>\` and \`git push --force-with-lease\`."
+          } > "$body_file"
+
+          if [ -n "$existing" ]; then
+            gh api --method PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$existing" -F "body=@$body_file" > /dev/null
+          else
+            gh api --method POST "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" -F "body=@$body_file" > /dev/null
+          fi

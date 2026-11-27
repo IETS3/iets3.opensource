@@ -1,0 +1,105 @@
+# Release notes per published version, generated with git-cliff (https://git-cliff.org), see CONTRIBUTING.md.
+#
+# Only PR merge commits are listed, including those that arrived through the cascade; the single commits of a
+# PR and cascade PRs are not. Conventional entries show the first paragraph of the PR description below the title.
+# In CI (gradle/release-notes.gradle.kts) the PR title and description are taken from the GitHub API; without it
+# the merge commit text is used, e.g. by consumers:
+#   git cliff -c cliff.toml <commit of version X>..<commit of version Y>
+
+[changelog]
+trim = false
+# collapse the empty lines left by the template logic
+postprocessors = [{ pattern = '\n{3,}', replace = "\n\n" }]
+body = """
+{%- set breaking = commits | filter(attribute="breaking", value=true) -%}
+{%- set features = commits | filter(attribute="group", value="Features") -%}
+{%- set fixes = commits | filter(attribute="group", value="Fixes") -%}
+{%- set performance = commits | filter(attribute="group", value="Performance") -%}
+{%- set unclassified = commits | filter(attribute="group", value="Unclassified changes") -%}
+{%- set other = commits | filter(attribute="group", value="Other changes") -%}
+{%- set dependencies = get_env(name="RN_DEPENDENCIES", default="") -%}
+{%- macro entry(commit) -%}
+- {% if commit.scope %}**{{ commit.scope }}**: {% endif %}{{ commit.message | split(pat="\n") | first | trim }}
+{%- if commit.body %}{% set summary = commit.body | trim | split(pat="\n\n") | first | trim %}{% if summary %}{{ "\n  " }}{{ summary | replace(from="\n", to=" ") }}{% endif %}{% endif %}
+{%- endmacro entry -%}
+{%- macro section(title, items) -%}
+{%- set shown = items | filter(attribute="breaking", value=false) %}
+{%- if shown | length > 0 %}
+## {{ title }}
+{% for commit in shown %}
+{{ self::entry(commit=commit) }}
+{%- endfor %}
+{% endif %}
+{%- endmacro section -%}
+
+# {{ get_env(name="RN_TITLE", default="Release notes") }}
+{{ get_env(name="RN_INTRO", default="") }}
+{% if breaking | length > 0 %}
+## Breaking changes
+{% for commit in breaking %}
+{{ self::entry(commit=commit) }}
+{%- if commit.breaking_description and commit.breaking_description != commit.message %}{{ "\n  - " }}{{ commit.breaking_description | trim | replace(from="\n", to=" ") }}{% endif %}
+{%- endfor %}
+{% endif %}
+{{ self::section(title="Features", items=features) }}
+{{- self::section(title="Fixes", items=fixes) }}
+{{- self::section(title="Performance", items=performance) }}
+{%- if unclassified | length > 0 %}
+## Unclassified changes
+{% for commit in unclassified %}
+- {{ commit.raw_message | split(pat="\n") | first | trim }}
+{%- endfor %}
+{% endif %}
+{%- if dependencies %}
+## Dependencies
+{{ dependencies }}
+{% endif %}
+{%- if breaking | length + features | length + fixes | length + performance | length + unclassified | length == 0 %}
+No user-relevant changes.
+{% endif %}
+{%- if other | length > 0 %}
+<details><summary>Other changes ({{ other | length }})</summary>
+
+{% for commit in other %}
+- {{ commit.raw_message | split(pat="\n") | first | trim }}
+{%- endfor %}
+
+</details>
+{% endif %}
+"""
+
+[git]
+conventional_commits = true
+filter_unconventional = false
+split_commits = false
+# single commits of a PR are skipped even if breaking; the PR merge carries the breaking change
+protect_breaking_commits = false
+sort_commits = "oldest"
+# releases are cut by version, not by tags
+tag_pattern = "^never-a-release-tag$"
+commit_preprocessors = [
+  # PR descriptions from the GitHub API use CRLF
+  { pattern = '\r', replace = "" },
+  # hints and unchanged placeholders from the PR template
+  { pattern = '(?s)<!--.*?-->', replace = "" },
+  { pattern = 'What changes for users, in 1-3 sentences\.[^\n]*\n?This paragraph is shown in the release notes\.', replace = "" },
+  { pattern = '\*\*\[THIS IS TEMPLATE[^\n]*', replace = "" },
+  # old GitHub merge message "Merge pull request #N from owner/branch" + PR title -> "PR title (#N)"
+  { pattern = '^Merge pull request #(\d+) from \S+\r?\n\r?\n([^\r\n]+)', replace = "${2} (#${1})" },
+]
+commit_parsers = [
+  # single commits of a PR
+  { field = "merge_commit", pattern = "false", skip = true },
+  # cascade PRs and other merges that are not PR merges
+  { message = '^chore\(cascade\)', skip = true },
+  { message = '^Merge \S+ into \S+', skip = true },
+  { message = '^Merge (branch|remote-tracking branch|commit|tag) ', skip = true },
+  # PR merges: the subject ends with "(#N)"
+  { message = '^feat(\([^)]*\))?!?: [^\r\n]*\(#\d+\)[ \t]*(\r?\n|$)', group = "Features" },
+  { message = '^fix(\([^)]*\))?!?: [^\r\n]*\(#\d+\)[ \t]*(\r?\n|$)', group = "Fixes" },
+  { message = '^perf(\([^)]*\))?!?: [^\r\n]*\(#\d+\)[ \t]*(\r?\n|$)', group = "Performance" },
+  { message = '^(refactor|docs|test|build|ci|chore|revert)(\([^)]*\))?!?: [^\r\n]*\(#\d+\)[ \t]*(\r?\n|$)', group = "Other changes" },
+  { message = '^[^\r\n]*\(#\d+\)[ \t]*(\r?\n|$)', group = "Unclassified changes" },
+  # anything else is not a PR merge
+  { message = '.*', skip = true },
+]

@@ -1,0 +1,19 @@
+# Conventional Commits rules for PR titles and commits, see CONTRIBUTING.md.
+# Used by the git hooks (.pre-commit-config.yaml), the PR check (.github/workflows/conventional-commits.yml)
+# and ./gradlew checkCommits. Types and scopes are listed twice: in schema_pattern (used by commitizen) and in
+# the lists below (used for error hints). The self-test in .github/conventional-commits/ keeps both in sync.
+
+[tool.commitizen]
+name = "cz_customize"
+# No exceptions: "Merge branch ...", "Revert ...", "fixup!", "squash!" must follow the convention as well
+allowed_prefixes = []
+
+[tool.commitizen.customize]
+schema = "<type>(<scope>)!: <description>"
+example = "fix(variability): keep empty line after inserted variability content"
+schema_pattern = '''(?s)(feat|fix|perf|refactor|test|docs|build|ci|chore|revert)(\((kernelf|interpreter|variability|physunits|analysis|components|req|base|trace|migration|build|deps|platform|ci|docs|cascade)\))?!?: \S[^\r\n]*((\r?\n\r?\n.*)|(\s*))?$'''
+types = ["feat", "fix", "perf", "refactor", "test", "docs", "build", "ci", "chore", "revert"]
+scopes = [
+    "kernelf", "interpreter", "variability", "physunits", "analysis", "components", "req", "base", "trace",
+    "migration", "build", "deps", "platform", "ci", "docs", "cascade",
+]

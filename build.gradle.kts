@@ -563,3 +563,7 @@ tasks.cyclonedxDirectBom {
     includeLicenseText.set(false)
     includeConfigs.set(bundledDependencies.map { it.name }.union(listOf(languageLibs.name, mps.name)))
 }
+
+// Conventional Commits git hooks and release notes, see CONTRIBUTING.md
+apply(from = "gradle/conventional-commits.gradle.kts")
+apply(from = "gradle/release-notes.gradle.kts")

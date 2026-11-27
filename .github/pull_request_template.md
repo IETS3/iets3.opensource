@@ -1,17 +1,12 @@
-**[THIS IS TEMPLATE - ADJUST THIS TEXT ACCORDING TO YOUR PULL REQUEST]**
+<!-- PR title: Conventional Commit without issue number, e.g. "fix(variability): keep empty line after content";
+     types and scopes: CONTRIBUTING.md. Every commit of this PR must follow the convention.
+     Keep this description up to date while the PR changes.
+     Breaking change: "!" after type/scope and a last paragraph "BREAKING CHANGE: <impact and migration>".
+     Merge via the console as described in CONTRIBUTING.md. -->
 
-Each pull request should contain a brief summary of the proposed changes  
-that can be easily read by the consumers of project releases.
+What changes for users, in 1-3 sentences. Mention migrations users must run on their own models.
+This paragraph is shown in the release notes.
 
-Use the first comment in the pull request and update it as needed during
-the work on pull request to keep the description up-to-date.
+<!-- Optional: details for reviewers (not in the release notes) -->
 
-Some of the items in the description might include:
-
-- compatibility issues with previous versions if this PR introduces any
-breaking changes
-
-- hints on the included migrations and things to consider when applying
-the migration to the own project
-
-- reference to a related Github issue
+Closes #NNNN
