@@ -13,7 +13,7 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.List;
 import org.iets3.variability.artifacts.base.plugin.IVAAUtil;
 import java.util.Collection;
-import org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings;
+import org.iets3.variability.base.plugin.IETS3VariabilitySettings;
 import org.iets3.variability.base.plugin.Settings;
 import org.iets3.variability.artifacts.base.plugin.IArtifactAlgorithms;
 import org.iets3.variability.artifacts.base.plugin.IFilterInstantiator;
