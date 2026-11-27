@@ -3074,6 +3074,11 @@
             <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1pVVBIrdzqA" role="3bR37C">
+          <node concept="3bR9La" id="1pVVBIrdzq_" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5wLtKNeSWz5" role="3989C9">
@@ -9718,6 +9723,16 @@
         <node concept="1SiIV0" id="54b6uwtyE6R" role="3bR37C">
           <node concept="3bR9La" id="54b6uwtyE6S" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="fWrWhfVBMA" role="3bR37C">
+          <node concept="3bR9La" id="fWrWhfVBMB" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5oh3yFSLTXg" role="3bR37C">
+          <node concept="3bR9La" id="5oh3yFSLTXh" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
           </node>
         </node>
       </node>
@@ -16995,6 +17010,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5oh3yFSLUcC" role="3bR37C">
+          <node concept="3bR9La" id="5oh3yFSLUcD" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7YuIrXB5Sn0" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -17924,6 +17944,16 @@
         <node concept="1SiIV0" id="7FNYGQj8E63" role="3bR37C">
           <node concept="3bR9La" id="7FNYGQj8E64" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6$6VD0OfrZ$" role="3bR37C">
+          <node concept="3bR9La" id="6$6VD0OfrZ_" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6$6VD0OfrZA" role="3bR37C">
+          <node concept="3bR9La" id="6$6VD0OfrZB" role="1SiIV1">
+            <ref role="3bR37D" node="1VJeVhdX98g" resolve="org.iets3.core.expr.typetags.physunits" />
           </node>
         </node>
       </node>
@@ -19098,6 +19128,11 @@
       <node concept="1SiIV0" id="54b6uwtyEmx" role="3bR37C">
         <node concept="3bR9La" id="54b6uwtyEmy" role="1SiIV1">
           <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="fWrWhfVBMC" role="3bR37C">
+        <node concept="3bR9La" id="fWrWhfVBMD" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
         </node>
       </node>
     </node>
