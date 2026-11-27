@@ -140,6 +140,17 @@ fun rnGitCliffExecutable(): File {
 /** Not soft-failed like other release-notes errors, so a version bump without new checksums fails the PR build. */
 class RnChecksumMismatch(message: String) : GradleException(message)
 
+/**
+ * CI checkouts can be shallow (TeamCity: teamcity.git.shallowClone). The range lookup needs the commit history,
+ * so fetch it: commits only (--filter=tree:0, a few MB), file contents are loaded on demand.
+ */
+fun rnEnsureHistory() {
+    if (rnRun("git", "rev-parse", "--is-shallow-repository").trim() != "true") return
+    logger.lifecycle("Release notes: shallow clone, fetching the commit history from origin (commits only)")
+    rnRun("git", "fetch", "--quiet", "--no-tags", "--unshallow", "--filter=tree:0", "origin",
+        rnRun("git", "rev-parse", "HEAD").trim())
+}
+
 data class RnStart(val commit: String, val version: String?)
 
 /** Published versions of a line as commit hash -> version, from the Nexus metadata. */
@@ -268,6 +279,7 @@ val generateReleaseNotes = tasks.register("generateReleaseNotes") {
             }
             rnNotesDir.mkdirs()
             rnNotesFile.delete()
+            rnEnsureHistory()
             val start = rnFindStart(line)
             val range: String
             val intro: String
