@@ -29,13 +29,15 @@ jobs:
 
       - name: Create PR
         id: cascade
-        # TODO(#2072): switch to the upstream release containing specificlanguages/cascading-merge#4
-        uses: nkoester/cascading-merge@442f713d2cff59a6a1969c56edf0ae853cb42c8f # PR #4 head
+        # pinned by commit: the action runs with an App token that has workflows write
+        uses: specificlanguages/cascading-merge@45ff28026d2055e60a36edbe61443df4b37a8290 # v2.1.0
         with:
           exclude_branch_prefix: maintenance/mps3
           token: ${{ steps.app-token.outputs.token }}
-          pr_title: 'chore(cascade): merge {head} into {base}'
-          merge_commit_message: 'chore(cascade): merge {head} into {base}'
+          # {current_branch}: the pushed branch, {next_branch}: the PR base, {merge_branch}: the PR head (merge/*)
+          pr_title: 'chore(cascade): merge {current_branch} into {next_branch}'
+          merge_commit_message: 'chore(cascade): merge {current_branch} into {merge_branch}'
+          update_from_base_message: 'chore(cascade): merge {next_branch} into {merge_branch}'
 
       # Also covers cascade PRs that were created before, or by a version of the action without pr_title.
       # A title change re-triggers the Conventional Commits check, because the App token is used.
