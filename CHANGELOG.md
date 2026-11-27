@@ -20,6 +20,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
+- Base: `ICanStoreCheckResult.getLastResult()` returns the stored result again for nodes in read-only models, e.g. the test models of a gradle build. The view model `CheckResults` refuses values for such nodes; the result is kept as a user object on the node then, as before the view models.
 
 
 ## October 2026
