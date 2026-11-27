@@ -17,10 +17,13 @@ import org.jetbrains.mps.openapi.module.SRepository;
 import java.util.function.Supplier;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.typesystem.inference.TypeCheckerHelper;
+import jetbrains.mps.newTypesystem.context.TargetTypecheckingContext;
+import jetbrains.mps.typesystem.inference.TypeChecker;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 
 /**
- * Keeps one incremental typechecking context per root an interpreter run touches, like the editor keeps one session per open root. Without it, getTypeOf goes through TargetLegacyTypecheckingQueries, which creates and disposes a fresh TypeCheckingContext for every call, so nothing is cached. The interpreter asks for types very often (e.g. PlusExpression, DataMemberRef), which made single tests run for minutes. The contexts are served by ScopedTypecheckingProvider, which MPS asks before its default provider and which answers only on the thread that opened the scope. So it works on any thread: Run Manually runs on the EDT, whereas Run Tests and the CI interpreter runner (JUnitInterpreterExecutor) run on a pooled thread, where MPS keeps no per-root sessions. Roots an editor holds a session for are still answered by that session. Use a scope only on the thread that opened it; contextFor and the type queries it serves need read access like any type query, close needs no model lock. All contexts are disposed on close.  
+ * Caches the types an interpreter run asks for. Without a scope, getTypeOf goes through TargetLegacyTypecheckingQueries, which creates and disposes a fresh TypeCheckingContext for every call: it infers just the queried node, from the rules that apply to it and the nodes they ask the type of, but keeps nothing. The interpreter asks for the same types very often (e.g. PlusExpression, DataMemberRef), which made single tests run for minutes. Within a scope each type is computed once in the same way and then answered from the scope (typeOf). No root is checked as a whole, so a scope pays off for one evaluation as well as for a whole run. The types are not invalidated: a scope spans one run of checks, in which the models do not change in ways that affect types, and it drops everything on close. They are served by ScopedTypecheckingProvider, which MPS asks before its default provider and which answers only on the thread that opened the scope. So it works on any thread: Run Manually runs on the EDT, whereas Run Tests and the CI interpreter runner (JUnitInterpreterExecutor) run on a pooled thread, where MPS keeps no per-root sessions. Roots an editor holds a session for are still answered by that session. Use a scope only on the thread that opened it; typeOf and the queries it serves need read access like any type query, close needs no model lock.
  */
 public final class TypecheckingSessionScope {
   private static final ThreadLocal<TypecheckingSessionScope> CURRENT = new ThreadLocal<TypecheckingSessionScope>();
@@ -28,6 +31,7 @@ public final class TypecheckingSessionScope {
   private final Map<SNode, IncrementalTypecheckingContext> contexts = MapSequence.fromMap(new HashMap<SNode, IncrementalTypecheckingContext>());
   private final Map<SNode, SNode> derivedNodes = MapSequence.fromMap(new HashMap<SNode, SNode>());
   private final Set<SNode> derivedRoots = SetSequence.fromSet(new HashSet<SNode>());
+  private final Map<SNode, SNode> types = MapSequence.fromMap(new HashMap<SNode, SNode>());
   private final LanguageRegistry registry;
 
   private TypecheckingSessionScope(LanguageRegistry registry) {
@@ -66,19 +70,6 @@ public final class TypecheckingSessionScope {
     return CURRENT.get();
   }
   /**
-   * Runs the computation in the current scope, or opens and closes one for the repository when none exists. 
-   */
-  public static <T> T withScope(SRepository repository, Supplier<T> computation) {
-    TypecheckingSessionScope scope = open(repository);
-    try {
-      return computation.get();
-    } finally {
-      if (scope != null) {
-        scope.close();
-      }
-    }
-  }
-  /**
    * Runs the computation in the current scope, or opens and closes one for the anchor when none exists. 
    */
   public static <T> T withScope(SNode anchor, Supplier<T> computation) {
@@ -93,7 +84,7 @@ public final class TypecheckingSessionScope {
   }
 
   /**
-   * Builds a detached node for key once per scope, so it may be typechecked incrementally; without an open scope it is built on every call.    
+   * Builds a detached node for key once per scope, so its types are cached like those of the model; without an open scope it is built on every call.
    */
   public static SNode derivedNode(SNode key, _FunctionTypes._return_P0_E0<? extends SNode> factory) {
     TypecheckingSessionScope scope = CURRENT.get();
@@ -111,7 +102,7 @@ public final class TypecheckingSessionScope {
   }
 
   /**
-   * Whether node stays unchanged while this scope is open, or every change to it reaches the context's model listeners, so it may be typechecked incrementally and serve as the key of derivedNode: true for nodes in a model of a repository and in trees built by derivedNode. MPS attaches no listeners to a model outside a repository, so its nodes are not stable.  
+   * Whether node stays unchanged while this scope is open, so its type may be cached and it may serve as the key of derivedNode: true for nodes in a model of a repository, which a run of checks does not change, and in trees built by derivedNode. Other detached trees and models outside a repository are built, and may be changed, by the code that runs.   
    */
   public boolean isStable(SNode node) {
     SNode root = SNodeOperations.getContainingRoot(node);
@@ -119,7 +110,7 @@ public final class TypecheckingSessionScope {
     return (rootModel != null && rootModel.getRepository() != null) || SetSequence.fromSet(derivedRoots).contains(root);
   }
   /**
-   * Returns null for a root that is not stable: a detached tree not built by derivedNode, which the interpreter builds and changes without raising change events, or a model outside a repository, to which MPS attaches no listeners. A cached context would answer stale types for either.  
+   * The incremental typechecking context of the root of node, created on first use, through which checkRecursively reports the errors of a whole root. Returns null for a root that is not stable (isStable).
    */
   public IncrementalTypecheckingContext contextFor(SNode node, TypeCheckerHelper helper) {
     SNode root = SNodeOperations.getContainingRoot(node);
@@ -134,17 +125,45 @@ public final class TypecheckingSessionScope {
     return context;
   }
   /**
-   * Drops the cached types of node's root, if this scope holds a context for it; creates none.  
+   * The type of node, computed once per scope by computeType and then answered from this scope. A first query costs what it costs without a scope, and no root is checked as a whole. The types are not invalidated: a scope spans one run of checks, in which the models do not change in ways that affect types, and it is dropped when the run ends. A node that is not stable (isStable) is typed on every call.   
+   */
+  public SNode typeOf(SNode node, TypeCheckerHelper helper) {
+    if (MapSequence.fromMap(types).containsKey(node)) {
+      return MapSequence.fromMap(types).get(node);
+    }
+    SNode type = computeType(node, helper);
+    if (isStable(node)) {
+      MapSequence.fromMap(types).put(node, type);
+    }
+    return type;
+  }
+  /**
+   * Computes the type of node the way MPS does outside an editor: a TargetTypecheckingContext infers just this node, from the rules that apply to it and the nodes they ask the type of, and is disposed afterwards.   
+   */
+  public static SNode computeType(SNode node, TypeCheckerHelper helper) {
+    TargetTypecheckingContext targetContext = new TargetTypecheckingContext(null, helper);
+    try {
+      return targetContext.getTypeOf(node, TypeChecker.getInstance());
+    } finally {
+      targetContext.dispose();
+    }
+  }
+  /**
+   * Drops the cached types of node's root, and clears its incremental context if this scope holds one; creates none.   
    */
   public void clearCache(SNode node) {
-    IncrementalTypecheckingContext rootContext = MapSequence.fromMap(contexts).get(SNodeOperations.getContainingRoot(node));
+    final SNode root = SNodeOperations.getContainingRoot(node);
+    for (SNode typed : ListSequence.fromList(SetSequence.fromSet(MapSequence.fromMap(types).keySet()).where((it) -> SNodeOperations.getContainingRoot(it) == root).toList())) {
+      MapSequence.fromMap(types).removeKey(typed);
+    }
+    IncrementalTypecheckingContext rootContext = MapSequence.fromMap(contexts).get(root);
     if (rootContext != null) {
       rootContext.clear();
     }
   }
 
   /**
-   * Disposes every context, also when one of them fails to (each holds listeners on its models), and rethrows the first failure afterwards.  
+   * Drops the cached types and disposes every context, also when one of them fails to (each holds listeners on its models), and rethrows the first failure afterwards.   
    */
   public void close() {
     CleanupFailures failures = new CleanupFailures();
@@ -152,6 +171,7 @@ public final class TypecheckingSessionScope {
       failures.run(() -> scopedContext.dispose());
     }
     MapSequence.fromMap(contexts).clear();
+    MapSequence.fromMap(types).clear();
     MapSequence.fromMap(derivedNodes).clear();
     SetSequence.fromSet(derivedRoots).clear();
     CURRENT.remove();

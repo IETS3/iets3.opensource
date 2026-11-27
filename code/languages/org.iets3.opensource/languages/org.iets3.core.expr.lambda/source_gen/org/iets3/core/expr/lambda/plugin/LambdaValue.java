@@ -6,9 +6,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Map;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
+import org.iets3.core.expr.lambda.behavior.LambdaExpression__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
-import org.iets3.core.expr.lambda.behavior.LambdaExpression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.CopyUtil;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -18,6 +18,7 @@ import org.iets3.core.expr.base.behavior.IRef__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import org.iets3.core.expr.lambda.behavior.CapturedValue__BehaviorDescriptor;
+import org.iets3.core.expr.base.plugin.TypecheckingSessionScope;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import java.util.List;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
@@ -35,18 +36,53 @@ public class LambdaValue extends ExecutableValue {
   private SNode lambda = null;
   private Map<SNode, SNode> mapping;
   private boolean stopOnStop = false;
+  private boolean shared = false;
 
   public LambdaValue(SNode le, IContext ctx, ICoverageAnalyzer coverage, boolean stopOnStop) {
+    this.stopOnStop = stopOnStop;
+    SNode sharedCopy = sharedCopy(le);
+    if (sharedCopy != null) {
+      lambda = sharedCopy;
+      mapping = LambdaExpression__BehaviorDescriptor.getNodeMapping_id3u8VfJfplfS.invoke(sharedCopy);
+      LambdaExpression__BehaviorDescriptor.putNodeMapping_id1ZCJf$ej28Z.invoke(le, mapping);
+      shared = true;
+      return;
+    }
     mapping = MapSequence.fromMap(new HashMap<SNode, SNode>());
     LambdaExpression__BehaviorDescriptor.putNodeMapping_id1ZCJf$ej28Z.invoke(le, mapping);
     lambda = SNodeOperations.as(CopyUtil.copy(le, mapping, true), CONCEPTS.LambdaExpression$64);
-    this.stopOnStop = stopOnStop;
     Iterable<SNode> tobBeCaptured = ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(lambda, LINKS.expression$T2aj), CONCEPTS.IRef$sq, true, new SAbstractConcept[]{})).where((it) -> (boolean) IRef__BehaviorDescriptor.targetStateIsMutable_id22hm_0zJBUZ.invoke(it));
     for (SNode c : Sequence.fromIterable(tobBeCaptured)) {
-      SNode cv = createCapturedValue_z5q1ut_a0a0f0g(SNodeOperations.cast(SNodeOperations.copyNode(TypecheckingFacade.getFromContext().getTypeOf(IRef__BehaviorDescriptor.target_id6rGLT0TevFd.invoke(c))), CONCEPTS.Type$WK));
+      SNode cv = createCapturedValue_z5q1ut_a0a0h0h(SNodeOperations.cast(SNodeOperations.copyNode(TypecheckingFacade.getFromContext().getTypeOf(IRef__BehaviorDescriptor.target_id6rGLT0TevFd.invoke(c))), CONCEPTS.Type$WK));
       CapturedValue__BehaviorDescriptor.setValue_id22hm_0zJHWz.invoke(cv, ctx.getRootInterpreter().evaluate(IRef__BehaviorDescriptor.target_id6rGLT0TevFd.invoke(c), ctx, coverage, null, stopOnStop));
       SNodeOperations.replaceWithAnother(c, cv);
     }
+  }
+
+  private LambdaValue(SNode sharedCopy, Map<SNode, SNode> mapping, boolean stopOnStop) {
+    this.lambda = sharedCopy;
+    this.mapping = mapping;
+    this.stopOnStop = stopOnStop;
+    this.shared = true;
+  }
+
+  /**
+   * The copy of le that all values of le share while a TypecheckingSessionScope is open: built once per scope by TypecheckingSessionScope.derivedNode, so the types the interpreter asks for in its body are cached like those of the model, instead of being computed in a fresh typechecking context on every evaluation of a fresh copy. Returns null without a scope, for a lambda in a tree that may change (TypecheckingSessionScope.isStable), and for a body that refers to mutable state, which each value captures when it is created.   
+   */
+  private static SNode sharedCopy(final SNode le) {
+    TypecheckingSessionScope scope = TypecheckingSessionScope.current();
+    if (scope == null || !(scope.isStable(le))) {
+      return null;
+    }
+    return SNodeOperations.as(TypecheckingSessionScope.derivedNode(le, () -> {
+      if (ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(le, LINKS.expression$T2aj), CONCEPTS.IRef$sq, true, new SAbstractConcept[]{})).any((it) -> (boolean) IRef__BehaviorDescriptor.targetStateIsMutable_id22hm_0zJBUZ.invoke(it))) {
+        return null;
+      }
+      Map<SNode, SNode> copyMapping = MapSequence.fromMap(new HashMap<SNode, SNode>());
+      SNode copy = SNodeOperations.as(CopyUtil.copy(le, copyMapping, true), CONCEPTS.LambdaExpression$64);
+      LambdaExpression__BehaviorDescriptor.putNodeMapping_id1ZCJf$ej28Z.invoke(copy, copyMapping);
+      return copy;
+    }), CONCEPTS.LambdaExpression$64);
   }
 
   @Override
@@ -59,7 +95,7 @@ public class LambdaValue extends ExecutableValue {
   }
 
   public ExecutableValue copy(IContext ctx, ICoverageAnalyzer coverage) {
-    LambdaValue copy = new LambdaValue(lambda, ctx, coverage, stopOnStop);
+    LambdaValue copy = ((shared ? new LambdaValue(lambda, mapping, stopOnStop) : new LambdaValue(lambda, ctx, coverage, stopOnStop)));
     ListSequence.fromList(copy.boundValues).addSequence(ListSequence.fromList(this.boundValues));
     return copy;
   }
@@ -95,7 +131,7 @@ public class LambdaValue extends ExecutableValue {
     return res;
   }
 
-  private static SNode createCapturedValue_z5q1ut_a0a0f0g(SNode p0) {
+  private static SNode createCapturedValue_z5q1ut_a0a0h0h(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.CapturedValue$Gh);
     n0.forChild(LINKS.type$EhVN).initNode(p0, CONCEPTS.Type$WK, true);
     return n0.getResult();

@@ -18,6 +18,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import com.mbeddr.mpsutil.traceExplorer.plugin.ITraceRerunner;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
+import org.iets3.core.expr.base.plugin.TypecheckingSessionScope;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -49,11 +50,13 @@ public final class ITraceRoot__BehaviorDescriptor extends BaseBHDescriptor {
     final SNode n = __thisNode__;
     final ITraceRerunner runner = new ITraceRerunner() {
       public IRerunnableTraceRecord rerun() {
-        IETS3ExprEvaluator evaluator = new IETS3ExprEvaluator().withComputationTrace(true);
+        final IETS3ExprEvaluator evaluator = new IETS3ExprEvaluator().withComputationTrace(true);
         ComputationTrace trace;
         try {
-          IValueAndTraceAndEnv result = evaluator.evaluate(n);
-          trace = result.getTrace();
+          // A traced evaluation asks for the types of the same nodes again and again (in loops, recursion, every call of a function);
+          // the scope caches them for this evaluation, or joins the scope of an enclosing run.
+          IValueAndTraceAndEnv evaluated = TypecheckingSessionScope.withScope(n, () -> evaluator.evaluate(n));
+          trace = evaluated.getTrace();
         } catch (Throwable t) {
           // An exception must not cost the whole trace: show what was computed before it,
           // with the node that threw marked as the failure.

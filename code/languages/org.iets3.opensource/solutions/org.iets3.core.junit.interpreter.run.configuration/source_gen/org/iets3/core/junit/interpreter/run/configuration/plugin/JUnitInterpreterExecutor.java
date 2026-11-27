@@ -59,9 +59,9 @@ public class JUnitInterpreterExecutor {
     if (wrappers == null || ListSequence.fromList(wrappers).isEmpty()) {
       return;
     }
-    // Each test item runs in a write action of its own (handleTestItem), and the scope spans all of them. In between,
-    // the user may edit models and each test stores its result. The scope's typechecking contexts follow those changes
-    // through their model listeners and do not cache types of detached trees, so no test sees types of an earlier state.
+    // Each test item runs in a write action of its own (handleTestItem), and the scope spans all of them. The types the
+    // scope caches are kept for the whole run: the run does not change the models in ways that affect types. Types of
+    // detached trees the interpreter builds and changes are not cached (TypecheckingSessionScope.isStable).
     InterpreterTestRunScope.withScope(repo, () -> {
       for (ITestNodeWrapper wrapper : wrappers) {
         if (config.isTerminationRequested()) {

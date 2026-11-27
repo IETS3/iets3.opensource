@@ -6,9 +6,10 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Map;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
+import org.iets3.core.expr.lambda.behavior.LambdaExpression__BehaviorDescriptor;
+import org.iets3.core.expr.lambda.behavior.ShortLambdaExpression__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
-import org.iets3.core.expr.lambda.behavior.ShortLambdaExpression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -22,11 +23,12 @@ import org.iets3.core.expr.base.behavior.IRef__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import org.iets3.core.expr.lambda.behavior.CapturedValue__BehaviorDescriptor;
+import org.iets3.core.expr.base.plugin.TypecheckingSessionScope;
+import jetbrains.mps.internal.collections.runtime.SetSequence;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import java.util.List;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer;
-import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -44,9 +46,17 @@ public class ShortLambdaValue extends ExecutableValue {
   private boolean stopOnStop = false;
 
   public ShortLambdaValue(SNode le, IContext ctx, ICoverageAnalyzer coverage, boolean stopOnStop) {
+    shortLambda = le;
+    this.stopOnStop = stopOnStop;
+    SNode sharedLambda = sharedLambda(le);
+    if (sharedLambda != null) {
+      lambda = sharedLambda;
+      mapping = LambdaExpression__BehaviorDescriptor.getNodeMapping_id3u8VfJfplfS.invoke(sharedLambda);
+      ShortLambdaExpression__BehaviorDescriptor.putNodeMapping_id5s__jxDLZW7.invoke(le, mapping);
+      return;
+    }
     mapping = MapSequence.fromMap(new HashMap<SNode, SNode>());
     ShortLambdaExpression__BehaviorDescriptor.putNodeMapping_id5s__jxDLZW7.invoke(le, mapping);
-    shortLambda = le;
     lambda = ShortLambdaExpression__BehaviorDescriptor.getLambda_idXbOhLk5ek9.invoke(le);
 
     lambda = ((lambda == null) ? SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba520706L, "org.iets3.core.expr.lambda.structure.LambdaExpression")) : lambda);
@@ -57,7 +67,7 @@ public class ShortLambdaValue extends ExecutableValue {
 
     final Wrappers._T<SNode> lambdaArg = new Wrappers._T<SNode>(ShortLambdaExpression__BehaviorDescriptor.getLambdaArg_id5s__jxCqcBE.invoke(le));
     if (lambdaArg.value == null) {
-      lambdaArg.value = createLambdaArg_99yx9z_a0a0m0i();
+      lambdaArg.value = createLambdaArg_99yx9z_a0a0p0i();
       ShortLambdaExpression__BehaviorDescriptor.putLambdaArg_id5s__jxCq8Sv.invoke(le, lambdaArg.value);
     }
     SNode ttt = IShortLambdaContainer__BehaviorDescriptor.requiredType_id6zmBjqUm7MF.invoke(SNodeOperations.cast(SNodeOperations.getParent(le), CONCEPTS.IShortLambdaContainer$6m));
@@ -67,19 +77,57 @@ public class ShortLambdaValue extends ExecutableValue {
       // do not go into nested short lambda expressions, otherwise all
       // "it"s are replaced with a ref to the same lambda arg!
       if (SNodeOperations.getNodeAncestor(it, CONCEPTS.LambdaExpression$64, false, false) == lambda && (SNodeOperations.getNodeAncestor(it, CONCEPTS.ShortLambdaExpression$Xg, false, false) == null)) {
-        SNode argRef = createLambdaArgRef_99yx9z_a0a0c0a0a61a8(lambdaArg.value);
+        SNode argRef = createLambdaArgRef_99yx9z_a0a0c0a0a91a8(lambdaArg.value);
         MapSequence.fromMap(mapping).put(it, argRef);
         SNodeOperations.replaceWithAnother(it, argRef);
       }
     });
 
-    this.stopOnStop = stopOnStop;
     Iterable<SNode> tobBeCaptured = ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(lambda, LINKS.expression$T2aj), CONCEPTS.IRef$sq, true, new SAbstractConcept[]{})).where((it) -> (boolean) IRef__BehaviorDescriptor.targetStateIsMutable_id22hm_0zJBUZ.invoke(it));
     for (SNode c : Sequence.fromIterable(tobBeCaptured)) {
-      SNode cv = createCapturedValue_99yx9z_a0a0u0i(SNodeOperations.cast(SNodeOperations.copyNode(TypecheckingFacade.getFromContext().getTypeOf(IRef__BehaviorDescriptor.target_id6rGLT0TevFd.invoke(c))), CONCEPTS.Type$WK));
+      SNode cv = createCapturedValue_99yx9z_a0a0w0i(SNodeOperations.cast(SNodeOperations.copyNode(TypecheckingFacade.getFromContext().getTypeOf(IRef__BehaviorDescriptor.target_id6rGLT0TevFd.invoke(c))), CONCEPTS.Type$WK));
       CapturedValue__BehaviorDescriptor.setValue_id22hm_0zJHWz.invoke(cv, ctx.getRootInterpreter().evaluate(IRef__BehaviorDescriptor.target_id6rGLT0TevFd.invoke(c), ctx, coverage, null, stopOnStop));
       SNodeOperations.replaceWithAnother(c, cv);
     }
+  }
+
+  /**
+   * The lambda that all values of le share while a TypecheckingSessionScope is open: expanded once per scope by TypecheckingSessionScope.derivedNode, so the types the interpreter asks for in its body are cached like those of the model, instead of being computed in a fresh typechecking context on every evaluation of a fresh expansion. Returns null without a scope, for a short lambda in a tree that may change (TypecheckingSessionScope.isStable), and for a body that refers to mutable state, which each value captures when it is created.   
+   */
+  private static SNode sharedLambda(final SNode le) {
+    TypecheckingSessionScope scope = TypecheckingSessionScope.current();
+    if (scope == null || !(scope.isStable(le))) {
+      return null;
+    }
+    return SNodeOperations.as(TypecheckingSessionScope.derivedNode(le, () -> expand(le)), CONCEPTS.LambdaExpression$64);
+  }
+
+  /**
+   * The lambda le stands for: a copy of its body in which every "it" of le is a reference to its one argument, and which carries the mapping from the nodes of le to their copies. Returns null if the body refers to mutable state.   
+   */
+  private static SNode expand(SNode le) {
+    if (ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(le, LINKS.expr$CW3E), CONCEPTS.IRef$sq, true, new SAbstractConcept[]{})).any((it) -> (boolean) IRef__BehaviorDescriptor.targetStateIsMutable_id22hm_0zJBUZ.invoke(it))) {
+      return null;
+    }
+    final Map<SNode, SNode> expansionMapping = MapSequence.fromMap(new HashMap<SNode, SNode>());
+    SNode expansion = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba520706L, "org.iets3.core.expr.lambda.structure.LambdaExpression"));
+    SLinkOperations.setTarget(expansion, LINKS.expression$T2aj, SNodeOperations.as(CopyUtil.copy(SLinkOperations.getTarget(le, LINKS.expr$CW3E), expansionMapping, true), CONCEPTS.Expression$D_));
+    ListSequence.fromList(SLinkOperations.getChildren(expansion, LINKS.args$8wKH)).clear();
+    SNode arg = createLambdaArg_99yx9z_a0f0m();
+    SLinkOperations.setTarget(arg, LINKS.type$8xXf, SNodeOperations.copyNode(IShortLambdaContainer__BehaviorDescriptor.requiredType_id6zmBjqUm7MF.invoke(SNodeOperations.cast(SNodeOperations.getParent(le), CONCEPTS.IShortLambdaContainer$6m))));
+    ListSequence.fromList(SLinkOperations.getChildren(expansion, LINKS.args$8wKH)).addElement(arg);
+    for (final SNode itExpr : ListSequence.fromList(ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(expansion, LINKS.expression$T2aj), CONCEPTS.ShortLambdaItExpression$k0, true, new SAbstractConcept[]{})).toList())) {
+      // do not go into nested short lambda expressions, their "it" is their own argument
+      if (SNodeOperations.getNodeAncestor(itExpr, CONCEPTS.LambdaExpression$64, false, false) == expansion && (SNodeOperations.getNodeAncestor(itExpr, CONCEPTS.ShortLambdaExpression$Xg, false, false) == null)) {
+        SNode argRef = createLambdaArgRef_99yx9z_a0a0b0i0m(arg);
+        for (SNode original : ListSequence.fromList(SetSequence.fromSet(MapSequence.fromMap(expansionMapping).keySet()).where((key) -> MapSequence.fromMap(expansionMapping).get(key) == itExpr).toList())) {
+          MapSequence.fromMap(expansionMapping).put(original, argRef);
+        }
+        SNodeOperations.replaceWithAnother(itExpr, argRef);
+      }
+    }
+    LambdaExpression__BehaviorDescriptor.putNodeMapping_id1ZCJf$ej28Z.invoke(expansion, expansionMapping);
+    return expansion;
   }
 
   @Override
@@ -123,19 +171,29 @@ public class ShortLambdaValue extends ExecutableValue {
     return res;
   }
 
-  private static SNode createLambdaArg_99yx9z_a0a0m0i() {
+  private static SNode createLambdaArg_99yx9z_a0a0p0i() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.LambdaArg$9W);
     n0.setProperty(PROPS.name$MnvL, "it");
     return n0.getResult();
   }
-  private static SNode createLambdaArgRef_99yx9z_a0a0c0a0a61a8(SNode p0) {
+  private static SNode createLambdaArgRef_99yx9z_a0a0c0a0a91a8(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.LambdaArgRef$5P);
     n0.setReferenceTarget(LINKS.arg$J0Dd, p0);
     return n0.getResult();
   }
-  private static SNode createCapturedValue_99yx9z_a0a0u0i(SNode p0) {
+  private static SNode createCapturedValue_99yx9z_a0a0w0i(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.CapturedValue$Gh);
     n0.forChild(LINKS.type$EhVN).initNode(p0, CONCEPTS.Type$WK, true);
+    return n0.getResult();
+  }
+  private static SNode createLambdaArg_99yx9z_a0f0m() {
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.LambdaArg$9W);
+    n0.setProperty(PROPS.name$MnvL, "it");
+    return n0.getResult();
+  }
+  private static SNode createLambdaArgRef_99yx9z_a0a0b0i0m(SNode p0) {
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.LambdaArgRef$5P);
+    n0.setReferenceTarget(LINKS.arg$J0Dd, p0);
     return n0.getResult();
   }
 

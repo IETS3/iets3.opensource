@@ -13,6 +13,10 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import org.iets3.core.expr.typetags.physunits.behavior.ConversionSpecifier__BehaviorDescriptor;
+import org.iets3.core.expr.base.plugin.InterpreterSession;
+import org.jetbrains.mps.openapi.model.SModel;
+import java.util.Arrays;
+import org.iets3.core.expr.typetags.physunits.behavior.IConvertUnit__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 
 public class PhysUnitInterpreterHelper {
@@ -66,6 +70,37 @@ public class PhysUnitInterpreterHelper {
 
     SNode chained = ListSequence.fromList(conversionSeq).foldLeft(SNodeOperations.as(operand, CONCEPTS.Expression$D_), (s, it) -> (SNode) ConversionSpecifier__BehaviorDescriptor.expandValParameter_id7UgeC20_E8d.invoke(it.getImplicitConv(), s));
     return chained;
+  }
+
+  /**
+   * The conversion specifier that convert applies. Choosing it computes types and searches all visible conversion rules, which a conversion inside a function or a lambda would repeat on every evaluation. The choice depends only on the model, so for a convert expression in a model it is made once per InterpreterSession (InterpreterSession.cached); without a session, and for detached convert expressions such as the implicit conversions built during an evaluation, it is made on every call.   
+   */
+  public static SNode getConversionSpecifier(final SNode convert) {
+    InterpreterSession session = InterpreterSession.current();
+    SModel convertModel = SNodeOperations.getModel(convert);
+    if (session == null || convertModel == null || convertModel.getRepository() == null) {
+      return selectConversionSpecifier(convert);
+    }
+    return (SNode) session.cached(Arrays.asList("PhysUnitInterpreterHelper.getConversionSpecifier", convert), () -> selectConversionSpecifier(convert));
+  }
+
+  private static SNode selectConversionSpecifier(SNode convert) {
+    IUnitLangConfig config = PhysUnitLangConfigHelper.getConfig();
+    SNode conversionSpecifier = null;
+    SNode contextForScope = IConvertUnit__BehaviorDescriptor.getContext_id7NHcideTk7h.invoke(convert);
+
+    switch (config.getConversionSpecifierSelection()) {
+      case DEFINED_IN_CONVERT_EXPESSION:
+        conversionSpecifier = IConvertUnit__BehaviorDescriptor.getConversionSpecifier_id7SygLIkR36w.invoke(convert);
+        break;
+      case FIRST_APPLICABLE:
+        conversionSpecifier = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(convert, contextForScope)).first();
+        break;
+    }
+    if ((conversionSpecifier == null)) {
+      conversionSpecifier = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(convert, contextForScope)).first();
+    }
+    return conversionSpecifier;
   }
 
   private static final class CONCEPTS {

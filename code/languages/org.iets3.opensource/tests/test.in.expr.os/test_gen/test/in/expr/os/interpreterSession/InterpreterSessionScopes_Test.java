@@ -28,6 +28,11 @@ import jetbrains.mps.smodel.SModelId;
 import jetbrains.mps.smodel.TrivialModelDescriptor;
 import org.iets3.core.expr.tests.behavior.EvalResult;
 import org.iets3.core.expr.tests.behavior.AbstractTestItem__BehaviorDescriptor;
+import org.iets3.core.expr.lambda.plugin.LambdaValue;
+import java.util.Map;
+import org.iets3.core.expr.lambda.behavior.LambdaExpression__BehaviorDescriptor;
+import org.iets3.core.expr.lambda.plugin.ShortLambdaValue;
+import org.iets3.core.expr.lambda.behavior.ShortLambdaExpression__BehaviorDescriptor;
 import jetbrains.mps.lang.test.behavior.INodesTestMethod__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -63,8 +68,8 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
     new TestBody(this).test_withScopeOnAnchorOpensOrReusesAScope();
   }
   @Test
-  public void test_typesAreCachedInScopeAndInvalidatedByChanges() throws Throwable {
-    new TestBody(this).test_typesAreCachedInScopeAndInvalidatedByChanges();
+  public void test_typesAreCachedForTheWholeScope() throws Throwable {
+    new TestBody(this).test_typesAreCachedForTheWholeScope();
   }
   @Test
   public void test_clearCacheDropsTheCachedTypesOfARoot() throws Throwable {
@@ -83,6 +88,18 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
     new TestBody(this).test_testItemRunsInTheSessionOfTheRunScope();
   }
   @Test
+  public void test_testItemJoinsATypecheckingScopeToItsSession() throws Throwable {
+    new TestBody(this).test_testItemJoinsATypecheckingScopeToItsSession();
+  }
+  @Test
+  public void test_lambdaValuesShareOneCopyWithinAScope() throws Throwable {
+    new TestBody(this).test_lambdaValuesShareOneCopyWithinAScope();
+  }
+  @Test
+  public void test_shortLambdaValuesShareOneExpansionWithinAScope() throws Throwable {
+    new TestBody(this).test_shortLambdaValuesShareOneExpansionWithinAScope();
+  }
+  @Test
   public void addition_item0_2946166939443365714() throws Throwable {
     new TestBody(this).addition_item0_2946166939443365714();
   }
@@ -95,7 +112,7 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
 
     @Override
     protected void initTestNodes() {
-      prepareTestNodes("2946166939443365697", "2946166939443365709");
+      prepareTestNodes("2946166939443365697", "2946166939443365709", "7567998526961534527");
     }
 
     public void test_runScopeOpensSessionAndTypecheckingScope() throws Exception {
@@ -209,13 +226,13 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
         Assert.assertEquals("open inside a scope returns null", true, openedInside == null);
       });
     }
-    public void test_typesAreCachedInScopeAndInvalidatedByChanges() throws Exception {
+    public void test_typesAreCachedForTheWholeScope() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         Assert.assertEquals("the application plugin installed the scoped typechecking provider", true, ScopedTypecheckingProvider.isInstalled());
         SNode unscopedFirst = TypecheckingFacade.getFromContext().getTypeOf(getAnnotatedNode("plus"));
         SNode unscopedSecond = TypecheckingFacade.getFromContext().getTypeOf(getAnnotatedNode("plus"));
-        List<SNode> scoped = TypecheckingSessionScope.withScope(myProject.getRepository(), () -> {
+        List<SNode> scoped = TypecheckingSessionScope.withScope(getAnnotatedNode("plus"), () -> {
           List<SNode> types = ListSequence.fromList(new ArrayList<SNode>());
           ListSequence.fromList(types).addElement(TypecheckingFacade.getFromContext().getTypeOf(getAnnotatedNode("plus")));
           ListSequence.fromList(types).addElement(TypecheckingFacade.getFromContext().getTypeOf(getAnnotatedNode("plus")));
@@ -225,16 +242,16 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
         });
         String fresh = SNodeOperations.present(TypecheckingFacade.getFromContext().getTypeOf(getAnnotatedNode("plus")));
         Assert.assertEquals("without a scope every query computes a new type, so the identity checks below mean something", false, unscopedFirst == unscopedSecond);
-        Assert.assertEquals("inside a scope a repeated query is answered from the cached context", true, ListSequence.fromList(scoped).getElement(0) == ListSequence.fromList(scoped).getElement(1));
-        Assert.assertEquals("after a change of an operand the scope answers the new type", fresh, SNodeOperations.present(ListSequence.fromList(scoped).getElement(2)));
-        Assert.assertEquals("the change of the operand changed the type", false, SNodeOperations.present(ListSequence.fromList(scoped).getElement(0)).equals(fresh));
+        Assert.assertEquals("inside a scope a repeated query is answered from the cache", true, ListSequence.fromList(scoped).getElement(0) == ListSequence.fromList(scoped).getElement(1));
+        Assert.assertEquals("a scope keeps a type until it closes, also after a change: it spans one run of checks, in which the models do not change", true, ListSequence.fromList(scoped).getElement(2) == ListSequence.fromList(scoped).getElement(0));
+        Assert.assertEquals("after the scope a query sees the changed operand", false, SNodeOperations.present(ListSequence.fromList(scoped).getElement(0)).equals(fresh));
       });
     }
     public void test_clearCacheDropsTheCachedTypesOfARoot() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         Assert.assertEquals("the application plugin installed the scoped typechecking provider", true, ScopedTypecheckingProvider.isInstalled());
-        List<SNode> types = TypecheckingSessionScope.withScope(myProject.getRepository(), () -> {
+        List<SNode> types = TypecheckingSessionScope.withScope(getAnnotatedNode("plus"), () -> {
           List<SNode> result = ListSequence.fromList(new ArrayList<SNode>());
           ListSequence.fromList(result).addElement(TypecheckingFacade.getFromContext().getTypeOf(getAnnotatedNode("plus")));
           ListSequence.fromList(result).addElement(TypecheckingFacade.getFromContext().getTypeOf(getAnnotatedNode("plus")));
@@ -253,7 +270,7 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
         SNode outsideFirst = TypecheckingSessionScope.derivedNode(getAnnotatedNode("plus"), () -> SNodeOperations.copyNode(getAnnotatedNode("plus")));
         SNode outsideSecond = TypecheckingSessionScope.derivedNode(getAnnotatedNode("plus"), () -> SNodeOperations.copyNode(getAnnotatedNode("plus")));
         final List<SNode> built = ListSequence.fromList(new ArrayList<SNode>());
-        List<String> facts = TypecheckingSessionScope.withScope(myProject.getRepository(), () -> {
+        List<String> facts = TypecheckingSessionScope.withScope(getAnnotatedNode("plus"), () -> {
           TypecheckingSessionScope scope = TypecheckingSessionScope.current();
           SNode first = TypecheckingSessionScope.derivedNode(getAnnotatedNode("plus"), () -> {
             SNode derived = SNodeOperations.copyNode(getAnnotatedNode("plus"));
@@ -281,7 +298,7 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
           return result;
         });
         Assert.assertEquals("without a scope derivedNode builds the node on every call", false, outsideFirst == outsideSecond);
-        Assert.assertEquals("a derived node is built once per scope and typechecked incrementally, a plain detached copy is neither", ListSequence.fromListAndArray(new ArrayList<String>(), "built once", "derived stable", "derived type cached"), facts);
+        Assert.assertEquals("a derived node is built once per scope and its type is cached, a plain detached copy is neither", ListSequence.fromListAndArray(new ArrayList<String>(), "built once", "derived stable", "derived type cached"), facts);
         Assert.assertEquals("the factory runs once per scope", 1, ListSequence.fromList(built).count());
       });
     }
@@ -289,12 +306,12 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
       initTestNodes();
       runWithinCommand(() -> {
         Assert.assertEquals("the application plugin installed the scoped typechecking provider", true, ScopedTypecheckingProvider.isInstalled());
-        // MPS attaches no model listeners to a model outside a repository, so a cached type of its nodes would never be invalidated.
+        // A model outside a repository is built by the code that runs, which may change it, so the types of its nodes are not kept.
         SModel data = new SModel(PersistenceFacade.getInstance().createModelReference(null, SModelId.generate(), "outsideRepository"));
         TrivialModelDescriptor outside = new TrivialModelDescriptor(data);
         final SNode plusOutside = SNodeOperations.copyNode(getAnnotatedNode("plus"));
         data.addRootNode(plusOutside);
-        List<String> facts = TypecheckingSessionScope.withScope(myProject.getRepository(), () -> {
+        List<String> facts = TypecheckingSessionScope.withScope(getAnnotatedNode("plus"), () -> {
           TypecheckingSessionScope scope = TypecheckingSessionScope.current();
           List<String> result = ListSequence.fromList(new ArrayList<String>());
           if (scope.isStable(getAnnotatedNode("plus"))) {
@@ -309,7 +326,7 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
           return result;
         });
         Assert.assertEquals("the copy is in the model outside the repository, so the test is about the repository and not about detached nodes", true, SNodeOperations.getModel(plusOutside) == outside);
-        Assert.assertEquals("only nodes of models in a repository are typechecked incrementally", ListSequence.fromListAndArray(new ArrayList<String>(), "node in the repository stable"), facts);
+        Assert.assertEquals("only the types of nodes of models in a repository are cached", ListSequence.fromListAndArray(new ArrayList<String>(), "node in the repository stable"), facts);
       });
     }
     public void test_testItemRunsInTheSessionOfTheRunScope() throws Exception {
@@ -329,6 +346,69 @@ public class InterpreterSessionScopes_Test extends BaseTransformationTest {
           }
         });
         Assert.assertEquals("a test item runs in the session of the run scope and leaves it open", ListSequence.fromListAndArray(new ArrayList<String>(), "ok", "run session kept"), seen);
+      });
+    }
+    public void test_testItemJoinsATypecheckingScopeToItsSession() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        Assert.assertEquals("the application plugin installed the scoped typechecking provider", true, ScopedTypecheckingProvider.isInstalled());
+        InterpreterSession session = InterpreterSession.open();
+        boolean scopeBefore;
+        boolean ok;
+        boolean scopeAfterItem;
+        try {
+          scopeBefore = TypecheckingSessionScope.current() != null;
+          ok = AbstractTestItem__BehaviorDescriptor.executeTest_id4KZjPKUdEYm.invoke(getAnnotatedNode("item")).isOk();
+          scopeAfterItem = TypecheckingSessionScope.current() != null;
+        } finally {
+          session.close();
+        }
+        Assert.assertEquals("the session was opened without a typechecking scope", false, scopeBefore);
+        Assert.assertEquals("the item passes", true, ok);
+        Assert.assertEquals("the item joined a typechecking scope to the session it ran in, so all its evaluations share the cached types", true, scopeAfterItem);
+        Assert.assertEquals("the scope closes with the session", true, TypecheckingSessionScope.current() == null);
+      });
+    }
+    public void test_lambdaValuesShareOneCopyWithinAScope() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        Assert.assertEquals("the application plugin installed the scoped typechecking provider", true, ScopedTypecheckingProvider.isInstalled());
+        // The lambda captures nothing, so its values need no interpreter context. Each value puts the mapping of its copy on the lambda.
+        new LambdaValue(getAnnotatedNode("lambda"), null, null, false);
+        Map<SNode, SNode> unscopedFirst = LambdaExpression__BehaviorDescriptor.getNodeMapping_id3u8VfJfplfS.invoke(getAnnotatedNode("lambda"));
+        new LambdaValue(getAnnotatedNode("lambda"), null, null, false);
+        Map<SNode, SNode> unscopedSecond = LambdaExpression__BehaviorDescriptor.getNodeMapping_id3u8VfJfplfS.invoke(getAnnotatedNode("lambda"));
+        List<Map<SNode, SNode>> scoped = TypecheckingSessionScope.withScope(getAnnotatedNode("lambda"), () -> {
+          List<Map<SNode, SNode>> mappings = ListSequence.fromList(new ArrayList<Map<SNode, SNode>>());
+          new LambdaValue(getAnnotatedNode("lambda"), null, null, false);
+          ListSequence.fromList(mappings).addElement(LambdaExpression__BehaviorDescriptor.getNodeMapping_id3u8VfJfplfS.invoke(getAnnotatedNode("lambda")));
+          new LambdaValue(getAnnotatedNode("lambda"), null, null, false);
+          ListSequence.fromList(mappings).addElement(LambdaExpression__BehaviorDescriptor.getNodeMapping_id3u8VfJfplfS.invoke(getAnnotatedNode("lambda")));
+          return mappings;
+        });
+        Assert.assertEquals("without a scope every value copies the lambda", false, unscopedFirst == unscopedSecond);
+        Assert.assertEquals("within a scope all values share one copy of the lambda", true, ListSequence.fromList(scoped).getElement(0) == ListSequence.fromList(scoped).getElement(1));
+      });
+    }
+    public void test_shortLambdaValuesShareOneExpansionWithinAScope() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        Assert.assertEquals("the application plugin installed the scoped typechecking provider", true, ScopedTypecheckingProvider.isInstalled());
+        // The short lambda captures nothing, so its values need no interpreter context. Each value puts the mapping of its expansion on the short lambda.
+        new ShortLambdaValue(getAnnotatedNode("shortLambda"), null, null, false);
+        Map<SNode, SNode> unscopedFirst = ShortLambdaExpression__BehaviorDescriptor.getNodeMapping_id5s__jxDLZVE.invoke(getAnnotatedNode("shortLambda"));
+        new ShortLambdaValue(getAnnotatedNode("shortLambda"), null, null, false);
+        Map<SNode, SNode> unscopedSecond = ShortLambdaExpression__BehaviorDescriptor.getNodeMapping_id5s__jxDLZVE.invoke(getAnnotatedNode("shortLambda"));
+        List<Map<SNode, SNode>> scoped = TypecheckingSessionScope.withScope(getAnnotatedNode("shortLambda"), () -> {
+          List<Map<SNode, SNode>> mappings = ListSequence.fromList(new ArrayList<Map<SNode, SNode>>());
+          new ShortLambdaValue(getAnnotatedNode("shortLambda"), null, null, false);
+          ListSequence.fromList(mappings).addElement(ShortLambdaExpression__BehaviorDescriptor.getNodeMapping_id5s__jxDLZVE.invoke(getAnnotatedNode("shortLambda")));
+          new ShortLambdaValue(getAnnotatedNode("shortLambda"), null, null, false);
+          ListSequence.fromList(mappings).addElement(ShortLambdaExpression__BehaviorDescriptor.getNodeMapping_id5s__jxDLZVE.invoke(getAnnotatedNode("shortLambda")));
+          return mappings;
+        });
+        Assert.assertEquals("without a scope every value expands the short lambda", false, unscopedFirst == unscopedSecond);
+        Assert.assertEquals("within a scope all values share one expansion of the short lambda", true, ListSequence.fromList(scoped).getElement(0) == ListSequence.fromList(scoped).getElement(1));
       });
     }
     public void addition_item0_2946166939443365714() throws Exception {

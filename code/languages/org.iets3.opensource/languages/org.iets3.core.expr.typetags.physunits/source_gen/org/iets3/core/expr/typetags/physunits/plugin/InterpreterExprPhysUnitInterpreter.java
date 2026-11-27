@@ -12,8 +12,8 @@ import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import com.mbeddr.mpsutil.interpreter.rt.ICoverageAnalyzer;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.iets3.core.expr.typetags.physunits.behavior.IConvertUnit__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.iets3.core.expr.typetags.physunits.behavior.IConvertUnit__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import com.mbeddr.mpsutil.interpreter.rt.StopAndReturnException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
@@ -54,23 +54,9 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          IUnitLangConfig config = PhysUnitLangConfigHelper.getConfig();
-          SNode conversionSpecifier = null;
-          SNode contextForScope = IConvertUnit__BehaviorDescriptor.getContext_id7NHcideTk7h.invoke(node);
+          SNode specifier = PhysUnitInterpreterHelper.getConversionSpecifier(node);
 
-          switch (config.getConversionSpecifierSelection()) {
-            case DEFINED_IN_CONVERT_EXPESSION:
-              conversionSpecifier = IConvertUnit__BehaviorDescriptor.getConversionSpecifier_id7SygLIkR36w.invoke(node);
-              break;
-            case FIRST_APPLICABLE:
-              conversionSpecifier = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(node, contextForScope)).first();
-              break;
-          }
-          if ((conversionSpecifier == null)) {
-            conversionSpecifier = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(node, contextForScope)).first();
-          }
-
-          SNode convertExpression = SLinkOperations.getTarget(conversionSpecifier, LINKS.expression$BZ0p);
+          SNode convertExpression = SLinkOperations.getTarget(specifier, LINKS.expression$BZ0p);
           Object evaluatedSourceUnitValue = context.getRootInterpreter().evaluate(IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(node), context, coverage, trace, false);
           MapSequence.fromMap(context.getEnvironment()).put(PhysUnitInterpreterHelper.CURRENT_VAL_EXPRESSION, evaluatedSourceUnitValue);
           Object convertedTargetUnit = context.getRootInterpreter().evaluate(convertExpression, context, coverage, trace, false);

@@ -6,9 +6,6 @@ import jetbrains.mps.typechecking.TypecheckingQueries;
 import jetbrains.mps.typesystem.inference.TypeCheckerHelper;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.NodeReadEventsCaster;
-import jetbrains.mps.newTypesystem.context.IncrementalTypecheckingContext;
-import jetbrains.mps.typesystem.inference.TypeChecker;
-import jetbrains.mps.newTypesystem.context.TargetTypecheckingContext;
 import java.util.Collection;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -19,12 +16,13 @@ import jetbrains.mps.lang.pattern.ConceptMatchingPattern;
 import jetbrains.mps.lang.pattern.INodeMatchingPattern;
 import java.util.function.Consumer;
 import jetbrains.mps.errors.item.NodeReportItem;
+import jetbrains.mps.newTypesystem.context.IncrementalTypecheckingContext;
 import jetbrains.mps.util.Pair;
 import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.errors.item.TypesystemReportItemAdapter;
 
 /**
- * Answers type queries through the incremental contexts of the TypecheckingSessionScope open on the current thread. Mirrors the incremental queries of MPS's LegacyTypecheckingProvider, but with one context per root instead of one per session. 
+ * Answers type queries from the TypecheckingSessionScope open on the current thread: getTypeOf computes a type like MPS's TargetLegacyTypecheckingQueries and keeps it in the scope (TypecheckingSessionScope.typeOf); checkRecursively reports the errors of a whole root through an incremental context the scope keeps for that root, like MPS's incremental queries.  
  */
 public final class ScopedTypecheckingQueries implements TypecheckingQueries {
   private final TypeCheckerHelper helper;
@@ -39,24 +37,15 @@ public final class ScopedTypecheckingQueries implements TypecheckingQueries {
       return null;
     }
     // Type queries inside a scope record no dependencies: the reads of the computation are not what the type depends
-    // on. The first query in a root checks the whole root, which would make one stored result depend on the root and
-    // all its descendants, and a cached answer reads nothing. So the reads are kept from the listeners of this thread;
-    // a stored result that used a type which changed since is refreshed by running the check again.
+    // on, and a cached answer reads nothing. So the reads are kept from the listeners of this thread; a stored result
+    // that used a type which changed since is refreshed by running the check again.
     NodeReadEventsCaster.setNodesReadListener(null);
     try {
       TypecheckingSessionScope currentScope = TypecheckingSessionScope.current();
       if (currentScope != null) {
-        IncrementalTypecheckingContext scopedContext = currentScope.contextFor(expression, helper);
-        if (scopedContext != null) {
-          return scopedContext.getTypeOf(expression, TypeChecker.getInstance());
-        }
+        return currentScope.typeOf(expression, helper);
       }
-      TargetTypecheckingContext targetContext = new TargetTypecheckingContext(null, helper);
-      try {
-        return targetContext.getTypeOf(expression, TypeChecker.getInstance());
-      } finally {
-        targetContext.dispose();
-      }
+      return TypecheckingSessionScope.computeType(expression, helper);
     } finally {
       NodeReadEventsCaster.removeNodesReadListener();
     }

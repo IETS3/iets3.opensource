@@ -6,7 +6,7 @@ import jetbrains.mps.logging.Logger;
 import org.jetbrains.mps.openapi.module.SRepository;
 
 /**
- * Keeps one interpreter and typechecking session open for a whole run of checks in the JUnit interpreter runner and the manual root/model/children actions. Use withScope to run checks with automatic cleanup on the current thread. Nested runs leave the outer session open. Takes no model lock and needs none: the checks take the read or write access they need, possibly several in turn, and the cached typechecking contexts follow changes made in between through their model listeners.  
+ * Keeps one interpreter and typechecking session open for a whole run of checks in the JUnit interpreter runner and the manual root/model/children actions. Use withScope to run checks with automatic cleanup on the current thread. Nested runs leave the outer session open. Takes no model lock and needs none: the checks take the read or write access they need, possibly several in turn. The types the typechecking session caches are kept until the run ends, because a run does not change the models in ways that affect types.
  */
 public final class InterpreterTestRunScope {
   private static final Logger LOG = Logger.getLogger(InterpreterTestRunScope.class);

@@ -17941,6 +17941,16 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6$6VD0OfrZ$" role="3bR37C">
+          <node concept="3bR9La" id="6$6VD0OfrZ_" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6$6VD0OfrZA" role="3bR37C">
+          <node concept="3bR9La" id="6$6VD0OfrZB" role="1SiIV1">
+            <ref role="3bR37D" node="1VJeVhdX98g" resolve="org.iets3.core.expr.typetags.physunits" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2mWlB9yWxuR" role="2G$12L">
         <property role="BnDLt" value="true" />

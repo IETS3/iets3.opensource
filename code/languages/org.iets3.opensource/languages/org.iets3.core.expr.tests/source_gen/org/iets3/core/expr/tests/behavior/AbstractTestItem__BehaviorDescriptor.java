@@ -32,6 +32,7 @@ import jetbrains.mps.errors.MessageStatus;
 import org.iets3.core.expr.tests.editor.TestColors;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.base.plugin.InterpreterSession;
+import org.iets3.core.expr.base.plugin.TypecheckingSessionScope;
 import com.jetbrains.mpsext.viewmodel.runtime.Computed;
 import com.jetbrains.mpsext.viewmodel.runtime.ViewModels;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -126,6 +127,8 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ static EvalResult executeTest_id4KZjPKUdEYm(@NotNull final SNode __thisNode__) {
     if (!(SPropertyOperations.getBoolean(__thisNode__, PROPS.isIgnored$hvX5))) {
       return InterpreterSession.withSession(() -> {
+        // Outside a run scope, caches the types for setup, test and every repeated evaluation of this item; inside one, the item runs in that scope.
+        TypecheckingSessionScope.joinSession(__thisNode__);
         Computed<EvalResult> computed = ViewModels.named("org.iets3.core.base.behavior.CheckResults").compute(() -> {
           AbstractTestItem__BehaviorDescriptor.executeSetupInternal_id1cd9HYW_D_k.invoke(__thisNode__);
           return ((EvalResult) AbstractTestItem__BehaviorDescriptor.executeTestInternal_id78hTg1$THJg.invoke(__thisNode__));

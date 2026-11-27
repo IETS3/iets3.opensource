@@ -1230,12 +1230,14 @@
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
           <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
           <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
           <language id="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
           <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
           <language id="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" />
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
           <language id="l:5a0fae25-8093-498f-81fe-3b264864819a:test.org.iets3.analysis.base.solvable" />
@@ -2054,6 +2056,8 @@
           <module ref="6effa8ea-ddf9-441a-a29e-80a73b7d0fc7(org.iets3.core.expr.tests.rt)" kind="rt" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
           <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
+          <module ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" kind="cl" />
+          <module ref="7ee265bd-5986-4709-86ed-2c6daa33cd8c(org.iets3.core.expr.typetags.physunits)" kind="cl" />
           <module ref="86255e62-4839-480a-a7d0-9ee30f97e2d8(org.iets3.core.expr.typetags.phyunits.si)" kind="cl" />
         </dependencies>
         <uses>
@@ -2064,6 +2068,7 @@
           <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
           <language id="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
           <language id="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
           <language id="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
           <language id="l:6fadc44e-69c2-4a4a-9d16-7ebf5f8d3ba0:org.iets3.core.expr.math" />
@@ -4315,27 +4320,53 @@
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker/languages/group.filepicker/com.mbeddr.mpsutil.filepicker.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung/languages/group.jung/com.mbeddr.mpsutil.jung.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml/languages/group.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.traceExplorer.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.varscope/languages/group.varscope/com.mbeddr.mpsutil.varscope.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.varscope/languages/group.varscope/com.mbeddr.mpsutil.varscope.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.runtime.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.collections.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.lambda.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.path.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.simpleTypes.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.rt.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.physunits.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.phyunits.si.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />

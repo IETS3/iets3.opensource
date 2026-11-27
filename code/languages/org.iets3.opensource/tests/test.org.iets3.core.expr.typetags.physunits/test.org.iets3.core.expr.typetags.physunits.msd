@@ -14,6 +14,8 @@
   <dependencies>
     <dependency reexport="false">86255e62-4839-480a-a7d0-9ee30f97e2d8(org.iets3.core.expr.typetags.phyunits.si)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
+    <dependency reexport="false">7ee265bd-5986-4709-86ed-2c6daa33cd8c(org.iets3.core.expr.typetags.physunits)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />

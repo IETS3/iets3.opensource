@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import java.util.Objects;
 import com.jetbrains.mpsext.viewmodel.runtime.ViewModels;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
@@ -45,7 +46,10 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
     ICanStoreCheckResult__BehaviorDescriptor.storeLastResultWithDependencies_id55VuGTOFj73.invoke(__thisNode__, result, Dependencies.NONE);
   }
   /*package*/ static void storeLastResultWithDependencies_id55VuGTOFj73(@NotNull SNode __thisNode__, IResult result, Dependencies dependencies) {
-    ViewModels.named("org.iets3.core.base.behavior.CheckResults").write(__thisNode__, result, dependencies);
+    boolean stored = Objects.equals(ViewModels.named("org.iets3.core.base.behavior.CheckResults").write(__thisNode__, result, dependencies).getNow(false), true);
+    // The view model refuses values for nodes of read-only models (e.g. the models of tests run from a build) and of
+    // nodes in no model of a repository. Their result is kept on the node, so that it can still be read.
+    __thisNode__.putUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__), ((stored ? null : result)));
     if (result instanceof IPersistentResult && SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.ICanStorePersistentResult$LT)) {
       ((IPersistentResult) result).writeToFile();
     }
@@ -79,6 +83,10 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
   }
   /*package*/ static IResult getStoredResult_id55VuGTOFj9K(@NotNull SNode __thisNode__) {
     Object result = ViewModels.named("org.iets3.core.base.behavior.CheckResults").get(__thisNode__);
+    if (result == null) {
+      // a result the view model refused (see storeLastResultWithDependencies)
+      result = __thisNode__.getUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__));
+    }
     return ((result instanceof IResult ? (IResult) result : null));
   }
 
