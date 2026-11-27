@@ -75,6 +75,9 @@
           <node concept="Xl_RD" id="3ZBI8AvYaXs" role="2BsfMF">
             <property role="Xl_RC" value=".*Generated_.*_Test" />
           </node>
+          <node concept="Xl_RD" id="1xfJekm$zuC" role="2BsfMF">
+            <property role="Xl_RC" value="!test[.]org[.]iets3[.]genjava[.]nodeurl[.]fixtures[.].*" />
+          </node>
         </node>
       </node>
     </node>
