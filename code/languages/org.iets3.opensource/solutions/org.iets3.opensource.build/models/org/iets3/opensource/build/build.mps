@@ -18007,6 +18007,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="3ubr__6yxR4" role="3bR37C">
+          <node concept="3bR9La" id="3ubr__6yxR5" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1E1JtA" id="4O1MtdoYzuV" role="3989C9">
