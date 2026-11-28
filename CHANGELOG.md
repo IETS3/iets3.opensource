@@ -9,6 +9,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 - Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
+- Variability: Duplicate feature attribute assignments in configurations are now reported, with a quickfix to remove them (#2046).
 
 ### Changed
 - Variability: The cyclic dependency between `org.iets3.variability.base` and `org.iets3.variability.featuremodel.base` has been removed. For this, the extension point `tailorIETS3Variability` and its settings classes have been moved to `org.iets3.variability.base`. Projects which tailor IETS3 Variability have to migrate and rebuild, see [these instructions](https://github.com/IETS3/iets3.opensource/issues/2044#issuecomment-6920740399).
